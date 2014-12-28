@@ -6,4 +6,4 @@
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/com/coffe/mycoffee/R$string.class \
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/com/coffe/mycoffee/R$xml.class \
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/com/coffe/mycoffee/R.class \
-/Users/admin/Desktop/mycoffee/platforms/android/ant-build/dexedLibs/classes-30d8e8c4ea386760fb886a29d647ad05.jar \
+/Users/admin/Desktop/mycoffee/platforms/android/ant-build/dexedLibs/classes-6769d2b1bb3f2024940d6bf96fa9181c.jar \

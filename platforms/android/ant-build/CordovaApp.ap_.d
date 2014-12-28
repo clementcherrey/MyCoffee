@@ -35,6 +35,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/index.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/newindex.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/index.css \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/logo.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/index.js \
