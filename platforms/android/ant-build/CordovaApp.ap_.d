@@ -37,9 +37,11 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/newindex.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/storage_test.html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/storageList.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/index.css \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/logo.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/index.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/jquery-2.1.3.min.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/main.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/storage.js \
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/AndroidManifest.xml \

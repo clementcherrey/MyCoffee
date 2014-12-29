@@ -7,6 +7,6 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
-    <content src="storage_test.html" />
+    <content src="storageList.html" />
     <access origin="*" />
 </widget>
