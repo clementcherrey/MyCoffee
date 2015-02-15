@@ -8,6 +8,6 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
-    <content src="devpage.html" />
+    <content src="devpage2.html" />
     <access origin="*" />
 </widget>

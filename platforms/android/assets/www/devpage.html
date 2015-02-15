@@ -35,7 +35,8 @@
             $(document).on('pageshow', '#main', function() {  
               	// $('#map_canvas').gmap();
                //$('#map_canvas').gmap({ 'center': '31.2000,121.5000' }); 
-               $('#map_canvas').gmap({ 'center': '31.2000,121.5000', 'zoom': 12});              
+               $('#map_canvas').gmap({ 'center': '31.2000,121.5000', 'zoom': 12}); 
+               $('#map_canvas').gmap('addMarker', { 'position': new google.maps.LatLng(31.2000,121.5000)});             
                // $('#map_canvas').gmap({ 'zoom': 4 });
                // $('#map_canvas').gmap('refresh');
             });

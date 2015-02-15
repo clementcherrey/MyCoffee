@@ -24,7 +24,7 @@
                 right:0;
             }
         </style>  
-        <script type="text/javascript" src="js/storage.js"></script>
+        <script type="text/javascript" src="js/storage2.js"></script>
         <script type="text/javascript" src="cordova.js"></script>      
         <script type="text/javascript" src="http://maps.google.cn/maps/api/js?language=en-US&sensor=true"></script>              
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -32,10 +32,10 @@
         <script type="text/javascript" src="http://jquery-ui-map.googlecode.com/svn/trunk/ui/min/jquery.ui.map.full.min.js"></script>
         <script type="text/javascript" src="http://jquery-ui-map.googlecode.com/svn/trunk/ui/jquery.ui.map.extensions.js"></script>
         <script>
-            $(document).on('pageshow', '#main', function() {  
-               $('#map_canvas').gmap({ 'center': '31.2000,121.5000', 'zoom': 12});              
-               $('#map_canvas').gmap('addMarker', { 'position': new google.maps.LatLng(31.2000,121.5000) } );
-            });
+            //$(document).on('pageshow', '#main', function() {            
+              // $('#map_canvas').gmap({ 'center': '31.2000,121.5000', 'zoom': 12}); 
+               //$('#map_canvas').gmap('addMarker', { 'position': new google.maps.LatLng(31.2000,121.5000)});             
+            //});
         </script>  
 </head>
 
@@ -59,8 +59,8 @@
 </div>
 </div>
 
-<div data-role="page" id="headlinepage">
-<div data-theme="a" data-role="header"><a href="#home"
+<div data-role="page" id="headline">
+<div data-theme="a" data-role="header"><a href="#homepage"
 	class="ui-btn-left" data-transition="slide" data-direction="reverse">Back</a>
 <h3>Store Info</h3>
 </div>

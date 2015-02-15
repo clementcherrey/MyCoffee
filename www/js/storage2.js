@@ -23,7 +23,7 @@ function setup(tx){
     ' location TEXT,'+
     ' lat FLOAT,'+
     ' lng FLOAT)');
-    alert("table created");
+    //alert("table created");
 }
 
 
@@ -32,18 +32,16 @@ function errorHandler(e){
 }
 
 function dbReady(){
-    alert("in db ready");
+    //alert("in db ready");
         db.transaction(function(tx){
-            tx.executeSql("insert into store(name,brand,comfort,location,lat,lng) values(?,?,?,?,?,?)",["store starbucks one","starbucks",4.3,"unknow",1.2,1.3]);
-            tx.executeSql("insert into store(name,brand,comfort,location,lat,lng) values(?,?,?,?,?,?)",["costa store 1","costa",3,"unknow",1.2,1.4]);
-            tx.executeSql("insert into store(name,brand,comfort,location,lat,lng) values(?,?,?,?,?,?)",["store starbucks two","starbucks",4,"unknow",1.2,1.4]);
-            tx.executeSql("insert into store(name,brand,comfort,location,lat,lng) values(?,?,?,?,?,?)",["costa store 52","costa",3,"unknow",1.2,1.4]);
-            alert("data added");
+            tx.executeSql("insert into store(name,brand,comfort,location,lat,lng) values(?,?,?,?,?,?)",["store starbucks one","starbucks",4.3,"unknow",31.225523, 121.491344]);
+            tx.executeSql("insert into store(name,brand,comfort,location,lat,lng) values(?,?,?,?,?,?)",["costa store 1","costa",3,"unknow",31.228606, 121.512802]);
+        //    alert("data added");
             tx.executeSql("select * from store order by id asc",[],gotlog, errorHandler);
         });
 
      $("#store-list").on('vclick', 'li a', function(){
-            alert("click detected");
+            //alert("click detected");
             storeInfo.id = $(this).attr('data-id');
             alert(storeInfo.id);
            // $.mobile.changePage( "#headline", { transition: "slide", changeHash: false });;
@@ -51,7 +49,7 @@ function dbReady(){
         });
 
     $("#headline").on('pagebeforeshow', function(){
-        alert("in page before show");
+        alert("in headline before show");
         $('#store-data').empty();
         for (var i = 0; i < storeInfo.result.rows.length; i++) {
             if(i == storeInfo.id) {
@@ -70,15 +68,21 @@ function dbReady(){
         };
         $('#store-data').listview('refresh');
     });
-
-    $("#mappage").on('pagebeforeshow', function(){
-        alert("in mappage before show");
-    });
-
-
+    
+    $("#main").on('pageshow', function(){
+        alert("in map before show");
+        $('#map_canvas').gmap({ 'center': '31.2000,121.5000', 'zoom': 12}); 
+        $('#map_canvas').gmap('addMarker', { 'position': new google.maps.LatLng(31.2000,121.5000)});
+        for (var i = 0; i < storeInfo.result.rows.length; i++) {
+        alert("in for");
+        var tmplat = storeInfo.result.rows.item(i).lat;
+        var tmplng = storeInfo.result.rows.item(i).lng;
+        alert("var passed");
+        alert(tmplat+" "+tmplng);
+        $('#map_canvas').gmap('addMarker', { 'position': new google.maps.LatLng(tmplat,tmplng)});
+        };
+    });      
 }
-
-
 
 
 var storeInfo = {
@@ -113,26 +117,4 @@ function gotlog(tx, results){
 }
 
 
-
-$(document).on('pagebeforeshow', '#headline', function(){
-    alert("in headline before show");
-    $('#store-data').empty();
-    $.each(storeInfo.result, function(i, row) {
-    alert("in each");
-        if(row.id == storeInfo.id) {
-      alert("in the if");
-            var tmpName = results.rows.item(i).name;
-            var tmpBrand = results.rows.item(i).brand;
-            var tmpComfort = results.rows.item(i).comfort;
-            var tmpLocation = results.rows.item(i).location;
-
-            $('#store-data').append('<li><img src="img/' + tmpBrand + '.jpeg"/></li>');
-            $('#store-data').append('<li>Name: '+tmpName+'</li>');
-            $('#store-data').append('<li>Comfort : '+tmpComfort+'</li>');
-            $('#store-data').append('<li>Location : '+tmpLocation+'</li>');
-            $('#store-data').listview('refresh');
-        }
-    });
-    $('#store-data').listview('refresh');
-});
 
