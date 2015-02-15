@@ -42,13 +42,13 @@ function dbReady(){
             tx.executeSql("select * from store order by id asc",[],gotlog, errorHandler);
         });
 
-    $("#store-list").on('vclick', 'li a', function(){
-        alert("click detected");
-        storeInfo.id = $(this).attr('data-id');
-        alert(storeInfo.id);
-       // $.mobile.changePage( "#headline", { transition: "slide", changeHash: false });;
-        $("body").pagecontainer("change", "#headlinepage", { role: "page" });
-    });
+     $("#store-list").on('vclick', 'li a', function(){
+            alert("click detected");
+            storeInfo.id = $(this).attr('data-id');
+            alert(storeInfo.id);
+           // $.mobile.changePage( "#headline", { transition: "slide", changeHash: false });;
+            $("body").pagecontainer("change", "#headline", { role: "page" });
+        });
 
     $("#headline").on('pagebeforeshow', function(){
         alert("in page before show");
@@ -115,11 +115,12 @@ function gotlog(tx, results){
 
 
 $(document).on('pagebeforeshow', '#headline', function(){
-    alert("in page before show");
+    alert("in headline before show");
     $('#store-data').empty();
     $.each(storeInfo.result, function(i, row) {
+    alert("in each");
         if(row.id == storeInfo.id) {
-            alert("in the if");
+      alert("in the if");
             var tmpName = results.rows.item(i).name;
             var tmpBrand = results.rows.item(i).brand;
             var tmpComfort = results.rows.item(i).comfort;

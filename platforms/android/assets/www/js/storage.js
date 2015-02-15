@@ -19,8 +19,10 @@ function setup(tx){
     ' name TEXT,' +
     ' added DATE,' +
     ' brand TEXT,' +
-    ' comfort INTEGER,' +
-    ' location TEXT)');
+    ' comfort FLOAT,' +
+    ' location TEXT,'+
+    ' lat FLOAT,'+
+    ' lng FLOAT)');
     alert("table created");
 }
 
@@ -31,17 +33,11 @@ function errorHandler(e){
 
 function dbReady(){
     alert("in db ready");
-  //  $("#testbutton").on("touchstart", function(e){
-   //     alert("touch test detected");
         db.transaction(function(tx){
-            tx.executeSql("insert into store(name,brand,comfort,location) values(?,?,?,?)",["store starbucks one","starbucks",4,"unknow"]);
-            tx.executeSql("insert into store(name,brand,comfort,location) values(?,?,?,?)",["costa store 1","costa",3,"unknow"]);
-            tx.executeSql("insert into store(name,brand,comfort,location) values(?,?,?,?)",["store starbucks two","starbucks",4,"unknow"]);
-            tx.executeSql("insert into store(name,brand,comfort,location) values(?,?,?,?)",["costa store 52","costa",3,"unknow"]);
-            tx.executeSql("insert into store(name,brand,comfort,location) values(?,?,?,?)",["store starbucks 33","starbucks",4,"unknow"]);
-            tx.executeSql("insert into store(name,brand,comfort,location) values(?,?,?,?)",["second costa store","costa",3,"unknow"]);
-            tx.executeSql("insert into store(name,brand,comfort,location) values(?,?,?,?)",["store starbucks very big","starbucks",4,"unknow"]);
-            tx.executeSql("insert into store(name,brand,comfort,location) values(?,?,?,?)",["costa store","costa",3,"unknow"]);
+            tx.executeSql("insert into store(name,brand,comfort,location,lat,lng) values(?,?,?,?,?,?)",["store starbucks one","starbucks",4.3,"unknow",1.2,1.3]);
+            tx.executeSql("insert into store(name,brand,comfort,location,lat,lng) values(?,?,?,?,?,?)",["costa store 1","costa",3,"unknow",1.2,1.4]);
+            tx.executeSql("insert into store(name,brand,comfort,location,lat,lng) values(?,?,?,?,?,?)",["store starbucks two","starbucks",4,"unknow",1.2,1.4]);
+            tx.executeSql("insert into store(name,brand,comfort,location,lat,lng) values(?,?,?,?,?,?)",["costa store 52","costa",3,"unknow",1.2,1.4]);
             alert("data added");
             tx.executeSql("select * from store order by id asc",[],gotlog, errorHandler);
         });
@@ -106,7 +102,7 @@ function gotlog(tx, results){
             var tmpComfort = results.rows.item(i).comfort;
             var tmpLocation = results.rows.item(i).location;
 
-            $('#store-list').append('<li><a href="#" data-id="' + i + '">' +
+            $('#store-list').append('<li><a href="#headline" data-id="' + i + '">' +
             '<img src="img/' + tmpBrand + '.jpeg"/>' +
             '<h3>' + tmpName + '</h3>' +
             '<p>comfort: ' + tmpComfort + '/5 </p>' +

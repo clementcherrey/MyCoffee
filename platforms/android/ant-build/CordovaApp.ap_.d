@@ -34,6 +34,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/demoJQureymobileMap.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/devpage.html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/devpage2.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/index.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/jquery.gmap.js \
@@ -55,4 +56,5 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/mapshop.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/mapshop2.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/storage.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/storage2.js \
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/AndroidManifest.xml \

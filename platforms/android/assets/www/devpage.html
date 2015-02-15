@@ -24,22 +24,20 @@
                 right:0;
             }
         </style>  
-        <script type="text/javascript" src="js/storage.js"></script>
+        <script type="text/javascript" src="js/storage2.js"></script>
         <script type="text/javascript" src="cordova.js"></script>      
         <script type="text/javascript" src="http://maps.google.cn/maps/api/js?language=en-US&sensor=true"></script>              
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <script type="text/javascript" src="http://jquery-ui-map.googlecode.com/svn/trunk/ui/min/jquery.ui.map.full.min.js"></script>
         <script type="text/javascript" src="http://jquery-ui-map.googlecode.com/svn/trunk/ui/jquery.ui.map.extensions.js"></script>
         <script>
             $(document).on('pageshow', '#main', function() {  
-                $('#map_canvas').gmap();
-                //ancien centre
-               // $('#map_canvas').gmap({ 'center': '42.345573,-71.098326' }); 
-                //nouveau centre
-               	$('#map_canvas').gmap({ 'center': '31.2000,121.5000' });               
-                $('#map_canvas').gmap({ 'zoom': 8 });
-                $('#map_canvas').gmap('refresh');
+              	// $('#map_canvas').gmap();
+               //$('#map_canvas').gmap({ 'center': '31.2000,121.5000' }); 
+               $('#map_canvas').gmap({ 'center': '31.2000,121.5000', 'zoom': 12});              
+               // $('#map_canvas').gmap({ 'zoom': 4 });
+               // $('#map_canvas').gmap('refresh');
             });
         </script>  
 </head>
@@ -64,8 +62,8 @@
 </div>
 </div>
 
-<div data-role="page" id="headlinepage">
-<div data-theme="a" data-role="header"><a href="#home"
+<div data-role="page" id="headline">
+<div data-theme="a" data-role="header"><a href="#homepage"
 	class="ui-btn-left" data-transition="slide" data-direction="reverse">Back</a>
 <h3>Store Info</h3>
 </div>
