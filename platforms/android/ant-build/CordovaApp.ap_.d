@@ -38,6 +38,8 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/index.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/jquery.gmap.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/jquery.ui.map.extensions.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/jquery.ui.map.full.min.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/new_attempt.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/newindex.html \
