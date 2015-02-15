@@ -2,9 +2,10 @@
  * Created by clement on 12/29/14.
  */
 function init(){
+    alert("in init");
     document.addEventListener("deviceready", deviceready, true);
-}
 
+}
 var db;
 
 function deviceready(){
@@ -50,7 +51,7 @@ function dbReady(){
         storeInfo.id = $(this).attr('data-id');
         alert(storeInfo.id);
        // $.mobile.changePage( "#headline", { transition: "slide", changeHash: false });;
-        $("body").pagecontainer("change", "#headline", { role: "page" });
+        $("body").pagecontainer("change", "#headlinepage", { role: "page" });
     });
 
     $("#headline").on('pagebeforeshow', function(){
@@ -73,7 +74,16 @@ function dbReady(){
         };
         $('#store-data').listview('refresh');
     });
+
+    $("#mappage").on('pagebeforeshow', function(){
+        alert("in mappage before show");
+    });
+
+
 }
+
+
+
 
 var storeInfo = {
     id : null,
@@ -128,3 +138,4 @@ $(document).on('pagebeforeshow', '#headline', function(){
     });
     $('#store-data').listview('refresh');
 });
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="js/" kind="src" path="platforms/android/assets/www"/>
+	<classpathentry kind="src" path="platforms/android/assets/www/js"/>
+	<classpathentry kind="src" path="platforms/android/cordova/lib"/>
+	<classpathentry excluding="benchmark/" kind="src" path="platforms/android/cordova/node_modules/q"/>
+	<classpathentry kind="src" path="platforms/android/cordova/node_modules/q/benchmark"/>
+	<classpathentry excluding="scripts/|src/" kind="src" path="platforms/android/cordova/node_modules/shelljs"/>
+	<classpathentry kind="src" path="platforms/android/cordova/node_modules/shelljs/scripts"/>
+	<classpathentry kind="src" path="platforms/android/cordova/node_modules/shelljs/src"/>
+	<classpathentry kind="src" path="platforms/android/cordova/node_modules/which"/>
+	<classpathentry kind="src" path="platforms/android/platform_www"/>
+	<classpathentry kind="src" path="www/js"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

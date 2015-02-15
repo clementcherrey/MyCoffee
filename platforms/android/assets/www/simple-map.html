@@ -1,0 +1,63 @@
+.<!DOCTYPE html>
+<html>
+  <head>
+    <title>Asynchronous Loading</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+ 	body, #stores{
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+      #map_canvas {
+    padding: 0;
+    position : absolute !important; 
+    top : 40px !important;  
+    right : 0; 
+    bottom : 40px !important;  
+    left : 0 !important;     
+}
+    </style>
+    
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+    <script>
+function initialize() {
+  var mapOptions = {
+    zoom: 8,
+    center: new google.maps.LatLng(-34.397, 150.644)
+  };
+
+  var map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+}
+
+$(document).on("pageinit", "#stores", initialize);
+
+</script>
+  </head>
+  
+  
+  <body>
+
+ 
+ <div data-role="page" id="stores">   
+     <div data-theme="a" data-role="header">
+        <h3>
+            Map
+        </h3>
+    </div>
+   	 <div id="map_canvas" style="height:100%"></div>
+   
+      <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            Footer
+        </h3>
+    </div>
+   </div>
+  </body>
+</html>

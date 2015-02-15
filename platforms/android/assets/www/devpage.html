@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<title>dev page</title>
+	
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <style>
+        #content {
+   			 padding: 0;
+   			 position : absolute !important; 
+   			 top : 40px !important;  
+   			 right : 0; 
+   			 bottom : 40px !important;  
+   			 left : 0 !important;     
+			}
+            #map_canvas {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left:0;
+                right:0;
+            }
+        </style>  
+        <script type="text/javascript" src="js/storage.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>      
+        <script type="text/javascript" src="http://maps.google.cn/maps/api/js?language=en-US&sensor=true"></script>              
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="http://jquery-ui-map.googlecode.com/svn/trunk/ui/min/jquery.ui.map.full.min.js"></script>
+        <script type="text/javascript" src="http://jquery-ui-map.googlecode.com/svn/trunk/ui/jquery.ui.map.extensions.js"></script>
+        <script>
+            $(document).on('pageshow', '#main', function() {  
+                $('#map_canvas').gmap();
+                //ancien centre
+               // $('#map_canvas').gmap({ 'center': '42.345573,-71.098326' }); 
+                //nouveau centre
+               	$('#map_canvas').gmap({ 'center': '31.2000,121.5000' });               
+                $('#map_canvas').gmap({ 'zoom': 8 });
+                $('#map_canvas').gmap('refresh');
+            });
+        </script>  
+</head>
+
+
+<body onload="init()">
+<div data-role="page" id="homepage">
+<div data-theme="a" data-role="header">
+<h3>Store List</h3>
+</div>
+<div><a href="#main" id="gomap" class="ui-btn">Map </a></div>
+<div data-role="content">
+<div class="list-wrapper">
+<ul data-role="listview" id="store-list">
+
+</ul>
+</div>
+</div>
+
+<div data-theme="a" data-role="footer">
+<h1>Copyright 2013</h1>
+</div>
+</div>
+
+<div data-role="page" id="headlinepage">
+<div data-theme="a" data-role="header"><a href="#home"
+	class="ui-btn-left" data-transition="slide" data-direction="reverse">Back</a>
+<h3>Store Info</h3>
+</div>
+<div data-role="content">
+<ul data-role="listview" id="store-data" data-theme="a">
+
+</ul>
+</div>
+</div>
+
+<div data-role="page" id="main">
+        <div data-theme="a" data-role="header">
+            <h3>
+                First Page
+            </h3>
+        </div>
+
+        <div data-role="content" id="content">
+            <div id="map_canvas" style="height:100%"></div>
+        </div>
+
+        <div data-theme="a" data-role="footer" data-position="fixed">
+            <h3>
+                First Page
+            </h3>
+        </div>
+    	</div>
+    
+</body>
+</html>
