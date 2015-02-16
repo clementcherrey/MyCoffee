@@ -23,7 +23,8 @@ function setup(tx){
     ' location TEXT,'+
     ' lat FLOAT,'+
     ' lng FLOAT)');
-    //alert("table created");
+    alert("table created");
+   
 }
 
 
@@ -34,13 +35,10 @@ function errorHandler(e){
 function dbReady(){
     //alert("in db ready");
         db.transaction(function(tx){
-            tx.executeSql("insert into store(name,brand,comfort,location,lat,lng) values(?,?,?,?,?,?)",["store starbucks one","starbucks",4.3,"unknow",31.225523, 121.491344]);
-            tx.executeSql("insert into store(name,brand,comfort,location,lat,lng) values(?,?,?,?,?,?)",["costa store 1","costa",3,"unknow",31.228606, 121.512802]);
-        //    alert("data added");
-            tx.executeSql("select * from store order by id asc",[],gotlog, errorHandler);
+            tx.executeSql("select * from store order by id asc",[],populatedb, errorHandler);
         });
 
-     $("#store-list").on('vclick', 'li a', function(){
+    $("#store-list").on('vclick', 'li a', function(){
             //alert("click detected");
             storeInfo.id = $(this).attr('data-id');
             alert(storeInfo.id);
@@ -89,6 +87,22 @@ var storeInfo = {
     id : null,
     result : null
 }
+
+
+function populatedb(tx, results){
+	if (results.rows.length==0){
+		alert("no data");
+		tx.executeSql("insert into store(name,brand,comfort,location,lat,lng) values(?,?,?,?,?,?)",["store starbucks one","starbucks",4.3,"unknow",31.225523, 121.491344]);
+		alert("new data added");
+        tx.executeSql("select * from store order by id asc",[],gotlog, errorHandler);
+		
+	} else {
+		alert("db already full");
+		gotlog(tx,results);
+		};
+		
+	
+	}
 
 function gotlog(tx, results){
     alert("in gotlog");
