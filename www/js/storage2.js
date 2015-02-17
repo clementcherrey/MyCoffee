@@ -76,10 +76,13 @@ function dbReady(){
         	    center: myLatlng
         	  }
         	  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-
+        
+        var image = 'img/150.png';
+        
         	  var marker = new google.maps.Marker({
         	      position: myLatlng,
         	      map: map,
+        	      icon: image,
         	      title: 'Hello World!'
         	  });
         
