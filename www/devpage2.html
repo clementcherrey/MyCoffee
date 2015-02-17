@@ -37,22 +37,28 @@
 
 <body onload="init()">
 <div data-role="page" id="homepage">
-<div data-theme="a" data-role="header">
-<h3>Store List</h3>
-</div>
-<div><a href="#main" id="gomap" class="ui-btn">Map </a></div>
-<div data-role="content">
-<div class="list-wrapper">
-<ul data-role="listview" id="store-list">
-
+<div data-role="header" data-position="fixed" style="overflow:hidden;">
+<h1>I'm a header</h1>
+<a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-gear">Setting</a>
+<div data-role="navbar">
+<ul>
+<li><a href="#homepage" data-icon="grid" class="ui-btn-active">List</a></li>
+<li><a href="#main" data-icon="star">Map</a></li>
 </ul>
-</div>
-</div>
+</div><!-- /navbar -->
+</div><!-- /header -->
 
+<div data-role="content">
+	<div class="list-wrapper">
+		<ul data-role="listview" id="store-list">
+		<!-- store list here -->
+		</ul>
+	</div><!-- list wrapper -->
+</div><!-- content -->
 <div data-theme="a" data-role="footer">
-<h1>Copyright 2013</h1>
-</div>
-</div>
+	<h1>Super footer</h1>
+</div><!-- footer -->
+</div><!-- home page -->
 
 <div data-role="page" id="headline">
 <div data-theme="a" data-role="header"><a href="#homepage"
