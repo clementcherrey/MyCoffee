@@ -51,6 +51,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/150.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/costa.jpeg \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/logo.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/old-cup.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/starbucks.jpeg \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/xigua.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/index.js \

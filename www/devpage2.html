@@ -23,6 +23,9 @@
                 left:0;
                 right:0;
             }
+            .back-button {
+            outline: 0;
+            }
         </style>  
         <script type="text/javascript" src="js/storage2.js"></script>
         <script type="text/javascript" src="cordova.js"></script>      
@@ -36,14 +39,18 @@
 
 
 <body onload="init()">
+
+<!-- /////////////////////////////////////////////////////////// -->
+
+<!-- home page -->
 <div data-role="page" id="homepage">
 <div data-role="header" data-position="fixed" style="overflow:hidden;">
 <h1>I'm a header</h1>
 <a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-gear">Setting</a>
 <div data-role="navbar">
 <ul>
-<li><a href="#homepage" data-icon="grid" class="ui-btn-active">List</a></li>
-<li><a href="#main" data-icon="star">Map</a></li>
+<li><a href="#homepage" data-icon="grid" class="ui-btn-active" data-transition="slide">List</a></li>
+<li><a href="#main" data-icon="star" data-transition="slide">Map</a></li>
 </ul>
 </div><!-- /navbar -->
 </div><!-- /header -->
@@ -55,40 +62,61 @@
 		</ul>
 	</div><!-- list wrapper -->
 </div><!-- content -->
-<div data-theme="a" data-role="footer">
-	<h1>Super footer</h1>
-</div><!-- footer -->
+<div id="outputDiv"><!-- test distance result display here --></div>
+<a href="index.html" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-u ui-btn-icon-top">Top</a>
 </div><!-- home page -->
 
+<!-- /////////////////////////////////////////////////////////// -->
+
+<!-- headline page -->
 <div data-role="page" id="headline">
-<div data-theme="a" data-role="header"><a href="#homepage"
-	class="ui-btn-left" data-transition="slide" data-direction="reverse">Back</a>
-<h3>Store Info</h3>
-</div>
+<div data-role="header" data-position="fixed">
+<h1>Shop Info</h1>
+<a href="#homepage" class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left" data-transition="slide" data-direction="reverse" style="border: none; background-color: transparent;"><img src="img/old-cup.png" alt="some_text"></a>
+</div><!-- /header -->
+
 <div data-role="content">
+<div class="list-wrapper">
 <ul data-role="listview" id="store-data" data-theme="a">
-
+<!-- description here -->
 </ul>
+</div><!-- list wrapper -->
+<h3>Grid Note</h3>
+<h3>Note : 4.5 / 5</h3>
+<h4> 1376 Nanjing West Road Jing'an, Shanghai</h4>
+<div class="ui-grid-a ui-responsive">
+<div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="img/old-cup.png" alt="some_text"></div></div>
+<div class="ui-block-b"><div class="ui-bar ui-bar-a">Note : 4.5 / 5 </div></div>
+	
 </div>
+</div><!-- content -->
+
+<div data-role="footer" data-position="fixed" style="text-align:center;">
+    <a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-location ui-nodisc-icon ui-alt-icon ui-btn-icon-right"><h3>Show on Map</h3></a>
+  </div>
 </div>
 
+<!-- /////////////////////////////////////////////////////////// -->
+
+<!-- home page -->
 <div data-role="page" id="main">
         <div data-theme="a" data-role="header">
-            <h3>
-                First Page
+            <h3 id="map-title">
+			<!-- title here --> test
             </h3>
-        </div>
+        <a href="#homepage" class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left" data-transition="slide" data-direction="reverse" style="border: none;"><img src="img/150.png" alt="some_text">Back</a>
+        </div>	
 
         <div data-role="content" id="content">
             <div id="map_canvas" style="height:100%"></div>
         </div>
 
-        <div data-theme="a" data-role="footer" data-position="fixed">
+<div data-theme="a" data-role="footer" data-position="fixed">
             <h3>
                 First Page
             </h3>
-        </div>
-    	</div>
+</div>
+</div>
     
 </body>
 </html>
