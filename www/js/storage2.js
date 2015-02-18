@@ -80,6 +80,10 @@ function dbReady(){
     
     $("#main").on('pageshow', function(){
     alert("in map show");
+//	test de geolocation
+    getMyPos();
+
+	
     if(mapInfo.createNb == 0){
     var image = 'img/xigua.png';
     var map;
@@ -159,36 +163,46 @@ function gotlog(tx, results){
         return false;
     }
     else {
-        storeInfo.result = results;
-        //alert("result saved");
-        
-        calculateDistances(31.225523, 121.491344);
+        storeInfo.result = results;        
+//      calculateDistances(31.225523, 121.491344);
+        initDistCalc();
         for (var i = 0; i < results.rows.length; i++) {
             var tmpName = results.rows.item(i).name;
             var tmpBrand = results.rows.item(i).brand;
             var tmpComfort = results.rows.item(i).comfort;
             var tmpLocation = results.rows.item(i).location;
-            
-            
-
+  
             $('#store-list').append('<li><a href="#headline" data-transition="slide" data-id="' + i + '">' +
             '<img src="img/' + tmpBrand + '.jpeg"/>' +
             '<h3>' + tmpName + '</h3>' +
-            '<p>Distance: 100 km</p></a></li>');
+            '<div id="dist_'+ i +'_">success</div></a></li>');
         }
     }
     $('#store-list').listview('refresh');
 }
 
-function calculateDistances(lat, lng) {
+function initDistCalc(){
+	alert("in initDistCalc");
+	var tableLatLng = [];
+	for (var i = 0; i < storeInfo.result.rows.length; i++) {
+//	alert("boucle one time");
+	var tmpLat = storeInfo.result.rows.item(i).lat;
+	var tmpLng = storeInfo.result.rows.item(i).lng;
+	tableLatLng[i] =  new google.maps.LatLng(tmpLat, tmpLng);
+	}
+	calculateDistances(tableLatLng);
+}
+
+
+function calculateDistances(tableLL) {
 	alert("in calculate");
+	
 	  var service = new google.maps.DistanceMatrixService();
-	  var shopLocation = new google.maps.LatLng(lat, lng);
 	  var origin = new google.maps.LatLng(mapInfo.currentLat, mapInfo.currentLng);
 	  service.getDistanceMatrix(
 	    {
 	      origins: [origin],
-	      destinations: [shopLocation],
+	      destinations : tableLL,
 	      travelMode: google.maps.TravelMode.DRIVING,
 	      unitSystem: google.maps.UnitSystem.METRIC,
 	      avoidHighways: false,
@@ -203,7 +217,50 @@ function callbackDistance(response, status) {
 	  } else {
 	    mapInfo.distances =  response.rows[0].elements;
 	    for (var i = 0; i < mapInfo.distances.length; i++) {
-	    	alert(mapInfo.distances[i].distance.text);
+//	    	alert(mapInfo.distances[i].distance.text);
+	    	var tmpId = "dist_"+ i +"_";
+	    	var outputDiv = document.getElementById(tmpId);
+	    	outputDiv.innerHTML = '';
+	    	outputDiv.innerHTML += '<h2>'+ mapInfo.distances[i].distance.text +'</h2>';
 	    }
 	  }
 }
+
+function getMyPos(){
+	// onSuccess Callback
+	// This method accepts a Position object, which contains the
+	// current GPS coordinates
+	//
+	alert("in getMyPos");
+	var options = { enableHighAccuracy: true, maximumAge: 300, timeout: 90000 };
+
+	if(navigator.geolocation){
+		alert(" TRUUUUUUUE !!!");
+	}
+	
+	var onSuccess = function(position) {
+	alert("in onSuccess");
+
+	    alert('Latitude: '          + position.coords.latitude          + '\n' +
+	          'Longitude: '         + position.coords.longitude         + '\n' +
+	          'Altitude: '          + position.coords.altitude          + '\n' +
+	          'Accuracy: '          + position.coords.accuracy          + '\n' +
+	          'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+	          'Heading: '           + position.coords.heading           + '\n' +
+	          'Speed: '             + position.coords.speed             + '\n' +
+	          'Timestamp: '         + position.timestamp                + '\n');
+	};
+
+	// onError Callback receives a PositionError object
+	//
+	function onError(error) {
+		alert("in error");
+	    alert('code: '    + error.code    + '\n' +
+	          'message: ' + error.message + '\n');
+	}
+
+	navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
+	alert("end getMyPos");
+
+}
+

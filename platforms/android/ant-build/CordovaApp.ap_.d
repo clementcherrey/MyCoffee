@@ -43,6 +43,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/new_attempt.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/newindex.html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/simple-map.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/storage_test.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/storageList.html \
