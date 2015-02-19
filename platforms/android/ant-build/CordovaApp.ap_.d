@@ -61,6 +61,6 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/map.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/mapshop.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/mapshop2.js \
-/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/storage.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/storage2.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/storage3.js \
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/AndroidManifest.xml \

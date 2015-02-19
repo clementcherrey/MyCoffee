@@ -164,8 +164,11 @@ function gotlog(tx, results){
     }
     else {
         storeInfo.result = results;        
-//      calculateDistances(31.225523, 121.491344);
-        initDistCalc();
+        
+        // init geolocatoin then calc of distance
+        getMyPos();
+        
+        //display basic info for each store
         for (var i = 0; i < results.rows.length; i++) {
             var tmpName = results.rows.item(i).name;
             var tmpBrand = results.rows.item(i).brand;
@@ -182,7 +185,7 @@ function gotlog(tx, results){
 }
 
 function initDistCalc(){
-	alert("in initDistCalc");
+	//alert("in initDistCalc");
 	var tableLatLng = [];
 	for (var i = 0; i < storeInfo.result.rows.length; i++) {
 //	alert("boucle one time");
@@ -231,36 +234,30 @@ function getMyPos(){
 	// This method accepts a Position object, which contains the
 	// current GPS coordinates
 	//
-	alert("in getMyPos");
-	var options = { enableHighAccuracy: true, maximumAge: 300, timeout: 90000 };
+	//alert("in getMyPos");
+	var options = { enableHighAccuracy: true, maximumAge: 300, timeout: 10000 };
 
 	if(navigator.geolocation){
-		alert(" TRUUUUUUUE !!!");
+	//	alert(" TRUUUUUUUE !!!");
 	}
 	
 	var onSuccess = function(position) {
-	alert("in onSuccess");
-
-	    alert('Latitude: '          + position.coords.latitude          + '\n' +
-	          'Longitude: '         + position.coords.longitude         + '\n' +
-	          'Altitude: '          + position.coords.altitude          + '\n' +
-	          'Accuracy: '          + position.coords.accuracy          + '\n' +
-	          'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
-	          'Heading: '           + position.coords.heading           + '\n' +
-	          'Speed: '             + position.coords.speed             + '\n' +
-	          'Timestamp: '         + position.timestamp                + '\n');
+//	alert("in onSuccess");
+	alert('Latitude: '          + position.coords.latitude          + '\n' +
+	      'Longitude: '         + position.coords.longitude         + '\n');	
+//	set the origin for the distance calc using the geolocation result
+	mapInfo.currentLat = position.coords.latitude;
+	mapInfo.currentLng = position.coords.longitude;
+	initDistCalc();
 	};
-
-	// onError Callback receives a PositionError object
-	//
-	function onError(error) {
-		alert("in error");
-	    alert('code: '    + error.code    + '\n' +
+	
+	var onError = function(error) {
+//	alert("in error");
+	alert('code: '    + error.code    + '\n' +
 	          'message: ' + error.message + '\n');
+	initDistCalc();
 	}
 
 	navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
-	alert("end getMyPos");
-
 }
 
