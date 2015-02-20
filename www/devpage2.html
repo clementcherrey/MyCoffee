@@ -7,41 +7,7 @@
 	<title>dev page</title>
 	
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-        <style>
-        #content {
-   			 padding: 0;
-   			 position : absolute !important; 
-   			 top : 40px !important;  
-   			 right : 0; 
-   			 bottom : 40px !important;  
-   			 left : 0 !important;     
-			}
-            #map_canvas {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left:0;
-                right:0;
-            }
-            .back-button {
-            outline: 0;
-            }
-            
-            
-            #footer-div {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-	#footer-title {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size:large;
-}
-
-        </style>  
+<link rel="stylesheet" href="css/main.css" />
         
         <script type="text/javascript" src="js/storage2.js"></script>
         <script type="text/javascript" src="cordova.js"></script>      
@@ -52,7 +18,6 @@
         <script type="text/javascript" src="jquery.ui.map.extensions.js"></script>
  
 </head>
-
 
 <body onload="init()">
 
@@ -98,7 +63,7 @@
 </div><!-- content -->
 
 <div data-role="footer" data-position="fixed" style="text-align:center;">
-    <a href="#main" class="ui-btn ui-corner-all ui-shadow" style="padding: 10px 30px 10px 30px;"><span style="font-size:large;">Show on Map</span></a>
+    <a href="#main" id="show-map-button" class="ui-btn ui-corner-all ui-shadow"><span>Show on Map</span></a>
   </div>
 </div>
 

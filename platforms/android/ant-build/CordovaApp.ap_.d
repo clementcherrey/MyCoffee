@@ -49,6 +49,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/storageList.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/test_jqmap.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/index.css \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/main.css \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/150.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/costa.jpeg \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/logo.png \
