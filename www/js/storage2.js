@@ -296,7 +296,7 @@ function getMyPos() {
 	var options = {
 		enableHighAccuracy : true,
 		maximumAge : 300,
-		timeout : 2000
+		timeout : 60000
 	};
 
 	var onSuccess = function(position) {
