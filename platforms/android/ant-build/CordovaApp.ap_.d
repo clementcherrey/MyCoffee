@@ -51,11 +51,43 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/index.css \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/main.css \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/150.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/21-skull.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/45.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/banner-top.jpeg \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/costa.jpeg \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/logo.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/mini-starbucks.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab.html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/old-cup.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/rating_stars_model.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/size.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/starbucks.jpeg \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/starbucks.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/xigua.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/cb=gapi.loaded_0 \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/dn.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/logo11w.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/rs=ACT90oEMip51O03e2at-FOuNmnqPDsQEiA \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/rs=ACT90oEMip51O03e2at-FOuNmnqPDsQEiA(1) \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/rs=AItRSTNMwurMn4SoBk9gYu3aaG8QVc0kgg \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/saved_resource.html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/thumbnail(1).html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/thumbnail(2).html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/thumbnail(3).html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/thumbnail(4).html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/thumbnail(5).html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/thumbnail(6).html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/thumbnail(7).html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/thumbnail.html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/title(1).html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/title(2).html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/title(3).html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/title(4).html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/title(5).html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/title(6).html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/title(7).html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files/title.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/index.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/Init.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/main.js \

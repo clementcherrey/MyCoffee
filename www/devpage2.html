@@ -26,17 +26,18 @@
 <!-- home page -->
 <div data-role="page" id="homepage">
 <div data-role="header" data-position="fixed" style="overflow:hidden;">
-<h1>I'm a header</h1>
-<a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-gear">Setting</a>
-<div data-role="navbar">
+<h1 class="header-title">My Super App</h1>
+<a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-gear">Online</a>
+<div data-role="navbar" class="custom-navbar"">
 <ul>
-<li><a href="#homepage" data-icon="grid" class="ui-btn-active" data-transition="slide">List</a></li>
-<li><a href="#main" data-icon="star" data-transition="slide">Map</a></li>
+<li><a href="#" data-icon="refresh" data-transition="slide">Refresh </a></li>
+<li><a href="#main" data-icon="location" data-transition="slide">Map</a></li>
 </ul>
 </div><!-- /navbar -->
 </div><!-- /header -->
 
 <div data-role="content">
+
 	<div class="list-wrapper">
 		<ul data-role="listview" id="store-list">
 		<!-- store list here -->
@@ -49,9 +50,9 @@
 
 <!-- headline page -->
 <div data-role="page" id="headline">
-<div data-role="header" data-position="fixed" id="footer-div">
-<h1 id="footer-title">Shop Info</h1>
-<a href="#homepage" class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left" data-transition="slide" data-direction="reverse" style="border: none; background-color: transparent;"><img src="img/old-cup.png" alt="some_text"></a>
+<div data-role="header" data-position="fixed" class="header-div">
+<h1 class="header-title"> </h1>
+<a href="#homepage" class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left" data-transition="slide" data-direction="reverse" style="border: none; background-color: transparent;"><img src="img/old-cup.png" alt="cup-logo"></a>
 </div><!-- /header -->
 
 <div data-role="content">
@@ -70,12 +71,10 @@
 <!-- /////////////////////////////////////////////////////////// -->
 
 <div data-role="page" id="main">
-        <div data-theme="a" data-role="header">
-            <h3 id="map-title">
-            title map
-            </h3>
-<a href="#homepage" class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left" data-transition="slide" data-direction="reverse" style="border: none; background-color: transparent;"><img src="img/old-cup.png" alt="some_text"></a>
-        </div>	
+<div data-role="header" data-position="fixed" class="header-div">
+<h1 class="header-title">Shop Info</h1>
+<a href="#homepage" class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left" data-transition="slide" data-direction="reverse" style="border: none; background-color: transparent;"><img src="img/old-cup.png" alt="cup-logo"></a>
+</div><!-- /header -->
 
         <div data-role="content" id="content">
             <div id="map_canvas" style="height:100%"></div>

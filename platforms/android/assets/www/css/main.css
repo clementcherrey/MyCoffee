@@ -1,37 +1,116 @@
-#content {
-   			 padding: 0;
-   			 position : absolute !important; 
-   			 top : 40px !important;  
-   			 right : 0; 
-   			 bottom : 40px !important;  
-   			 left : 0 !important;     
-			}
-            #map_canvas {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left:0;
-                right:0;
-            }
-            #show-map-button{
-            	padding: 10px 30px 10px 30px;
-            	font-size:large;
-            }
-            
-            .back-button {
-            outline: 0;
-            }
-            
-            
-            #footer-div {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+.ui-page {
+	background: #FFFFFF;
 }
 
-	#footer-title {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size:large;
+.ui-footer {
+	
+}
+
+.grids div { /* all blocks */
+	display: table;
+	height: 80px;
+	margin: auto;
+}
+
+.grids div>p {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: medium;
+	font-weight: bold;
+}
+
+.center-div {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.custom-navbar ul li a {
+	color: black !important;
+	border: 0 !important;
+	text-shadow: none !important;
+	background: #FFFFFF !important; /* Old browsers */
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+
+.custom-navbar ul li a.ui-btn-active {
+	color: black !important;
+	border: 0 !important;
+	text-shadow: none !important;
+	background: #FFFFFF !important; /* Old browsers */
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+
+#content {
+	padding: 0;
+	position: absolute !important;
+	top: 40px !important;
+	right: 0;
+	bottom: 40px !important;
+	left: 0 !important;
+}
+
+#map_canvas {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#show-map-button {
+	padding: 10px 30px 10px 30px;
+	font-size: large;
+}
+
+.store-name {
+	font-size: large;
+	font-weight: bold;
+	display: table;
+	margin: auto;
+}
+
+.store-note {
+	font-size: medium;
+	display: table;
+	margin-top: auto;
+}
+
+.store-address {
+	font-size: large;
+	font-style: italic;
+	white-space: normal;
+	margin-bottom: 30px;
+}
+
+.how-to-go {
+	font-size: medium;
+	font-style: normal;
+}
+
+.info1 {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.info2 {
+	display: block;
+	margin: auto auto auto auto;
+}
+
+.back-button {
+	outline: 0;
+}
+
+.header-title {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: large;
 }
