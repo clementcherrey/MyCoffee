@@ -55,7 +55,9 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/21green.jpeg \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/45.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/banner-top.jpeg \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/banner.xcf \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/costa.jpeg \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/img for background.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/logo-coffee.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/logo-coffee.xcf \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/logo.png \
@@ -64,6 +66,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/New Tab_files \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/old-cup.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/rating_stars_model.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/search-background.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/size.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/starbucks.jpeg \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/starbucks.png \
