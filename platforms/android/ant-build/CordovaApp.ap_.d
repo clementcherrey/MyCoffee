@@ -52,6 +52,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/main.css \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/150.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/21-skull.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/21green.jpeg \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/45.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/banner-top.jpeg \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/costa.jpeg \

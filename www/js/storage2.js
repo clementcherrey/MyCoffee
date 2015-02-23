@@ -80,9 +80,10 @@ function dbReady() {
 														+ '<div class="ui-block-b"><div><p><span>Distance: 1.3 km</span></br>'
 														+ '<span>Wifi : YES</span></p></div>'
 														+ '</div></li>');
-								$('#store-data').append(
-										'<li style="white-space:normal;"><p style="font-size: medium;white-space:normal;"><span style="bold">Subway: Century Avenue (line 2)</span></br>'
-										+ '<span style="bold">Tips :</span> Take exit 4 from the century avenue station then walk 100m along lolilol street, you will see the starbucks on your left. It is located in front a big Lianhua supermarket</span></p></li>');
+								$('#store-data')
+										.append(
+												'<li style="white-space:normal;"><p style="font-size: medium;white-space:normal;"><span style="bold">Subway: Century Avenue (line 2)</span></br>'
+														+ '<span style="bold">Tips :</span> Take exit 4 from the century avenue station then walk 100m along lolilol street, you will see the starbucks on your left. It is located in front a big Lianhua supermarket</span></p></li>');
 								$('#store-data')
 										.append(
 												'<li><div class="ui-grid-a">'
@@ -94,7 +95,8 @@ function dbReady() {
 														+ '</span><span class="info1"><img src="img/size.png"/></span></div></div>'
 														+ '</div></li>');
 								$('#store-data').append(
-										'<li style="white-space:normal;">Description :' + tmpLocation + '</li>');
+										'<li style="white-space:normal;">Description :'
+												+ tmpLocation + '</li>');
 								$('#store-data').listview('refresh');
 							}
 						}
@@ -109,7 +111,6 @@ function dbReady() {
 						// alert("in map show");
 						// test de geolocation
 
-						
 						if (mapInfo.createNb == 0) {
 							var map;
 							var mapOptions = {
@@ -235,9 +236,9 @@ function populatedb(tx, results) {
 
 function displayList() {
 	// alert("in display");
-	
-	$.mobile.loading( 'hide');
-	
+
+	$.mobile.loading('hide');
+
 	$('#store-list').empty();
 	for ( var i = 0; i < storeInfo.result.rows.length; i++) {
 		// old version
@@ -265,7 +266,7 @@ function displayList() {
 }
 
 function gotlog(tx, results) {
-	// alert("in gotlog");
+	alert("in gotlog");
 
 	if (results.rows.length == 0) {
 		alert("no data");
@@ -284,15 +285,15 @@ function gotlog(tx, results) {
 };
 
 function getMyPos() {
-	
-	$.mobile.loading( 'show', {
-		text: 'Obtianing Your Location',
-		textVisible: true,
-		theme: 'a',
-		html: ""
-	});
-	
-	// alert("in getMyPos");
+
+//	$.mobile.loading('show', {
+//		text : 'Obtianing Your Location',
+//		textVisible : true,
+//		theme : 'a',
+//		html : ""
+//	});
+
+	alert("in getMyPos");
 	var options = {
 		enableHighAccuracy : true,
 		maximumAge : 300,
@@ -306,13 +307,15 @@ function getMyPos() {
 		// set the origin for the distance calc using the geolocation result
 		mapInfo.currentLat = position.coords.latitude;
 		mapInfo.currentLng = position.coords.longitude;
+		alert("real position of the user:" + position.coords.latitude)
+		alert("lat store in map info:" + mapInfo.currentLat);
 		initDistCalc();
+
 	};
 
 	var onError = function(error) {
-		// alert("in error");
-		// alert('code: ' + error.code + '\n' +
-		// 'message: ' + error.message + '\n');
+		alert("in error");
+		alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
 		initDistCalc();
 	};
 
@@ -322,14 +325,13 @@ function getMyPos() {
 
 function initDistCalc() {
 	// alert("in initDistCalc");
-	$.mobile.loading( 'show', {
-		text: 'Calculating Distances',
-		textVisible: true,
-		theme: 'a',
-		html: ""
-	});
-	
-	
+//	$.mobile.loading('show', {
+//		text : 'Calculating Distances',
+//		textVisible : true,
+//		theme : 'a',
+//		html : ""
+//	});
+
 	var tableLatLng = [];
 	for ( var i = 0; i < storeInfo.result.rows.length; i++) {
 		// alert("boucle one time");
@@ -341,7 +343,7 @@ function initDistCalc() {
 }
 
 function calculateDistances(tableLL) {
-	// alert("in calculate");
+	 alert("in calculate");
 
 	var service = new google.maps.DistanceMatrixService();
 	var origin = new google.maps.LatLng(mapInfo.currentLat, mapInfo.currentLng);
@@ -356,13 +358,13 @@ function calculateDistances(tableLL) {
 }
 
 function callbackDistance(response, status) {
-//	alert("in callback");
+	// alert("in callback");
 	if (status != google.maps.DistanceMatrixStatus.OK) {
 		alert('Error was: ' + status);
 	} else {
 
 		// mapInfo.distances = response.rows[0].elements;
-		// alert(response.rows[0].elements[1].distance.text);
+		alert("oe of the distance calculated" + response.rows[0].elements[1].distance.text);
 		// alert("before for");
 		for ( var i = 0; i < response.rows[0].elements.length; i++) {
 			mapInfo.distances.push( {
@@ -372,7 +374,7 @@ function callbackDistance(response, status) {
 			});
 			// alert('test de distance: ' + mapInfo.distances[i].distance);
 		}
-//		alert("before diplay");
+		// alert("before diplay");
 		sortDistance();
 		displayList();
 	}

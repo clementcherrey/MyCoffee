@@ -6,6 +6,11 @@
 	
 }
 
+.ui-icon-gear {
+	background: red !important;
+
+}
+
 .grids div { /* all blocks */
 	display: table;
 	height: 80px;
