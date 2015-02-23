@@ -286,12 +286,18 @@ function gotlog(tx, results) {
 
 function getMyPos() {
 
+//	$.mobile.loading('show', {
+//		text : 'Obtianing Your Location',
+//		textVisible : true,
+//		theme : 'a',
+//		html : ""
+//	});
 
 	alert("in getMyPos");
 	var options = {
 		enableHighAccuracy : true,
 		maximumAge : 300,
-		timeout : 60000
+		timeout : 10000
 	};
 
 	var onSuccess = function(position) {
@@ -319,12 +325,12 @@ function getMyPos() {
 
 function initDistCalc() {
 	// alert("in initDistCalc");
-	$.mobile.loading('show', {
-		text : 'Calculating Distances',
-		textVisible : true,
-		theme : 'a',
-		html : ""
-	});
+//	$.mobile.loading('show', {
+//		text : 'Calculating Distances',
+//		textVisible : true,
+//		theme : 'a',
+//		html : ""
+//	});
 
 	var tableLatLng = [];
 	for ( var i = 0; i < storeInfo.result.rows.length; i++) {
