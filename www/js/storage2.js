@@ -2,7 +2,7 @@
  * Created by clement on 12/29/14.
  */
 function init() {
-	// alert("in init");
+	alert("in init");
 	document.addEventListener("deviceready", deviceready, true);
 
 }
@@ -19,7 +19,7 @@ function setup(tx) {
 			+ ' added DATE,' + ' brand TEXT,' + ' comfort FLOAT,'
 			+ ' location TEXT,' + ' lat FLOAT,' + ' lng FLOAT,'
 			+ 'distance TEXT)');
-	// alert("table created");
+	alert("table created");
 
 }
 
@@ -228,19 +228,30 @@ function populatedb(tx, results) {
 }
 
 function displayList() {
-	// alert("in display");
+	alert("in display");
 
 	$.mobile.loading('hide');
 
 	$('#store-list').empty();
-	for ( var i = 0; i < storeInfo.result.rows.length; i++) {
+	for ( var i = 0; i < mapInfo.distances.length; i++) {
 		// old version
-		var tmpName = storeInfo.result.rows.item(i).name;
-		var tmpBrand = storeInfo.result.rows.item(i).brand;
-		var tmpComfort = storeInfo.result.rows.item(i).comfort;
-		var tmpLocation = storeInfo.result.rows.item(i).location;
-		var tmpDistance = mapInfo.distances[i].distance;
+//		var tmpName = storeInfo.result.rows.item(i).name;
+//		var tmpBrand = storeInfo.result.rows.item(i).brand;
+//		var tmpComfort = storeInfo.result.rows.item(i).comfort;
+//		var tmpLocation = storeInfo.result.rows.item(i).location;
+//		var tmpDistance = mapInfo.distances[i].distance;
 
+//		new version
+		alert(mapInfo.distances[i].id);
+		var tmpId = Number(mapInfo.distances[i].id);
+		alert(tmpId);
+		var tmpDistance = mapInfo.distances[i].distance;
+		alert(tmpId +" , "+ tmpDistance);
+		
+		var tmpName = storeInfo.result.rows.item(tmpId).name;
+		var tmpBrand = storeInfo.result.rows.item(tmpId).brand;
+		alert(tmpName +" , "+ tmpBrand);
+		
 		$('#store-list').append(
 				'<li><a href="#headline" data-transition="slide" data-id="' + i
 						+ '">' + '<img src="img/' + tmpBrand + '.png"/>'
