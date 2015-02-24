@@ -6,8 +6,6 @@
 	
 }
 
-
-
 .ui-header {
 	background: #FFFFFF !important;
 	border-top: none;
@@ -19,7 +17,7 @@
 }
 
 .wrap {
-	border: none; 
+	border: none;
 	margin: 0px !important;
 	padding: 0px !important;
 }
@@ -42,10 +40,6 @@
 	padding: 0 !important;
 	margin: 0 !important;
 	width: 100%;
-}
-
-.ui-icon-gear {
-	background: red !important;
 }
 
 .grids div { /* all blocks */
@@ -87,6 +81,16 @@
 	background: #FFFFFF !important; /* Old browsers */
 	box-shadow: none !important;
 	-webkit-box-shadow: none !important;
+}
+
+#getLocation {
+	background: #699b48;
+	color: #FFFFFF;
+	width: 80%;
+	align: center;
+	margin-top: 100px;
+	font-size: 18px;
+	font-weight: normal;
 }
 
 #content {

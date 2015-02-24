@@ -151,9 +151,7 @@ function dbReady() {
 										function() {
 											this.infowindow.open(map, this);
 										});
-							}
-							;
-
+							};
 						} else {
 							// alert("map already created");
 							map.setCenter(new google.maps.LatLng(
@@ -216,11 +214,6 @@ function populatedb(tx, results) {
 						"insert into store(name,brand,comfort,location,lat,lng,distance) values(?,?,?,?,?,?,?)",
 						[ "store starbucks 6", "starbucks", 4.6, "unknow",
 								31.226800, 121.463718, "0 km" ]);
-		tx
-				.executeSql(
-						"insert into store(name,brand,comfort,location,lat,lng,distance) values(?,?,?,?,?,?,?)",
-						[ "store starbucks 7", "starbucks", 4.7, "unknow",
-								31.203164, 121.462688, "0 km" ]);
 
 		// alert("new data added");
 		tx.executeSql("select * from store order by id asc", [], gotlog,
@@ -248,14 +241,6 @@ function displayList() {
 		var tmpLocation = storeInfo.result.rows.item(i).location;
 		var tmpDistance = mapInfo.distances[i].distance;
 
-		// var tmpName = tab[i].name;
-		// var tmpBrand = tab[i].brand;
-		// var tmpComfort = tab[i].comfort;
-		// var tmpLocation = tab[i].location;
-		// var tmpDistance = tab[i].distance;
-
-		// alert(tmpDistance);
-
 		$('#store-list').append(
 				'<li><a href="#headline" data-transition="slide" data-id="' + i
 						+ '">' + '<img src="img/' + tmpBrand + '.png"/>'
@@ -267,39 +252,29 @@ function displayList() {
 
 function gotlog(tx, results) {
 	alert("in gotlog");
-
+	
+	$('#getLocation').on("tap", getMyPos);
+	
 	if (results.rows.length == 0) {
 		alert("no data");
 		return false;
 	} else {
-
-		// old version
 		storeInfo.result = results;
-
-		// init geolocatoin then calc of distance
-		getMyPos();
-
-		// display basic info for each store
-		displayList(storeInfo.result);
 	}
 };
 
 function getMyPos() {
-
-//	$.mobile.loading('show', {
-//		text : 'Obtianing Your Location',
-//		textVisible : true,
-//		theme : 'a',
-//		html : ""
-//	});
-
-	alert("in getMyPos");
+	//hide button for geolocation
+	$("#getLocation").hide();
+	
+	//alert("in getMyPos");
 	var options = {
 		enableHighAccuracy : true,
 		maximumAge : 300,
 		timeout : 10000
 	};
 
+	
 	var onSuccess = function(position) {
 		// alert("in onSuccess");
 		alert('Latitude: ' + position.coords.latitude + '\n' + 'Longitude: '
@@ -320,18 +295,9 @@ function getMyPos() {
 	};
 
 	navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
-
 }
 
 function initDistCalc() {
-	// alert("in initDistCalc");
-//	$.mobile.loading('show', {
-//		text : 'Calculating Distances',
-//		textVisible : true,
-//		theme : 'a',
-//		html : ""
-//	});
-
 	var tableLatLng = [];
 	for ( var i = 0; i < storeInfo.result.rows.length; i++) {
 		// alert("boucle one time");
@@ -343,8 +309,7 @@ function initDistCalc() {
 }
 
 function calculateDistances(tableLL) {
-	 alert("in calculate");
-
+	//alert("in calculate");
 	var service = new google.maps.DistanceMatrixService();
 	var origin = new google.maps.LatLng(mapInfo.currentLat, mapInfo.currentLng);
 	service.getDistanceMatrix( {
@@ -364,7 +329,8 @@ function callbackDistance(response, status) {
 	} else {
 
 		// mapInfo.distances = response.rows[0].elements;
-		alert("oe of the distance calculated" + response.rows[0].elements[1].distance.text);
+		alert("oe of the distance calculated"
+				+ response.rows[0].elements[1].distance.text);
 		// alert("before for");
 		for ( var i = 0; i < response.rows[0].elements.length; i++) {
 			mapInfo.distances.push( {
@@ -391,3 +357,6 @@ function sortDistance() {
 
 	mapInfo.distances.sort(compare);
 }
+
+
+
