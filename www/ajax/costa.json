@@ -1,0 +1,714 @@
+[
+    {
+        "brand": "Costa",
+        "name": "Costa Zhangjiang Pudong Software Park No.2",
+        "lat": "31.230416",
+        "lng": "121.473701",
+        "address": "Room 105-1 , No.14 Building , Guoshoujing Park Of Shanghai Pudong New Area Technology Park , No.498 Guoshoujing Rd , Zhangjiang High Technology Park , Shanghai",
+        "phone": "021-5135 5819"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa XiangCheng",
+        "lat": "31.224105",
+        "lng": "121.528959",
+        "address": "No.15,17, XiangCheng Rd, Pudong New District, Shanghai",
+        "phone": "021-5081 1182"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Tesco GuangXin",
+        "lat": "31.226766",
+        "lng": "121.410896",
+        "address": "No.1185, North ZhongShan Rd, Putuo District, Shanghai",
+        "phone": "021-5294 4019"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa SMG",
+        "lat": "31.231518",
+        "lng": "121.465187",
+        "address": "No.651, West NanJing Rd, Jing'an District, Shanghai",
+        "phone": "021-6256 5899-5777"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa New World PT",
+        "lat": "31.242875",
+        "lng": "121.441602",
+        "address": "Room L123, No.155, ChangShou Rd, Putuo District, Shanghai",
+        "phone": "021-5291 9871"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Zizhu Park",
+        "lat": "31.0225794793",
+        "lng": "121.4514327049",
+        "address": "Riverside high tech Zone Minhang District Zizhu Shanghai No. 8 1 floor B block",
+        "phone": "021-5458 3763"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Fund Building",
+        "lat": "31.22405",
+        "lng": "121.532521",
+        "address": "Unit A, No.101, ZhuLin Rd, Pudong New District, Shanghai",
+        "phone": "021-6045 6277"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Gubei Carrefour",
+        "lat": "31.197146",
+        "lng": "121.393239",
+        "address": "1F, No. 268 South Shuicheng Rd. Changning district, Shanghai",
+        "phone": "021-62186193"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa HQ-SMG",
+        "lat": "31.203405",
+        "lng": "121.408882",
+        "address": "1F, No.1376, HongQiao Rd, Changning District, Shanghai",
+        "phone": "021-6278 8177-3281"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Xingmei",
+        "lat": "31.106063",
+        "lng": "121.4112",
+        "address": "No.1234, XingMei Rd, Minhang District, Shanghai",
+        "phone": "021-2428 5101"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Hongqiao Airport 2",
+        "lat": "31.198853",
+        "lng": "121.327429",
+        "address": "No.1, No.1 ShenDa Rd, Changning District, Shanghai",
+        "phone": "021-2238 2406"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Bund Square",
+        "lat": "31.19342",
+        "lng": "121.471986",
+        "address": "Room104-105, No.868, East LongHua Rd, Huangpu District, Shanghai",
+        "phone": "021-5307 8562"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa K11",
+        "lat": "31.226454",
+        "lng": "121.472025",
+        "address": "B223-225, K11 Mall, No.300, Middle HuaiHai Rd, Luwan District, Shanghai",
+        "phone": "021-6312 9135"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa DBS",
+        "lat": "31.241793",
+        "lng": "121.503553",
+        "address": "No.B104, No.1318, LuJiaZui Ring Rd,Pudong New District, Shanghai",
+        "phone": "021-6087 5383"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Changning New World Store",
+        "lat": "31.219279",
+        "lng": "121.420727",
+        "address": "1F, No.823, ChangNing Rd, Changning District, Shanghai",
+        "phone": "021-5238 1955"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa 9 Joy Plaza",
+        "lat": "31.219701",
+        "lng": "121.43961",
+        "address": "No.9, ZhengNing Rd, Changning District, Shanghai",
+        "phone": "021-5238 2901"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Ruihong Newcity",
+        "lat": "31.262228",
+        "lng": "121.498168",
+        "address": "No100, RuiHong Rd, Hongkou District, Shanghai",
+        "phone": "021-6580 8180"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Dingxi RD",
+        "lat": "31.204286",
+        "lng": "121.398582",
+        "address": "No.1394, West Yan'an Rd, Changning District, Shanghai",
+        "phone": "021-52300972"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Tesco Qibao",
+        "lat": "31.158263",
+        "lng": "121.346762",
+        "address": "1F, No.3155, QiXin Rd(Tesco Qibao), Minhang District, Shanghai",
+        "phone": "021-5486 7152"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Zhangjiang Runhe",
+        "lat": "31.190428",
+        "lng": "121.604276",
+        "address": "1F,Unit 5, No.1000 ZhangHeng Rd, Pudong New District, Shanghai",
+        "phone": "021-5077 0854"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Shanghai Bailian Expo",
+        "lat": "31.1867802558",
+        "lng": "121.491857787",
+        "address": "3B32, 33 berth, No. 1368, World Expo Road, Pudong New district, Shanghai.",
+        "phone": "021-3107 8732"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Buynow",
+        "lat": "31.19085",
+        "lng": "121.437786",
+        "address": "1Y01, No.339, North Caoxi Rd, Xuhui Distrct, Shangha",
+        "phone": "021-6085 7631"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Fenyang Road",
+        "lat": "31.214637",
+        "lng": "121.455604",
+        "address": "Room 101, No.3, FenYang Rd, Xuhui Distrct, Shanghai",
+        "phone": "021-6422 6862"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa F1",
+        "lat": "31.337217",
+        "lng": "121.225548",
+        "address": "No.2000, AnTing Town, YiNing Rd, Jiading District, Shanghai",
+        "phone": "021-6956 8530"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Xiandai Building",
+        "lat": "31.247296",
+        "lng": "121.441641",
+        "address": "Room A, 1F, No.258, ShiMen Er Rd, Jing'an District, Shanghai",
+        "phone": "021-6230 8225"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa crystal",
+        "lat": "31.235516",
+        "lng": "121.465762",
+        "address": "No. 269, Wujiang Rd, Jing'an District, Shanghai.",
+        "phone": "021-6136 1403"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa YUEXING",
+        "lat": "31.241206",
+        "lng": "121.417294",
+        "address": "B1- B1053-1055, No 3300, North Zhongshan Rd, Putuo District, Shanghai",
+        "phone": "021-6214 5972"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Station 85",
+        "lat": "31.221903",
+        "lng": "121.448193",
+        "address": "No.93, ChangShu Rd, Jingan District, Shanghai",
+        "phone": "021-5403 0089"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Huacao",
+        "lat": "31.2053503982",
+        "lng": "121.2911009789",
+        "address": "Unit102, Lane4, No.569, YunLe Rd, Minhang Distric, Shanghai",
+        "phone": "021-6465 1330"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Hongkou park",
+        "lat": "31.260504",
+        "lng": "121.482596",
+        "address": "No.2398, North SiChuan Rd, Hongkou District, Shanghai",
+        "phone": "021-6605 3389"
+    },
+    {
+        "brand": "Costa",
+        "name": "Shanghai YaJuLe",
+        "lat": "31.236556",
+        "lng": "121.472584",
+        "address": "No.525, middle Xizang Rd, Huangpu District, Shanghai.",
+        "phone": "021-5308 8773"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa JSWB（HQ）",
+        "lat": "31.207516",
+        "lng": "121.402531",
+        "address": "No.75, LouShanGuan Rd, Changning District, Shanghai",
+        "phone": "021-3252 1867"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa XinTianDi",
+        "lat": "31.217591",
+        "lng": "121.474886",
+        "address": "Unit L117—L243(A、B、C), No.245, MaDang Rd, Luwan District, Shanghai",
+        "phone": "021-3366 0057"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa SJ PingGao",
+        "lat": "31.007169",
+        "lng": "121.231188",
+        "address": "1F, No.30, Lane 79, ZhongShan Rd, Songjiang District, Shanghai",
+        "phone": "021-6776 0458"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa IFC",
+        "lat": "31.240398",
+        "lng": "121.505013",
+        "address": "Room LG1-37, NO.8 Central Avenue, the Financial Trade Zone of LuJiaZui, Pudong New District, Shanghai",
+        "phone": "021-5011 7436"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Hongfeng",
+        "lat": "31.241829",
+        "lng": "121.593525",
+        "address": "No.399, Hongfeng Rd, Pudong New District, Shanghai",
+        "phone": "021-5899 0226"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa CITIC Square",
+        "lat": "31.228986",
+        "lng": "121.455982",
+        "address": "Room 501, No.1168, West Nanjing Rd, Jingan District, Shanghai",
+        "phone": "021-5239 9185"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Bund",
+        "lat": "31.240857",
+        "lng": "121.49055",
+        "address": "No.387, East No.1 ZhongShan Rd, Huangpu District, Shanghai",
+        "phone": "021-5321 0007"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Imago",
+        "lat": "31.23849",
+        "lng": "121.42298",
+        "address": "No.99, WuNing Rd, Putuo District, Shanghai",
+        "phone": "021-3252 0392"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Citic Plaza",
+        "lat": "31.249094",
+        "lng": "121.48495",
+        "address": "Shop 102, No.863, CITIC Plaza, North SiChuan Rd, Hongkou Distric, Shanghai",
+        "phone": "021-5698 2819"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Ciros",
+        "lat": "31.234968",
+        "lng": "121.468277",
+        "address": "1F, No.388, West NanJing Rd, Huangpu District, Shanghai",
+        "phone": "021-6334 6035"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Ascendes",
+        "lat": "31.216013",
+        "lng": "121.470573",
+        "address": "Room 110, 1F, Ascendas Plaza, No.333, TianYaoQiao Rd, Xuhui Distrct, Shanghai",
+        "phone": "021-6426 8826"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Huaning Hongji CLD Store",
+        "lat": "31.227206",
+        "lng": "121.410831",
+        "address": "No.300, 1F, XuanHua Rd,Changning District, Shanghai",
+        "phone": "021-6212 8618"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Bailian Onecity",
+        "lat": "31.302095",
+        "lng": "121.515076",
+        "address": "sm-2/sm-3, No.8, Songhu Rd, Yangpu District, Shanghai",
+        "phone": "021-5523 3015"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Hongqiao HUB2",
+        "lat": "31.19268",
+        "lng": "121.3215",
+        "address": "hqjc-9,hqhc-54,HongQiao Station, Shanghai Railway Station，Minhang District, Shanghai",
+        "phone": "021-5471 6359/9079"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Youyou",
+        "lat": "31.208911",
+        "lng": "121.519861",
+        "address": "No.76,PuJian Rd, Pudong New District, Shanghai",
+        "phone": "021-6873 9675"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa South Bailian",
+        "lat": "31.134958",
+        "lng": "121.400986",
+        "address": "No.7388, HuMin Rd, Minhang District, Shanghai",
+        "phone": "021-3453 2153"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Oriental Department",
+        "lat": "31.193971",
+        "lng": "121.43815",
+        "address": "B03-F02-1-047, 2F, Orient Shopping Centre, No.8, North Caoxi Rd, Xuhui Distrct, Shanghai",
+        "phone": "021-6469 3630"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Ramada",
+        "lat": "31.238876",
+        "lng": "121.487675",
+        "address": "No.10, GuiZhou Rd, Huangpu District, Shanghai",
+        "phone": "021-6351 2916"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Z Star Plaza",
+        "lat": "31.159116856",
+        "lng": "121.4289692044",
+        "address": "RM, 101-111 ,No.9, PuBei Rd, Xuhui District, Shanghai",
+        "phone": "021-6482 6126"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Wujiaochangwanda",
+        "lat": "31.301508",
+        "lng": "121.514132",
+        "address": "B-02, No.77, SongHu Rd, Yangpu District, Shanghai",
+        "phone": "021-6537 9893"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa HongMei Rd",
+        "lat": "31.188868",
+        "lng": "121.386974",
+        "address": "No.3196, HongMei Rd, Minhang District, Shanghai",
+        "phone": "021-6406 5909"
+    },
+    {
+        "brand": "Costa",
+        "name": "Shanghai Hongqiao Airport 3",
+        "lat": "31.194708",
+        "lng": "121.326198",
+        "address": "T2 airport terminalA3-M2-S26, Hongqiao Airport, ShenDaYi Rd, Changning District, Shanghai",
+        "phone": "021-2238 2570"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa iapm",
+        "lat": "31.2145677874",
+        "lng": "121.4578646421",
+        "address": "Room.241-243, (LG2), IAPM Plaza, No.999, Central Huaihai Rd, Xuhui, Shanghai",
+        "phone": "021-6416 0683"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Bank Plaza",
+        "lat": "31.239624",
+        "lng": "121.504136",
+        "address": "1F West Lobby , No.168 Middle Yincheng Rd , Pudong New Area , Shanghai",
+        "phone": "021-3475 7177"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Linkong",
+        "lat": "31.231353",
+        "lng": "121.353307",
+        "address": "Room 102, 1F, No.6, Lane 280, Changning District, Shanghai",
+        "phone": "021-6230 7821"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Life Hub",
+        "lat": "31.257569",
+        "lng": "121.580114",
+        "address": "Room 105, 1F, No.7, Lane 3611, ZhangYang Rd, Pudong District, Shanghai",
+        "phone": "021-2023 3063"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Jiefang Building",
+        "lat": "31.105328",
+        "lng": "121.390171",
+        "address": "No.2, 1F, No.4855, DuShi Rd, Minhang District, Shanghai",
+        "phone": "021-3497 8366"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Gucun Park",
+        "lat": "31.3441559529",
+        "lng": "121.3733200729",
+        "address": "Rm101, No.11, Avenue 111, Luxiang Rd, Baoshan District, Shanghai",
+        "phone": "021-6603 3016"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Pudong Airport Free Trade Zone",
+        "lat": "31.163166",
+        "lng": "121.803652",
+        "address": "1F, Area B, No.1333, WenJu Rd, Pudong New Area, Shanghai",
+        "phone": "021-5089 5761"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa New World Dept",
+        "lat": "31.208746",
+        "lng": "121.520591",
+        "address": "Shop 07-08A, No.118, PuJian Rd, Pudong New District, Shanghai",
+        "phone": "021-5192 5153"
+    },
+    {
+        "brand": "Costa",
+        "name": "Shanghai Yao Hua",
+        "lat": "31.193194",
+        "lng": "121.49719",
+        "address": "B1 5G03-1-013 room, No. 1368, World Expo Road, Pudong New district, Shanghai.",
+        "phone": "021-3107 8731"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Hongqiao SMG",
+        "lat": "31.203699",
+        "lng": "121.405792",
+        "address": "1F,No.1376,Hongqiao Rd,Changning District,Shanghai",
+        "phone": "021-52895880"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Sinan Villa",
+        "lat": "31.216013",
+        "lng": "121.470573",
+        "address": "Room 103, No.5, 1F, Lane 507, Middle FuXing Rd, Luwan Distrct, Shanghai",
+        "phone": "021-6404 7144"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Jiatinghui Plaza",
+        "lat": "31.289168",
+        "lng": "121.163428",
+        "address": "Unit 202, 2F, Shanghai JiaTingHui City Life Square, No.1055, North MoYu Rd, Jiading District, Shanghai",
+        "phone": "021-6950 3640"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Lianyang",
+        "lat": "31.228216",
+        "lng": "121.558099",
+        "address": "Unit A-127, 1F, “LianYang Square”, No.300, FangDian Rd, Pudong New District, Shanghai",
+        "phone": "021-6866 0886"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa U Way",
+        "lat": "31.212361",
+        "lng": "121.47789",
+        "address": "No.203, XuJiaHui Rd, Luwan District, Shanghai",
+        "phone": "021-3316 1051"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Langao Rd",
+        "lat": "31.254762",
+        "lng": "121.419826",
+        "address": "Room 106, No.68, TongChuan Rd, Putuo District, Shanghai",
+        "phone": "3353 5989"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa South Shopping Mall",
+        "lat": "31.13156",
+        "lng": "121.40102",
+        "address": "1F, South Bailian Shopping Mall, No.7388, HuMin Rd, Minhang District, Shanghai",
+        "phone": "021-6412 2191"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa New World LW",
+        "lat": "31.218527",
+        "lng": "121.459093",
+        "address": "Unit 20030A, 20040A, No.939-947, Middle HuaiHai Rd, Luwan District, Shanghai",
+        "phone": "021-6474 1223"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Hongqiao Hub",
+        "lat": "31.19285",
+        "lng": "121.3215",
+        "address": "B1-35, HongQiao Station, Shanghai Railway Station, Shengui Rd, Minhang District, Shanghai",
+        "phone": "021-5151 1067"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa SWFC",
+        "lat": "31.23539",
+        "lng": "121.507738",
+        "address": "No.100, World Financial Centre, Pudong New District, Shanghai",
+        "phone": "021-6877 7071"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa SML",
+        "lat": "31.210599",
+        "lng": "121.468105",
+        "address": "F1610-1613, No.618, XuJiaHui Rd, Xuhui Distrct, Shanghai",
+        "phone": "021-6075 2058"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa MeiYueHua",
+        "lat": "31.207516",
+        "lng": "121.462097",
+        "address": "No.238, ZhaoJiaBang Rd, Xuhui Distrct, Shanghai",
+        "phone": "021-6466 8081"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Cloud Nine",
+        "lat": "31.271729",
+        "lng": "121.479285",
+        "address": "No.19, 1F, Area A, No.388, West JiangWan Rd, Hongkou District, Shanghai",
+        "phone": "021-6173 6102"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Tianlin Walmart",
+        "lat": "31.171685",
+        "lng": "121.417336",
+        "address": "No.402, GuiLin Rd, Xuhui District, Shanghai",
+        "phone": "021-3469 1978"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Wujiefang",
+        "lat": "31.157244",
+        "lng": "121.516738",
+        "address": "Unit 110, NO.2100, DongMing Rd, Pudong New Area, Shanghai",
+        "phone": "021-5844 6297"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa ZhangJiang",
+        "lat": "31.202964",
+        "lng": "121.603847",
+        "address": "No.2, BoYun Rd, Pudong Zhangjiang Software Park, Shanghai",
+        "phone": "021-5027 2338"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Studio Cinema",
+        "lat": "31.230491",
+        "lng": "121.457119",
+        "address": "10F, Area B, No.1038, West NaJing Rd,Jingan District, Shanghai",
+        "phone": "021-5228 8196"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Majesty Plaza",
+        "lat": "31.234729",
+        "lng": "121.477075",
+        "address": "No.700, JiuJiang Rd, Huangpu District, Shanghai",
+        "phone": "021-6330 7596"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Crystal",
+        "lat": "31.229372",
+        "lng": "121.456904",
+        "address": "No.269, WuJiang Rd, Jingan District, Shanghai",
+        "phone": "021-6136 1403"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Anfu",
+        "lat": "31.214545",
+        "lng": "121.444352",
+        "address": "No.166, AnFu Rd, Xuhui District, Shanghai",
+        "phone": "021-5403 7951"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa 96 Plaza",
+        "lat": "31.228124",
+        "lng": "121.523895",
+        "address": "Room 153, No.796, DongFang Rd, Pudong New District, Shanghai",
+        "phone": "021-6159 0113"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Sam's club",
+        "lat": "31.205828",
+        "lng": "121.545525",
+        "address": "Unit 110003, Wal-Mart, West Gaoke Rd, Pudong New District, Shanghai",
+        "phone": "021-5866 0083"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa 889 Plaza",
+        "lat": "31.230638",
+        "lng": "121.428881",
+        "address": "L1-29, Yueda Plaza, NO.889, WanHangDu Rd, Jingan District, Shanghai",
+        "phone": "021-3252 7900"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa East SMG",
+        "lat": "31.197899",
+        "lng": "121.52016",
+        "address": "NO.2000, DongFang Rd, Pudong District, Shanghai",
+        "phone": "021-5076 2907"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa ICP",
+        "lat": "31.251937",
+        "lng": "121.484735",
+        "address": "1F, International Capital Plaza, No.1318 North SiChuan Rd, Hongkou District, Shanghai",
+        "phone": "021-3633 6229"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Wanli carrefour",
+        "lat": "31.268244",
+        "lng": "121.410341",
+        "address": "1F, NO.1500 Xincun Rd, Putuo District, Shanghai",
+        "phone": "021-56618967"
+    },
+    {
+        "brand": "Costa",
+        "name": "Costa Zhong Rong Jasper Tower",
+        "lat": "31.243701",
+        "lng": "121.507573",
+        "address": "Room 203, 2F, No.13 Building, NO.320, LvLin Rd, Pudong New District, Shanghai",
+        "phone": "021-5076 2736"
+    }
+]

@@ -14,19 +14,12 @@ function deviceready() {
 }
 
 function setup(tx) {
-	tx.executeSql('create table if not exists store('
-			+ 'id INTEGER PRIMARY KEY AUTOINCREMENT, ' + ' name TEXT,'
-			+ ' added DATE,' + ' brand TEXT,' + ' comfort FLOAT,'
-			+ ' location TEXT,' + ' lat FLOAT,' + ' lng FLOAT,'
-			+ 'distance TEXT)');
-	// alert("table created");
-
-	// to test json
-	tx.executeSql('create table if not exists phones('
-			+ 'id INTEGER PRIMARY KEY AUTOINCREMENT, ' + ' phone TEXT,'
-			+ ' os TEXT,' + ' size_inch FLOAT,' + ' size_cm FLOAT,'
-			+ ' ppi ININTEGER)');
-	alert("table jsoncreated");
+	tx
+			.executeSql('create table if not exists store('
+					+ 'id INTEGER PRIMARY KEY AUTOINCREMENT, ' + ' name TEXT,'
+					+ ' brand TEXT,' + ' address TEXT,' + ' lat FLOAT,'
+					+ ' lng FLOAT)');
+	alert("table created");
 
 }
 
@@ -56,13 +49,23 @@ function dbReady() {
 					function() {
 						// alert("in headline before show");
 						$('#store-data').empty();
+						$('#header-title').empty();
+
 						for ( var i = 0; i < storeInfo.result.rows.length; i++) {
 							if (i == storeInfo.id) {
 								// alert("in the if");
 								var tmpName = storeInfo.result.rows.item(i).name;
+								$('#header-title').append(tmpName);
+
 								var tmpBrand = storeInfo.result.rows.item(i).brand;
-								var tmpComfort = storeInfo.result.rows.item(i).comfort;
-								var tmpLocation = storeInfo.result.rows.item(i).location;
+								var tmpNote = "4";
+								var tmpWifi = "freewifi";
+								var tmpAddress = "1376 Nanjing West Road Jingan, jianpu district";
+								var tmpStation = "People square";
+								var tmpSubwayDetail = "500 metres from exit 4, on your right";
+								var tmpDescription = "blablabla bla blablabla blablablabla bla blablabla bla blablabla bla blablabla bla blablabla bla blablabla bla blablabla bla blablabla bla";
+								var tmpDistance = mapInfo.distances[i].distance;
+								var tmpSubwayLine = "2";
 
 								mapInfo.centerLat = storeInfo.result.rows
 										.item(i).lat;
@@ -70,40 +73,49 @@ function dbReady() {
 										.item(i).lng;
 								mapInfo.mapZoom = 14;
 
-								$('#store-data')
-										.append(
-												'<li><span class="store-name">'
-														+ tmpName
-														+ '</span></br>'
-														+ '<span class="store-name"><img src="img/45.png"/></span></br>'
-														+ '<span class="store-address"> 1376 Nanjing West Road Jingan, Shanghai</span>'
-														+ '</li>');
-								$('#store-data')
-										.append(
-												'<li><div class="ui-grid-a grids">'
-														+ '<div class="ui-block-a"><img class="info1" src="img/'
-														+ tmpBrand
-														+ '.png"/></div>'
-														+ '<div class="ui-block-b"><div><p><span>Distance: 1.3 km</span></br>'
-														+ '<span>Wifi : YES</span></p></div>'
-														+ '</div></li>');
-								$('#store-data')
-										.append(
-												'<li style="white-space:normal;"><p style="font-size: medium;white-space:normal;"><span style="bold">Subway: Century Avenue (line 2)</span></br>'
-														+ '<span style="bold">Tips :</span> Take exit 4 from the century avenue station then walk 100m along lolilol street, you will see the starbucks on your left. It is located in front a big Lianhua supermarket</span></p></li>');
+
 								$('#store-data')
 										.append(
 												'<li><div class="ui-grid-a">'
-														+ '<div class="ui-block-a"><div class="ui-body ui-body-d"><span class="info1">Comfort : '
-														+ tmpComfort
-														+ '</span><span class="info1"><img src="img/150.png"/></span></div></div>'
-														+ '<div class="ui-block-b"><div class="ui-body ui-body-d"><span class="info1">Size : '
-														+ tmpComfort
-														+ '</span><span class="info1"><img src="img/size.png"/></span></div></div>'
+														+ '<div class="ui-block-a"><div class="ui-body ui-body-d"><img src="img/'
+														+ tmpBrand
+														+ '.png"/></div></div>'
+														+ '<div class="ui-block-b "><div class="ui-body ui-body-d"><p style="font-size:large;font-weight:bold;">'
+														+ tmpName
+														+ '</p><p><img src="img/'
+														+ tmpNote
+														+ '-stars.png" style="width: 50%;"/></p></div></div>'
+														+ '</div></li>');
+
+								$('#store-data')
+										.append(
+												'<li><div class="ui-grid-a">'
+														+ '<div class="ui-block-a grids"><div class="ui-body ui-body-d"><img src="img/'
+														+ tmpWifi
+														+ '.png"/></div></div>'
+														+ '<div class="ui-block-b"><div class="ui-body ui-body-d"><span style="font-size:16px;font-weight:bold;">Distance : '
+														+ tmpDistance
+														+ '</span></div></div>'
 														+ '</div></li>');
 								$('#store-data').append(
-										'<li style="white-space:normal;">Description :'
-												+ tmpLocation + '</li>');
+										'<li style="white-space:normal;"><span style="font-weight:bold;">Address :</span>'
+												+ tmpAddress + '</li>');
+								$('#store-data')
+										.append(
+												'<li style="white-space:normal;"><p><span style="font-weight:bold;">Station:'
+														+ tmpStation
+														+ '</span><img src="img/line'
+														+ tmpSubwayLine
+														+ '.png"/></p>'
+														+ '<p><span id="subway-details>'
+														+ tmpSubwayDetail
+														+ '</span></p></li>');
+								$('#store-data')
+										.append(
+												'<li style="white-space:normal; font-size: medium"><span style="font-weight:bold;">Description :</span>'
+														+ tmpDescription
+														+ '</li>');
+								// to delete after test
 								$('#store-data').listview('refresh');
 							}
 						}
@@ -187,48 +199,10 @@ var mapInfo = {
 
 function populatedb(tx, results) {
 	if (results.rows.length == 0) {
-		// alert("no data");
-		tx
-				.executeSql(
-						"insert into store(name,brand,comfort,location,lat,lng,distance) values(?,?,?,?,?,?,?)",
-						[
-								"Starbucks Century Avenue",
-								"starbucks",
-								4.1,
-								"Choose the Selection tool appropriate to your purpose. Your choices, and how they work, are as follows: the Rectangle Select tool that lets you select any rectangular section of your image; the Ellipse Select tool that lets you select any elliptical or circular area in your image;",
-								31.225523, 121.491344, "0 km" ]);
-		tx
-				.executeSql(
-						"insert into store(name,brand,comfort,location,lat,lng,distance) values(?,?,?,?,?,?,?)",
-						[ "store starbucks 2", "starbucks", 4.2, "unknow",
-								31.228562, 121.512470, "0 km" ]);
-		tx
-				.executeSql(
-						"insert into store(name,brand,comfort,location,lat,lng,distance) values(?,?,?,?,?,?,?)",
-						[ "store starbucks 3", "starbucks", 4.3, "unknow",
-								31.228268, 121.516761, "0 km" ]);
-		tx
-				.executeSql(
-						"insert into store(name,brand,comfort,location,lat,lng,distance) values(?,?,?,?,?,?,?)",
-						[ "store starbucks 4", "starbucks", 4.4, "unknow",
-								31.239423, 121.484489, "0 km" ]);
-		tx
-				.executeSql(
-						"insert into store(name,brand,comfort,location,lat,lng,distance) values(?,?,?,?,?,?,?)",
-						[ "store starbucks 5", "starbucks", 4.5, "unknow",
-								31.220928, 121.475048, "0 km" ]);
-		tx
-				.executeSql(
-						"insert into store(name,brand,comfort,location,lat,lng,distance) values(?,?,?,?,?,?,?)",
-						[ "store starbucks 6", "starbucks", 4.6, "unknow",
-								31.226800, 121.463718, "0 km" ]);
-
-		// alert("new data added");
-		tx.executeSql("select * from store order by id asc", [], gotlog,
-				errorHandler);
-
+		alert("no data");
+		jsonpopulate();
 	} else {
-		// alert("db already full");
+		alert("db already full");
 		gotlog(tx, results);
 	}
 	;
@@ -239,8 +213,8 @@ function displayList() {
 	alert("in display");
 
 	$.mobile.loading('hide');
-
 	$('#store-list').empty();
+	alert(mapInfo.distances.length);
 	for ( var i = 0; i < mapInfo.distances.length; i++) {
 		// old version
 		// var tmpName = storeInfo.result.rows.item(i).name;
@@ -250,15 +224,15 @@ function displayList() {
 		// var tmpDistance = mapInfo.distances[i].distance;
 
 		// new version
-		alert(mapInfo.distances[i].id);
+		// alert(mapInfo.distances[i].id);
 		var tmpId = Number(mapInfo.distances[i].id);
-		alert(tmpId);
+		// alert(tmpId);
 		var tmpDistance = mapInfo.distances[i].distance;
-		alert(tmpId + " , " + tmpDistance);
+		// alert(tmpId + " , " + tmpDistance);
 
 		var tmpName = storeInfo.result.rows.item(tmpId).name;
 		var tmpBrand = storeInfo.result.rows.item(tmpId).brand;
-		alert(tmpName + " , " + tmpBrand);
+		// alert(tmpName + " , " + tmpBrand);
 
 		$('#store-list').append(
 				'<li><a href="#headline" data-transition="slide" data-id="' + i
@@ -274,10 +248,17 @@ function gotlog(tx, results) {
 
 	// ***************************
 	// test parsing json file
-	testjson();
+	// testjson();
 	// ***************************
 
 	$('#getLocation').on("tap", getMyPos);
+
+	// $('#change-footer').on("tap", function() {
+	// alert("in change footer");
+	// $("#homefooter").hide();
+	// alert("end change footer");
+	//
+	// });
 
 	if (results.rows.length == 0) {
 		alert("no data");
@@ -291,11 +272,11 @@ function getMyPos() {
 	// hide button for geolocation
 	$("#getLocation").hide();
 
-	// alert("in getMyPos");
+	alert("in getMyPos");
 	var options = {
 		enableHighAccuracy : true,
 		maximumAge : 300,
-		timeout : 10000
+		timeout : 2000
 	};
 
 	var onSuccess = function(position) {
@@ -321,18 +302,32 @@ function getMyPos() {
 }
 
 function initDistCalc() {
-	var tableLatLng = [];
-	for ( var i = 0; i < storeInfo.result.rows.length; i++) {
-		// alert("boucle one time");
-		var tmpLat = storeInfo.result.rows.item(i).lat;
-		var tmpLng = storeInfo.result.rows.item(i).lng;
-		tableLatLng[i] = new google.maps.LatLng(tmpLat, tmpLng);
+	//alert("in init cal");
+	var divbytwenty = storeInfo.result.rows.length / 20;
+	//alert(divbytwenty);
+	for ( var j = 0; j < divbytwenty; j++) {
+		var counter = j*20;
+		//alert ("counter "+counter);
+		var tableLatLng = [];
+		for ( var i = 0; i < 20 && i < storeInfo.result.rows.length - counter ; i++) {
+			var tmpId = counter+i;
+			//alert("temp Id" + tmpId);
+			var tmpLat = storeInfo.result.rows.item(tmpId).lat;
+			var tmpLng = storeInfo.result.rows.item(tmpId).lng;
+			tableLatLng[i] = new google.maps.LatLng(tmpLat, tmpLng);
+		}
+		//alert("length talbe : "+tableLatLng.length);
+		calculateDistances(tableLatLng);
 	}
-	calculateDistances(tableLatLng);
+
+	setTimeout(function() {
+		sortDistance();
+		displayList();
+	}, 5000);
 }
 
 function calculateDistances(tableLL) {
-	// alert("in calculate");
+	//alert("in calculate");
 	var service = new google.maps.DistanceMatrixService();
 	var origin = new google.maps.LatLng(mapInfo.currentLat, mapInfo.currentLng);
 	service.getDistanceMatrix( {
@@ -345,27 +340,30 @@ function calculateDistances(tableLL) {
 	}, callbackDistance);
 }
 
+var callbackBase = -20;
+
 function callbackDistance(response, status) {
-	// alert("in callback");
+
 	if (status != google.maps.DistanceMatrixStatus.OK) {
 		alert('Error was: ' + status);
 	} else {
-
-		// mapInfo.distances = response.rows[0].elements;
-		alert("oe of the distance calculated"
-				+ response.rows[0].elements[1].distance.text);
+		callbackBase += 20;
+		//alert(callbackBase);
+//		alert("one distance calculated"
+//				+ response.rows[0].elements[1].distance.text);
 		// alert("before for");
 		for ( var i = 0; i < response.rows[0].elements.length; i++) {
+			var valueId = callbackBase + i;
+			if(true){
 			mapInfo.distances.push( {
-				id : i,
+				id : valueId,
 				distance : new String(
 						response.rows[0].elements[i].distance.text)
 			});
+			}
 			// alert('test de distance: ' + mapInfo.distances[i].distance);
 		}
 		// alert("before diplay");
-		sortDistance();
-		displayList();
 	}
 }
 
@@ -381,37 +379,64 @@ function sortDistance() {
 	mapInfo.distances.sort(compare);
 }
 
-function testjson() {
-	alert("in test json");
-	$.getJSON("ajax/phones.json", function(data) {
-		alert(data);
-		db.transaction(function(tx) {
-			$.each(data, function(key, val) {
-//				alert("in each");
-//				alert(val.phone);
-				tx.executeSql(
-						"insert into phones (phone,os,ppi) values(?,?,?)", [val.phone, val.os, val.ppi ]);
-			}),verify()});
-		
-	});
+function jsonpopulate() {
+	alert("in json function");
+	$
+			.getJSON(
+					"ajax/costa.json",
+					function(data) {
+						alert(data);
+						db
+								.transaction(function(tx) {
+									$
+											.each(
+													data,
+													function(key, val) {
+														// alert("in
+														// each");
+														// alert(val.name);
+														tx
+																.executeSql(
+																		"insert into store(name,brand,address,lat,lng) values(?,?,?,?,?)",
+																		[
+																				val.name,
+																				val.brand,
+																				val.address,
+																				val.lat,
+																				val.lng ]);
+													});
+
+									tx
+											.executeSql(
+													"select * from store order by id asc",
+													[], gotlog, errorHandler);
+								});
+
+					});
+
+	// db.transaction(function(tx) {
+	// tx.executeSql("select * from store order by id asc", [], gotlog,
+	// errorHandler);
+	// });
 
 	function verify() {
-		alert("in verify");
+		// alert("in verify");
 		db.transaction(function(tx) {
-		tx.executeSql("select * from phones", [], displayPhone, errorHandler);
+			tx.executeSql("select * from phones", [], displayPhone,
+					errorHandler);
 		});
 	}
 
 	function displayPhone(tx, results) {
-		alert("in displayPhone");
+		// alert("in displayPhone");
 		alert(results);
 		if (results.rows.length == 0) {
 			alert("no data");
 			return false;
 		} else {
 			for ( var i = 0; i < results.rows.length; i++) {
-				alert("in for");
-				alert(results.rows.item(i).phone);
+				// alert("in for");
+				// alert(results.rows.item(i).phone);
 			}
 		}
 	}

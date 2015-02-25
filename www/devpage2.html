@@ -25,45 +25,48 @@
 
 <body onload="init()">
 
-<!-- /////////////////////////////////////////////////////////// -->
+<!-- //////////////////////// HOME PAGE /////////////////////////////////// -->
 
-<!-- home page -->
 <div data-role="page" id="homepage">
 <div data-role="header" data-position="fixed" style="overflow: hidden;">
-<div align="center">
-     <img  src="img/title-app.png" alt="coffee-app" Style="padding: 5% 0px 3% 0px;"/>
+<div align="center"><img src="img/title-app.png" alt="coffee-app"
+	Style="padding: 5% 0px 3% 0px;" /></div>
 </div>
-</div><!-- /header -->
+<!-- /header -->
 
 <div class="wrap">
-<div class="banner">
-     <img  src="img/search-background.png" alt="coffee-app"/>
-</div><!-- image for research bar later -->
-</div>
+<div class="banner"><img src="img/search-background.png"
+	alt="coffee-app" /></div>
+<!-- image for research bar later --></div>
 <div align="center">
-<button id="getLocation" class="ui-btn">Find Coffee Shops Near Me</button>
+<button id="getLocation" class="ui-btn">Coffee Shops Near Me</button>
 </div>
 
 <div data-role="content">
 <div class="list-wrapper">
 <ul data-role="listview" id="store-list">
-	
+
 	<!-- store list here -->
 </ul>
-</div><!-- list wrapper -->
-</div><!-- content -->
-<div data-theme="a" data-role="footer" data-position="fixed">
-<div data-role="navbar" class="custom-navbar"">
+</div>
+<!-- /list wrapper --></div>
+<!-- /content -->
+<div data-theme="a" data-role="footer" data-position="fixed"
+	id="homefooter">
+<div data-role="navbar" class="custom-navbar">
 <ul>
-	<li><a href="#" data-icon="refresh" data-transition="slide">Refresh</a></li>
-	<li><a href="#main" data-icon="location" data-transition="slide">Map</a></li>
+	<li><a href="#main" data-icon="location" data-transition="slide" class="ui-btn ui-nodisc-icon ui-alt-icon">Map</a></li>
+	<li><a href="#" data-icon="search" data-transition="slide">Filter</a></li>
 </ul>
-</div><!-- navbar -->
-</div><!-- footer -->
-</div><!-- home page -->
-<!-- /////////////////////////////////////////////////////////// -->
+</div>
+<!-- /first navbar --></div>
+<!-- /footer --></div>
+<!-- /home page -->
 
-<!-- headline page -->
+
+
+<!-- //////////////////////// HEADLINE /////////////////////////////////// -->
+
 <div data-role="page" id="headline">
 <div data-role="header" data-position="fixed" class="header-div">
 <h1 class="header-title"></h1>
@@ -88,11 +91,13 @@
 	class="ui-btn ui-corner-all ui-shadow"><span>Show on Map</span></a></div>
 </div>
 
-<!-- /////////////////////////////////////////////////////////// -->
+
+
+<!-- //////////////////////// MAIN /////////////////////////////////// -->
 
 <div data-role="page" id="main">
 <div data-role="header" data-position="fixed" class="header-div">
-<h1 class="header-title">Shop Info</h1>
+<h1 id="header-title"></h1>
 <a href="#homepage"
 	class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
 	data-transition="slide" data-direction="reverse"
