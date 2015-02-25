@@ -2,7 +2,7 @@
  * Created by clement on 12/29/14.
  */
 function init() {
-	alert("in init");
+	// alert("in init");
 	document.addEventListener("deviceready", deviceready, true);
 
 }
@@ -19,7 +19,14 @@ function setup(tx) {
 			+ ' added DATE,' + ' brand TEXT,' + ' comfort FLOAT,'
 			+ ' location TEXT,' + ' lat FLOAT,' + ' lng FLOAT,'
 			+ 'distance TEXT)');
-	alert("table created");
+	// alert("table created");
+
+	// to test json
+	tx.executeSql('create table if not exists phones('
+			+ 'id INTEGER PRIMARY KEY AUTOINCREMENT, ' + ' phone TEXT,'
+			+ ' os TEXT,' + ' size_inch FLOAT,' + ' size_cm FLOAT,'
+			+ ' ppi ININTEGER)');
+	alert("table jsoncreated");
 
 }
 
@@ -151,7 +158,8 @@ function dbReady() {
 										function() {
 											this.infowindow.open(map, this);
 										});
-							};
+							}
+							;
 						} else {
 							// alert("map already created");
 							map.setCenter(new google.maps.LatLng(
@@ -235,23 +243,23 @@ function displayList() {
 	$('#store-list').empty();
 	for ( var i = 0; i < mapInfo.distances.length; i++) {
 		// old version
-//		var tmpName = storeInfo.result.rows.item(i).name;
-//		var tmpBrand = storeInfo.result.rows.item(i).brand;
-//		var tmpComfort = storeInfo.result.rows.item(i).comfort;
-//		var tmpLocation = storeInfo.result.rows.item(i).location;
-//		var tmpDistance = mapInfo.distances[i].distance;
+		// var tmpName = storeInfo.result.rows.item(i).name;
+		// var tmpBrand = storeInfo.result.rows.item(i).brand;
+		// var tmpComfort = storeInfo.result.rows.item(i).comfort;
+		// var tmpLocation = storeInfo.result.rows.item(i).location;
+		// var tmpDistance = mapInfo.distances[i].distance;
 
-//		new version
+		// new version
 		alert(mapInfo.distances[i].id);
 		var tmpId = Number(mapInfo.distances[i].id);
 		alert(tmpId);
 		var tmpDistance = mapInfo.distances[i].distance;
-		alert(tmpId +" , "+ tmpDistance);
-		
+		alert(tmpId + " , " + tmpDistance);
+
 		var tmpName = storeInfo.result.rows.item(tmpId).name;
 		var tmpBrand = storeInfo.result.rows.item(tmpId).brand;
-		alert(tmpName +" , "+ tmpBrand);
-		
+		alert(tmpName + " , " + tmpBrand);
+
 		$('#store-list').append(
 				'<li><a href="#headline" data-transition="slide" data-id="' + i
 						+ '">' + '<img src="img/' + tmpBrand + '.png"/>'
@@ -263,9 +271,14 @@ function displayList() {
 
 function gotlog(tx, results) {
 	alert("in gotlog");
-	
+
+	// ***************************
+	// test parsing json file
+	testjson();
+	// ***************************
+
 	$('#getLocation').on("tap", getMyPos);
-	
+
 	if (results.rows.length == 0) {
 		alert("no data");
 		return false;
@@ -275,17 +288,16 @@ function gotlog(tx, results) {
 };
 
 function getMyPos() {
-	//hide button for geolocation
+	// hide button for geolocation
 	$("#getLocation").hide();
-	
-	//alert("in getMyPos");
+
+	// alert("in getMyPos");
 	var options = {
 		enableHighAccuracy : true,
 		maximumAge : 300,
 		timeout : 10000
 	};
 
-	
 	var onSuccess = function(position) {
 		// alert("in onSuccess");
 		alert('Latitude: ' + position.coords.latitude + '\n' + 'Longitude: '
@@ -293,7 +305,7 @@ function getMyPos() {
 		// set the origin for the distance calc using the geolocation result
 		mapInfo.currentLat = position.coords.latitude;
 		mapInfo.currentLng = position.coords.longitude;
-		alert("real position of the user:" + position.coords.latitude)
+		alert("real position of the user:" + position.coords.latitude);
 		alert("lat store in map info:" + mapInfo.currentLat);
 		initDistCalc();
 
@@ -320,7 +332,7 @@ function initDistCalc() {
 }
 
 function calculateDistances(tableLL) {
-	//alert("in calculate");
+	// alert("in calculate");
 	var service = new google.maps.DistanceMatrixService();
 	var origin = new google.maps.LatLng(mapInfo.currentLat, mapInfo.currentLng);
 	service.getDistanceMatrix( {
@@ -369,5 +381,38 @@ function sortDistance() {
 	mapInfo.distances.sort(compare);
 }
 
+function testjson() {
+	alert("in test json");
+	$.getJSON("ajax/phones.json", function(data) {
+		alert(data);
+		db.transaction(function(tx) {
+			$.each(data, function(key, val) {
+//				alert("in each");
+//				alert(val.phone);
+				tx.executeSql(
+						"insert into phones (phone,os,ppi) values(?,?,?)", [val.phone, val.os, val.ppi ]);
+			}),verify()});
+		
+	});
 
+	function verify() {
+		alert("in verify");
+		db.transaction(function(tx) {
+		tx.executeSql("select * from phones", [], displayPhone, errorHandler);
+		});
+	}
 
+	function displayPhone(tx, results) {
+		alert("in displayPhone");
+		alert(results);
+		if (results.rows.length == 0) {
+			alert("no data");
+			return false;
+		} else {
+			for ( var i = 0; i < results.rows.length; i++) {
+				alert("in for");
+				alert(results.rows.item(i).phone);
+			}
+		}
+	}
+}

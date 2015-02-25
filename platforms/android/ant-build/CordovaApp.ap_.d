@@ -29,6 +29,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/_where-is-www.txt \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/ajax \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/cordova.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/cordova_plugins.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css \
@@ -48,6 +49,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/storage_test.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/storageList.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/test_jqmap.html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/ajax/phones.json \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/index.css \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/main.css \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/150.png \
