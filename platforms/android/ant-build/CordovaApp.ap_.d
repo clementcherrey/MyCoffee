@@ -78,6 +78,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/title-app.xcf \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/wifi.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/xigua.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/distance.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/index.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/Init.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/main.js \

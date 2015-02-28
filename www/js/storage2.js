@@ -73,7 +73,6 @@ function dbReady() {
 										.item(i).lng;
 								mapInfo.mapZoom = 14;
 
-
 								$('#store-data')
 										.append(
 												'<li><div class="ui-grid-a">'
@@ -97,9 +96,10 @@ function dbReady() {
 														+ tmpDistance
 														+ '</p></div></div>'
 														+ '</div></li>');
-								$('#store-data').append(
-										'<li style="white-space:normal;"><span style="font-weight:bold;">Address :</span>'
-												+ tmpAddress + '</li>');
+								$('#store-data')
+										.append(
+												'<li style="white-space:normal;"><span style="font-weight:bold;">Address :</span>'
+														+ tmpAddress + '</li>');
 								$('#store-data')
 										.append(
 												'<li style="white-space:normal;"><p><span style="font-weight:bold;">Station:'
@@ -215,28 +215,26 @@ function displayList() {
 	$.mobile.loading('hide');
 	$('#store-list').empty();
 	alert(mapInfo.distances.length);
-	
+
 	for ( var i = 0; i < mapInfo.distances.length; i++) {
 		var tmpId = Number(mapInfo.distances[i].id);
-		// alert(tmpId);
 		var tmpDistance = mapInfo.distances[i].distance;
-		// alert(tmpId + " , " + tmpDistance);
 
-		var tmpName = storeInfo.result.rows.item(tmpId).name;
+		var tmpNam e = storeInfo.result.rows.item(tmpId).name;
 		var tmpBrand = storeInfo.result.rows.item(tmpId).brand;
-		var tmpBrand = storeInfo.result.rows.item(tmpId).address;
-		// alert(tmpName + " , " + tmpBrand);
-
+		var tmpAddress = storeInfo.result.rows.item(tmpId).address;
 		$('#store-list').append(
-				'<li data-icon="false"><a href="#headline" data-transition="slide" data-id="' + i
-						+ '">' + '<img src="img/' + tmpBrand + '.png"/>'
-						+ '<h3>' + tmpName + '</h3><p></p><span class="ui-li-count">' + tmpDistance + '</span></a></li>');
+				'<li data-icon="false"><a href="#headline" data-transition="slide" data-id="'
+						+ i + '">' + '<img src="img/' + tmpBrand + '.png"/>'
+						+ '<h3>' + tmpName
+						+ '</h3><p>tmpAddress</p><span class="ui-li-count">'
+						+ tmpDistance + '</span></a></li>');
 	}
 	$('#store-list').listview('refresh');
 }
 
 function gotlog(tx, results) {
-//	alert("in gotlog");
+	// alert("in gotlog");
 	$('#getLocation').on("tap", getMyPos);
 	if (results.rows.length == 0) {
 		alert("no data");
@@ -271,90 +269,13 @@ function getMyPos() {
 	};
 
 	var onError = function(error) {
-		//alert("in error");
-		alert('error code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
+		// alert("in error");
+		alert('error code: ' + error.code + '\n' + 'message: ' + error.message
+				+ '\n');
 		initDistCalc();
 	};
 
 	navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
-}
-
-function initDistCalc() {
-	//alert("in init cal");
-	var divbytwenty = storeInfo.result.rows.length / 20;
-	//alert(divbytwenty);
-	for ( var j = 0; j < divbytwenty; j++) {
-		var counter = j*20;
-		//alert ("counter "+counter);
-		var tableLatLng = [];
-		for ( var i = 0; i < 20 && i < storeInfo.result.rows.length - counter ; i++) {
-			var tmpId = counter+i;
-			//alert("temp Id" + tmpId);
-			var tmpLat = storeInfo.result.rows.item(tmpId).lat;
-			var tmpLng = storeInfo.result.rows.item(tmpId).lng;
-			tableLatLng[i] = new google.maps.LatLng(tmpLat, tmpLng);
-		}
-		//alert("length talbe : "+tableLatLng.length);
-		calculateDistances(tableLatLng);
-	}
-
-	setTimeout(function() {
-		sortDistance();
-		displayList();
-	}, 5000);
-}
-
-function calculateDistances(tableLL) {
-	//alert("in calculate");
-	var service = new google.maps.DistanceMatrixService();
-	var origin = new google.maps.LatLng(mapInfo.currentLat, mapInfo.currentLng);
-	service.getDistanceMatrix( {
-		origins : [ origin ],
-		destinations : tableLL,
-		travelMode : google.maps.TravelMode.DRIVING,
-		unitSystem : google.maps.UnitSystem.METRIC,
-		avoidHighways : false,
-		avoidTolls : false
-	}, callbackDistance);
-}
-
-var callbackBase = -20;
-
-function callbackDistance(response, status) {
-
-	if (status != google.maps.DistanceMatrixStatus.OK) {
-		alert('Error was: ' + status);
-	} else {
-		callbackBase += 20;
-		//alert(callbackBase);
-//		alert("one distance calculated"
-//				+ response.rows[0].elements[1].distance.text);
-		// alert("before for");
-		for ( var i = 0; i < response.rows[0].elements.length; i++) {
-			var valueId = callbackBase + i;
-			if(true){
-			mapInfo.distances.push( {
-				id : valueId,
-				distance : new String(
-						response.rows[0].elements[i].distance.text)
-			});
-			}
-			// alert('test de distance: ' + mapInfo.distances[i].distance);
-		}
-		// alert("before diplay");
-	}
-}
-
-function sortDistance() {
-	function compare(a, b) {
-		if (a.distance < b.distance)
-			return -1;
-		if (a.distance > b.distance)
-			return 1;
-		return 0;
-	}
-
-	mapInfo.distances.sort(compare);
 }
 
 function jsonpopulate() {
@@ -370,9 +291,6 @@ function jsonpopulate() {
 											.each(
 													data,
 													function(key, val) {
-														// alert("in
-														// each");
-														// alert(val.name);
 														tx
 																.executeSql(
 																		"insert into store(name,brand,address,lat,lng) values(?,?,?,?,?)",
@@ -391,5 +309,4 @@ function jsonpopulate() {
 								});
 
 					});
-
 }
