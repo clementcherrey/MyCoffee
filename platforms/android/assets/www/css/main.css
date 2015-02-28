@@ -1,8 +1,9 @@
 .ui-page {
-	background: #FFFFFF !important;
+	
 }
 
 .ui-footer {
+	position: fixed !important;
 	background: #FFFFFF !important;
 	border-top: solid;
 	border-right: none;
@@ -13,6 +14,7 @@
 }
 
 .ui-header {
+	position: fixed !important;
 	background: #FFFFFF !important;
 	border-top: none;
 	border-right: none;
@@ -50,16 +52,28 @@
 
 .grids {
 	position: relative;
-	height: 65px;
-	
+	height: 80px;
+	width: 100%;
+	padding: 0px;
+	align: center;
 }
 
 .grids div {
 	position: absolute;
 	top: 50%;
-	height: 60px;
-	margin-top: -30px;
+	right: 0px;
+	height: 50px;
+	margin-top: -25px;
+	width: 100%;
+	padding: 0px;
+}
+
+.grids div p {
 	color: red;
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
+	padding: 0px;
 }
 
 .center-div {
@@ -72,22 +86,23 @@
 }
 
 .custom-navbar ul li a {
-	color: red !important;
-	border: 0 !important;
+	color: black !important;
+	border: 0 1px 0 1px !important;
 	text-shadow: none !important;
 	background: #FFFFFF !important; /* Old browsers */
 	box-shadow: none !important;
 	-webkit-box-shadow: none !important;
-	font-size:  !important;
+	font-size: large !important;
 }
 
 .custom-navbar ul li a.ui-btn-active {
 	color: black !important;
-	border: 0 !important;
+	border: 0 1px 0 1px !important;
 	text-shadow: none !important;
 	background: #FFFFFF !important; /* Old browsers */
 	box-shadow: none !important;
 	-webkit-box-shadow: none !important;
+	font-size: large !important;
 }
 
 #getLocation {
@@ -109,6 +124,24 @@
 	left: 0 !important;
 }
 
+#store-list li a {
+	background: #FFFFFF !important;
+}
+
+#store-list li a img {
+	background: #FFFFFF !important;
+	border: none;
+	border-color: #bbb;
+	border-width: 1px !important;
+	max-height: 60px;
+	max-width: 60px;
+	margin: 10px 10px 10px 10px !important;
+}
+
+.ui-li-count {
+	top: 1.6em !important;
+}
+
 #map_canvas {
 	position: absolute;
 	top: 0;
@@ -120,6 +153,10 @@
 #show-map-button {
 	padding: 10px 30px 10px 30px;
 	font-size: large;
+	border-color: #5da92a;
+	background-color: white;
+	color: black;
+	background-color: white;
 }
 
 .store-name {

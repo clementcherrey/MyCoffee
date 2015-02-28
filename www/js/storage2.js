@@ -80,11 +80,11 @@ function dbReady() {
 														+ '<div class="ui-block-a"><div class="ui-body ui-body-d"><img src="img/'
 														+ tmpBrand
 														+ '.png"/></div></div>'
-														+ '<div class="ui-block-b "><div class="ui-body ui-body-d"><p style="font-size:large;font-weight:bold;">'
+														+ '<div class="ui-block-b grids"><div class="ui-body ui-body-d"><p style="white-space:normal;">'
 														+ tmpName
 														+ '</p><p><img src="img/'
 														+ tmpNote
-														+ '-stars.png" style="width: 50%;"/></p></div></div>'
+														+ '-stars.png" style="width: 80px;"/></p></div></div>'
 														+ '</div></li>');
 
 								$('#store-data')
@@ -93,9 +93,9 @@ function dbReady() {
 														+ '<div class="ui-block-a grids"><div class="ui-body ui-body-d"><img src="img/'
 														+ tmpWifi
 														+ '.png"/></div></div>'
-														+ '<div class="ui-block-b"><div class="ui-body ui-body-d"><span style="font-size:16px;font-weight:bold;">Distance : '
+														+ '<div class="ui-block-b grids"><div class="ui-body ui-body-d"><p>Distance : '
 														+ tmpDistance
-														+ '</span></div></div>'
+														+ '</p></div></div>'
 														+ '</div></li>');
 								$('#store-data').append(
 										'<li style="white-space:normal;"><span style="font-weight:bold;">Address :</span>'
@@ -215,16 +215,8 @@ function displayList() {
 	$.mobile.loading('hide');
 	$('#store-list').empty();
 	alert(mapInfo.distances.length);
+	
 	for ( var i = 0; i < mapInfo.distances.length; i++) {
-		// old version
-		// var tmpName = storeInfo.result.rows.item(i).name;
-		// var tmpBrand = storeInfo.result.rows.item(i).brand;
-		// var tmpComfort = storeInfo.result.rows.item(i).comfort;
-		// var tmpLocation = storeInfo.result.rows.item(i).location;
-		// var tmpDistance = mapInfo.distances[i].distance;
-
-		// new version
-		// alert(mapInfo.distances[i].id);
 		var tmpId = Number(mapInfo.distances[i].id);
 		// alert(tmpId);
 		var tmpDistance = mapInfo.distances[i].distance;
@@ -232,34 +224,20 @@ function displayList() {
 
 		var tmpName = storeInfo.result.rows.item(tmpId).name;
 		var tmpBrand = storeInfo.result.rows.item(tmpId).brand;
+		var tmpBrand = storeInfo.result.rows.item(tmpId).address;
 		// alert(tmpName + " , " + tmpBrand);
 
 		$('#store-list').append(
-				'<li><a href="#headline" data-transition="slide" data-id="' + i
+				'<li data-icon="false"><a href="#headline" data-transition="slide" data-id="' + i
 						+ '">' + '<img src="img/' + tmpBrand + '.png"/>'
-						+ '<h3>' + tmpName + '</h3>' + '<div id="dist_' + i
-						+ '_">' + tmpDistance + '</div></a></li>');
+						+ '<h3>' + tmpName + '</h3><p></p><span class="ui-li-count">' + tmpDistance + '</span></a></li>');
 	}
 	$('#store-list').listview('refresh');
 }
 
 function gotlog(tx, results) {
-	alert("in gotlog");
-
-	// ***************************
-	// test parsing json file
-	// testjson();
-	// ***************************
-
+//	alert("in gotlog");
 	$('#getLocation').on("tap", getMyPos);
-
-	// $('#change-footer').on("tap", function() {
-	// alert("in change footer");
-	// $("#homefooter").hide();
-	// alert("end change footer");
-	//
-	// });
-
 	if (results.rows.length == 0) {
 		alert("no data");
 		return false;
@@ -286,15 +264,15 @@ function getMyPos() {
 		// set the origin for the distance calc using the geolocation result
 		mapInfo.currentLat = position.coords.latitude;
 		mapInfo.currentLng = position.coords.longitude;
-		alert("real position of the user:" + position.coords.latitude);
-		alert("lat store in map info:" + mapInfo.currentLat);
+		alert("position user lat:" + position.coords.latitude);
+		alert("lat map info:" + mapInfo.currentLat);
 		initDistCalc();
 
 	};
 
 	var onError = function(error) {
-		alert("in error");
-		alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
+		//alert("in error");
+		alert('error code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
 		initDistCalc();
 	};
 
@@ -414,30 +392,4 @@ function jsonpopulate() {
 
 					});
 
-	// db.transaction(function(tx) {
-	// tx.executeSql("select * from store order by id asc", [], gotlog,
-	// errorHandler);
-	// });
-
-	function verify() {
-		// alert("in verify");
-		db.transaction(function(tx) {
-			tx.executeSql("select * from phones", [], displayPhone,
-					errorHandler);
-		});
-	}
-
-	function displayPhone(tx, results) {
-		// alert("in displayPhone");
-		alert(results);
-		if (results.rows.length == 0) {
-			alert("no data");
-			return false;
-		} else {
-			for ( var i = 0; i < results.rows.length; i++) {
-				// alert("in for");
-				// alert(results.rows.item(i).phone);
-			}
-		}
-	}
 }

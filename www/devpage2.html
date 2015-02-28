@@ -28,7 +28,7 @@
 <!-- //////////////////////// HOME PAGE /////////////////////////////////// -->
 
 <div data-role="page" id="homepage">
-<div data-role="header" data-position="fixed" style="overflow: hidden;">
+<div data-role="header" data-position="fixed">
 <div align="center"><img src="img/title-app.png" alt="coffee-app"
 	Style="padding: 5% 0px 3% 0px;" /></div>
 </div>
@@ -38,13 +38,22 @@
 <div class="banner"><img src="img/search-background.png"
 	alt="coffee-app" /></div>
 <!-- image for research bar later --></div>
-<div align="center">
-<button id="getLocation" class="ui-btn">Coffee Shops Near Me</button>
+<div align="center"><button id="getLocation" class="ui-btn">Coffee Shops Near Me</button>
 </div>
 
 <div data-role="content">
 <div class="list-wrapper">
 <ul data-role="listview" id="store-list">
+	<li data-icon="false"><a href="#headline" data-transition="slide"><img
+		src="img/Costa.png" />
+	<h3>Costa Test</h3>
+	<p>1376 Nanjing West Road Jingan, jianpu district</p><span class="ui-li-count">12 km</span></a></li>
+	
+	<li><a href="#headline" data-transition="slide"><img
+		src="img/Costa.png" />
+	<h3>Costa Test</h3>
+	<div>30km</div>
+	</a></li>
 
 	<!-- store list here -->
 </ul>
@@ -55,8 +64,8 @@
 	id="homefooter">
 <div data-role="navbar" class="custom-navbar">
 <ul>
-	<li><a href="#main" data-icon="location" data-transition="slide" class="ui-btn ui-nodisc-icon ui-alt-icon">Map</a></li>
-	<li><a href="#" data-icon="search" data-transition="slide">Filter</a></li>
+	<li><a href="#main">Map</a></li>
+	<li><a href="#">Filter</a></li>
 </ul>
 </div>
 <!-- /first navbar --></div>
