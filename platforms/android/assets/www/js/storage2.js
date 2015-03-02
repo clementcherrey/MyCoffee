@@ -9,6 +9,7 @@ function init() {
 var db;
 
 function deviceready() {
+	// alert("in deviceready");
 	db = window.openDatabase("store", "1.0", "store_list", 10000000);
 	db.transaction(setup, errorHandler, dbReady);
 }
@@ -19,7 +20,7 @@ function setup(tx) {
 					+ 'id INTEGER PRIMARY KEY AUTOINCREMENT, ' + ' name TEXT,'
 					+ ' brand TEXT,' + ' address TEXT,' + ' lat FLOAT,'
 					+ ' lng FLOAT)');
-	alert("table created");
+	// alert("table created");
 
 }
 
@@ -76,10 +77,10 @@ function dbReady() {
 								$('#store-data')
 										.append(
 												'<li><div class="ui-grid-a">'
-														+ '<div class="ui-block-a"><div class="ui-body ui-body-d"><img src="img/'
+														+ '<div class="ui-block-a grids line-1 grid-left""><div class="ui-body ui-body-d"><img src="img/'
 														+ tmpBrand
 														+ '.png"/></div></div>'
-														+ '<div class="ui-block-b grids"><div class="ui-body ui-body-d"><p style="white-space:normal;">'
+														+ '<div class="ui-block-b grids line-1 grid-right"><div class="ui-body ui-body-d"><p>'
 														+ tmpName
 														+ '</p><p><img src="img/'
 														+ tmpNote
@@ -89,10 +90,10 @@ function dbReady() {
 								$('#store-data')
 										.append(
 												'<li><div class="ui-grid-a">'
-														+ '<div class="ui-block-a grids"><div class="ui-body ui-body-d"><img src="img/'
+														+ '<div class="ui-block-a grids line-2 grid-left"><div class="ui-body ui-body-d"><img src="img/'
 														+ tmpWifi
 														+ '.png"/></div></div>'
-														+ '<div class="ui-block-b grids"><div class="ui-body ui-body-d"><p>Distance : '
+														+ '<div class="ui-block-b grids line-2 grid-right"><div class="ui-body ui-body-d"><p>Distance : '
 														+ tmpDistance
 														+ '</p></div></div>'
 														+ '</div></li>');
@@ -210,30 +211,25 @@ function populatedb(tx, results) {
 }
 
 function displayList() {
-	alert("in display");
+	// alert("in display");
 
 	$.mobile.loading('hide');
 	$('#store-list').empty();
-	alert(mapInfo.distances.length);
+	alert("number of line in display: " + mapInfo.distances.length);
 
 	for ( var i = 0; i < mapInfo.distances.length; i++) {
 		var tmpId = Number(mapInfo.distances[i].id);
-		// alert(tmpId);
 		var tmpDistance = mapInfo.distances[i].distance;
-		// alert(tmpId + " , " + tmpDistance);
-
+		// alert(tmpId+ " : " + tmpDistance);
 		var tmpName = storeInfo.result.rows.item(tmpId).name;
 		var tmpBrand = storeInfo.result.rows.item(tmpId).brand;
 		var tmpAddress = storeInfo.result.rows.item(tmpId).address;
-//		alert(tmpBrand);
-//		alert("img/" + tmpBrand + ".png");
-
 		$('#store-list').append(
 				'<li data-icon="false"><a href="#headline" data-transition="slide" data-id="'
 						+ i + '">' + '<img src="img/' + tmpBrand + '.png"/>'
-						+ '<h3>' + tmpName
-						+ '</h3><p>tmpAddress</p><span class="ui-li-count">'
-						+ tmpDistance + '</span></a></li>');
+						+ '<h3>' + tmpName + '</h3><p>' + tmpAddress
+						+ '</p><span class="ui-li-count">' + tmpDistance
+						+ '</span></a></li>');
 	}
 	$('#store-list').listview('refresh');
 }
@@ -296,8 +292,6 @@ function jsonpopulate() {
 											.each(
 													data,
 													function(key, val) {
-//														alert(val.name);
-//														alert(val.brand);
 														tx
 																.executeSql(
 																		"insert into store(name,brand,address,lat,lng) values(?,?,?,?,?)",

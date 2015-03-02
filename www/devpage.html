@@ -4,94 +4,142 @@
 <meta charset="UTF-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, user-scalable=no" />
-	<title>dev page</title>
-	
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-        <style>
-        #content {
-   			 padding: 0;
-   			 position : absolute !important; 
-   			 top : 40px !important;  
-   			 right : 0; 
-   			 bottom : 40px !important;  
-   			 left : 0 !important;     
-			}
-            #map_canvas {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left:0;
-                right:0;
-            }
-        </style>  
-        <script type="text/javascript" src="js/storage2.js"></script>
-        <script type="text/javascript" src="cordova.js"></script>      
-        <script type="text/javascript" src="http://maps.google.cn/maps/api/js?language=en-US&sensor=true"></script>              
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        <script type="text/javascript" src="http://jquery-ui-map.googlecode.com/svn/trunk/ui/min/jquery.ui.map.full.min.js"></script>
-        <script type="text/javascript" src="http://jquery-ui-map.googlecode.com/svn/trunk/ui/jquery.ui.map.extensions.js"></script>
-        <script>
-            $(document).on('pageshow', '#main', function() {  
-              	// $('#map_canvas').gmap();
-               //$('#map_canvas').gmap({ 'center': '31.2000,121.5000' }); 
-               $('#map_canvas').gmap({ 'center': '31.2000,121.5000', 'zoom': 12}); 
-               $('#map_canvas').gmap('addMarker', { 'position': new google.maps.LatLng(31.2000,121.5000)});             
-               // $('#map_canvas').gmap({ 'zoom': 4 });
-               // $('#map_canvas').gmap('refresh');
-            });
-        </script>  
+<title>dev page</title>
+
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/main.css" />
+
+<script type="text/javascript" src="js/storage2.js"></script>
+<script type="text/javascript" src="js/distance.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript"
+	src="http://maps.google.cn/maps/api/js?region=cn&language=en-US&sensor=true"></script>
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript"
+	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="jquery.ui.map.full.min.js"></script>
+<script type="text/javascript" src="jquery.ui.map.extensions.js"></script>
+
 </head>
 
-
 <body onload="init()">
-<div data-role="page" id="homepage">
-<div data-theme="a" data-role="header">
-<h3>Store List</h3>
-</div>
-<div><a href="#main" id="gomap" class="ui-btn">Map </a></div>
-<div data-role="content">
-<div class="list-wrapper">
-<ul data-role="listview" id="store-list">
+<script type="text/javascript">
+	$('#select-choice-1').change(
+			function() {
+				$('#myContent .ui-listview-filter input.ui-input-text').val(
+						$(this).val()).trigger('keyup');
+			});
+</script>
 
+
+
+<!-- //////////////////////// HOME PAGE /////////////////////////////////// -->
+
+<div data-role="page" id="homepage">
+<div data-role="header" data-position="fixed">
+<div align="center"><img src="img/title-app.png" alt="coffee-app"
+	Style="padding: 5% 0px 3% 0px;" /></div>
+</div>
+<!-- /header -->
+
+<div class="wrap">
+<div class="banner"><img src="img/search-background.png"
+	alt="coffee-app" /></div>
+<!-- image for research bar later --></div>
+<div align="center">
+<button id="getLocation" class="ui-btn">Coffee Shops Near Me</button>
+</div>
+
+<div data-role="content">
+ <select name="select-choice-1" id="select-choice-1">
+        <option value="">select</option>
+        <option value="Costa">Costa</option>
+        <option value="Starbucks">Starbucks</option>
+  </select>
+<div class="list-wrapper"  id="myContent">
+<ul data-role="listview" data-filter="true" id="store-list">
+	<li data-filtertext="Costa" data-icon="false"><a href="#headline"
+		data-transition="slide"><img src="img/Costa.png" />
+	<h3>Costa Test</h3>
+	<p>1376 Nanjing West Road Jingan, jianpu district</p>
+	<span class="ui-li-count">12 km</span></a></li>
+
+	<li data-filtertext="Starbucks"><a href="#headline"
+		data-transition="slide"><img src="img/Costa.png" />
+	<h3>Costa Test</h3>
+	<div>30km</div>
+	</a></li>
+
+	<!-- store list here -->
 </ul>
 </div>
+<!-- /list wrapper --></div>
+<!-- /content -->
+<div data-theme="a" data-role="footer" data-position="fixed"
+	id="homefooter">
+<div data-role="navbar" class="custom-navbar">
+<ul>
+	<li><a href="#main">Map</a></li>
+	<li><a href="#">Filter</a></li>
+</ul>
 </div>
+<!-- /first navbar --></div>
+<!-- /footer --></div>
+<!-- /home page -->
 
-<div data-theme="a" data-role="footer">
-<h1>Copyright 2013</h1>
-</div>
-</div>
+
+
+<!-- //////////////////////// HEADLINE /////////////////////////////////// -->
 
 <div data-role="page" id="headline">
-<div data-theme="a" data-role="header"><a href="#homepage"
-	class="ui-btn-left" data-transition="slide" data-direction="reverse">Back</a>
-<h3>Store Info</h3>
-</div>
-<div data-role="content">
-<ul data-role="listview" id="store-data" data-theme="a">
+<div data-role="header" data-position="fixed" class="header-div">
+<h1 class="header-title"></h1>
+<a href="#homepage"
+	class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
+	data-transition="slide" data-direction="reverse"
+	style="border: none; background-color: transparent;"><img
+	src="img/logo-coffee.png" alt="cup-logo"></a></div>
+<!-- /header -->
 
+<div data-role="content">
+<div class="list-wrapper">
+<ul data-role="listview" id="store-data" data-theme="a">
+	<!-- description here -->
 </ul>
 </div>
+<!-- list wrapper --></div>
+<!-- content -->
+
+<div data-role="footer" data-position="fixed"
+	style="text-align: center;"><a href="#main" id="show-map-button"
+	class="ui-btn ui-corner-all ui-shadow"><span>Show on Map</span></a></div>
 </div>
 
+
+
+<!-- //////////////////////// MAIN /////////////////////////////////// -->
+
 <div data-role="page" id="main">
-        <div data-theme="a" data-role="header">
-            <h3>
-                First Page
-            </h3>
-        </div>
+<div data-role="header" data-position="fixed" class="header-div">
+<h1 id="header-title"></h1>
+<a href="#homepage"
+	class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
+	data-transition="slide" data-direction="reverse"
+	style="border: none; background-color: transparent;"><img
+	src="img/logo-coffee.png" alt="cup-logo"></a></div>
+<!-- /header -->
 
-        <div data-role="content" id="content">
-            <div id="map_canvas" style="height:100%"></div>
-        </div>
+<div data-role="content" id="content">
+<div id="map_canvas" style="height: 100%"></div>
+</div>
+<!-- /content -->
+<div data-role="footer" data-position="fixed"
+	style="text-align: center;"><a href="#main" id="show-map-button"
+	class="ui-btn ui-corner-all ui-shadow"><span>My location</span></a></div>
+</div>
+</div>
 
-        <div data-theme="a" data-role="footer" data-position="fixed">
-            <h3>
-                First Page
-            </h3>
-        </div>
-    	</div>
-    
 </body>
 </html>

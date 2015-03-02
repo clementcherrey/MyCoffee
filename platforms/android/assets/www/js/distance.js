@@ -1,9 +1,10 @@
+// ********************* sync the loop to request distances *************************//
 function syncLoop(iterations, process, exit) {
-	alert("in syncLoop");
+//	alert("in syncLoop");
 	var index = 0, done = false, shouldExit = false;
 	var loop = {
 		next : function() {
-			alert("in next");
+//			alert("in next");
 			if (done) {
 				if (shouldExit && exit) {
 					return exit(); // Exit if we're done
@@ -11,8 +12,8 @@ function syncLoop(iterations, process, exit) {
 			}
 			// If we're not finished
 			if (index < iterations) {
-				alert("in if");
-				alert(iterations);
+//				alert("in if");
+//				alert(iterations);
 				index++; // Increment our index
 				process(loop); // Run our process, pass in the loop
 				// Otherwise we're done
@@ -35,14 +36,16 @@ function syncLoop(iterations, process, exit) {
 	return loop;
 }
 
+// ********************* use the sync loop to launch the distances calc
+// *************************//
 function initDistCalc() {
-	alert("in init calc");
+//	alert("in init calc");
 	// only send 20 locations per request for distqnces
 	var divbytwenty = storeInfo.result.rows.length / 20;
 
 	syncLoop(divbytwenty, function(loop) {
 		var j = loop.iteration() * 20;
-		alert("my counter equal" + j);
+//		alert("my counter equal" + j);
 		var tableLatLng = [];
 		for ( var i = 0; i < 20 && i < storeInfo.result.rows.length - j; i++) {
 			var tmpId = j + i;
@@ -51,8 +54,8 @@ function initDistCalc() {
 			var tmpLng = storeInfo.result.rows.item(tmpId).lng;
 			tableLatLng[i] = new google.maps.LatLng(tmpLat, tmpLng);
 		}
-		alert('loop done');
-		alert("length table : " + tableLatLng.length);
+//		alert('loop done');
+//		alert("length table : " + tableLatLng.length);
 		function callnext() {
 			loop.next();
 		}
@@ -61,7 +64,7 @@ function initDistCalc() {
 	}, function() {
 		sortDistance();
 		displayList();
-		Alert('done');
+//		alert('done');
 	});
 }
 
@@ -69,7 +72,7 @@ function initDistCalc() {
 var callbackBase = -20;
 
 function calculateDistances(tableLL, callback) {
-	alert("in calculate");
+//	alert("in calculate");
 	var service = new google.maps.DistanceMatrixService();
 	var origin = new google.maps.LatLng(mapInfo.currentLat, mapInfo.currentLng);
 	service.getDistanceMatrix( {
@@ -80,7 +83,7 @@ function calculateDistances(tableLL, callback) {
 		avoidHighways : false,
 		avoidTolls : false
 	}, function(response, status) {
-		alert("in callbackDistance");
+//		alert("in callbackDistance");
 		if (status != google.maps.DistanceMatrixStatus.OK) {
 			alert('Error was: ' + status);
 		} else {
@@ -95,13 +98,14 @@ function calculateDistances(tableLL, callback) {
 								response.rows[0].elements[i].distance.text)
 					});
 				}
-				// alert('test de distance: ' + mapInfo.distances[i].distance);
 			}
 			callback();
 		}
 	});
 }
 
+// ********************* sort the distance array from close to
+// far*************************//
 function sortDistance() {
 	function compare(a, b) {
 		if (a.distance < b.distance)

@@ -2,6 +2,10 @@
 	
 }
 
+#myContent .ui-listview-filter {
+	display: none;
+}
+
 .ui-footer {
 	position: fixed !important;
 	background: #FFFFFF !important;
@@ -50,28 +54,53 @@
 	width: 100%;
 }
 
+.line-1 {
+	height: 80px;
+}
+
+.line-2 {
+	height: 60px;
+}
+
 .grids {
 	position: relative;
-	height: 80px;
 	width: 100%;
 	padding: 0px;
 	align: center;
 }
 
-.grids div {
+.line-1 div {
 	position: absolute;
 	top: 50%;
-	right: 0px;
-	height: 50px;
-	margin-top: -25px;
+	height: 80px;
+	margin-top: -40px;
 	width: 100%;
 	padding: 0px;
 }
 
+.line-2 div {
+	position: absolute;
+	top: 50%;
+	height: 60px;
+	margin-top: -30px;
+	width: 100%;
+	padding: 0px;
+}
+
+.grid-left div img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.grid-right div {
+	left: 0px;
+}
+
 .grids div p {
-	color: red;
+	color: black;
 	font-size: 18px;
-	font-weight: bold;
+	font-weight: normal;
 	width: 100%;
 	padding: 0px;
 }
