@@ -67,8 +67,10 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/logo-coffee.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/logo-coffee.xcf \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/logo.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/map-me.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/marker-cup.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/mini-starbucks.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/near-me.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/old-cup.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/old-cup.xcf \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/rating_stars_model.png \

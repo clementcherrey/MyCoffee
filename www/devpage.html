@@ -24,13 +24,19 @@
 
 </head>
 
-<body onload="init()">
+<body>
 <script type="text/javascript">
+$(function(){
+	alert("initialize");
 	$('#select-choice-1').change(
 			function() {
-				$('#myContent .ui-listview-filter input.ui-input-text').val(
-						$(this).val()).trigger('keyup');
+				alert("changed happened");
+				var selectval= $(this).val();
+				alert($(".ui-input-search input").data('lastval'));
+				alert($(".ui-input-search input").data('lastval'));
+				$(".ui-input-search input").data('lastval', selectval);
 			});
+});
 </script>
 
 
@@ -52,13 +58,13 @@
 <button id="getLocation" class="ui-btn">Coffee Shops Near Me</button>
 </div>
 
-<div data-role="content">
- <select name="select-choice-1" id="select-choice-1">
-        <option value="">select</option>
-        <option value="Costa">Costa</option>
-        <option value="Starbucks">Starbucks</option>
-  </select>
-<div class="list-wrapper"  id="myContent">
+<div data-role="content"><select name="select-choice-1"
+	id="select-choice-1">
+	<option value="">select</option>
+	<option value="Costa">Costa</option>
+	<option value="Starbucks">Starbucks</option>
+</select>
+<div class="list-wrapper" id="myContent">
 <ul data-role="listview" data-filter="true" id="store-list">
 	<li data-filtertext="Costa" data-icon="false"><a href="#headline"
 		data-transition="slide"><img src="img/Costa.png" />

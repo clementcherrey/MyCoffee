@@ -2,14 +2,14 @@
  * Created by clement on 12/29/14.
  */
 function init() {
-	// alert("in init");
+	alert("in init");
 	document.addEventListener("deviceready", deviceready, true);
 
 }
 var db;
 
 function deviceready() {
-	// alert("in deviceready");
+	alert("in deviceready");
 	db = window.openDatabase("store", "1.0", "store_list", 10000000);
 	db.transaction(setup, errorHandler, dbReady);
 }
@@ -50,13 +50,13 @@ function dbReady() {
 					function() {
 						// alert("in headline before show");
 						$('#store-data').empty();
-						$('#header-title').empty();
+						$('.header-title').empty();
 
 						for ( var i = 0; i < storeInfo.result.rows.length; i++) {
 							if (i == storeInfo.id) {
 								// alert("in the if");
 								var tmpName = storeInfo.result.rows.item(i).name;
-								$('#header-title').append(tmpName);
+								$('.header-title').append(tmpName);
 
 								var tmpBrand = storeInfo.result.rows.item(i).brand;
 								var tmpNote = "4";
@@ -124,62 +124,7 @@ function dbReady() {
 						$('#store-data').listview('refresh');
 					});
 
-	$("#main")
-			.on(
-					'pageshow',
-					function() {
-						// alert("in map show");
-						// test de geolocation
-
-						if (mapInfo.createNb == 0) {
-							var map;
-							var mapOptions = {
-								zoom : mapInfo.mapZoom,
-								center : new google.maps.LatLng(
-										mapInfo.centerLat, mapInfo.centerLng)
-							};
-							map = new google.maps.Map(document
-									.getElementById('map_canvas'), mapOptions);
-							for ( var i = 0; i < storeInfo.result.rows.length; i++) {
-								var tmplat = storeInfo.result.rows.item(i).lat;
-								var tmplng = storeInfo.result.rows.item(i).lng;
-								var tmpLatlng = new google.maps.LatLng(tmplat,
-										tmplng);
-
-								var tmpName = storeInfo.result.rows.item(i).name;
-								var tmpBrand = storeInfo.result.rows.item(i).brand;
-								var tmpAddress = "1376 Nanjing West Road Jingan, jianpu district";
-
-								var contentString = '<div>'
-										+ '<img class="info1" src="img/mini-'
-										+ tmpBrand + '.png"/>' + '<h13>'
-										+ tmpName + '</h3><div>' + tmpAddress
-										+ '</div>';
-
-								var infowindow = new google.maps.InfoWindow( {
-									content : contentString
-								});
-
-								var marker = new google.maps.Marker( {
-									position : tmpLatlng,
-									map : map,
-									icon : 'img/old-cup.png',
-									infowindow : infowindow
-								});
-
-								google.maps.event.addListener(marker, 'click',
-										function() {
-											this.infowindow.open(map, this);
-										});
-							}
-							;
-						} else {
-							// alert("map already created");
-							map.setCenter(new google.maps.LatLng(
-									mapInfo.centerLat, mapInfo.centerLng));
-							map.setZoom(mapInfo.mapZoom);
-						}
-					});
+	$("#main").on('pageshow', initMap);
 }
 
 var storeInfo = {
@@ -197,6 +142,67 @@ var mapInfo = {
 	distances : [],
 	title : "coffee shop in Shanghai"
 };
+
+function initMap() {
+	alert("in intiMap !");
+	if (mapInfo.createNb == 0) {
+		var map;
+		var mapOptions = {
+			zoom : mapInfo.mapZoom,
+			center : new google.maps.LatLng(mapInfo.centerLat,
+					mapInfo.centerLng)
+		};
+		map = new google.maps.Map(document.getElementById('map_canvas'),
+				mapOptions);
+		
+		// button to center the map on the actual location
+		$('#test').on(
+				"tap",
+				function() {
+					alert(" test !");
+					map.setCenter(new google.maps.LatLng(mapInfo.currentLat,
+							mapInfo.currentLng));
+				});
+//		static info window
+		var infoWindow = null;
+		for ( var i = 0; i < storeInfo.result.rows.length; i++) {
+			var tmplat = storeInfo.result.rows.item(i).lat;
+			var tmplng = storeInfo.result.rows.item(i).lng;
+			var tmpLatlng = new google.maps.LatLng(tmplat, tmplng);
+
+			var tmpName = storeInfo.result.rows.item(i).name;
+			var tmpBrand = storeInfo.result.rows.item(i).brand;
+			var tmpAddress = "1376 Nanjing West Road Jingan, jianpu district";
+
+			var contentString = '<div>' + '<img class="info1" src="img/mini-'
+					+ tmpBrand + '.png"/>' + '<h13>' + tmpName + '</h3><div>'
+					+ tmpAddress + '</div>';
+
+
+			infoWindow = new google.maps.InfoWindow({
+			      content: contentString
+			  });
+
+			var marker = new google.maps.Marker( {
+				position : tmpLatlng,
+				map : map,
+				icon : 'img/marker-cup.png'
+//				infowindow : infowindow
+			});
+
+			google.maps.event.addListener(marker, 'click', function() {
+				infoWindow.open(map, this);
+			});
+		}
+		;
+	} else {
+		// alert("map already created");
+		map.setCenter(new google.maps.LatLng(mapInfo.centerLat,
+				mapInfo.centerLng));
+		map.setZoom(mapInfo.mapZoom);
+	}
+
+}
 
 function populatedb(tx, results) {
 	if (results.rows.length == 0) {
@@ -235,8 +241,11 @@ function displayList() {
 }
 
 function gotlog(tx, results) {
-	// alert("in gotlog");
+	alert("in gotlog");
 	$('#getLocation').on("tap", getMyPos);
+
+	
+
 	if (results.rows.length == 0) {
 		alert("no data");
 		return false;
@@ -261,12 +270,11 @@ function getMyPos() {
 		alert('Latitude: ' + position.coords.latitude + '\n' + 'Longitude: '
 				+ position.coords.longitude + '\n');
 		// set the origin for the distance calc using the geolocation result
-		mapInfo.currentLat = position.coords.latitude;
-		mapInfo.currentLng = position.coords.longitude;
-		alert("position user lat:" + position.coords.latitude);
-		alert("lat map info:" + mapInfo.currentLat);
+		// **************uncomment the first two when outside city test is
+		// done**********
+		// mapInfo.currentLat = position.coords.latitude;
+		// mapInfo.currentLng = position.coords.longitude;
 		initDistCalc();
-
 	};
 
 	var onError = function(error) {

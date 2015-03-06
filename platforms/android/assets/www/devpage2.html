@@ -19,12 +19,13 @@
 	src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript"
 	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-<script type="text/javascript" src="jquery.ui.map.full.min.js"></script>
-<script type="text/javascript" src="jquery.ui.map.extensions.js"></script>
+
 
 </head>
 
 <body onload="init()">
+
+
 <!-- //////////////////////// HOME PAGE /////////////////////////////////// -->
 
 <div data-role="page" id="homepage">
@@ -38,12 +39,15 @@
 <div class="banner"><img src="img/search-background.png"
 	alt="coffee-app" /></div>
 <!-- image for research bar later --></div>
-<div align="center">
-<button id="getLocation" class="ui-btn">Coffee Shops Near Me</button>
+<div class="imageContainer">
+<button id="getLocation" class="ui-btn"></button>
+</div>
+<div class="imageContainer">
+<button id="goMap" class="ui-btn" href="#main"></button>
 </div>
 
 <div data-role="content">
-<div class="list-wrapper" >
+<div class="list-wrapper">
 <ul data-role="listview" id="store-list">
 	<!-- store list here -->
 </ul>
@@ -61,9 +65,6 @@
 <!-- /first navbar --></div>
 <!-- /footer --></div>
 <!-- /home page -->
-
-
-
 <!-- //////////////////////// HEADLINE /////////////////////////////////// -->
 
 <div data-role="page" id="headline">
@@ -96,7 +97,7 @@
 
 <div data-role="page" id="main">
 <div data-role="header" data-position="fixed" class="header-div">
-<h1 id="header-title"></h1>
+<h1 class="header-title"></h1>
 <a href="#homepage"
 	class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
 	data-transition="slide" data-direction="reverse"
@@ -109,8 +110,10 @@
 </div>
 <!-- /content -->
 <div data-role="footer" data-position="fixed"
-	style="text-align: center;"><a href="#main" id="show-map-button"
-	class="ui-btn ui-corner-all ui-shadow"><span>My location</span></a></div>
+	style="text-align: center;"><!--<a href="#" class="ui-btn ui-corner-all ui-shadow"><span>My location</span></a>
+-->
+<button id="test" class="ui-btn">My location</button>
+</div>
 </div>
 </div>
 
