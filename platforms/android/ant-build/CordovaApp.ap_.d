@@ -36,6 +36,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/demoJQureymobileMap.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/devpage.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/devpage2.html \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/devpage3.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/index.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/jquery.gmap.js \
@@ -50,6 +51,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/storageList.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/test_jqmap.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/ajax/costa.json \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/ajax/metro.json \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/ajax/phones.json \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/index.css \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/main.css \
@@ -69,6 +71,8 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/logo.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/map-me.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/marker-cup.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/marker.png \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/marker.xcf \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/mini-starbucks.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/near-me.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/old-cup.png \
@@ -83,6 +87,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/wifi.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/img/xigua.png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/distance.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/geocoding.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/index.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/Init.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/main.js \

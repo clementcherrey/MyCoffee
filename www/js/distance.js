@@ -39,10 +39,11 @@ function syncLoop(iterations, process, exit) {
 // ********************* use the sync loop to launch the distances calc
 // *************************//
 function initDistCalc() {
-	alert("in init calc");
+	// alert("in init calc");
 	// only send 20 locations per request for distqnces
+	// alert (storeInfo.result.rows.length);
 	var divbytwenty = storeInfo.result.rows.length / 20;
-	alert(divbytwenty);
+	// alert(divbytwenty);
 	
 	syncLoop(divbytwenty, function(loop) {
 		var j = loop.iteration() * 20;
@@ -73,7 +74,7 @@ function initDistCalc() {
 var callbackBase = -20;
 
 function calculateDistances(tableLL, callback) {
-//	alert("in calculate");
+// alert("in calculate");
 	var service = new google.maps.DistanceMatrixService();
 	var origin = new google.maps.LatLng(mapInfo.currentLat, mapInfo.currentLng);
 	service.getDistanceMatrix( {
@@ -84,13 +85,14 @@ function calculateDistances(tableLL, callback) {
 		avoidHighways : false,
 		avoidTolls : false
 	}, function(response, status) {
-		alert("in callbackDistance");
+		// alert("in callbackDistance");
 		if (status != google.maps.DistanceMatrixStatus.OK) {
-			alert('Error was: ' + status);
+			// alert('Error was: ' + status);
 		} else {
+			// alert("in else");
 			callbackBase += 20;
 			for ( var i = 0; i < response.rows[0].elements.length; i++) {
-//				alert (response.rows[0].elements[i].status);
+		// alert (response.rows[0].elements[i].status);
 				var valueId = callbackBase + i;
 				if (true) {
 					mapInfo.distances.push( {
@@ -105,7 +107,7 @@ function calculateDistances(tableLL, callback) {
 	});
 }
 
-// ****** sort the distance array from close to far**************//
+// ****** sort the distance array from close to far ******//
 function sortDistance() {
 	function compare(a, b) {
 		if (a.distance < b.distance)

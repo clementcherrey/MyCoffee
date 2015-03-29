@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="css/main.css" />
 
 <script type="text/javascript" src="js/storage2.js"></script>
+<script type="text/javascript" src="js/storage3.js"></script>
+<script type="text/javascript" src="js/geocoding.js"></script>
 <script type="text/javascript" src="js/distance.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript"
@@ -24,22 +26,20 @@
 </head>
 
 <body onload="init()">
-
 <!-- //////////////////////// HOME PAGE /////////////////////////////////// -->
-
 <div data-role="page" id="homepage">
 <div data-role="header" data-position="fixed">
 <div align="center"><img src="img/title-app.png" alt="coffee-app"
 	Style="padding: 5% 0px 3% 0px;" /></div>
 </div>
-<!-- /header -->	
+<!-- /header -->
 
 <div class="wrap">
 <div class="banner"><img src="img/search-background.png"
 	alt="coffee-app" /></div>
 <!-- image for research bar later --></div>
 <div class="imageContainer">
-<button id="getLocation" class="ui-btn"></button>
+<button id="getClosest" class="ui-btn"></button>
 </div>
 <div class="imageContainer">
 <a id="goMap" class="ui-btn" href="#main"></a>
@@ -64,57 +64,5 @@
 <!-- /first navbar --></div>
 <!-- /footer --></div>
 <!-- /home page -->
-<!-- //////////////////////// HEADLINE /////////////////////////////////// -->
-
-<div data-role="page" id="headline">
-<div data-role="header" data-position="fixed" class="header-div">
-<h1 class="header-title"></h1>
-<a href="#homepage"
-	class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
-	data-transition="slide" data-direction="reverse"
-	style="border: none; background-color: transparent;"><img
-	src="img/logo-coffee.png" alt="cup-logo"></a></div>
-<!-- /header -->
-
-<div data-role="content">
-<div class="list-wrapper">
-<ul data-role="listview" id="store-data" data-theme="a">
-	<!-- description here -->
-</ul>
-</div>
-<!-- list wrapper --></div>
-<!-- content -->
-
-<div data-role="footer" data-position="fixed"
-	style="text-align: center;" ><a href="#main" id="show-map-button"
-	class="ui-btn ui-corner-all ui-shadow"><span>Show on Map</span></a></div>
-</div>
-
-
-
-<!-- //////////////////////// MAIN /////////////////////////////////// -->
-
-<div data-role="page" id="main">
-<div data-role="header" data-position="fixed" class="header-div">
-<h1 class="header-title"></h1>
-<a href="#homepage"
-	class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
-	data-transition="slide" data-direction="reverse"
-	style="border: none; background-color: transparent;"><img
-	src="img/logo-coffee.png" alt="cup-logo"></a></div>
-<!-- /header -->
-
-<div data-role="content" id="content">
-<div id="map_canvas" style="height: 100%"></div>
-</div>
-<!-- /content -->
-<div data-role="footer" data-position="fixed"
-	style="text-align: center;"><!--<a href="#" class="ui-btn ui-corner-all ui-shadow"><span>My location</span></a>
--->
-<button id="test" class="ui-btn">My location</button>
-</div>
-</div>
-</div>
-
 </body>
 </html>

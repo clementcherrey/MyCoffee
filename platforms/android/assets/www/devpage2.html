@@ -25,7 +25,6 @@
 
 <body onload="init()">
 
-
 <!-- //////////////////////// HOME PAGE /////////////////////////////////// -->
 
 <div data-role="page" id="homepage">
@@ -33,7 +32,7 @@
 <div align="center"><img src="img/title-app.png" alt="coffee-app"
 	Style="padding: 5% 0px 3% 0px;" /></div>
 </div>
-<!-- /header -->
+<!-- /header -->	
 
 <div class="wrap">
 <div class="banner"><img src="img/search-background.png"
@@ -43,7 +42,7 @@
 <button id="getLocation" class="ui-btn"></button>
 </div>
 <div class="imageContainer">
-<button id="goMap" class="ui-btn" href="#main"></button>
+<a id="goMap" class="ui-btn" href="#main"></a>
 </div>
 
 <div data-role="content">
@@ -55,7 +54,7 @@
 <!-- /list wrapper --></div>
 <!-- /content -->
 <div data-theme="a" data-role="footer" data-position="fixed"
-	id="homefooter">
+	id="homefooter" hidden="true">
 <div data-role="navbar" class="custom-navbar">
 <ul>
 	<li><a href="#main">Map</a></li>
@@ -87,7 +86,7 @@
 <!-- content -->
 
 <div data-role="footer" data-position="fixed"
-	style="text-align: center;"><a href="#main" id="show-map-button"
+	style="text-align: center;" ><a href="#main" id="show-map-button"
 	class="ui-btn ui-corner-all ui-shadow"><span>Show on Map</span></a></div>
 </div>
 
