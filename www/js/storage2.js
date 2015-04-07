@@ -3,28 +3,59 @@
  */
  function init() {
  	alert("in init");
- 	document.addEventListener("deviceready", deviceready, true);
+ 	//for browser
+$( document ).ready(function() {
+		// alert( " storage 2, doc ready!" );
+		deviceready();
+	}); 	
 
+ 	//for phone
+ 	document.addEventListener("deviceready", deviceready, true);
  }
  var db;
 
  function deviceready() {
- 	alert("in deviceready");
+ 	// alert("in deviceready");
  	db = window.openDatabase("store", "1.0", "store_list", 10000000);
  	db.transaction(setup, errorHandler, dbReady);
  }
 
  function setup(tx) {
- 	tx
- 	.executeSql('create table if not exists store('
- 		+ 'id INTEGER PRIMARY KEY AUTOINCREMENT, ' + ' name TEXT,'
- 		+ ' brand TEXT,' + ' address TEXT,' + ' lat FLOAT,'
+
+ // suppress drop table
+ tx.executeSql('DROP TABLE store');
+ tx.executeSql('DROP TABLE subway');
+
+ 	tx.executeSql('create table if not exists store('
+ 		+ ' id INTEGER PRIMARY KEY, ' 
+ 		+ ' wifi TEXT,'
+ 		+ ' latte TEXT,'
+ 		+ ' name TEXT,'
+ 		+ ' brand TEXT,' 
+ 		+ ' address TEXT,' 
+ 		+ ' lat FLOAT,'
  		+ ' lng FLOAT)');
- 	alert("table 1 created");
 
  	tx.executeSql('create table if not exists contentList('
- 		+ 'id INTEGER PRIMARY KEY,' + 'content TEXT)');
- 	alert("table 2 created");
+ 		+ 'id INTEGER PRIMARY KEY,' 
+ 		+ 'content TEXT)');
+
+ 	tx.executeSql('create table if not exists subway('
+ 		+ ' id INTEGER PRIMARY KEY,' 
+ 		+ ' station TEXT,' 
+ 		+ ' line INTEGER'
+ 		+ ' lat FLOAT,'
+ 		+ ' lng FLOAT)');
+
+ 	tx.executeSql('create table if not exists storeSub('
+ 		+'storeId INTEGER NOT NULL,' 
+ 		+'subwayId INTEGER NOT NULL,'
+ 		+'distance TEXT,' 
+ 		+'FOREIGN KEY (storeId) REFERENCES store (id),' 
+ 		+'FOREIGN KEY (subwayId) REFERENCES subway (id),' 
+ 		+'PRIMARY KEY (storeId, subwayId))');
+ 	 
+ 	 // alert("table joint created");
  }
 
  function errorHandler(e) {
@@ -32,7 +63,7 @@
  }
 
  function dbReady() {
- 	loadOldList();
+ 	// loadOldList();
 	// alert("in db ready");
 	db.transaction(function(tx) {
 		tx.executeSql("select * from store order by id asc", [], populatedb,
@@ -40,9 +71,9 @@
 	});
 
 	$("#store-list").on('vclick', 'li a', function() {
-		alert("click detected");
+		// alert("click detected");
 		storeInfo.id = $(this).attr('data-id');
-		alert(storeInfo.id);
+		// alert(storeInfo.id);
 		$("body").pagecontainer("change", "#headline", {
 			role : "page"
 		});
@@ -52,13 +83,13 @@
 	.on(
 		'pagebeforeshow',
 		function() {
-						alert("in headline before show");
+						// alert("in headline before show");
 						$('#store-data').empty();
 						$('.header-title').empty();
 
 						for ( var i = 0; i < storeInfo.result.rows.length; i++) {
 							if (i == storeInfo.id) {
-								alert("in the if");
+								// alert("in the if");
 								var tmpName = storeInfo.result.rows.item(i).name;
 								$('.header-title').append(tmpName);
 
@@ -73,7 +104,7 @@
 								var tmpDistance = "33 km";
 								var tmpPrice = "$$$";
 								var tmpSubwayLine = "2";
-								alert("lol");
+								// alert("lol");
 
 								mapInfo.centerLat = storeInfo.result.rows
 								.item(i).lat;
@@ -85,20 +116,20 @@
 
 								$('#store-data')
 								.append(
-									'<li><div class = "container1">'
-									+ '<div><p>'
-									+ tmpName
-									+ '</p><p><img src="img/'
-									+ tmpNote
-									+ '-stars.png" style="width: 80px;"/></p></div></div>'
+									'<li>'
 									+ '<div class="container2"><img src="img/'
 									+ tmpBrand
 									+ '.png"/></div>'
+									+ '<div class = "container1"><div><p>'
+									+ tmpName
+									+ '</p><p><img src="img/'
+									+ tmpNote
+									+ '-stars.png" style="width: 80px;"/></p></div></div>'						
 									+ '</li>');
 
 								$('#store-data')
 								.append(
-									'<li><div class="ui-grid-b">'
+									'<li class="containerWifi"><div class="ui-grid-b">'
 									+ '<div class="ui-block-a grids"><div class="ui-body ui-body-d"><p>From your location:</p><p>'
 									+ tmpDistance
 									+ '</p></div></div>'
@@ -163,10 +194,11 @@ var mapInfo = {
 	maxLng : 122.493735
 };
 
+var map;
 function initMap() {
 	alert("in intiMap !");
 	if (mapInfo.createNb == 0) {
-		var map;
+		alert("in no map created !");
 		var mapOptions = {
 			zoom : mapInfo.mapZoom,
 			center : new google.maps.LatLng(mapInfo.centerLat,
@@ -179,7 +211,7 @@ function initMap() {
 		$('#test').on(
 			"tap",
 			function() {
-				alert(" test !");
+			//	alert(" test !");
 				map.setCenter(new google.maps.LatLng(mapInfo.currentLat,
 					mapInfo.currentLng));
 			});
@@ -210,14 +242,19 @@ function initMap() {
 				icon : 'img/marker.png',
 				content : contents[i]
 			}));
-//			alert(markers[i].content);
+			console.log("marker i content: "+ markers[i].content);
+			console.log("marker 0 content: "+ markers[0].content);
+		}
+		for ( var i = 0; i < storeInfo.result.rows.length; i++) {
 			google.maps.event.addListener(markers[i], 'click',  function(){
-			infoWindow.content = this.content;
+			infoWindow.content = "YO";
+			infoWindow.setContent(this.content);
 			infoWindow.open(map, this);
 			});
 		};
+		mapInfo.createNb++;
 } else {
-		// alert("map already created");
+		alert("map already created");
 		map.setCenter(new google.maps.LatLng(mapInfo.centerLat,
 			mapInfo.centerLng));
 		map.setZoom(mapInfo.mapZoom);
@@ -227,7 +264,7 @@ function initMap() {
 
 function populatedb(tx, results) {
 	if (results.rows.length == 0) {
-		alert("no data");
+		// alert("no data");
 		jsonpopulate();
 	} else {
 		//old version data loading
@@ -247,12 +284,13 @@ function displayList() {
 		var tmpId = Number(mapInfo.distances[i].id);
 		var tmpDistance = mapInfo.distances[i].distance;
 		// alert(tmpId+ " : " + tmpDistance);
+		var myId = storeInfo.result.rows.item(tmpId).id;
 		var tmpName = storeInfo.result.rows.item(tmpId).name;
 		var tmpBrand = storeInfo.result.rows.item(tmpId).brand;
 		var tmpAddress = storeInfo.result.rows.item(tmpId).address;
 		$('#store-list').append(
 			'<li data-icon="false"><a href="#headline" data-transition="slide" data-id="'
-			+ i + '">' + '<img src="img/' + tmpBrand + '.png"/>'
+			+ myId + '">' + '<img src="img/' + tmpBrand + '.png"/>'
 			+ '<h3>' + tmpName + '</h3><p>' + tmpAddress
 			+ '</p><span class="ui-li-count">' + tmpDistance
 			+ '</span></a></li>');
@@ -291,28 +329,24 @@ function loadOldList(){
 
 
 function gotlog(tx, results) {
-	alert("in gotlog");
+	console.log("in gotlog");
 	$('#getLocation').on("tap", getMyPos);
-
-	// $('#getClosest').on("tap", jsonTransform);
-
-
-	if (results.rows.length == 0) {
+	if (results.rows.length == 0) {	
 		alert("no data");
 		return false;
 	} else {
-		//alert("in got log else");
 		storeInfo.result = results;
-		//alert(storeInfo.result);
-		alert(storeInfo.result.rows.length);
-
+		console.log("storeInfo length : "+ storeInfo.result.rows.length);
+		console.log("item id 0 in storeInfo : "+ storeInfo.result.rows.item(0).name);
 	}
 };
 
 function getMyPos() {
 	// hide button for geolocation
-	$("#getLocation").hide();
-	$("#goMap").hide();
+
+	$("#twobutt").empty();
+	// $("#getLocation").hide();
+	// $("#goMap").hide();
 	// show footer
 	$("#homefooter").show();
 
@@ -360,32 +394,32 @@ function getMyPos() {
 }
 
 function jsonpopulate() {
-	alert("in json function");
+	// alert("in json function");
 	$
 	.getJSON(
 		"ajax/costa.json",
 		function(data) {
-			alert(data);
+			// alert(data);
 			db
 			.transaction(function(tx) {
-				$
-				.each(
-					data,
+				$.each(data,
 					function(key, val) {
 						tx
 						.executeSql(
-							"insert into store(name,brand,address,lat,lng) values(?,?,?,?,?)",
+							"insert into store(id,wifi,latte,brand,name,address,lat,lng) values(?,?,?,?,?,?,?,?)",
 							[
-							val.name,
+							val.id,
+							val.wifi,
+							val.latte,
 							val.brand,
+							val.name,
 							val.address,
 							val.lat,
 							val.lng ]);
 					});
 
-				tx
-				.executeSql(
-					"select * from store order by id asc",
+				// alert("after insert");
+				tx.executeSql("select * from store",
 					[], gotlog, errorHandler);
 			});
 

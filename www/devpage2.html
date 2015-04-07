@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-<meta charset="UTF-8">
-<meta name="viewport"
+	<meta charset="UTF-8">
+	<meta name="viewport"
 	content="width=device-width, initial-scale=1.0, user-scalable=no" />
-<title>dev page</title>
+	<title>dev page</title>
 
-<link rel="stylesheet"
+	<link rel="stylesheet"
 	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/main.css" />
 
-<script type="text/javascript" src="js/storage2.js"></script>
-<script type="text/javascript" src="js/distance.js"></script>
-<script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript"
+	<script type="text/javascript" src="js/storage2.js"></script>
+	<script type="text/javascript" src="js/distance.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript"
 	src="http://maps.google.cn/maps/api/js?region=cn&language=en-US&sensor=true"></script>
-<script type="text/javascript"
+	<script type="text/javascript"
 	src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script type="text/javascript"
+	<script type="text/javascript"
 	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 
@@ -25,90 +25,98 @@
 
 <body onload="init()">
 
-<!-- //////////////////////// HOME PAGE /////////////////////////////////// -->
+	<!-- //////////////////////// HOME PAGE /////////////////////////////////// -->
 
-<div data-role="page" id="homepage">
-<div data-role="header" data-position="fixed">
-<div align="center"><img src="img/title-app.png" alt="coffee-app"
-	Style="padding: 5% 0px 3% 0px;" /></div>
-</div>
-<!-- /header -->	
+	<div data-role="page" id="homepage">
+		<div data-role="header" data-position="fixed">
+			<div align="center"><img src="img/title-app.png" alt="coffee-app"
+				Style="padding: 5% 0px 3% 0px;" />
+			</div>
+		</div>
+			<!-- /header -->	
+			<!-- image for research bar later -->
+		<div class="wrap">
+			<div class="banner">
+				<div id="inputdiv">
+					 <input type="search" name="search-1" id="search-1" value="">
+				</div>
+			</div>
+		</div>
 
-<div class="wrap">
-<div class="banner"><img src="img/search-background.png"
-	alt="coffee-app" /></div>
-<!-- image for research bar later --></div>
-<div class="imageContainer">
-<button id="getLocation" class="ui-btn"></button>
-</div>
-<div class="imageContainer">
-<a id="goMap" class="ui-btn" href="#main"></a>
-</div>
+		<!-- 2 buttons for first visist -->
+		<div id="twobutt">
+			<div class="imageContainer">
+				<button id="getLocation" class="ui-btn"></button>
+			</div>
+			<div class="imageContainer">
+				<a id="goMap" class="ui-btn" href="#main"></a>
+			</div>
+		</div>
 
-<div data-role="content">
-<div class="list-wrapper">
-<ul data-role="listview" id="store-list">
-	<!-- store list here -->
-</ul>
-</div>
-<!-- /list wrapper --></div>
-<!-- /content -->
-<div data-theme="a" data-role="footer" data-position="fixed"
-	id="homefooter" hidden="true">
-<div data-role="navbar" class="custom-navbar">
-<ul>
-	<li><a href="#main">Map</a></li>
-	<li><a href="#">Filter</a></li>
-</ul>
-</div>
-<!-- /first navbar --></div>
-<!-- /footer --></div>
-<!-- /home page -->
-<!-- //////////////////////// HEADLINE /////////////////////////////////// -->
+		<div data-role="content">
+			<div class="list-wrapper">
+				<ul data-role="listview" id="store-list">
+					<!-- store list here -->
+				</ul>
+			</div>
+			<!-- /list wrapper --></div>
+			<!-- /content -->
+			<div data-theme="a" data-role="footer" data-position="fixed"
+			id="homefooter" hidden="true">
+			<div data-role="navbar" class="custom-navbar">
+				<ul>
+					<li><a href="#main">Map</a></li>
+					<li><a href="#">More</a></li>
+				</ul>
+			</div>
+			<!-- /first navbar --></div>
+			<!-- /footer --></div>
+			<!-- /home page -->
+			<!-- //////////////////////// HEADLINE /////////////////////////////////// -->
 
-<div data-role="page" id="headline">
-<div data-role="header" data-position="fixed" class="header-div">
-<h1 class="header-title"></h1>
-<a href="#homepage"
-	class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
-	data-transition="slide" data-direction="reverse"
-	style="border: none; background-color: transparent;"><img
-	src="img/logo-coffee.png" alt="cup-logo"></a></div>
-<!-- /header -->
+			<div data-role="page" id="headline">
+				<div data-role="header" data-position="fixed" class="header-div">
+					<h1 class="header-title"></h1>
+					<a href="#homepage"
+					class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
+					data-transition="slide" data-direction="reverse"
+					style="border: none; background-color: transparent;"><img
+					src="img/logo-coffee.png" alt="cup-logo"></a></div>
+					<!-- /header -->
 
-<div data-role="content">
-<div class="list-wrapper">
-<ul data-role="listview" id="store-data" data-theme="a">
-	<!-- description here -->
-</ul>
-</div>
-<!-- list wrapper --></div>
-<!-- content -->
+					<div data-role="content">
+						<div class="list-wrapper">
+							<ul data-role="listview" id="store-data" data-theme="a">
+								<!-- description here -->
+							</ul>
+						</div>
+						<!-- list wrapper --></div>
+						<!-- content -->
 
-<div data-role="footer" data-position="fixed"
-	style="text-align: center;" ><a href="#main" id="show-map-button"
-	class="ui-btn ui-corner-all ui-shadow"><span>Show on Map</span></a></div>
-</div>
-
+						<div data-role="footer" data-position="fixed"
+						style="text-align: center;" ><a href="#main" id="show-map-button"
+						class="ui-btn ui-corner-all ui-shadow"><span>Show on Map</span></a></div>
+					</div>
 
 
-<!-- //////////////////////// MAIN /////////////////////////////////// -->
 
-<div data-role="page" id="main">
-<div data-role="header" data-position="fixed" class="header-div">
-<h1 class="header-title"></h1>
-<a href="#homepage"
-	class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
-	data-transition="slide" data-direction="reverse"
-	style="border: none; background-color: transparent;"><img
-	src="img/logo-coffee.png" alt="cup-logo"></a></div>
-<!-- /header -->
+					<!-- //////////////////////// MAIN /////////////////////////////////// -->
 
-<div data-role="content" id="content">
-<div id="map_canvas" style="height: 100%"></div>
-</div>
-<!-- /content -->
-<div data-role="footer" data-position="fixed"
+					<div data-role="page" id="main">
+						<div data-role="header" data-position="fixed" class="header-div">
+							<h1 class="header-title"></h1>
+							<a href="#homepage"
+							class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
+							data-transition="slide" data-direction="reverse"
+							style="border: none; background-color: transparent;"><img
+							src="img/logo-coffee.png" alt="cup-logo"></a></div>
+							<!-- /header -->
+
+							<div data-role="content" id="content">
+								<div id="map_canvas" style="height: 100%"></div>
+							</div>
+							<!-- /content -->
+							<div data-role="footer" data-position="fixed"
 	style="text-align: center;"><!--<a href="#" class="ui-btn ui-corner-all ui-shadow"><span>My location</span></a>
 -->
 <button id="test" class="ui-btn">My location</button>

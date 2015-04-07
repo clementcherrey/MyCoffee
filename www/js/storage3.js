@@ -1,6 +1,6 @@
 
 /*
-* prepare teh arry of locations
+* prepare the array of locations
 * fix how the function is called
 */
 function mySubways(){

@@ -20,11 +20,56 @@
  		+ 'id INTEGER PRIMARY KEY AUTOINCREMENT, ' + ' name TEXT,'
  		+ ' brand TEXT,' + ' address TEXT,' + ' lat FLOAT,'
  		+ ' lng FLOAT)');
- 	alert("table 1 created");
+ 	// alert("table store created");
 
  	tx.executeSql('create table if not exists contentList('
  		+ 'id INTEGER PRIMARY KEY,' + 'content TEXT)');
- 	alert("table 2 created");
+ 	// alert("table to save curreng created");
+
+
+ 	tx.executeSql('create table if not exists subway('
+ 		+ 'id INTEGER PRIMARY KEY AUTOINCREMENT,' + 'station TEXT,' +'line INTEGER)');
+	 // alert("table sub created");
+
+ 	tx.executeSql('create table if not exists jointable('
+ 		+'storeId INTEGER NOT NULL,' + 'subwayId INTEGER NOT NULL,'
+ 		+'distance TEXT,' 
+ 		+'FOREIGN KEY (storeId) REFERENCES store (id),' 
+ 		+'FOREIGN KEY (subwayId) REFERENCES subway (id),' 
+ 		+'PRIMARY KEY (storeId, subwayId))');
+ 	 // alert("table joint created");
+
+/////////////////TEST (to delete after)////////
+
+	tx.executeSql("insert into store (name,brand) values(?,?)",
+			["store test", "pacific"]);
+
+
+	tx.executeSql("select * from store", [], function(tx, result){
+				alert("select store");
+				alert(result);
+				alert(result.rows.item(0).name);
+				},
+			errorHandler);
+
+	tx.executeSql("insert into subway (station,line) values(?,?)",
+			["people square", 2]);
+
+
+	tx.executeSql("insert into jointable (storeId,subwayId, distance) values(?,?,?)",
+		[0, 0, "10000km"]);
+
+	tx.executeSql("select * from jointable", [], function(tx, result){
+				alert("select jointable");
+				alert(result.rows.item(0).distance);
+				},
+			errorHandler);
+	alert("insert joint done");
+
+
+
+/////////////////END TEST (to delete after)////////
+
  }
 
  function errorHandler(e) {
@@ -58,7 +103,7 @@
 
 						for ( var i = 0; i < storeInfo.result.rows.length; i++) {
 							if (i == storeInfo.id) {
-								alert("in the if");
+								// alert("in the if");
 								var tmpName = storeInfo.result.rows.item(i).name;
 								$('.header-title').append(tmpName);
 
@@ -73,7 +118,7 @@
 								var tmpDistance = "33 km";
 								var tmpPrice = "$$$";
 								var tmpSubwayLine = "2";
-								alert("lol");
+								// alert("lol");
 
 								mapInfo.centerLat = storeInfo.result.rows
 								.item(i).lat;
@@ -85,20 +130,20 @@
 
 								$('#store-data')
 								.append(
-									'<li><div class = "container1">'
-									+ '<div><p>'
-									+ tmpName
-									+ '</p><p><img src="img/'
-									+ tmpNote
-									+ '-stars.png" style="width: 80px;"/></p></div></div>'
+									'<li>'
 									+ '<div class="container2"><img src="img/'
 									+ tmpBrand
 									+ '.png"/></div>'
+									+ '<div class = "container1"><div><p>'
+									+ tmpName
+									+ '</p><p><img src="img/'
+									+ tmpNote
+									+ '-stars.png" style="width: 80px;"/></p></div></div>'						
 									+ '</li>');
 
 								$('#store-data')
 								.append(
-									'<li><div class="ui-grid-b">'
+									'<li class="containerWifi"><div class="ui-grid-b">'
 									+ '<div class="ui-block-a grids"><div class="ui-body ui-body-d"><p>From your location:</p><p>'
 									+ tmpDistance
 									+ '</p></div></div>'
@@ -179,7 +224,7 @@ function initMap() {
 		$('#test').on(
 			"tap",
 			function() {
-				alert(" test !");
+			//	alert(" test !");
 				map.setCenter(new google.maps.LatLng(mapInfo.currentLat,
 					mapInfo.currentLng));
 			});
@@ -311,8 +356,10 @@ function gotlog(tx, results) {
 
 function getMyPos() {
 	// hide button for geolocation
-	$("#getLocation").hide();
-	$("#goMap").hide();
+
+	$("#twobutt").empty();
+	// $("#getLocation").hide();
+	// $("#goMap").hide();
 	// show footer
 	$("#homefooter").show();
 
