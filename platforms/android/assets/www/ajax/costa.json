@@ -1,5 +1,8 @@
 [
     {
+        "id": "0",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Zhangjiang Pudong Software Park No.2",
         "lat": "31.230416",
@@ -8,6 +11,9 @@
         "phone": "021-5135 5819"
     },
     {
+        "id": "1",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa XiangCheng",
         "lat": "31.224105",
@@ -16,6 +22,9 @@
         "phone": "021-5081 1182"
     },
     {
+        "id": "2",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Tesco GuangXin",
         "lat": "31.226766",
@@ -24,6 +33,9 @@
         "phone": "021-5294 4019"
     },
     {
+        "id": "3",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa SMG",
         "lat": "31.231518",
@@ -32,6 +44,9 @@
         "phone": "021-6256 5899-5777"
     },
     {
+        "id": "4",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa New World PT",
         "lat": "31.242875",
@@ -40,6 +55,9 @@
         "phone": "021-5291 9871"
     },
     {
+        "id": "5",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Zizhu Park",
         "lat": "31.0225794793",
@@ -48,6 +66,9 @@
         "phone": "021-5458 3763"
     },
     {
+        "id": "6",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Fund Building",
         "lat": "31.22405",
@@ -56,6 +77,9 @@
         "phone": "021-6045 6277"
     },
     {
+        "id": "7",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Gubei Carrefour",
         "lat": "31.197146",
@@ -64,6 +88,9 @@
         "phone": "021-62186193"
     },
     {
+        "id": "8",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa HQ-SMG",
         "lat": "31.203405",
@@ -72,6 +99,9 @@
         "phone": "021-6278 8177-3281"
     },
     {
+        "id": "9",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Xingmei",
         "lat": "31.106063",
@@ -80,6 +110,9 @@
         "phone": "021-2428 5101"
     },
     {
+        "id": "10",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Hongqiao Airport 2",
         "lat": "31.198853",
@@ -88,6 +121,9 @@
         "phone": "021-2238 2406"
     },
     {
+        "id": "11",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Bund Square",
         "lat": "31.19342",
@@ -96,6 +132,9 @@
         "phone": "021-5307 8562"
     },
     {
+        "id": "12",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa K11",
         "lat": "31.226454",
@@ -104,6 +143,9 @@
         "phone": "021-6312 9135"
     },
     {
+        "id": "13",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa DBS",
         "lat": "31.241793",
@@ -112,6 +154,9 @@
         "phone": "021-6087 5383"
     },
     {
+        "id": "14",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Changning New World Store",
         "lat": "31.219279",
@@ -120,6 +165,9 @@
         "phone": "021-5238 1955"
     },
     {
+        "id": "15",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa 9 Joy Plaza",
         "lat": "31.219701",
@@ -128,6 +176,9 @@
         "phone": "021-5238 2901"
     },
     {
+        "id": "16",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Ruihong Newcity",
         "lat": "31.262228",
@@ -136,6 +187,9 @@
         "phone": "021-6580 8180"
     },
     {
+        "id": "17",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Dingxi RD",
         "lat": "31.204286",
@@ -144,6 +198,9 @@
         "phone": "021-52300972"
     },
     {
+        "id": "18",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Tesco Qibao",
         "lat": "31.158263",
@@ -152,6 +209,9 @@
         "phone": "021-5486 7152"
     },
     {
+        "id": "19",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Zhangjiang Runhe",
         "lat": "31.190428",
@@ -160,6 +220,9 @@
         "phone": "021-5077 0854"
     },
     {
+        "id": "20",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Shanghai Bailian Expo",
         "lat": "31.1867802558",
@@ -168,6 +231,9 @@
         "phone": "021-3107 8732"
     },
     {
+        "id": "21",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Buynow",
         "lat": "31.19085",
@@ -176,6 +242,9 @@
         "phone": "021-6085 7631"
     },
     {
+        "id": "22",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Fenyang Road",
         "lat": "31.214637",
@@ -184,6 +253,9 @@
         "phone": "021-6422 6862"
     },
     {
+        "id": "23",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa F1",
         "lat": "31.337217",
@@ -192,6 +264,9 @@
         "phone": "021-6956 8530"
     },
     {
+        "id": "24",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Xiandai Building",
         "lat": "31.247296",
@@ -200,6 +275,9 @@
         "phone": "021-6230 8225"
     },
     {
+        "id": "25",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa crystal",
         "lat": "31.235516",
@@ -208,6 +286,9 @@
         "phone": "021-6136 1403"
     },
     {
+        "id": "26",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa YUEXING",
         "lat": "31.241206",
@@ -216,6 +297,9 @@
         "phone": "021-6214 5972"
     },
     {
+        "id": "27",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Station 85",
         "lat": "31.221903",
@@ -224,6 +308,9 @@
         "phone": "021-5403 0089"
     },
     {
+        "id": "28",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Huacao",
         "lat": "31.2053503982",
@@ -232,6 +319,9 @@
         "phone": "021-6465 1330"
     },
     {
+        "id": "29",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Hongkou park",
         "lat": "31.260504",
@@ -240,6 +330,9 @@
         "phone": "021-6605 3389"
     },
     {
+        "id": "30",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Shanghai YaJuLe",
         "lat": "31.236556",
@@ -248,6 +341,9 @@
         "phone": "021-5308 8773"
     },
     {
+        "id": "31",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa JSWB（HQ）",
         "lat": "31.207516",
@@ -256,6 +352,9 @@
         "phone": "021-3252 1867"
     },
     {
+        "id": "32",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa XinTianDi",
         "lat": "31.217591",
@@ -264,6 +363,9 @@
         "phone": "021-3366 0057"
     },
     {
+        "id": "33",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa SJ PingGao",
         "lat": "31.007169",
@@ -272,6 +374,9 @@
         "phone": "021-6776 0458"
     },
     {
+        "id": "34",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa IFC",
         "lat": "31.240398",
@@ -280,6 +385,9 @@
         "phone": "021-5011 7436"
     },
     {
+        "id": "35",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Hongfeng",
         "lat": "31.241829",
@@ -288,6 +396,9 @@
         "phone": "021-5899 0226"
     },
     {
+        "id": "36",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa CITIC Square",
         "lat": "31.228986",
@@ -296,6 +407,9 @@
         "phone": "021-5239 9185"
     },
     {
+        "id": "37",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Bund",
         "lat": "31.240857",
@@ -304,6 +418,9 @@
         "phone": "021-5321 0007"
     },
     {
+        "id": "38",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Imago",
         "lat": "31.23849",
@@ -312,6 +429,9 @@
         "phone": "021-3252 0392"
     },
     {
+        "id": "39",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Citic Plaza",
         "lat": "31.249094",
@@ -320,6 +440,9 @@
         "phone": "021-5698 2819"
     },
     {
+        "id": "40",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Ciros",
         "lat": "31.234968",
@@ -328,6 +451,9 @@
         "phone": "021-6334 6035"
     },
     {
+        "id": "41",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Ascendes",
         "lat": "31.216013",
@@ -336,6 +462,9 @@
         "phone": "021-6426 8826"
     },
     {
+        "id": "42",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Huaning Hongji CLD Store",
         "lat": "31.227206",
@@ -344,6 +473,9 @@
         "phone": "021-6212 8618"
     },
     {
+        "id": "43",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Bailian Onecity",
         "lat": "31.302095",
@@ -352,6 +484,9 @@
         "phone": "021-5523 3015"
     },
     {
+        "id": "44",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Hongqiao HUB2",
         "lat": "31.19268",
@@ -360,6 +495,9 @@
         "phone": "021-5471 6359/9079"
     },
     {
+        "id": "45",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Youyou",
         "lat": "31.208911",
@@ -368,6 +506,9 @@
         "phone": "021-6873 9675"
     },
     {
+        "id": "46",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa South Bailian",
         "lat": "31.134958",
@@ -376,6 +517,9 @@
         "phone": "021-3453 2153"
     },
     {
+        "id": "47",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Oriental Department",
         "lat": "31.193971",
@@ -384,6 +528,9 @@
         "phone": "021-6469 3630"
     },
     {
+        "id": "48",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Ramada",
         "lat": "31.238876",
@@ -392,6 +539,9 @@
         "phone": "021-6351 2916"
     },
     {
+        "id": "49",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Z Star Plaza",
         "lat": "31.159116856",
@@ -400,6 +550,9 @@
         "phone": "021-6482 6126"
     },
     {
+        "id": "50",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Wujiaochangwanda",
         "lat": "31.301508",
@@ -408,6 +561,9 @@
         "phone": "021-6537 9893"
     },
     {
+        "id": "51",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa HongMei Rd",
         "lat": "31.188868",
@@ -416,6 +572,9 @@
         "phone": "021-6406 5909"
     },
     {
+        "id": "52",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Shanghai Hongqiao Airport 3",
         "lat": "31.194708",
@@ -424,6 +583,9 @@
         "phone": "021-2238 2570"
     },
     {
+        "id": "53",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa iapm",
         "lat": "31.2145677874",
@@ -432,6 +594,9 @@
         "phone": "021-6416 0683"
     },
     {
+        "id": "54",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Bank Plaza",
         "lat": "31.239624",
@@ -440,6 +605,9 @@
         "phone": "021-3475 7177"
     },
     {
+        "id": "55",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Linkong",
         "lat": "31.231353",
@@ -448,6 +616,9 @@
         "phone": "021-6230 7821"
     },
     {
+        "id": "56",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Life Hub",
         "lat": "31.257569",
@@ -456,6 +627,9 @@
         "phone": "021-2023 3063"
     },
     {
+        "id": "57",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Jiefang Building",
         "lat": "31.105328",
@@ -464,6 +638,9 @@
         "phone": "021-3497 8366"
     },
     {
+        "id": "58",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Gucun Park",
         "lat": "31.3441559529",
@@ -472,6 +649,9 @@
         "phone": "021-6603 3016"
     },
     {
+        "id": "59",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Pudong Airport Free Trade Zone",
         "lat": "31.163166",
@@ -480,6 +660,9 @@
         "phone": "021-5089 5761"
     },
     {
+        "id": "60",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa New World Dept",
         "lat": "31.208746",
@@ -488,6 +671,9 @@
         "phone": "021-5192 5153"
     },
     {
+        "id": "61",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Shanghai Yao Hua",
         "lat": "31.193194",
@@ -496,6 +682,9 @@
         "phone": "021-3107 8731"
     },
     {
+        "id": "62",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Hongqiao SMG",
         "lat": "31.203699",
@@ -504,6 +693,9 @@
         "phone": "021-52895880"
     },
     {
+        "id": "63",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Sinan Villa",
         "lat": "31.216013",
@@ -512,6 +704,9 @@
         "phone": "021-6404 7144"
     },
     {
+        "id": "64",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Jiatinghui Plaza",
         "lat": "31.289168",
@@ -520,6 +715,9 @@
         "phone": "021-6950 3640"
     },
     {
+        "id": "65",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Lianyang",
         "lat": "31.228216",
@@ -528,6 +726,9 @@
         "phone": "021-6866 0886"
     },
     {
+        "id": "66",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa U Way",
         "lat": "31.212361",
@@ -536,6 +737,9 @@
         "phone": "021-3316 1051"
     },
     {
+        "id": "67",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Langao Rd",
         "lat": "31.254762",
@@ -544,6 +748,9 @@
         "phone": "3353 5989"
     },
     {
+        "id": "68",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa South Shopping Mall",
         "lat": "31.13156",
@@ -552,6 +759,9 @@
         "phone": "021-6412 2191"
     },
     {
+        "id": "69",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa New World LW",
         "lat": "31.218527",
@@ -560,6 +770,9 @@
         "phone": "021-6474 1223"
     },
     {
+        "id": "70",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Hongqiao Hub",
         "lat": "31.19285",
@@ -568,6 +781,9 @@
         "phone": "021-5151 1067"
     },
     {
+        "id": "71",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa SWFC",
         "lat": "31.23539",
@@ -576,6 +792,9 @@
         "phone": "021-6877 7071"
     },
     {
+        "id": "72",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa SML",
         "lat": "31.210599",
@@ -584,6 +803,9 @@
         "phone": "021-6075 2058"
     },
     {
+        "id": "73",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa MeiYueHua",
         "lat": "31.207516",
@@ -592,6 +814,9 @@
         "phone": "021-6466 8081"
     },
     {
+        "id": "74",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Cloud Nine",
         "lat": "31.271729",
@@ -600,6 +825,9 @@
         "phone": "021-6173 6102"
     },
     {
+        "id": "75",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Tianlin Walmart",
         "lat": "31.171685",
@@ -608,6 +836,9 @@
         "phone": "021-3469 1978"
     },
     {
+        "id": "76",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Wujiefang",
         "lat": "31.157244",
@@ -616,6 +847,9 @@
         "phone": "021-5844 6297"
     },
     {
+        "id": "77",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa ZhangJiang",
         "lat": "31.202964",
@@ -624,6 +858,9 @@
         "phone": "021-5027 2338"
     },
     {
+        "id": "78",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Studio Cinema",
         "lat": "31.230491",
@@ -632,6 +869,9 @@
         "phone": "021-5228 8196"
     },
     {
+        "id": "79",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Majesty Plaza",
         "lat": "31.234729",
@@ -640,6 +880,9 @@
         "phone": "021-6330 7596"
     },
     {
+        "id": "80",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Crystal",
         "lat": "31.229372",
@@ -648,6 +891,9 @@
         "phone": "021-6136 1403"
     },
     {
+        "id": "81",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Anfu",
         "lat": "31.214545",
@@ -656,6 +902,9 @@
         "phone": "021-5403 7951"
     },
     {
+        "id": "82",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa 96 Plaza",
         "lat": "31.228124",
@@ -664,6 +913,9 @@
         "phone": "021-6159 0113"
     },
     {
+        "id": "83",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Sam's club",
         "lat": "31.205828",
@@ -672,6 +924,9 @@
         "phone": "021-5866 0083"
     },
     {
+        "id": "84",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa 889 Plaza",
         "lat": "31.230638",
@@ -680,6 +935,9 @@
         "phone": "021-3252 7900"
     },
     {
+        "id": "85",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa East SMG",
         "lat": "31.197899",
@@ -688,6 +946,9 @@
         "phone": "021-5076 2907"
     },
     {
+        "id": "86",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa ICP",
         "lat": "31.251937",
@@ -696,6 +957,9 @@
         "phone": "021-3633 6229"
     },
     {
+        "id": "87",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Wanli carrefour",
         "lat": "31.268244",
@@ -704,6 +968,9 @@
         "phone": "021-56618967"
     },
     {
+        "id": "88",
+        "wifi": "free",
+        "latte": "31",
         "brand": "Costa",
         "name": "Costa Zhong Rong Jasper Tower",
         "lat": "31.243701",

@@ -55,10 +55,16 @@
 }
 
 #inputdiv{
-	width: 90%;
+	text-align: center;
+	width: 50% !important; 
 }
 
 #inputdiv input{
+	
+}
+
+#inputdiv button{
+
 }
 
 

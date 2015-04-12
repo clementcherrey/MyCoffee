@@ -3,81 +3,71 @@
  */
  function init() {
  	alert("in init");
- 	document.addEventListener("deviceready", deviceready, true);
+ 	//for browser
+ 	$( document ).ready(function() {
+		// alert( " storage 2, doc ready!" );
+		deviceready();
+	}); 	
 
+ 	//for phone
+ 	document.addEventListener("deviceready", deviceready, true);
  }
  var db;
 
  function deviceready() {
- 	alert("in deviceready");
+ 	// alert("in deviceready");
  	db = window.openDatabase("store", "1.0", "store_list", 10000000);
  	db.transaction(setup, errorHandler, dbReady);
  }
 
  function setup(tx) {
- 	tx
- 	.executeSql('create table if not exists store('
- 		+ 'id INTEGER PRIMARY KEY AUTOINCREMENT, ' + ' name TEXT,'
- 		+ ' brand TEXT,' + ' address TEXT,' + ' lat FLOAT,'
- 		+ ' lng FLOAT)');
- 	// alert("table store created");
 
- 	tx.executeSql('create table if not exists contentList('
- 		+ 'id INTEGER PRIMARY KEY,' + 'content TEXT)');
- 	// alert("table to save curreng created");
+ // suppress drop table
+ // tx.executeSql('DROP TABLE store');
+ // tx.executeSql('DROP TABLE subway');
+ // tx.executeSql('DROP TABLE storeSub');
 
 
- 	tx.executeSql('create table if not exists subway('
- 		+ 'id INTEGER PRIMARY KEY AUTOINCREMENT,' + 'station TEXT,' +'line INTEGER)');
-	 // alert("table sub created");
+ tx.executeSql('create table if not exists store('
+ 	+ ' id INTEGER PRIMARY KEY, ' 
+ 	+ ' wifi TEXT,'
+ 	+ ' latte TEXT,'
+ 	+ ' name TEXT,'
+ 	+ ' brand TEXT,' 
+ 	+ ' address TEXT,' 
+ 	+ ' lat FLOAT,'
+ 	+ ' lng FLOAT)');
 
- 	tx.executeSql('create table if not exists jointable('
- 		+'storeId INTEGER NOT NULL,' + 'subwayId INTEGER NOT NULL,'
- 		+'distance TEXT,' 
- 		+'FOREIGN KEY (storeId) REFERENCES store (id),' 
- 		+'FOREIGN KEY (subwayId) REFERENCES subway (id),' 
+ tx.executeSql('create table if not exists contentList('
+ 	+ 'id INTEGER PRIMARY KEY,' 
+ 	+ 'content TEXT)');
+
+ tx.executeSql('create table if not exists sub('
+ 	+ ' id INTEGER PRIMARY KEY,' 
+ 	+ ' station TEXT,' 
+ 	+ ' line INTEGER'
+ 	+ ' lat FLOAT,'
+ 	+ ' lng FLOAT)');
+
+
+ tx.executeSql('create table if not exists storeSub('
+ 	+'storeId INTEGER NOT NULL,' 
+ 	+'subwayId INTEGER NOT NULL,'
+ 	+'distanceText TEXT,' 
+ 	+'distanceValue INTEGER,' 
+ 		// +'FOREIGN KEY (storeId) REFERENCES store (id),' 
+ 		// +'FOREIGN KEY (subwayId) REFERENCES subway (id),' 
  		+'PRIMARY KEY (storeId, subwayId))');
+
  	 // alert("table joint created");
+ 	}
 
-/////////////////TEST (to delete after)////////
+ 	function errorHandler(e) {
+ 		alert(e.message);
+ 	}
 
-	tx.executeSql("insert into store (name,brand) values(?,?)",
-			["store test", "pacific"]);
-
-
-	tx.executeSql("select * from store", [], function(tx, result){
-				alert("select store");
-				alert(result);
-				alert(result.rows.item(0).name);
-				},
-			errorHandler);
-
-	tx.executeSql("insert into subway (station,line) values(?,?)",
-			["people square", 2]);
-
-
-	tx.executeSql("insert into jointable (storeId,subwayId, distance) values(?,?,?)",
-		[0, 0, "10000km"]);
-
-	tx.executeSql("select * from jointable", [], function(tx, result){
-				alert("select jointable");
-				alert(result.rows.item(0).distance);
-				},
-			errorHandler);
-	alert("insert joint done");
-
-
-
-/////////////////END TEST (to delete after)////////
-
- }
-
- function errorHandler(e) {
- 	alert(e.message);
- }
-
- function dbReady() {
- 	loadOldList();
+ 	function dbReady() {
+ 	// loadOldList();
 	// alert("in db ready");
 	db.transaction(function(tx) {
 		tx.executeSql("select * from store order by id asc", [], populatedb,
@@ -85,19 +75,37 @@
 	});
 
 	$("#store-list").on('vclick', 'li a', function() {
-		alert("click detected");
+		// alert("click detected");
 		storeInfo.id = $(this).attr('data-id');
-		alert(storeInfo.id);
+		// alert(storeInfo.id);
 		$("body").pagecontainer("change", "#headline", {
 			role : "page"
 		});
 	});
 
+	$("#buttonsearch").on('click', function(event){
+		alert("In click handler");
+		search();
+	});
+
+	function search(){
+		alert("Something happened!");
+		var searchTerm = $("#search-1").val();
+		alert("You're trying to search for "+searchTerm);
+		db.transaction(function(tx) {
+			tx.executeSql("select * from storeSub ", [], function(tx, result){
+				alert("select storeSub");
+				alert(result.rows.item(0).distanceText);
+			}
+			,errorHandler);
+		});
+	}
+
 	$("#headline")
 	.on(
 		'pagebeforeshow',
 		function() {
-						alert("in headline before show");
+						// alert("in headline before show");
 						$('#store-data').empty();
 						$('.header-title').empty();
 
@@ -208,10 +216,13 @@ var mapInfo = {
 	maxLng : 122.493735
 };
 
+var map;
+var contents = [];
+var markers = [];
 function initMap() {
 	alert("in intiMap !");
 	if (mapInfo.createNb == 0) {
-		var map;
+		alert("in no map created !");
 		var mapOptions = {
 			zoom : mapInfo.mapZoom,
 			center : new google.maps.LatLng(mapInfo.centerLat,
@@ -225,16 +236,16 @@ function initMap() {
 			"tap",
 			function() {
 			//	alert(" test !");
-				map.setCenter(new google.maps.LatLng(mapInfo.currentLat,
-					mapInfo.currentLng));
-			});
+			var currentLatLng = new google.maps.LatLng(mapInfo.currentLat,
+				mapInfo.currentLng);
+			map.setCenter(currentLatLng);
+		});
 		// static info window
 		var infoWindow = null;
 		infoWindow = new google.maps.InfoWindow( {
 			content : null
 		});
-		var contents = [];
-		var markers = [];
+		
 		for ( var i = 0; i < storeInfo.result.rows.length; i++) {
 			var tmplat = storeInfo.result.rows.item(i).lat;
 			var tmplng = storeInfo.result.rows.item(i).lng;
@@ -255,24 +266,40 @@ function initMap() {
 				icon : 'img/marker.png',
 				content : contents[i]
 			}));
-//			alert(markers[i].content);
+			// console.log("marker i content: "+ markers[i].content);
+			
 			google.maps.event.addListener(markers[i], 'click',  function(){
-			infoWindow.content = this.content;
-			infoWindow.open(map, this);
+				infoWindow.content = "YO";
+				infoWindow.setContent(this.content);
+				infoWindow.open(map, this);
 			});
 		};
-} else {
-		// alert("map already created");
+		mapInfo.createNb++;
+		if(storeInfo.id != null){
+			clickCurrentMarker();
+		}
+	} else {
+		alert("map already created");
 		map.setCenter(new google.maps.LatLng(mapInfo.centerLat,
 			mapInfo.centerLng));
 		map.setZoom(mapInfo.mapZoom);
+		if(storeInfo.id != null){
+			clickCurrentMarker();
+		}
+	}
+
+	function clickCurrentMarker(){
+		console.log(storeInfo.id);
+		console.log(markers.length);
+		console.log(markers[storeInfo.id].content);
+		google.maps.event.trigger(markers[storeInfo.id], 'click');
 	}
 
 }
 
 function populatedb(tx, results) {
 	if (results.rows.length == 0) {
-		alert("no data");
+		// alert("no data");
 		jsonpopulate();
 	} else {
 		//old version data loading
@@ -292,12 +319,13 @@ function displayList() {
 		var tmpId = Number(mapInfo.distances[i].id);
 		var tmpDistance = mapInfo.distances[i].distance;
 		// alert(tmpId+ " : " + tmpDistance);
+		var myId = storeInfo.result.rows.item(tmpId).id;
 		var tmpName = storeInfo.result.rows.item(tmpId).name;
 		var tmpBrand = storeInfo.result.rows.item(tmpId).brand;
 		var tmpAddress = storeInfo.result.rows.item(tmpId).address;
 		$('#store-list').append(
 			'<li data-icon="false"><a href="#headline" data-transition="slide" data-id="'
-			+ i + '">' + '<img src="img/' + tmpBrand + '.png"/>'
+			+ myId + '">' + '<img src="img/' + tmpBrand + '.png"/>'
 			+ '<h3>' + tmpName + '</h3><p>' + tmpAddress
 			+ '</p><span class="ui-li-count">' + tmpDistance
 			+ '</span></a></li>');
@@ -336,21 +364,15 @@ function loadOldList(){
 
 
 function gotlog(tx, results) {
-	alert("in gotlog");
+	console.log("in gotlog");
 	$('#getLocation').on("tap", getMyPos);
-
-	// $('#getClosest').on("tap", jsonTransform);
-
-
-	if (results.rows.length == 0) {
+	if (results.rows.length == 0) {	
 		alert("no data");
 		return false;
 	} else {
-		//alert("in got log else");
 		storeInfo.result = results;
-		//alert(storeInfo.result);
-		alert(storeInfo.result.rows.length);
-
+		console.log("storeInfo length : "+ storeInfo.result.rows.length);
+		console.log("item id 0 in storeInfo : "+ storeInfo.result.rows.item(0).name);
 	}
 };
 
@@ -408,31 +430,84 @@ function getMyPos() {
 
 function jsonpopulate() {
 	alert("in json function");
-	$
-	.getJSON(
-		"ajax/costa.json",
+	$.getJSON("ajax/storeSub.json",
 		function(data) {
-			alert(data);
-			db
-			.transaction(function(tx) {
-				$
-				.each(
-					data,
+			// alert(data);
+			db.transaction(function(tx) {
+				$.each(data,
 					function(key, val) {
 						tx
 						.executeSql(
-							"insert into store(name,brand,address,lat,lng) values(?,?,?,?,?)",
+							"insert into storeSub(storeId,subwayId,distanceText,distanceValue) values(?,?,?,?)",
 							[
-							val.name,
+							val.storeId,
+							val.subId,
+							val.distanceText,
+							val.distanceValue]);
+					});
+							// alert("insert done");
+							tx.executeSql("select * from storeSub",
+								[], function(tx,result){
+						// alert("lol");
+					}
+					,errorHandler);
+						});
+
+		});
+
+	$.getJSON("ajax/subway.json",
+		function(data) {
+			alert(data);
+			db.transaction(function(tx) {
+				$.each(data,
+					function(key, val) {
+						console.log(val.id +", "+val.station+", "+val.line+", "+val.lat+", "+val.lng);
+
+						tx
+						.executeSql(
+							"insert into sub(id,station,line,lat,lng) values(?,?,?,?,?)",
+							[
+							val.id,
+							val.station,
+							val.line,
+							val.lat,
+							val.lng]);
+
+						console.log("lol");
+					});
+				alert("insert subway lol");
+				tx.executeSql("select * from subway",
+					[], function(tx,result){
+						alert("select subway");
+					}
+					,errorHandler);
+			});
+		});
+
+	$.getJSON(
+		"ajax/costa.json",
+		function(data) {
+			// alert(data);
+			db
+			.transaction(function(tx) {
+				$.each(data,
+					function(key, val) {
+						tx
+						.executeSql(
+							"insert into store(id,wifi,latte,brand,name,address,lat,lng) values(?,?,?,?,?,?,?,?)",
+							[
+							val.id,
+							val.wifi,
+							val.latte,
 							val.brand,
+							val.name,
 							val.address,
 							val.lat,
 							val.lng ]);
 					});
 
-				tx
-				.executeSql(
-					"select * from store order by id asc",
+				// alert("after insert");
+				tx.executeSql("select * from store",
 					[], gotlog, errorHandler);
 			});
 

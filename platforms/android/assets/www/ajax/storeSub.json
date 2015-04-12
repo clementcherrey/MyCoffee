@@ -1,0 +1,302 @@
+[
+    {
+        "storeId": "46",
+        "subId": "12",
+        "distanceText": "1.0km",
+        "distanceValue": "954"
+    },
+    {
+        "storeId": "68",
+        "subId": "12",
+        "distanceText": "0.9km",
+        "distanceValue": "936"
+    },
+    {
+        "storeId": "49",
+        "subId": "14",
+        "distanceText": "1.5km",
+        "distanceValue": "1468"
+    },
+    {
+        "storeId": "49",
+        "subId": "15",
+        "distanceText": "2.0km",
+        "distanceValue": "1982"
+    },
+    {
+        "storeId": "21",
+        "subId": "16",
+        "distanceText": "1.7km",
+        "distanceValue": "1692"
+    },
+    {
+        "storeId": "47",
+        "subId": "16",
+        "distanceText": "1.4km",
+        "distanceValue": "9"
+    },
+    {
+        "storeId": "21",
+        "subId": "17",
+        "distanceText": "0.9km",
+        "distanceValue": "917"
+    },
+    {
+        "storeId": "47",
+        "subId": "17",
+        "distanceText": "0.6km",
+        "distanceValue": "600"
+    },
+    {
+        "storeId": "22",
+        "subId": "18",
+        "distanceText": "1.8km",
+        "distanceValue": "1775"
+    },
+    {
+        "storeId": "21",
+        "subId": "18",
+        "distanceText": "1.8km",
+        "distanceValue": "1769"
+    },
+    {
+        "storeId": "47",
+        "subId": "18",
+        "distanceText": "1.7km",
+        "distanceValue": "1690"
+    },
+    {
+        "storeId": "81",
+        "subId": "18",
+        "distanceText": "1.3km",
+        "distanceValue": "1305"
+    },
+    {
+        "storeId": "73",
+        "subId": "19",
+        "distanceText": "1.9km",
+        "distanceValue": "1929"
+    },
+    {
+        "storeId": "81",
+        "subId": "19",
+        "distanceText": "1.7km",
+        "distanceValue": "1745"
+    },
+    {
+        "storeId": "53",
+        "subId": "19",
+        "distanceText": "1.7km",
+        "distanceValue": "1678"
+    },
+    {
+        "storeId": "69",
+        "subId": "19",
+        "distanceText": "1.4km",
+        "distanceValue": "1420"
+    },
+    {
+        "storeId": "22",
+        "subId": "19",
+        "distanceText": "0.6km",
+        "distanceValue": "629"
+    },
+    {
+        "storeId": "40",
+        "subId": "21",
+        "distanceText": "2.0km",
+        "distanceValue": "1950"
+    },
+    {
+        "storeId": "22",
+        "subId": "21",
+        "distanceText": "1.9km",
+        "distanceValue": "1942"
+    },
+    {
+        "storeId": "79",
+        "subId": "21",
+        "distanceText": "1.9km",
+        "distanceValue": "1880"
+    },
+    {
+        "storeId": "69",
+        "subId": "21",
+        "distanceText": "1.6km",
+        "distanceValue": "1596"
+    },
+    {
+        "storeId": "3",
+        "subId": "21",
+        "distanceText": "1.5km",
+        "distanceValue": "1515"
+    },
+    {
+        "storeId": "0",
+        "subId": "21",
+        "distanceText": "1.4km",
+        "distanceValue": "1412"
+    },
+    {
+        "storeId": "66",
+        "subId": "21",
+        "distanceText": "1.4km",
+        "distanceValue": "1365"
+    },
+    {
+        "storeId": "63",
+        "subId": "21",
+        "distanceText": "0.9km",
+        "distanceValue": "895"
+    },
+    {
+        "storeId": "41",
+        "subId": "21",
+        "distanceText": "0.9km",
+        "distanceValue": "895"
+    },
+    {
+        "storeId": "12",
+        "subId": "21",
+        "distanceText": "0.6km",
+        "distanceValue": "624"
+    },
+    {
+        "storeId": "32",
+        "subId": "21",
+        "distanceText": "0.6km",
+        "distanceValue": "590"
+    },
+    {
+        "storeId": "40",
+        "subId": "22",
+        "distanceText": "2.0km",
+        "distanceValue": "1950"
+    },
+    {
+        "storeId": "30",
+        "subId": "22",
+        "distanceText": "1.8km",
+        "distanceValue": "1845"
+    },
+    {
+        "storeId": "3",
+        "subId": "22",
+        "distanceText": "1.6km",
+        "distanceValue": "1635"
+    },
+    {
+        "storeId": "79",
+        "subId": "22",
+        "distanceText": "1.4km",
+        "distanceValue": "1366"
+    },
+    {
+        "storeId": "12",
+        "subId": "22",
+        "distanceText": "1.0km",
+        "distanceValue": "1032"
+    },
+    {
+        "storeId": "0",
+        "subId": "22",
+        "distanceText": "0.6km",
+        "distanceValue": "581"
+    },
+    {
+        "storeId": "40",
+        "subId": "24",
+        "distanceText": "1.7km",
+        "distanceValue": "1703"
+    },
+    {
+        "storeId": "71",
+        "subId": "28",
+        "distanceText": "1.8km",
+        "distanceValue": "1760"
+    },
+    {
+        "storeId": "54",
+        "subId": "28",
+        "distanceText": "1.6km",
+        "distanceValue": "1578"
+    },
+    {
+        "storeId": "34",
+        "subId": "28",
+        "distanceText": "1.5km",
+        "distanceValue": "1473"
+    },
+    {
+        "storeId": "13",
+        "subId": "28",
+        "distanceText": "1.3km",
+        "distanceValue": "1307"
+    },
+    {
+        "storeId": "88",
+        "subId": "28",
+        "distanceText": "1.3km",
+        "distanceValue": "1278"
+    },
+    {
+        "storeId": "44",
+        "subId": "29",
+        "distanceText": "2m",
+        "distanceValue": "2"
+    },
+    {
+        "storeId": "70",
+        "subId": "29",
+        "distanceText": "1m",
+        "distanceValue": "1"
+    },
+    {
+        "storeId": "13",
+        "subId": "33",
+        "distanceText": "1.7km",
+        "distanceValue": "1723"
+    },
+    {
+        "storeId": "54",
+        "subId": "33",
+        "distanceText": "1.6km",
+        "distanceValue": "1557"
+    },
+    {
+        "storeId": "71",
+        "subId": "33",
+        "distanceText": "1.5km",
+        "distanceValue": "1501"
+    },
+    {
+        "storeId": "34",
+        "subId": "33",
+        "distanceText": "1.5km",
+        "distanceValue": "1452"
+    },
+    {
+        "storeId": "88",
+        "subId": "33",
+        "distanceText": "1.4km",
+        "distanceValue": "1363"
+    },
+    {
+        "storeId": "1",
+        "subId": "34",
+        "distanceText": "1.4km",
+        "distanceValue": "1438"
+    },
+    {
+        "storeId": "6",
+        "subId": "34",
+        "distanceText": "1.4km",
+        "distanceValue": "1389"
+    },
+    {
+        "storeId": "82",
+        "subId": "34",
+        "distanceText": "1.4km",
+        "distanceValue": "1382"
+    }
+]

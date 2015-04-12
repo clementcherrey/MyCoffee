@@ -4,7 +4,7 @@ function syncLoop(iterations, process, exit) {
 	var index = 0, done = false, shouldExit = false;
 	var loop = {
 		next : function() {
-			// alert("in next");
+			// console.log("in next");
 			if (done) {
 				if (shouldExit && exit) {
 					return exit(); // Exit if we're done
@@ -12,8 +12,8 @@ function syncLoop(iterations, process, exit) {
 			}
 			// If we're not finished
 			if (index < iterations) {
-				// alert("in if");
-				// alert(iterations);
+				// console.log("in if iteration: ");
+				// console.log(iterations);
 				index++; // Increment our index
 				process(loop); // Run our process, pass in the loop
 				// Otherwise we're done
@@ -41,7 +41,7 @@ function syncLoop(iterations, process, exit) {
 function initDistCalc() {
 	// alert("in init calc");
 	// only send 20 locations per request for distqnces
-	// alert (storeInfo.result.rows.length);
+	alert (storeInfo.result.rows.length);
 	var divbytwenty = storeInfo.result.rows.length / 20;
 	// alert(divbytwenty);
 	

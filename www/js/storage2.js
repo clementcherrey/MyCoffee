@@ -4,8 +4,7 @@
  function init() {
  	alert("in init");
  	//for browser
-$( document ).ready(function() {
-		// alert( " storage 2, doc ready!" );
+ 	$( document ).ready(function() {
 		deviceready();
 	}); 	
 
@@ -25,44 +24,48 @@ $( document ).ready(function() {
  // suppress drop table
  tx.executeSql('DROP TABLE store');
  tx.executeSql('DROP TABLE subway');
+ tx.executeSql('DROP TABLE storeSub');
 
- 	tx.executeSql('create table if not exists store('
- 		+ ' id INTEGER PRIMARY KEY, ' 
- 		+ ' wifi TEXT,'
- 		+ ' latte TEXT,'
- 		+ ' name TEXT,'
- 		+ ' brand TEXT,' 
- 		+ ' address TEXT,' 
- 		+ ' lat FLOAT,'
- 		+ ' lng FLOAT)');
 
- 	tx.executeSql('create table if not exists contentList('
- 		+ 'id INTEGER PRIMARY KEY,' 
- 		+ 'content TEXT)');
+ tx.executeSql('create table if not exists store('
+ 	+ ' id INTEGER  PRIMARY KEY, ' 
+ 	+ ' wifi TEXT,'
+ 	+ ' latte TEXT,'
+ 	+ ' name TEXT,'
+ 	+ ' brand TEXT,' 
+ 	+ ' address TEXT,' 
+ 	+ ' lat FLOAT,'
+ 	+ ' lng FLOAT)');
 
- 	tx.executeSql('create table if not exists subway('
- 		+ ' id INTEGER PRIMARY KEY,' 
- 		+ ' station TEXT,' 
- 		+ ' line INTEGER'
- 		+ ' lat FLOAT,'
- 		+ ' lng FLOAT)');
+ tx.executeSql('create table if not exists contentList('
+ 	+ 'id INTEGER PRIMARY KEY,' 
+ 	+ 'content TEXT)');
 
- 	tx.executeSql('create table if not exists storeSub('
- 		+'storeId INTEGER NOT NULL,' 
- 		+'subwayId INTEGER NOT NULL,'
- 		+'distance TEXT,' 
- 		+'FOREIGN KEY (storeId) REFERENCES store (id),' 
- 		+'FOREIGN KEY (subwayId) REFERENCES subway (id),' 
- 		+'PRIMARY KEY (storeId, subwayId))');
- 	 
+ tx.executeSql('create table if not exists subway('
+ 	+ ' id INTEGER PRIMARY KEY,' 
+ 	+ ' lat FLOAT,'
+ 	+ ' lng FLOAT,'
+ 	+ ' station TEXT,' 
+ 	+ ' line INTEGER'
+ 	+ ' test FLOAT)');
+
+tx.executeSql('create table if not exists storeSub('
+	+'storeId INTEGER NOT NULL,' 
+	+'subwayId INTEGER NOT NULL,'
+	+'distanceText TEXT,' 
+	+'distanceValue INTEGER,' 
+	+'FOREIGN KEY (storeId) REFERENCES store (id),' 
+	+'FOREIGN KEY (subwayId) REFERENCES subway (id),' 
+	+'PRIMARY KEY (storeId, subwayId))');
+
  	 // alert("table joint created");
- }
+ 	}
 
- function errorHandler(e) {
- 	alert(e.message);
- }
+ 	function errorHandler(e) {
+ 		alert(e.message);
+ 	}
 
- function dbReady() {
+ 	function dbReady() {
  	// loadOldList();
 	// alert("in db ready");
 	db.transaction(function(tx) {
@@ -79,10 +82,15 @@ $( document ).ready(function() {
 		});
 	});
 
-	$("#headline")
-	.on(
-		'pagebeforeshow',
-		function() {
+	$("#buttonsearch").on('click', function(event){
+		// alert("In click handler");
+		search();
+	});
+
+$("#headline")
+.on(
+	'pagebeforeshow',
+	function() {
 						// alert("in headline before show");
 						$('#store-data').empty();
 						$('.header-title').empty();
@@ -195,6 +203,8 @@ var mapInfo = {
 };
 
 var map;
+var contents = [];
+var markers = [];
 function initMap() {
 	alert("in intiMap !");
 	if (mapInfo.createNb == 0) {
@@ -212,16 +222,16 @@ function initMap() {
 			"tap",
 			function() {
 			//	alert(" test !");
-				map.setCenter(new google.maps.LatLng(mapInfo.currentLat,
-					mapInfo.currentLng));
-			});
+			var currentLatLng = new google.maps.LatLng(mapInfo.currentLat,
+				mapInfo.currentLng);
+			map.setCenter(currentLatLng);
+		});
 		// static info window
 		var infoWindow = null;
 		infoWindow = new google.maps.InfoWindow( {
 			content : null
 		});
-		var contents = [];
-		var markers = [];
+		
 		for ( var i = 0; i < storeInfo.result.rows.length; i++) {
 			var tmplat = storeInfo.result.rows.item(i).lat;
 			var tmplng = storeInfo.result.rows.item(i).lng;
@@ -242,22 +252,33 @@ function initMap() {
 				icon : 'img/marker.png',
 				content : contents[i]
 			}));
-			console.log("marker i content: "+ markers[i].content);
-			console.log("marker 0 content: "+ markers[0].content);
-		}
-		for ( var i = 0; i < storeInfo.result.rows.length; i++) {
+			// console.log("marker i content: "+ markers[i].content);
+			
 			google.maps.event.addListener(markers[i], 'click',  function(){
-			infoWindow.content = "YO";
-			infoWindow.setContent(this.content);
-			infoWindow.open(map, this);
+				infoWindow.content = "YO";
+				infoWindow.setContent(this.content);
+				infoWindow.open(map, this);
 			});
 		};
 		mapInfo.createNb++;
-} else {
+		if(storeInfo.id != null){
+			clickCurrentMarker();
+		}
+	} else {
 		alert("map already created");
 		map.setCenter(new google.maps.LatLng(mapInfo.centerLat,
 			mapInfo.centerLng));
 		map.setZoom(mapInfo.mapZoom);
+		if(storeInfo.id != null){
+			clickCurrentMarker();
+		}
+	}
+
+	function clickCurrentMarker(){
+		console.log(storeInfo.id);
+		console.log(markers.length);
+		console.log(markers[storeInfo.id].content);
+		google.maps.event.trigger(markers[storeInfo.id], 'click');
 	}
 
 }
@@ -395,8 +416,61 @@ function getMyPos() {
 
 function jsonpopulate() {
 	// alert("in json function");
-	$
-	.getJSON(
+	$.getJSON("ajax/storeSub.json",
+		function(data) {
+			// alert(data);
+			db.transaction(function(tx) {
+				$.each(data,
+					function(key, val) {
+						tx
+						.executeSql(
+							"insert into storeSub(storeId,subwayId,distanceText,distanceValue) values(?,?,?,?)",
+							[
+							val.storeId,
+							val.subId,
+							val.distanceText,
+							val.distanceValue]);
+					});
+							// alert("insert done");
+							tx.executeSql("select * from storeSub",
+								[], function(tx,result){
+						// alert("lol");
+					}
+					,errorHandler);
+						});
+
+		});
+
+	$.getJSON("ajax/subway.json",
+		function(data) {
+			// alert(data);
+			db.transaction(function(tx) {
+				$.each(data,
+					function(key, val) {
+						// console.log(val.id +", "+val.station+", "+val.line+", "+val.lat+", "+val.lng);
+
+						tx
+						.executeSql(
+							"insert into subway(id,station,line,lat,lng) values(?,?,?,?,?)",
+							[
+							val.id,
+							val.station,
+							val.line,
+							val.lat,
+							val.lng]);
+
+						// console.log("lol");
+					});
+				// alert("insert subway lol");
+				tx.executeSql("select * from subway",
+					[], function(tx,result){
+						// alert("select subway");
+					}
+					,errorHandler);
+			});
+		});
+
+	$.getJSON(
 		"ajax/costa.json",
 		function(data) {
 			// alert(data);
