@@ -2,19 +2,19 @@
  * Created by clement on 12/29/14.
  */
  function init() {
- 	alert("in init");
- 	//for browser
- 	$( document ).ready(function() {
-		deviceready();
-	}); 	
+ 	console.log("in init");
+ 	//****FOR BROWSER*****//
+ 			$( document ).ready(function() {
+			deviceready();
+		}); 	
 
- 	//for phone
+ 	//****FOR PHONE*****//
  	document.addEventListener("deviceready", deviceready, true);
  }
  var db;
 
  function deviceready() {
- 	// alert("in deviceready");
+ 	console.log("in deviceready");
  	db = window.openDatabase("store", "1.0", "store_list", 10000000);
  	db.transaction(setup, errorHandler, dbReady);
  }
@@ -57,8 +57,6 @@ tx.executeSql('create table if not exists storeSub('
 	+'FOREIGN KEY (storeId) REFERENCES store (id),' 
 	+'FOREIGN KEY (subwayId) REFERENCES subway (id),' 
 	+'PRIMARY KEY (storeId, subwayId))');
-
- 	 // alert("table joint created");
  	}
 
  	function errorHandler(e) {
@@ -67,123 +65,47 @@ tx.executeSql('create table if not exists storeSub('
 
  	function dbReady() {
  	// loadOldList();
-	// alert("in db ready");
+	console.log("in db ready");
 	db.transaction(function(tx) {
 		tx.executeSql("select * from store order by id asc", [], populatedb,
 			errorHandler);
+
+		tx.executeSql("select * from contentList", [], checkPreviousList,
+			errorHandler);
 	});
 
+	// the 2 buttons to use geolocation
+	$('#getLocation').on("tap", getMyPos);
+	$('#getLocation2').on("tap", getMyPos);
+
 	$("#store-list").on('vclick', 'li a', function() {
-		// alert("click detected");
 		storeInfo.id = $(this).attr('data-id');
-		// alert(storeInfo.id);
+		storeInfo.distance = $(this).attr('data-dist');
 		$("body").pagecontainer("change", "#headline", {
 			role : "page"
 		});
 	});
 
-	$("#buttonsearch").on('click', function(event){
-		// alert("In click handler");
-		search();
+	$( "#searchForm" ).submit(function( event ) {
+  	console.log( "Handler for .submit() called." );
+  	event.preventDefault();
+  	search();
 	});
 
-$("#headline")
-.on(
-	'pagebeforeshow',
-	function() {
-						// alert("in headline before show");
-						$('#store-data').empty();
-						$('.header-title').empty();
-
-						for ( var i = 0; i < storeInfo.result.rows.length; i++) {
-							if (i == storeInfo.id) {
-								// alert("in the if");
-								var tmpName = storeInfo.result.rows.item(i).name;
-								$('.header-title').append(tmpName);
-
-								var tmpBrand = storeInfo.result.rows.item(i).brand;
-								var tmpNote = "4";
-								var tmpWifi = "freewifi";
-								var tmpAddress = "1376 Nanjing West Road Jingan, jianpu district";
-								var tmpStation = "People square";
-								var tmpSubwayDetail = "500 metres from exit 4, on your right";
-								var tmpDescription = "blablabla bla blablabla blablablabla bla blablabla bla blablabla bla blablabla bla blablabla bla blablabla bla blablabla bla blablabla bla";
-								//var tmpDistance = mapInfo.distances[i].distance;
-								var tmpDistance = "33 km";
-								var tmpPrice = "$$$";
-								var tmpSubwayLine = "2";
-								// alert("lol");
-
-								mapInfo.centerLat = storeInfo.result.rows
-								.item(i).lat;
-								mapInfo.centerLng = storeInfo.result.rows
-								.item(i).lng;
-								mapInfo.mapZoom = 14;
-
-
-
-								$('#store-data')
-								.append(
-									'<li>'
-									+ '<div class="container2"><img src="img/'
-									+ tmpBrand
-									+ '.png"/></div>'
-									+ '<div class = "container1"><div><p>'
-									+ tmpName
-									+ '</p><p><img src="img/'
-									+ tmpNote
-									+ '-stars.png" style="width: 80px;"/></p></div></div>'						
-									+ '</li>');
-
-								$('#store-data')
-								.append(
-									'<li class="containerWifi"><div class="ui-grid-b">'
-									+ '<div class="ui-block-a grids"><div class="ui-body ui-body-d"><p>From your location:</p><p>'
-									+ tmpDistance
-									+ '</p></div></div>'
-									+ '<div class="ui-block-b grids"><div class="ui-body ui-body-d"><img src="img/'
-									+ tmpWifi
-									+ '.png"/></div></div>'
-									+ '<div class="ui-block-c grids"><div class="ui-body ui-body-d"><p>Price : </p><p>'
-									+ tmpPrice
-									+ '</p></div></div>'
-									+ '</div></li>');
-								$('#store-data')
-								.append(
-									'<li style="white-space:normal;"><span style="font-weight:bold;">Address :</span>'
-									+ tmpAddress + '</li>');
-								$('#store-data')
-								.append(
-									'<li style="white-space:normal;"><div><div>'
-									+ '<p style="font-weight:bold; font-size: medium">Station: '
-									+ tmpStation
-									+ '</p><div style="display:table;"><span style="vertical-align: middle;display: table-cell"> Subway line: </span> <span style="vertical-align: middle;display: table-cell;">'
-									+ '<img src="img/line'
-									+ tmpSubwayLine
-									+ '.png" /></span></div>'			
-									+ '<p>'
-									+ tmpSubwayDetail
-									+ '</p>'
-									+'<div></div></li>');
-								$('#store-data')
-								.append(
-									'<li style="white-space:normal; font-size: medium"><span style="font-weight:bold;">Description :</span>'
-									+ tmpDescription
-									+ '</li>');
-								// to delete after test
-								$('#store-data').listview('refresh');
-							}
-						}
-						;
-						$('#store-data').listview('refresh');
-					});
+$("#headline").on('pagebeforeshow',headlinePreDisplay);
 
 $("#main").on('pageshow', initMap);
 }
 
+
 var storeInfo = {
 	id : null,
+	distance: null,
 	result : null
+};
+
+var subway ={
+
 };
 
 var mapInfo = {
@@ -205,83 +127,7 @@ var mapInfo = {
 var map;
 var contents = [];
 var markers = [];
-function initMap() {
-	alert("in intiMap !");
-	if (mapInfo.createNb == 0) {
-		alert("in no map created !");
-		var mapOptions = {
-			zoom : mapInfo.mapZoom,
-			center : new google.maps.LatLng(mapInfo.centerLat,
-				mapInfo.centerLng)
-		};
-		map = new google.maps.Map(document.getElementById('map_canvas'),
-			mapOptions);
 
-		// button to center the map on the actual location
-		$('#test').on(
-			"tap",
-			function() {
-			//	alert(" test !");
-			var currentLatLng = new google.maps.LatLng(mapInfo.currentLat,
-				mapInfo.currentLng);
-			map.setCenter(currentLatLng);
-		});
-		// static info window
-		var infoWindow = null;
-		infoWindow = new google.maps.InfoWindow( {
-			content : null
-		});
-		
-		for ( var i = 0; i < storeInfo.result.rows.length; i++) {
-			var tmplat = storeInfo.result.rows.item(i).lat;
-			var tmplng = storeInfo.result.rows.item(i).lng;
-			var tmpLatlng = new google.maps.LatLng(tmplat, tmplng);
-
-			var tmpName = storeInfo.result.rows.item(i).name;
-			var tmpBrand = storeInfo.result.rows.item(i).brand;
-			var tmpAddress = "1376 Nanjing West Road Jingan, jianpu district";
-
-			contents.push('<div>' + '<img class="info1" src="img/mini-'
-				+ storeInfo.result.rows.item(i).brand + '.png"/>' + '<h13>'
-				+ storeInfo.result.rows.item(i).name + '</h3><div>'
-				+ tmpAddress + '</div>');
-
-			markers.push( new google.maps.Marker({
-				position : tmpLatlng,
-				map : map,
-				icon : 'img/marker.png',
-				content : contents[i]
-			}));
-			// console.log("marker i content: "+ markers[i].content);
-			
-			google.maps.event.addListener(markers[i], 'click',  function(){
-				infoWindow.content = "YO";
-				infoWindow.setContent(this.content);
-				infoWindow.open(map, this);
-			});
-		};
-		mapInfo.createNb++;
-		if(storeInfo.id != null){
-			clickCurrentMarker();
-		}
-	} else {
-		alert("map already created");
-		map.setCenter(new google.maps.LatLng(mapInfo.centerLat,
-			mapInfo.centerLng));
-		map.setZoom(mapInfo.mapZoom);
-		if(storeInfo.id != null){
-			clickCurrentMarker();
-		}
-	}
-
-	function clickCurrentMarker(){
-		console.log(storeInfo.id);
-		console.log(markers.length);
-		console.log(markers[storeInfo.id].content);
-		google.maps.event.trigger(markers[storeInfo.id], 'click');
-	}
-
-}
 
 function populatedb(tx, results) {
 	if (results.rows.length == 0) {
@@ -322,12 +168,22 @@ function displayList() {
 	
 }
 
+function checkPreviousList(tx, results){
+	if (results.rows.length == 0) {
+		alert("no list before");
+	} else {
+		alert("content previoussly stored");
+		loadOldList();
+	}
+}
+
 // Save the current home Page
 function storeCurrentList(){
 	alert("in save current list");
 	db.transaction(function(tx) {
 		var tmpContent = $('#store-list').html();
-		alert(tmpContent);
+		var contentString = new String(tmpContent);
+		// console.log(tmpContent);
 		tx.executeSql("insert into contentList(id,content) values(?,?)",
 			[0, tmpContent]);
 		tx.executeSql("insert into contentList(id,content) values(?,?)",
@@ -341,9 +197,10 @@ function loadOldList(){
 	db.transaction(function(tx) {
 		tx.executeSql("select * from contentList",[], successCB);
 		function successCB (tx, results){
-			alert ("in SCB");
-			alert (results.rows.item(0).content);
-			$('#store-list').append(results.rows.item(0).content);
+			console.log ("in SCB");
+			console.log ("loaded content: " +results.rows.item(0).content);
+			console.log (results.rows.item(1).content);
+			$('#store-list').append(results.rows.item(1).content);
 		}
 	});
 }
@@ -351,23 +208,32 @@ function loadOldList(){
 
 function gotlog(tx, results) {
 	console.log("in gotlog");
-	$('#getLocation').on("tap", getMyPos);
 	if (results.rows.length == 0) {	
 		alert("no data");
 		return false;
 	} else {
-		storeInfo.result = results;
-		console.log("storeInfo length : "+ storeInfo.result.rows.length);
-		console.log("item id 0 in storeInfo : "+ storeInfo.result.rows.item(0).name);
+		 storeInfo.result = results;
+		// console.log("results length: "+results.rows.length);
+		// 		for (var i = results.rows.length - 1; i >= 0; i--) {
+		// 			storeInfo.result.push({
+		// 				id : results.rows.item(i).id,
+		// 				wifi: results.rows.item(i).wifi,
+		// 					latte: results.rows.item(i).latte,
+		// 				brand: results.rows.item(i).brand,
+		// 				name: results.rows.item(i).name,
+		// 				address: results.rows.item(i).address,
+		// 				lat: results.rows.item(i).lat,
+		// 				lng: results.rows.item(i).lng,
+		// 			});
+		// 		};
+		// console.log("storeInfo length : "+ storeInfo.result.rows.length);
+		// console.log("item id 0 in storeInfo : "+ storeInfo.result.rows.item(0).name);
 	}
 };
 
 function getMyPos() {
 	// hide button for geolocation
-
 	$("#twobutt").empty();
-	// $("#getLocation").hide();
-	// $("#goMap").hide();
 	// show footer
 	$("#homefooter").show();
 
@@ -396,10 +262,10 @@ function getMyPos() {
 			alert("in if");
 			mapInfo.currentLat = position.coords.latitude;
 			mapInfo.currentLng = position.coords.longitude;
-			initDistCalc();
+			preCalc();
 		} else {
 			alert(" You are not in Shanghai. Impossible to calculate distances from your current position");
-			initDistCalc();
+			preCalc();
 		}
 	};
 
@@ -408,7 +274,7 @@ function getMyPos() {
 		alert('error code: ' + error.code + '\n' + 'message: ' + error.message
 			+ '\n');
 		alert("impossible to get your current position. Make sure you authorize shanghaiCoffee to access your location");
-		initDistCalc();
+		preCalc();
 	};
 
 	navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
@@ -470,6 +336,35 @@ function jsonpopulate() {
 			});
 		});
 
+// $.getJSON(
+// 		"ajax/starbucks.json",
+// 		function(data) {
+// 			// alert(data);
+// 			db
+// 			.transaction(function(tx) {
+// 				$.each(data,
+// 					function(key, val) {
+// 						tx
+// 						.executeSql(
+// 							"insert into store(id,wifi,latte,brand,name,address,lat,lng) values(?,?,?,?,?,?,?,?)",
+// 							[
+// 							val.id + 84,
+// 							val.wifi,
+// 							val.latte,
+// 							val.brand,
+// 							val.name,
+// 							val.address,
+// 							val.lat,
+// 							val.lng ]);
+// 					});
+
+// 				alert("after insert");
+// 				tx.executeSql("select * from store",
+// 					[], gotlog, errorHandler);
+// 			});
+
+// 		});
+
 	$.getJSON(
 		"ajax/costa.json",
 		function(data) {
@@ -492,9 +387,12 @@ function jsonpopulate() {
 							val.lng ]);
 					});
 
-				// alert("after insert");
+				alert("after insert");
 				tx.executeSql("select * from store",
 					[], gotlog, errorHandler);
+
+			// getStarbucks();
+
 			});
 
 		});

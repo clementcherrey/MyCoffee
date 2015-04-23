@@ -36,24 +36,50 @@ function syncLoop(iterations, process, exit) {
 	return loop;
 }
 
-// ********************* use the sync loop to launch the distances calc
-// *************************//
+function preCalc(){
+	storeInfo.result = [];
+	mapInfo.distances = [];
+	db.transaction(function(tx) {
+		tx.executeSql("select * from store",
+			[], function(tx,results){
+				alert("results: "+results);
+				alert("results length: "+results.rows.length);
+				for (var i = results.rows.length - 1; i >= 0; i--) {
+					storeInfo.result.push({
+						id : results.rows.item(i).id,
+						wifi: results.rows.item(i).wifi,
+						latte: results.rows.item(i).latte,
+						brand: results.rows.item(i).brand,
+						name: results.rows.item(i).name,
+						address: results.rows.item(i).address,
+						lat: results.rows.item(i).lat,
+						lng: results.rows.item(i).lng,
+					});
+				};
+				alert("finish for");
+				initDistCalc();
+				});
+	});
+}
+
+
+// ***** use the sync loop to launch the distances calc*******//
 function initDistCalc() {
-	// alert("in init calc");
+	alert("in init calc");
 	// only send 20 locations per request for distqnces
-	alert (storeInfo.result.rows.length);
-	var divbytwenty = storeInfo.result.rows.length / 20;
+	alert (storeInfo.result.length);
+	var divbytwenty = storeInfo.result.length / 20;
 	// alert(divbytwenty);
 	
 	syncLoop(divbytwenty, function(loop) {
 		var j = loop.iteration() * 20;
 		// alert("my counter equal" + j);
 		var tableLatLng = [];
-		for ( var i = 0; i < 20 && i < storeInfo.result.rows.length - j; i++) {
+		for ( var i = 0; i < 20 && i < storeInfo.result.length - j; i++) {
 			var tmpId = j + i;
 			// alert("temp Id" + tmpId);
-			var tmpLat = storeInfo.result.rows.item(tmpId).lat;
-			var tmpLng = storeInfo.result.rows.item(tmpId).lng;
+			var tmpLat = storeInfo.result[tmpId].lat;
+			var tmpLng = storeInfo.result[tmpId].lng;
 			tableLatLng[i] = new google.maps.LatLng(tmpLat, tmpLng);
 		}
 		// alert('loop done');
@@ -65,7 +91,7 @@ function initDistCalc() {
 		// callnext();
 	}, function() {
 		sortDistance();
-		displayList();
+		displaySearchResult();
 		// alert('done');
 	});
 }
@@ -75,16 +101,16 @@ var callbackBase = -20;
 
 function calculateDistances(tableLL, callback) {
 // alert("in calculate");
-	var service = new google.maps.DistanceMatrixService();
-	var origin = new google.maps.LatLng(mapInfo.currentLat, mapInfo.currentLng);
-	service.getDistanceMatrix( {
-		origins : [ origin ],
-		destinations : tableLL,
-		travelMode : google.maps.TravelMode.DRIVING,
-		unitSystem : google.maps.UnitSystem.METRIC,
-		avoidHighways : false,
-		avoidTolls : false
-	}, function(response, status) {
+var service = new google.maps.DistanceMatrixService();
+var origin = new google.maps.LatLng(mapInfo.currentLat, mapInfo.currentLng);
+service.getDistanceMatrix( {
+	origins : [ origin ],
+	destinations : tableLL,
+	travelMode : google.maps.TravelMode.DRIVING,
+	unitSystem : google.maps.UnitSystem.METRIC,
+	avoidHighways : false,
+	avoidTolls : false
+}, function(response, status) {
 		// alert("in callbackDistance");
 		if (status != google.maps.DistanceMatrixStatus.OK) {
 			// alert('Error was: ' + status);
@@ -93,26 +119,27 @@ function calculateDistances(tableLL, callback) {
 			callbackBase += 20;
 			for ( var i = 0; i < response.rows[0].elements.length; i++) {
 		// alert (response.rows[0].elements[i].status);
-				var valueId = callbackBase + i;
-				if (true) {
-					mapInfo.distances.push( {
-						id : valueId,
-						distance : new String(
-								response.rows[0].elements[i].distance.text)
-					});
-				}
-			}
-			callback();
+		var valueId = callbackBase + i;
+		if (true) {
+			mapInfo.distances.push( {
+				id : valueId,
+				distanceText : new String(
+					response.rows[0].elements[i].distance.text),
+				distanceValue: response.rows[0].elements[i].distance.value
+			});
 		}
-	});
+	}
+	callback();
+}
+});
 }
 
 // ****** sort the distance array from close to far ******//
 function sortDistance() {
 	function compare(a, b) {
-		if (a.distance < b.distance)
+		if (a.distanceValue < b.distanceValue)
 			return -1;
-		if (a.distance > b.distance)
+		if (a.distanceValue > b.distanceValue)
 			return 1;
 		return 0;
 	}

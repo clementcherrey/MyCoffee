@@ -3,13 +3,12 @@
  */
  function init() {
  	alert("in init");
- 	//for browser
- 	$( document ).ready(function() {
-		// alert( " storage 2, doc ready!" );
-		deviceready();
-	}); 	
+ 	//****FOR BROWSER*****//
+ 	// 		$( document ).ready(function() {
+		// 	deviceready();
+		// }); 	
 
- 	//for phone
+ 	//****FOR PHONE*****//
  	document.addEventListener("deviceready", deviceready, true);
  }
  var db;
@@ -29,7 +28,7 @@
 
 
  tx.executeSql('create table if not exists store('
- 	+ ' id INTEGER PRIMARY KEY, ' 
+ 	+ ' id INTEGER  PRIMARY KEY, ' 
  	+ ' wifi TEXT,'
  	+ ' latte TEXT,'
  	+ ' name TEXT,'
@@ -42,22 +41,22 @@
  	+ 'id INTEGER PRIMARY KEY,' 
  	+ 'content TEXT)');
 
- tx.executeSql('create table if not exists sub('
+ tx.executeSql('create table if not exists subway('
  	+ ' id INTEGER PRIMARY KEY,' 
+ 	+ ' lat FLOAT,'
+ 	+ ' lng FLOAT,'
  	+ ' station TEXT,' 
  	+ ' line INTEGER'
- 	+ ' lat FLOAT,'
- 	+ ' lng FLOAT)');
+ 	+ ' test FLOAT)');
 
-
- tx.executeSql('create table if not exists storeSub('
- 	+'storeId INTEGER NOT NULL,' 
- 	+'subwayId INTEGER NOT NULL,'
- 	+'distanceText TEXT,' 
- 	+'distanceValue INTEGER,' 
- 		// +'FOREIGN KEY (storeId) REFERENCES store (id),' 
- 		// +'FOREIGN KEY (subwayId) REFERENCES subway (id),' 
- 		+'PRIMARY KEY (storeId, subwayId))');
+tx.executeSql('create table if not exists storeSub('
+	+'storeId INTEGER NOT NULL,' 
+	+'subwayId INTEGER NOT NULL,'
+	+'distanceText TEXT,' 
+	+'distanceValue INTEGER,' 
+	+'FOREIGN KEY (storeId) REFERENCES store (id),' 
+	+'FOREIGN KEY (subwayId) REFERENCES subway (id),' 
+	+'PRIMARY KEY (storeId, subwayId))');
 
  	 // alert("table joint created");
  	}
@@ -83,28 +82,16 @@
 		});
 	});
 
-	$("#buttonsearch").on('click', function(event){
-		alert("In click handler");
-		search();
+	$( "#searchForm" ).submit(function( event ) {
+  	alert( "Handler for .submit() called." );
+  	event.preventDefault();
+  	search();
 	});
 
-	function search(){
-		alert("Something happened!");
-		var searchTerm = $("#search-1").val();
-		alert("You're trying to search for "+searchTerm);
-		db.transaction(function(tx) {
-			tx.executeSql("select * from storeSub ", [], function(tx, result){
-				alert("select storeSub");
-				alert(result.rows.item(0).distanceText);
-			}
-			,errorHandler);
-		});
-	}
-
-	$("#headline")
-	.on(
-		'pagebeforeshow',
-		function() {
+$("#headline")
+.on(
+	'pagebeforeshow',
+	function() {
 						// alert("in headline before show");
 						$('#store-data').empty();
 						$('.header-title').empty();
@@ -429,7 +416,7 @@ function getMyPos() {
 }
 
 function jsonpopulate() {
-	alert("in json function");
+	// alert("in json function");
 	$.getJSON("ajax/storeSub.json",
 		function(data) {
 			// alert(data);
@@ -457,15 +444,15 @@ function jsonpopulate() {
 
 	$.getJSON("ajax/subway.json",
 		function(data) {
-			alert(data);
+			// alert(data);
 			db.transaction(function(tx) {
 				$.each(data,
 					function(key, val) {
-						console.log(val.id +", "+val.station+", "+val.line+", "+val.lat+", "+val.lng);
+						// console.log(val.id +", "+val.station+", "+val.line+", "+val.lat+", "+val.lng);
 
 						tx
 						.executeSql(
-							"insert into sub(id,station,line,lat,lng) values(?,?,?,?,?)",
+							"insert into subway(id,station,line,lat,lng) values(?,?,?,?,?)",
 							[
 							val.id,
 							val.station,
@@ -473,12 +460,12 @@ function jsonpopulate() {
 							val.lat,
 							val.lng]);
 
-						console.log("lol");
+						// console.log("lol");
 					});
-				alert("insert subway lol");
+				// alert("insert subway lol");
 				tx.executeSql("select * from subway",
 					[], function(tx,result){
-						alert("select subway");
+						// alert("select subway");
 					}
 					,errorHandler);
 			});

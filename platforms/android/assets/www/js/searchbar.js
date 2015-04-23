@@ -20,11 +20,11 @@
 								distanceText : new String(tmpDistText),
 								distanceValue: tmpDistVal
 							});
-							console.log("mapInfo.distances test: "+ mapInfo.distances[0].id+", "+mapInfo.distances[0].distanceText);
-							console.log(tmpId);
+							console.log("mapInfo.distances test; "+ mapInfo.distances[0].id+", "+mapInfo.distances[0].distance);
+							// alert(tmpDistVal);
 							tx.executeSql("select * from store where id = ?",
 								[tmpId],function(tx, result){
-									console.log("name: " + result.rows.item(0).name + "latte: "+ result.rows.item(0).latte);
+									console.log("name: " + result.rows.item(0).name);
 									storeInfo.result.push({
 										id : result.rows.item(0).id,
 										wifi: result.rows.item(0).wifi,
@@ -32,8 +32,6 @@
 										brand: result.rows.item(0).brand,
 										name: result.rows.item(0).name,
 										address: result.rows.item(0).address,
-										lat: result.rows.item(0).lat,
-										lng: result.rows.item(0).lng,
 									});
 									// alert(storeInfo.result);
 								},errorHandler);
@@ -62,13 +60,13 @@ function displaySearchResult() {
 		var tmpAddress = storeInfo.result[i].address;
 		$('#store-list').append(
 			'<li data-icon="false"><a href="#headline" data-transition="slide" data-id="'
-			+ myId + '" data-dist="'+tmpDistance+'">' 
-			+ '<img src="img/' + tmpBrand + '.png"/>'
+			+ myId + '">' + '<img src="img/' + tmpBrand + '.png"/>'
 			+ '<h3>' + tmpName + '</h3><p>' + tmpAddress
 			+ '</p><span class="ui-li-count">' + tmpDistance
 			+ '</span></a></li>');
 	}
 	$('#store-list').listview('refresh');
-	storeCurrentList();	
+	//storeCurrentList();
+	
 	
 }

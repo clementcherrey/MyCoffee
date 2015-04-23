@@ -2,7 +2,7 @@
 var addressArray = [];
 function jsonTransform() {
 	console.log("in json function");
-	$.getJSON("ajax/metro.json",function(data) {
+	$.getJSON("ajax/starbuck-draft.json",function(data) {
 		$.each(data,function(key, val) {	
 			addressArray.push({id: val.id, name: val.name, address: val.address});
 			// codeAddress(val.address);
@@ -10,6 +10,8 @@ function jsonTransform() {
 		// alert(addressArray[0].address);
 		// codeAddress(addressArray[1].address);
 		initializeGeo();
+		// codeAddress(addressArray[111].address, 111, function(){alert("lol")});
+
 	});
 }
 
@@ -26,7 +28,9 @@ function initializeGeo() {
 		}
 		codeAddress(addressArray[loop.iteration()].address, tmpId, callnext);
 
-	}, function (){alert("finish !")});
+	}, function (){
+		// alert("finish !")
+	});
 
 }
 
@@ -42,16 +46,16 @@ function codeAddress(address, tmpId, callback) {
 				// alert(results[0].geometry.location.lat());
 				var tmplat = results[0].geometry.location.lat();
 				var tmplng = results[0].geometry.location.lng();
-				console.log("," + tmpId + "," + address+ "," + tmplat + "," + tmplng);
+				console.log("/" + tmpId + "/" + address+ "/" + tmplat + "/" + tmplng);
 
 				addressArray[tmpId] = {lat: tmplat, lng: tmplng};
 
 				// alert("After push");
 			} else if (status === google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {   
-			console.log("OVER_QUERY_LIMIT"); 
+			// console.log("OVER_QUERY_LIMIT"); 
             setTimeout(function() {
-                Geocode(address);
-            }, 200);
+                codeAddress(address, tmpId, callback);
+            }, 1000);
         	} else {
 				console.log('Geocode was not successful for the following reason: ' + status);
 			} 

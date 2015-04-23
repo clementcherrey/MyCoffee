@@ -89,10 +89,13 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/geocoding.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/index.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/Init.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/jquery-1.11.1.min.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/jquery.mobile-1.4.5.min.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/main.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/map.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/mapshop.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/mapshop2.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/searchbar.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/storage2.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/storage3.js \
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/AndroidManifest.xml \

@@ -52,11 +52,12 @@
 	border-left: none;
 	border-width: 3px !important;
 	border-color: #5da92a !important;
+	display: table;
 }
 
 #inputdiv{
-	text-align: center;
-	width: 50% !important; 
+	margin: auto;
+	width: 80% !important; 
 }
 
 #inputdiv input{
@@ -134,6 +135,15 @@
 	background:#ccddcc;
 	border-radius: 10px !important;
 
+}
+
+.containerSubway{
+	background:#e1ffc7 !important;
+}
+
+.containerSubway div{ 
+	padding: 4px !important;
+	border-radius: 0px !important;
 }
 
 .grids {
