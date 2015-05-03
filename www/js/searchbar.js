@@ -41,14 +41,18 @@
 						// alert(storeInfo.result);
 					// alert(storeInfo.result.rows.length);
 				},errorHandler);
-}
-,errorHandler);
+},function(){alert("No ssearch result, please enter a valid subway station")});
 },errorHandler, displaySearchResult);
 }	
 
 
 function displaySearchResult() {
 	console.log("in displaySearchResult");
+	// hide button for geolocation
+	$("#twobutt").empty();
+	// show footer
+	$("#homefooter").show();
+	// remove previous content of the list
 	$('#store-list').empty();
 	console.log("number of line in display: " + mapInfo.distances.length);
 

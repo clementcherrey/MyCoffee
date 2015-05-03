@@ -3,7 +3,7 @@ var subArray = [];
 var storeArray = [];
 
 function getsub(){
-console.log("in get sub");
+	console.log("in get sub");
 	$.getJSON("ajax/subway.json",function(data) {
 		$.each(data,function(key, val) {	
 			subArray.push({id: val.id, station: val.station, lat: val.lat, lng: val.lng});
@@ -14,34 +14,44 @@ console.log("in get sub");
 
 //put the brand as parmeter for futur version
 function getStore(){
-console.log("in get store");
+	console.log("in get store");
 	$.getJSON("ajax/costa.json",function(data) {
 		$.each(data,function(key, val) {	
 			storeArray.push({id: val.id, name: val.name, lat: val.lat, lng: val.lng });
 		});
-		loopOnSub();
+
+		$( "#searchsub" ).submit(function( event ) {
+			alert( "Handler for .submit() called." );
+			event.preventDefault();
+			var searchid = $("#search-sub").val();
+			// alert(searchid);
+			loopOnSub(searchid);
+		});
+		// loopOnSub(0);
 	});
 }
 
 // loop on subway station: for each sub
-function loopOnSub(){
+function loopOnSub(it){
 	// console.log("enter loop on sub");
-	syncLoop(subArray.length
+	syncLoop(20
 	//process	
 	, function(loop) {
-	myID = loop.iteration();
-	// console.log("myID : " + myID);
+		myID = loop.iteration()+ 20*it;
+		console.log("myID : " + myID);
 
-	function callnext() {
+		function callnext() {
 			// console.log("in call next");
 			callbackBase = 0;
 			loop.next();
-	}
+		}
 
-	initDistCalc2(subArray[myID], callnext);
+		initDistCalc2(subArray[myID], callnext);
 	}
 	//callback
-	,function() {alert ("finish subway loop")});
+	,function() {
+		alert("finish loop");
+	});
 }
 
 var tempSubStore = [];
@@ -97,24 +107,24 @@ function calculateDistances2(myOrigin, storesIDS, tableLL, callback) {
 	}, function(response, status) {
 		// console.log("in callbackDistance");
 		if (status != google.maps.DistanceMatrixStatus.OK) {
-			// console.log('Error was: ' + status);
-			 setTimeout(function() {
-			calculateDistances2(myOrigin, storesIDS, tableLL, callback);
-            }, 8000);
+			console.log('Error was: ' + status);
+			setTimeout(function() {
+				calculateDistances2(myOrigin, storesIDS, tableLL, callback);
+			}, 2000);
 		} else {
 			// console.log("status reponse OK");
 			callbackBase += 20;
 			for ( var i = 0; i < response.rows[0].elements.length; i++) {
 		// alert (response.rows[0].elements[i].status);
-				var valueId = storesIDS[i];
-				var distance = response.rows[0].elements[i].distance.value;
+		var valueId = storesIDS[i];
+		var distance = response.rows[0].elements[i].distance.value;
 				// if distance < 2 km
 				if (distance < 2000) {
 					tempSubStore.push( {
 						storeId : valueId,
 						subID : myOrigin.id,
 						distanceText : new String(
-								response.rows[0].elements[i].distance.text),
+							response.rows[0].elements[i].distance.text),
 						distanceValue : distance
 					});
 				}
@@ -136,12 +146,12 @@ function sortDistance2() {
 	tempSubStore.sort(compare);
 	// console.log("///////////// TABLE /////////////");
 	for (var i = tempSubStore.length - 1; i >= 0; i--) {
-	console.log( tempSubStore[i].storeId+", "+tempSubStore[i].subID
-		+", "+tempSubStore[i].distanceText+", "+tempSubStore[i].distanceValue);
+		console.log( ","+tempSubStore[i].storeId+","+tempSubStore[i].subID
+			+","+tempSubStore[i].distanceText+","+tempSubStore[i].distanceValue);
 
 	// console.log(storeArray[tempSubStore[i].storeId].id +", "
 	// 	+storeArray[tempSubStore[i].storeId].name);
-	};
+};
 	// console.log("/////////////	/////////////");
 }
 

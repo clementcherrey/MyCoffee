@@ -14,12 +14,13 @@
 	<script type="text/javascript" src="js/distancesub.js"></script>
 	<script type="text/javascript" src="js/geocoding.js"></script>
 	<script type="text/javascript" src="js/storage2.js"></script>
+	<script type="text/javascript" src="js/downloadImg.js"></script>
 	<script type="text/javascript"
 	src="http://maps.google.cn/maps/api/js?region=cn&language=en-US&sensor=true"></script>
 	<script type="text/javascript"
-	src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript"
-	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	src="js/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 <script>
@@ -27,14 +28,19 @@ function init() {
  	// alert("in init");
 	$( document ).ready(function() {
 		alert( "ready!" );
-		//jsonTransform();
-		getsub()
+		jsonTransform();
+		// getsub();
+		//downloadFile();
 	}); 	
 }
 </script>
 
 <body onload="init()">
-LOL	
+	<div id="inputdiv">
+		<form id="searchsub" action="preprocess.html">
+			 <input type="search" name="search-sub" id="search-sub" value=""/>
+		</form>
+	</div>
 
 </body>
 </html>

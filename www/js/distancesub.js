@@ -38,7 +38,7 @@ function loopOnSub(it){
 	//process	
 	, function(loop) {
 		myID = loop.iteration()+ 20*it;
-		// console.log("myID : " + myID);
+		console.log("myID : " + myID);
 
 		function callnext() {
 			// console.log("in call next");
@@ -107,7 +107,7 @@ function calculateDistances2(myOrigin, storesIDS, tableLL, callback) {
 	}, function(response, status) {
 		// console.log("in callbackDistance");
 		if (status != google.maps.DistanceMatrixStatus.OK) {
-			// console.log('Error was: ' + status);
+			console.log('Error was: ' + status);
 			setTimeout(function() {
 				calculateDistances2(myOrigin, storesIDS, tableLL, callback);
 			}, 2000);

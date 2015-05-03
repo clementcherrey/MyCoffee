@@ -1,18 +1,5 @@
-var map;
-var markers = [];
-var contents = [];
-
-
-
-
 function initMap() {
 	console.log("in intiMap !");
-	// add listener for return cleaning markers
-	$("#back-home").on('tap', function() {
-		alert("back-home");
-		infoWindow.close();
-	});
-	// init the map if no map
 	if (mapInfo.createNb == 0) {
 		console.log("in no map created !");
 		var mapOptions = {
@@ -29,13 +16,13 @@ function initMap() {
 			mapInfo.centerLng));
 		map.setZoom(mapInfo.mapZoom);
 	}
-	deleteMarkers();
+	initMarkers();
 }
 
 function clickCurrentMarker(){
-	for ( var i = 0; i < markers.length; i++) {
-		// console.log(" storeInfo.result[i].id: "+storeInfo.result[i].id+" , storeInfo.id:"+storeInfo.id);
-		if( markers[i].markerId == storeInfo.id){
+	for ( var i = 0; i < storeInfo.result.length; i++) {
+		console.log(" storeInfo.result[i].id: "+storeInfo.result[i].id+" , storeInfo.id:"+storeInfo.id);
+		if( storeInfo.result[i].id == storeInfo.id){
 			console.log("in if");
 			google.maps.event.trigger(markers[i], 'click');
 			break;
@@ -45,11 +32,8 @@ function clickCurrentMarker(){
 
 
 function initMarkers(){
-	console.log("in initMarkers")
-	var infoWindow = new google.maps.InfoWindow( {
-		content : null
-	});	 
-	contents = [];
+	var infoWindow = null;
+	clearOverlays();
 	infoWindow = new google.maps.InfoWindow( {
 		content : null
 	});
@@ -87,25 +71,9 @@ function initMarkers(){
 }
 
 
-// Sets the map on all markers in the array.
-function setAllMap(map) {
-	for (var i = 0; i < markers.length; i++) {
-		markers[i].setMap(map);
+function clearOverlays() {
+	for (var i = 0; i < markers.length; i++ ) {
+		markers[i].setMap(null);
 	}
-	if (map == null) {
-		initMarkers();
-	};
+	markers.length = 0;
 }
-
-// Removes the markers from the map, but keeps them in the array.
-function clearMarkers() {
-	setAllMap(null);
-}
-
-// Deletes all markers in the array by removing references to them.
-function deleteMarkers() {
-	console.log("in delete marker")
-	clearMarkers();
-	markers = [];
-}
-

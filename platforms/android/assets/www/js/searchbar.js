@@ -20,11 +20,11 @@
 								distanceText : new String(tmpDistText),
 								distanceValue: tmpDistVal
 							});
-							console.log("mapInfo.distances test; "+ mapInfo.distances[0].id+", "+mapInfo.distances[0].distance);
-							// alert(tmpDistVal);
+							console.log("mapInfo.distances test: "+ mapInfo.distances[0].id+", "+mapInfo.distances[0].distanceText);
+							console.log(tmpId);
 							tx.executeSql("select * from store where id = ?",
 								[tmpId],function(tx, result){
-									console.log("name: " + result.rows.item(0).name);
+									console.log("name: " + result.rows.item(0).name + "latte: "+ result.rows.item(0).latte);
 									storeInfo.result.push({
 										id : result.rows.item(0).id,
 										wifi: result.rows.item(0).wifi,
@@ -32,6 +32,8 @@
 										brand: result.rows.item(0).brand,
 										name: result.rows.item(0).name,
 										address: result.rows.item(0).address,
+										lat: result.rows.item(0).lat,
+										lng: result.rows.item(0).lng,
 									});
 									// alert(storeInfo.result);
 								},errorHandler);
@@ -39,14 +41,18 @@
 						// alert(storeInfo.result);
 					// alert(storeInfo.result.rows.length);
 				},errorHandler);
-}
-,errorHandler);
+},function(){alert("No ssearch result, please enter a valid subway station")});
 },errorHandler, displaySearchResult);
 }	
 
 
 function displaySearchResult() {
 	console.log("in displaySearchResult");
+	// hide button for geolocation
+	$("#twobutt").empty();
+	// show footer
+	$("#homefooter").show();
+	// remove previous content of the list
 	$('#store-list').empty();
 	console.log("number of line in display: " + mapInfo.distances.length);
 
@@ -60,13 +66,13 @@ function displaySearchResult() {
 		var tmpAddress = storeInfo.result[i].address;
 		$('#store-list').append(
 			'<li data-icon="false"><a href="#headline" data-transition="slide" data-id="'
-			+ myId + '">' + '<img src="img/' + tmpBrand + '.png"/>'
+			+ myId + '" data-dist="'+tmpDistance+'">' 
+			+ '<img src="img/' + tmpBrand + '.png"/>'
 			+ '<h3>' + tmpName + '</h3><p>' + tmpAddress
 			+ '</p><span class="ui-li-count">' + tmpDistance
 			+ '</span></a></li>');
 	}
 	$('#store-list').listview('refresh');
-	//storeCurrentList();
-	
+	storeCurrentList();	
 	
 }

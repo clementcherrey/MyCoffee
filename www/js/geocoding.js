@@ -2,7 +2,7 @@
 var addressArray = [];
 function jsonTransform() {
 	console.log("in json function");
-	$.getJSON("ajax/starbuck-draft.json",function(data) {
+	$.getJSON("ajax/SBpregeocode.json",function(data) {
 		$.each(data,function(key, val) {	
 			addressArray.push({id: val.id, name: val.name, address: val.address});
 			// codeAddress(val.address);
