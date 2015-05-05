@@ -42,7 +42,6 @@ function preCalc(){
 	db.transaction(function(tx) {
 		tx.executeSql("select * from store",
 			[], function(tx,results){
-				console.log("results: "+results);
 				console.log("results length: "+results.rows.length);
 				for (var i = results.rows.length - 1; i >= 0; i--) {
 					storeInfo.result.push({
@@ -52,11 +51,12 @@ function preCalc(){
 						brand: results.rows.item(i).brand,
 						name: results.rows.item(i).name,
 						address: results.rows.item(i).address,
+						open: results.rows.item(i).open,
+						description: results.rows.item(i).description,
 						lat: results.rows.item(i).lat,
 						lng: results.rows.item(i).lng,
 					});
 				};
-				console.log("finish for");
 				initDistCalc();
 			});
 	});
@@ -72,12 +72,6 @@ function estimateDiff(objArr){
 	var diffArr = $.map(objArr, function(n,i){
 		return [{id: n.id, diff: diffOp(n.lat,n.lng)}];
 	})
-
-	// for (var i = diffArr.length - 1; i >= 0; i--) {
-	// 	console.log(" row one diffArr id: "+ diffArr[i].id + ", diff: "+ diffArr[i].diff);
-	// };
-	
-
 	// sort using diff
 	function compareDiff(a, b) {
 		if (a.diff < b.diff)
@@ -87,7 +81,6 @@ function estimateDiff(objArr){
 		return 0;
 	}
 	diffArr.sort(compareDiff);
-	// console.log(" row one diffArr id: "+ diffArr[0].id + ", diff: "+ diffArr[0].diff);
 	return diffArr; 
 }
 
@@ -100,49 +93,42 @@ function initDistCalc() {
 	// only send 20 locations per request for distqnces
 	console.log ("number of store : " + storeInfo.result.length);
 	var divbytwenty = storeInfo.result.length / 20;
-	// alert(divbytwenty);
-
 	// test for new limit to replace divby twenty
-	var nbOfLoop = 1
+	var nbOfLoop = 2
 
 	syncLoop(nbOfLoop, function(loop) {
 		var j = loop.iteration() * 20;
 		console.log("my counter equal" + j);
 		var tableLatLng = [];
+		var valueId =[];
 		for ( var i = 0; i < 20 && i < storeInfo.result.length - j; i++) {
 			var itID = j+i;
 			var tmpId = currentDiff[itID].id;
-			console.log("tmpId: " + tmpId);
-
-			for ( var k = 0; k < storeInfo.result.length; i++) {
-				console.log("lol");
-				if(storeInfo.result[k].id == tmpId){
-					console.log("storeInfo.result.id == tmpId");
-					var tmpLat = storeInfo.result[k].lat;
-					var tmpLng = storeInfo.result[k].lng;
+			// console.log("itID: "+itID +", tmpId: " + tmpId);
+			for ( var k = 0; k < storeInfo.result.length ; k++) {
+				// console.log("storeInfo store id: " + storeInfo.result[k].id);
+				if (storeInfo.result[k].id == tmpId) {
+					valueId.push(tmpId);
+					tableLatLng.push(new google.maps.LatLng(storeInfo.result[k].lat, storeInfo.result[k].lng));
 					break;
-				}
+				};
 			}
-			tableLatLng[i] = new google.maps.LatLng(tmpLat, tmpLng);
 		}
-		// alert('loop done');
-		// alert("length table : " + tableLatLng.length);
+
+
 		function callnext() {
 			loop.next();
 		}
-		calculateDistances(tableLatLng, callnext);
-		// callnext();
+		calculateDistances(valueId, tableLatLng, callnext);
 	}, function() {
 		sortDistance();
 		displaySearchResult();
-		// alert('done');
 	});
 }
 
 // ********************* calculate distances *************************//
-var callbackBase = -20;
 
-function calculateDistances(tableLL, callback) {
+function calculateDistances(valueId, tableLL, callback) {
 	console.log("in calculate");
 	var service = new google.maps.DistanceMatrixService();
 	var origin = new google.maps.LatLng(mapInfo.currentLat, mapInfo.currentLng);
@@ -156,30 +142,28 @@ function calculateDistances(tableLL, callback) {
 	}, function(response, status) {
 		console.log("in callbackDistance");
 		if (status == google.maps.DistanceMatrixStatus.OK) {
-	// alert("in else");
-	callbackBase += 20;
-	for ( var i = 0; i < response.rows[0].elements.length; i++) {
-		// console.log (response.rows[0].elements[i].status);
-		var valueId = callbackBase + i;
-		if (true) {
-			mapInfo.distances.push( {
-				id : valueId,
-				distanceText : new String(
-					response.rows[0].elements[i].distance.text),
-				distanceValue: response.rows[0].elements[i].distance.value
-			});
-		}
-	}
-}else if (status === google.maps.DistanceMatrixStatus.OVER_QUERY_LIMIT) {   
-	console.log("OVER_QUERY_LIMIT"); 
-	setTimeout(function() {
-		calculateDistances(tableLL, callback);
-	}, 5000);
-}else {
-	console.log('distance calc was not successful for the following reason: ' + status);
-} 
-callback();
-});
+			for ( var i = 0; i < response.rows[0].elements.length; i++) {
+				var myIndex = i;
+				var myId = valueId[myIndex];
+				if (true) {
+					mapInfo.distances.push( {
+						id : myId,
+						distanceText : new String(
+							response.rows[0].elements[i].distance.text),
+						distanceValue: response.rows[0].elements[i].distance.value
+					});
+				}
+			}
+		}else if (status === google.maps.DistanceMatrixStatus.OVER_QUERY_LIMIT) {   
+			console.log("OVER_QUERY_LIMIT"); 
+			setTimeout(function() {
+				calculateDistances(tableLL, callback);
+			}, 5000);
+		}else {
+			console.log('distance calc was not successful for the following reason: ' + status);
+		} 
+		callback();
+	});
 }
 
 // ****** sort the distance array from close to far ******//

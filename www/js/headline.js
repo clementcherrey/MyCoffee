@@ -49,10 +49,10 @@ function headlineDisplay(sublines) {
 			var tmpNote = "2";
 			var tmpWifi = storeInfo.result[i].wifi;
 			var tmpAddress = storeInfo.result[i].address;
-			var tmpDescription = "blablabla bla blablabla blablablabla bla blablabla bla blablabla bla blablabla bla blablabla bla blablabla bla blablabla bla blablabla bla";
-			//var tmpDistance = mapInfo.distances[i].distance;
+			var tmpOpen = storeInfo.result[i].open;
+			var tmpDescription = storeInfo.result[i].description;
+			console.log("open: "+ tmpOpen+", description: "+tmpDescription);
 			var tmpDistance = storeInfo.distance;
-			// console.log("storeInfo.distance: "+ storeInfo.distance);
 			var tmpPrice = storeInfo.result[i].latte;
 
 			mapInfo.centerLat = storeInfo.result[i].lat;
@@ -69,9 +69,9 @@ function headlineDisplay(sublines) {
 				+ '.png"/></div>'
 				+ '<div class = "container1"><div><p>'
 				+ tmpName
-				+ '</p><p><img src="img/dollar-'
-				+ tmpNote
-				+ '.png" style="height: 30px;"/></p></div></div>'						
+				+ '</p><p>'
+				+	tmpOpen
+				+'</p></div></div>'						
 				+ '</div></li>');
 
 			$('#store-data')

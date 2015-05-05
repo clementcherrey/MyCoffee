@@ -36,6 +36,8 @@
  	+ ' name TEXT,'
  	+ ' brand TEXT,' 
  	+ ' address TEXT,' 
+ 	+ ' open TEXT,' 
+ 	+ ' description TEXT,' 
  	+ ' lat FLOAT,'
  	+ ' lng FLOAT)');
 
@@ -75,6 +77,7 @@ function dbReady() {
 
 	// the 2 buttons to use geolocation
 	$('#getLocation').on("tap", getMyPos);
+	$('#getLocation1').on("tap", getMyPos);
 	$('#getLocation2').on("tap", getMyPos);
 
 	$("#store-list").on('vclick', 'li a', function() {
@@ -96,6 +99,16 @@ function dbReady() {
 	$("#main").on('pageshow', initMap);
 }
 
+
+function getStoreIndexById(theId){
+	// console.log("getStoreIndexById for id = "+theId);
+	for ( var k = 0; k < storeInfo.result.length ; k++) {
+		if (storeInfo.result[k].id == theId) {
+			return k;
+		};
+	}
+	return null;
+}
 
 var storeInfo = {
 	id : null,
@@ -216,6 +229,8 @@ function loadOldList(tx,results){
 						brand: result.rows.item(0).brand,
 						name: result.rows.item(0).name,
 						address: result.rows.item(0).address,
+						open: result.rows.item(0).open,
+						description: result.rows.item(0).description,
 						lat: result.rows.item(0).lat,
 						lng: result.rows.item(0).lng,
 					});
@@ -266,7 +281,7 @@ function getMyPos() {
 			mapInfo.currentLng = position.coords.longitude;
 			preCalc();
 		} else {
-			alert(" You are not in Shanghai. Impossible to calculate distances from your current position");
+			// alert(" You are not in Shanghai. Impossible to calculate distances from your current position");
 			preCalc();
 		}
 	};
@@ -275,7 +290,7 @@ function getMyPos() {
 		// alert("in error");
 		console.log('error code: ' + error.code + '\n' + 'message: ' + error.message
 			+ '\n');
-		alert("impossible to get your current position. Make sure you authorize shanghaiCoffee to access your location");
+		// alert("impossible to get your current position. Make sure you authorize shanghaiCoffee to access your location");
 		preCalc();
 	};
 
@@ -283,7 +298,7 @@ function getMyPos() {
 }
 
 function jsonpopulate() {
-	 alert("in json function");
+	// alert("in json function");
 	$.getJSON("ajax/storeSub.json",
 		function(data) {
 			// alert(data);
@@ -349,7 +364,7 @@ function jsonpopulate() {
 					function(key, val) {
 						tx
 						.executeSql(
-							"insert into store(id,wifi,latte,brand,name,address,lat,lng) values(?,?,?,?,?,?,?,?)",
+							"insert into store(id,wifi,latte,brand,name,address,open,description,lat,lng) values(?,?,?,?,?,?,?,?,?,?)",
 							[
 							val.id +90,
 							val.wifi,
@@ -357,6 +372,8 @@ function jsonpopulate() {
 							val.brand,
 							val.name,
 							val.address,
+							val.open,
+							val.description,
 							val.lat,
 							val.lng ]);
 					});
@@ -394,7 +411,7 @@ function jsonpopulate() {
 				tx.executeSql("select * from store",
 					[], gotlog, errorHandler);
 
-		});
+			});
 
 		});
 	}
