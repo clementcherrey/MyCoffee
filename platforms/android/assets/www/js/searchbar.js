@@ -32,16 +32,15 @@
 										brand: result.rows.item(0).brand,
 										name: result.rows.item(0).name,
 										address: result.rows.item(0).address,
+										open: result.rows.item(0).open,
+										description: result.rows.item(0).description,
 										lat: result.rows.item(0).lat,
 										lng: result.rows.item(0).lng,
 									});
-									// alert(storeInfo.result);
 								},errorHandler);
 						};
-						// alert(storeInfo.result);
-					// alert(storeInfo.result.rows.length);
 				},errorHandler);
-},function(){alert("No ssearch result, please enter a valid subway station")});
+},function(){alert("No search result, please enter a valid subway station")});
 },errorHandler, displaySearchResult);
 }	
 
@@ -56,17 +55,18 @@ function displaySearchResult() {
 	$('#store-list').empty();
 	console.log("number of line in display: " + mapInfo.distances.length);
 
-	for ( var i = 0; i < mapInfo.distances.length; i++) {
+	for ( var i = 0; i < mapInfo.distances.length && i<40 ; i++) {
 		var tmpId = Number(mapInfo.distances[i].id);
 		var tmpDistance = mapInfo.distances[i].distanceText;
-		// alert(tmpId+ " : " + tmpDistance);
-		var myId = storeInfo.result[i].id;
-		var tmpName = storeInfo.result[i].name;
-		var tmpBrand = storeInfo.result[i].brand;
-		var tmpAddress = storeInfo.result[i].address;
+		var tmpIndex = getStoreIndexById(tmpId);
+		
+		var storeId = storeInfo.result[tmpIndex].id;
+		var tmpName = storeInfo.result[tmpIndex].name;
+		var tmpBrand = storeInfo.result[tmpIndex].brand;
+		var tmpAddress = storeInfo.result[tmpIndex].address;
 		$('#store-list').append(
 			'<li data-icon="false"><a href="#headline" data-transition="slide" data-id="'
-			+ myId + '" data-dist="'+tmpDistance+'">' 
+			+ storeId + '" data-dist="'+tmpDistance+'">' 
 			+ '<img src="img/' + tmpBrand + '.png"/>'
 			+ '<h3>' + tmpName + '</h3><p>' + tmpAddress
 			+ '</p><span class="ui-li-count">' + tmpDistance

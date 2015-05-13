@@ -10,6 +10,25 @@
 	
 }
 
+.lifoot{
+
+}
+
+#midbutt{
+border-left: solid;
+	border-right: solid;
+	border-width: 0.1em;
+	border-color: #bababa;
+}
+
+.lifoot a{
+	display: block !important;
+	margin-left: auto !important;
+    margin-right: auto !important;
+    border: none;
+}
+
+
 .ui-footer {
 	position: fixed !important;
 	background: #FFFFFF !important;
@@ -44,7 +63,7 @@
 	padding: 0 !important;
 	margin: 0 !important;
 	width: 100% !important;
-	height: 120px ;
+	height: 90px ;
 	overflow: hidden;
 	border-top: none;
 	border-right: none;
@@ -86,7 +105,7 @@
 
 .container1{
 	position: relative;
-	width: auto;
+	width: 100% - 90px;
 	padding-bottom: 80px;
 	float: left;
 	height: 0;

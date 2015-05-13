@@ -1,5 +1,28 @@
+var map;
+var markers = [];
+var contents = [];
+var myInfoWindow;
+
+
+
 function initMap() {
+	myInfoWindow = new google.maps.InfoWindow( {
+		content : null
+	});
 	console.log("in intiMap !");
+	// add listener for return cleaning markers
+	$("#back-home").on('click', function() {
+		console.log("back button taped");
+		if(myInfoWindow){
+			alert(myInfoWindow.getContent());
+			alert(myInfoWindow.getContent());
+			myInfoWindow.close();
+			google.maps.event.trigger(myInfoWindow, 'closeclick');
+		}
+		deleteMarkers();
+		alert("back-home");
+	});
+	// init the map if no map
 	if (mapInfo.createNb == 0) {
 		console.log("in no map created !");
 		var mapOptions = {
@@ -20,9 +43,9 @@ function initMap() {
 }
 
 function clickCurrentMarker(){
-	for ( var i = 0; i < storeInfo.result.length; i++) {
-		console.log(" storeInfo.result[i].id: "+storeInfo.result[i].id+" , storeInfo.id:"+storeInfo.id);
-		if( storeInfo.result[i].id == storeInfo.id){
+	for ( var i = 0; i < markers.length; i++) {
+		// console.log(" storeInfo.result[i].id: "+storeInfo.result[i].id+" , storeInfo.id:"+storeInfo.id);
+		if( markers[i].markerId == storeInfo.id){
 			console.log("in if");
 			google.maps.event.trigger(markers[i], 'click');
 			break;
@@ -32,11 +55,9 @@ function clickCurrentMarker(){
 
 
 function initMarkers(){
-	var infoWindow = null;
-	clearOverlays();
-	infoWindow = new google.maps.InfoWindow( {
-		content : null
-	});
+	console.log("in initMarkers");
+	myInfoWindow.content = null;
+	contents = [];
 	for ( var i = 0; i < storeInfo.result.length; i++) {
 		var tmplat = storeInfo.result[i].lat;
 		var tmplng = storeInfo.result[i].lng;
@@ -60,20 +81,81 @@ function initMarkers(){
 		}));
 		
 		google.maps.event.addListener(markers[i], 'click',  function(){
-			infoWindow.content = "YO";
-			infoWindow.setContent(this.content);
-			infoWindow.open(map, this);
+			myInfoWindow.content = "YO";
+			myInfoWindow.setContent(this.content);
+			myInfoWindow.open(map, this);
 		});
 	};
+
+
+	// TEST FOR THE LAT LNG BAIDU
+	var testSBJiashan = new google.maps.LatLng(31.203489,121.462607);
+	var testCostJiashan = new google.maps.LatLng(31.203513, 121.461977);
+	var testLatLngB = new google.maps.LatLng(31.208523,121.466471);
+	var testLatLngC = new google.maps.LatLng(31.208907,121.468067);
+	var testLatLngF = new google.maps.LatLng(31.208515,121.467329);
+	var testLatLngI = new google.maps.LatLng(31.208955,121.468806);
+	var myPos = new google.maps.LatLng(mapInfo.currentLat,mapInfo.currentLng);
+	markers.push( new google.maps.Marker({
+		position : myPos,
+		map : map,
+		icon : 'img/xigua.png',
+	}));
+	markers.push( new google.maps.Marker({
+		position : testSBJiashan,
+		map : map,
+		icon : 'img/marker.png',
+	}));
+	markers.push( new google.maps.Marker({
+		position : testCostJiashan,
+		map : map,
+		icon : 'img/marker.png',
+	}));
+	markers.push( new google.maps.Marker({
+		position : testLatLngB,
+		map : map,
+		icon : 'img/150.png',
+	}));
+	markers.push( new google.maps.Marker({
+		position : testLatLngC,
+		map : map,
+		icon : 'img/150.png',
+	}));
+	markers.push( new google.maps.Marker({
+		position : testLatLngF,
+		map : map,
+		icon : 'img/150.png',
+	}));
+	markers.push( new google.maps.Marker({
+		position : testLatLngI,
+		map : map,
+		icon : 'img/150.png',
+	}));
 	if(storeInfo.id != null){
 		clickCurrentMarker();
 	}
 }
 
 
-function clearOverlays() {
-	for (var i = 0; i < markers.length; i++ ) {
-		markers[i].setMap(null);
+// Sets the map on all markers in the array.
+function setAllMap(map) {
+	for (var i = 0; i < markers.length; i++) {
+		markers[i].setMap(map);
 	}
-	markers.length = 0;
+	if (map == null) {
+		initMarkers();
+	};
 }
+
+// Removes the markers from the map, but keeps them in the array.
+function clearMarkers() {
+	setAllMap(null);
+}
+
+// Deletes all markers in the array by removing references to them.
+function deleteMarkers() {
+	console.log("in delete marker")
+	clearMarkers();
+	markers = [];
+}
+

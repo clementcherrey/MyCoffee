@@ -20,12 +20,13 @@
  }
 
  function setup(tx) {
-
+//TEST hide navbar footer
+	$("#gpsLoading").hide();
  // suppress drop table
  tx.executeSql('DROP TABLE store');
  tx.executeSql('DROP TABLE subway');
  tx.executeSql('DROP TABLE storeSub');
- // tx.1executeSql('DROP TABLE contentList');
+ tx.executeSql('DROP TABLE contentList');
 
 
 
@@ -257,13 +258,13 @@ function getMyPos() {
 	console.log("in getMyPos");
 	var options = {
 		enableHighAccuracy : true,
-		maximumAge : 300,
+		maximumAge : 3000,
 		timeout : 4000
 	};
 
 	var onSuccess = function(position) {
-		// alert("in onSuccess");
-		console.log('Latitude: ' + position.coords.latitude + '\n' + 'Longitude: '
+		console.log("Success get my pos");
+		console.log('my position Latitude= ' + position.coords.latitude + '\n' + 'Longitude= '
 			+ position.coords.longitude + '\n');
 		// set the origin for the distance calc using the geolocation result
 		// ***uncomment the first two when outside city test is

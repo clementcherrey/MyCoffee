@@ -1,18 +1,26 @@
 
 var addressArray = [];
+
+
 function jsonTransform() {
 	console.log("in json function");
-	$.getJSON("ajax/pregoecodingSB.json",function(data) {
+	$.getJSON("ajax/SBpregeocode.json",function(data) {
 		$.each(data,function(key, val) {	
 			addressArray.push({id: val.id, name: val.name, address: val.address});
 			// codeAddress(val.address);
 		});
-		// alert(addressArray[0].address);
-		// codeAddress(addressArray[1].address);
-		initializeGeo();
-		// codeAddress(addressArray[111].address, 111, function(){alert("lol")});
-
+		initializeGeo();	
 	});
+}
+
+
+function testCoordinate(){
+	var myAddress = "上海市黄浦区肇嘉浜路212号";
+	alert ("myAddress: "+ myAddress);
+	function callnext(){
+		alert("lol");
+	}
+	codeAddress(myAddress, 0, callnext);
 }
 
 
@@ -43,7 +51,7 @@ function codeAddress(address, tmpId, callback) {
 		function(results, status) {
 			if (status == google.maps.GeocoderStatus.OK) { 
 				// alert(results[0].geometry.location);
-				// alert(results[0].geometry.location.lat());
+				alert("lat: " +results[0].geometry.location.lat());
 				var tmplat = results[0].geometry.location.lat();
 				var tmplng = results[0].geometry.location.lng();
 				console.log("/" + tmpId + "/" + address+ "/" + tmplat + "/" + tmplng);

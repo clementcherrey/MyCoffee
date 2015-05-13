@@ -4,9 +4,9 @@
  function init() {
  	console.log("in init");
  	//****FOR BROWSER*****//
- 	// $( document ).ready(function() {
- 	// 	deviceready();
- 	// }); 	
+ 	$( document ).ready(function() {
+ 		deviceready();
+ 	}); 	
 
  	//****FOR PHONE*****//
  	document.addEventListener("deviceready", deviceready, true);
@@ -22,9 +22,9 @@
  function setup(tx) {
 
  // suppress drop table
- // tx.executeSql('DROP TABLE store');
- // tx.executeSql('DROP TABLE subway');
- // tx.executeSql('DROP TABLE storeSub');
+ tx.executeSql('DROP TABLE store');
+ tx.executeSql('DROP TABLE subway');
+ tx.executeSql('DROP TABLE storeSub');
  // tx.1executeSql('DROP TABLE contentList');
 
 
@@ -36,6 +36,8 @@
  	+ ' name TEXT,'
  	+ ' brand TEXT,' 
  	+ ' address TEXT,' 
+ 	+ ' open TEXT,' 
+ 	+ ' description TEXT,' 
  	+ ' lat FLOAT,'
  	+ ' lng FLOAT)');
 
@@ -75,6 +77,7 @@ function dbReady() {
 
 	// the 2 buttons to use geolocation
 	$('#getLocation').on("tap", getMyPos);
+	$('#getLocation1').on("tap", getMyPos);
 	$('#getLocation2').on("tap", getMyPos);
 
 	$("#store-list").on('vclick', 'li a', function() {
@@ -96,6 +99,16 @@ function dbReady() {
 	$("#main").on('pageshow', initMap);
 }
 
+
+function getStoreIndexById(theId){
+	// console.log("getStoreIndexById for id = "+theId);
+	for ( var k = 0; k < storeInfo.result.length ; k++) {
+		if (storeInfo.result[k].id == theId) {
+			return k;
+		};
+	}
+	return null;
+}
 
 var storeInfo = {
 	id : null,
@@ -123,9 +136,8 @@ var mapInfo = {
 	maxLng : 122.493735
 };
 
-var map;
 var contents = [];
-var markers = [];
+
 
 
 function populatedb(tx, results) {
@@ -202,13 +214,13 @@ function loadOldList(tx,results){
 		console.log("after puttting the html");
 		storeInfo.result =[];
 		$('#store-list > li > a').each(function () {
-			console.log("in each");
+			// console.log("in each");
 			var tmpId = $(this).attr('data-id');
-			console.log("current data-id fetch: " + tmpId);
+			// console.log("current data-id fetch: " + tmpId);
 			tx.executeSql("select * from store where id = ?",
 				[tmpId],function(tx, result){
-					console.log("number of result: "+result.rows.length);
-					console.log("item 0: "+result.rows.item(0));
+					// console.log("number of result: "+result.rows.length);
+					// console.log("item 0: "+result.rows.item(0));
 					// console.log("name: " + result.rows.item(0).name + "latte: "+ result.rows.item(0).latte);
 					storeInfo.result.push({
 						id : result.rows.item(0).id,
@@ -217,6 +229,8 @@ function loadOldList(tx,results){
 						brand: result.rows.item(0).brand,
 						name: result.rows.item(0).name,
 						address: result.rows.item(0).address,
+						open: result.rows.item(0).open,
+						description: result.rows.item(0).description,
 						lat: result.rows.item(0).lat,
 						lng: result.rows.item(0).lng,
 					});
@@ -243,13 +257,13 @@ function getMyPos() {
 	console.log("in getMyPos");
 	var options = {
 		enableHighAccuracy : true,
-		maximumAge : 300,
-		timeout : 2000
+		maximumAge : 3000,
+		timeout : 4000
 	};
 
 	var onSuccess = function(position) {
-		// alert("in onSuccess");
-		console.log('Latitude: ' + position.coords.latitude + '\n' + 'Longitude: '
+		console.log("Success get my pos");
+		console.log('my position Latitude= ' + position.coords.latitude + '\n' + 'Longitude= '
 			+ position.coords.longitude + '\n');
 		// set the origin for the distance calc using the geolocation result
 		// ***uncomment the first two when outside city test is
@@ -262,12 +276,12 @@ function getMyPos() {
 		var test4 = mapInfo.minLat < position.coords.latitude;
 		console.log(test1 + " " + test2 + " " + test3 + " " + test4);
 		if (test1 && test2 && test3 && test4) {
-			console.log("in if");
+			console.log("test succeed");
 			mapInfo.currentLat = position.coords.latitude;
 			mapInfo.currentLng = position.coords.longitude;
 			preCalc();
 		} else {
-			alert(" You are not in Shanghai. Impossible to calculate distances from your current position");
+			// alert(" You are not in Shanghai. Impossible to calculate distances from your current position");
 			preCalc();
 		}
 	};
@@ -276,7 +290,7 @@ function getMyPos() {
 		// alert("in error");
 		console.log('error code: ' + error.code + '\n' + 'message: ' + error.message
 			+ '\n');
-		alert("impossible to get your current position. Make sure you authorize shanghaiCoffee to access your location");
+		// alert("impossible to get your current position. Make sure you authorize shanghaiCoffee to access your location");
 		preCalc();
 	};
 
@@ -284,7 +298,7 @@ function getMyPos() {
 }
 
 function jsonpopulate() {
-	 alert("in json function");
+	// alert("in json function");
 	$.getJSON("ajax/storeSub.json",
 		function(data) {
 			// alert(data);
@@ -334,39 +348,41 @@ function jsonpopulate() {
 				tx.executeSql("select * from subway",
 					[], function(tx,result){
 						// alert("select subway");
-						insertCosta();
+						// insertCosta();
 					}
 					,errorHandler);
 			});
 		});
 
-	// $.getJSON(
-	// 	"ajax/starbucks.json",
-	// 	function(data) {
-	// 		// alert(data);
-	// 		db
-	// 		.transaction(function(tx) {
-	// 			$.each(data,
-	// 				function(key, val) {
-	// 					tx
-	// 					.executeSql(
-	// 						"insert into store(id,wifi,latte,brand,name,address,lat,lng) values(?,?,?,?,?,?,?,?)",
-	// 						[
-	// 						val.id +90,
-	// 						val.wifi,
-	// 						val.latte,
-	// 						val.brand,
-	// 						val.name,
-	// 						val.address,
-	// 						val.lat,
-	// 						val.lng ]);
-	// 				});
+	$.getJSON(
+		"ajax/starbucks.json",
+		function(data) {
+			// alert(data);
+			db
+			.transaction(function(tx) {
+				$.each(data,
+					function(key, val) {
+						tx
+						.executeSql(
+							"insert into store(id,wifi,latte,brand,name,address,open,description,lat,lng) values(?,?,?,?,?,?,?,?,?,?)",
+							[
+							val.id +90,
+							val.wifi,
+							val.latte,
+							val.brand,
+							val.name,
+							val.address,
+							val.open,
+							val.description,
+							val.lat,
+							val.lng ]);
+					});
 
-	// 			alert("after insert");
-	// 			insertCosta();
-	// 		});
+				alert("after insert");
+				insertCosta();
+			});
 
-	// 	});
+		});
 
 	function insertCosta(){
 		$.getJSON(
@@ -395,7 +411,7 @@ function jsonpopulate() {
 				tx.executeSql("select * from store",
 					[], gotlog, errorHandler);
 
-		});
+			});
 
 		});
 	}

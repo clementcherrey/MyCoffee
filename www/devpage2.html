@@ -6,8 +6,7 @@
 	content="width=device-width, initial-scale=1.0, user-scalable=no" />
 	<title>dev page</title>
 
-	<link rel="stylesheet"
-	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
 	<link rel="stylesheet" href="css/main.css" />
 
 	<script type="text/javascript" src="js/storage2.js"></script>
@@ -30,7 +29,7 @@
 
 	<div data-role="page" id="homepage">
 		<div data-role="header" data-position="fixed">
-			<div align="center"><img src="img/title-app.png" alt="coffee-app"
+			<div align="center"><img src="img/title-app2.png" alt="my-app"
 				Style="padding: 5% 0px 3% 0px;" />
 			</div>
 		</div>
@@ -46,122 +45,122 @@
 			</div>
 		</div>
 
-		<!-- 2 buttons for first visist -->
-		<div id="twobutt">
-			<div class="imageContainer">
-				<button id="getLocation" class="ui-btn"></button>
+		<ul data-role="listview" data-split-icon="refresh">
+			<li>
+				<a id="refPos2" href="#">Results close to 
+					<span id="span-pos" style="font-weight:bold;"> Your Position</span></a>
+					<a href="#"></a>
+				</li>
+			</ul>
+
+
+			<!-- Main content-->
+			<div data-role="content">
+				<div class="list-wrapper">
+					<ul data-role="listview" id="store-list">
+						<!-- store list here -->
+					</ul>
+				</div>
 			</div>
-			<div class="imageContainer">
-				<a id="goMap" class="ui-btn" href="#main"></a>
-			</div>
-		</div>
-		<!-- GPS band -->
-		<div id="gpsBand">
-			<div class="gps container">
-				<button id="getLocation2" class="ui-btn  ui-btn-icon-right ui-icon-refresh" style="border: none; font-size: 13px;"> Close to your position (last update 2Hrs)</button>
-			</div>
-		</div>
-		<!-- Main content-->
-		<div data-role="content">
-			<div class="list-wrapper">
-				<ul data-role="listview" id="store-list">
-					<!-- store list here -->
-				</ul>
-			</div>
-			<!-- /list wrapper --></div>
-			<!-- /content -->
+	<!-- /content -->
 			<div data-theme="a" data-role="footer" data-position="fixed"
-			id="homefooter" hidden="true">
-			<div data-role="navbar" class="custom-navbar">
-				<ul style="border: none">
-					<li class="lifoot"><a href="#main"
-					class="ui-btn ui-btn-icon-notext ui-btn-inline ui-icon-location"></a></li>
-					<li id="midbutt" class="lifoot"><a id="getLocation1" href="#"
-					class="ui-btn ui-btn-icon-notext ui-btn-inline ui-icon-navigation"></a></li>
-					<li class="lifoot"><a href="#more"
-					class="ui-btn ui-btn-icon-notext ui-btn-inline ui-icon-gear"></a></li>
-				</ul>
+				id="homefooter" hidden="true">
+				<div id="footernav" data-role="navbar" class="custom-navbar">
+					<ul style="border: none">
+						<li class="lifoot"><a href="#main"
+								class="ui-btn ui-btn-icon-notext ui-btn-inline ui-icon-location"></a></li>
+						<li id="midbutt" class="lifoot"><a id="getLocation1" href="#"
+								class="ui-btn ui-btn-icon-notext ui-btn-inline ui-icon-navigation"></a></li>
+						<li class="lifoot"><a href="#more"
+								class="ui-btn ui-btn-icon-notext ui-btn-inline ui-icon-gear"></a></li>
+					</ul>
+				</div>
+				<div id="gpsLoading">
+				</div>
 			</div>
-			<!-- /first navbar --></div>
-			<!-- /footer --></div>
-			<!-- /home page -->
-			<!-- //////////////////////// HEADLINE /////////////////////////////////// -->
+	</div>
+		<!-- //////////////////////// HEADLINE /////////////////////////////////// -->
 
-			<div data-role="page" id="headline">
-				<div data-role="header" data-position="fixed" class="header-div">
-					<h1 class="header-title"></h1>
-					<a href="#homepage"
-					class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
-					data-transition="slide" data-direction="reverse"
-					style="border: none; background-color: transparent;"><img
-					src="img/logo-coffee.png" alt="cup-logo"></a></div>
-					<!-- /header -->
+							<div data-role="page" id="headline">
+								<div data-role="header" data-position="fixed" class="header-div">
+									<h1 class="header-title"></h1>
+									<a href="#homepage"
+									class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
+									data-transition="slide" data-direction="reverse"
+									style="border: none; background-color: transparent;"><img
+									src="img/logo-coffee.png" alt="cup-logo"></a></div>
+									<!-- /header -->
 
-					<div data-role="content">
-						<div class="list-wrapper">
-							<ul data-role="listview" id="store-data" data-theme="a">
-								<!-- description here -->
-							</ul>
-						</div>
-						<!-- list wrapper --></div>
-						<!-- content -->
+									<div data-role="content">
+										<div class="list-wrapper">
+											<ul data-role="listview" id="store-data" data-theme="a">
+												<!-- description here -->
+											</ul>
+										</div>
+										<!-- list wrapper --></div>
+										<!-- content -->
 
-						<div data-role="footer" data-position="fixed"
-						style="text-align: center;" ><a href="#main" id="show-map-button"
-						class="ui-btn ui-corner-all ui-shadow"><span>Show on Map</span></a></div>
-					</div>
+										<div data-role="footer" data-position="fixed"
+										style="text-align: center;" ><a href="#main" id="show-map-button"
+										class="ui-btn ui-corner-all ui-shadow"><span>Show on Map</span></a></div>
+									</div>
 
-					<!-- //////////////////////// MORE /////////////////////////////////// -->
+									<!-- //////////////////////// MORE /////////////////////////////////// -->
 
-					<div data-role="page" id="more">
-						<div data-role="header" data-position="fixed" class="header-div">
-							<h1 class="header-title"></h1>
-							<a href="#homepage"
-							class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
-							data-transition="slide" data-direction="reverse"
-							style="border: none; background-color: transparent;"><img
-							src="img/logo-coffee.png" alt="cup-logo"></a></div>
-							<!-- /header -->
+									<div data-role="page" id="more">
+										<div data-role="header" data-position="fixed" class="header-div">
+											<h1 class="header-title"></h1>
+											<a href="#homepage"
+											class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
+											data-transition="slide" data-direction="reverse"
+											style="border: none; background-color: transparent;"><img
+											src="img/logo-coffee.png" alt="cup-logo"></a></div>
+											<!-- /header -->
 
-							<div data-role="content">
-								<div class="list-wrapper">
-									<ul data-role="listview" data-inset="true">
-										 <li class="ui-field-contain">
-											 <label for="flip1">Map loaded in background:</label>
-											            <select name="flip1" id="flip1" data-role="slider">
-												                <option value="off">no</option>
-												                <option value="on">yes</option>
-											            </select>
-										        </li>
-										<li class="ui-field-contain">
-											            <label for="flip2">Get my position automatically:</label>
-											            <select name="flip2" id="flip2" data-role="slider">
-												                <option value="off">no</option>
-												                <option value="on">yes</option>
-											            </select>
-										        </li>
-									    </ul>
-								</div>
-							</div>
-						</div>
+											<div data-role="content">
+												<div  class="banana-wrapper">
+													<img src="img/dancing-banana.gif">
+												</div>
 
-						<!-- //////////////////////// MAIN /////////////////////////////////// -->
 
-						<div data-role="page" id="main">
-							<div data-role="header" data-position="fixed" class="header-div">
-								<h1 class="header-title"></h1>
-								<a href="#homepage" id="back-home"
-								class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
-								data-transition="slide" data-direction="reverse"
-								style="border: none; background-color: transparent;"><img
-								src="img/logo-coffee.png" alt="cup-logo"></a></div>
-								<!-- /header -->
+												<div class="list-wrapper">
+													<ul data-role="listview" data-inset="true">
+														 <li class="ui-field-contain">
+															 <label for="flip1">Map loaded in background:</label>
+															            <select name="flip1" id="flip1" data-role="slider">
+																                <option value="off">no</option>
+																                <option value="on">yes</option>
+															            </select>
+														        </li>
+														<li class="ui-field-contain">
+															            <label for="flip2">Get my position automatically:</label>
+															            <select name="flip2" id="flip2" data-role="slider">
+																                <option value="off">no</option>
+																                <option value="on">yes</option>
+															            </select>
+														        </li>
+													    </ul>
+												</div>
+											</div>
+										</div>
 
-								<div data-role="content" id="content">
-									<div id="map_canvas" style="height: 100%"></div>
-								</div>
-								<!-- /content -->
-								<div data-role="footer" data-position="fixed"
+	<!-- //////////////////////// MAIN /////////////////////////////////// -->
+
+										<div data-role="page" id="main">
+											<div data-role="header" data-position="fixed" class="header-div">
+												<h1 class="header-title"></h1>
+												<a href="#homepage" id="back-home"
+												class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
+												data-transition="slide" data-direction="reverse"
+												style="border: none; background-color: transparent;"><img
+												src="img/logo-coffee.png" alt="cup-logo"></a></div>
+												<!-- /header -->
+
+												<div data-role="content" id="content">
+													<div id="map_canvas" style="height: 100%"></div>
+												</div>
+												<!-- /content -->
+												<div data-role="footer" data-position="fixed"
 	style="text-align: center;"><!--<a href="#" class="ui-btn ui-corner-all ui-shadow"><span>My location</span></a>
 -->
 <button id="test" class="ui-btn">My location</button>

@@ -15,7 +15,7 @@
 }
 
 #midbutt{
-border-left: solid;
+	border-left: solid;
 	border-right: solid;
 	border-width: 0.1em;
 	border-color: #bababa;
@@ -24,8 +24,8 @@ border-left: solid;
 .lifoot a{
 	display: block !important;
 	margin-left: auto !important;
-    margin-right: auto !important;
-    border: none;
+	margin-right: auto !important;
+	border: none;
 }
 
 
@@ -76,16 +76,65 @@ border-left: solid;
 
 #inputdiv{
 	margin: auto;
-	width: 80% !important; 
+	width: 80% !important;
 }
 
-#inputdiv input{
-	
+
+/*CSS for the location band*/
+#band-container{
+	width: 100%;
+	margin: 0;
+	padding-bottom: 30px;
+	height: 0;
 }
 
-#inputdiv button{
+#refreshInfo-container{
+	position: relative;
+	float: left;
+	width: 70%;
+	margin: 0;
+	text-align: center;
+}
+
+#refPos{
+	padding: 0.1em;
+	padding-left:0;
+	display: block;
+	margin: auto;
+	font-size: 0.7em;
+}
+#refPos2{
+	text-align: center;
+	font-size: 0.7em;
+	font-weight: normal;
+}
+
+#refDate{
+	padding-left: 0;
+	display: block;
+	margin: auto;
+	font-size: 0.5em;
+}
+
+#refreshLogo-container{
+	position: relative;
+	float: left;
+	width: 25%;
+	margin: 0;
+	padding: 0;
+	border-left: none;
+	border-left-width: 0.1em;
+	border-left-color: grey;
 
 }
+
+#refreshLogo-container img{
+	width: 50%;
+	margin: auto;
+	padding: 3px;
+	display: block;
+}
+/*-------end band-------*/
 
 
 .banner img {
@@ -310,6 +359,10 @@ border-left: solid;
 	left: 0 !important;
 }
 
+#store-list  {
+	/*border-bottom:solid;*/
+}
+
 #store-list li a {
 	background: #FFFFFF !important;
 }
@@ -390,3 +443,20 @@ border-left: solid;
 	transform: translateY(-50%);
 	font-size: large;
 }
+
+#gpsLoading {
+	background-image: url('../img/dancing-banana.gif') !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100% !important;
+	height: 50px ;
+	overflow: hidden;
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	border-width: 0px !important;
+	border-color: #5da92a !important;
+	display: table;
+}
+

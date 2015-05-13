@@ -1,16 +1,26 @@
 var map;
 var markers = [];
 var contents = [];
-
+var myInfoWindow;
 
 
 
 function initMap() {
+	myInfoWindow = new google.maps.InfoWindow( {
+		content : null
+	});
 	console.log("in intiMap !");
 	// add listener for return cleaning markers
-	$("#back-home").on('tap', function() {
+	$("#back-home").on('click', function() {
+		console.log("back button taped");
+		if(myInfoWindow){
+			alert(myInfoWindow.getContent());
+			alert(myInfoWindow.getContent());
+			myInfoWindow.close();
+			google.maps.event.trigger(myInfoWindow, 'closeclick');
+		}
+		deleteMarkers();
 		alert("back-home");
-		infoWindow.close();
 	});
 	// init the map if no map
 	if (mapInfo.createNb == 0) {
@@ -29,7 +39,7 @@ function initMap() {
 			mapInfo.centerLng));
 		map.setZoom(mapInfo.mapZoom);
 	}
-	deleteMarkers();
+	initMarkers();
 }
 
 function clickCurrentMarker(){
@@ -45,14 +55,9 @@ function clickCurrentMarker(){
 
 
 function initMarkers(){
-	console.log("in initMarkers")
-	var infoWindow = new google.maps.InfoWindow( {
-		content : null
-	});	 
+	console.log("in initMarkers");
+	myInfoWindow.content = null;
 	contents = [];
-	infoWindow = new google.maps.InfoWindow( {
-		content : null
-	});
 	for ( var i = 0; i < storeInfo.result.length; i++) {
 		var tmplat = storeInfo.result[i].lat;
 		var tmplng = storeInfo.result[i].lng;
@@ -76,11 +81,56 @@ function initMarkers(){
 		}));
 		
 		google.maps.event.addListener(markers[i], 'click',  function(){
-			infoWindow.content = "YO";
-			infoWindow.setContent(this.content);
-			infoWindow.open(map, this);
+			myInfoWindow.content = "YO";
+			myInfoWindow.setContent(this.content);
+			myInfoWindow.open(map, this);
 		});
 	};
+
+
+	// TEST FOR THE LAT LNG BAIDU
+	var testSBJiashan = new google.maps.LatLng(31.203489,121.462607);
+	var testCostJiashan = new google.maps.LatLng(31.203513, 121.461977);
+	var testLatLngB = new google.maps.LatLng(31.208523,121.466471);
+	var testLatLngC = new google.maps.LatLng(31.208907,121.468067);
+	var testLatLngF = new google.maps.LatLng(31.208515,121.467329);
+	var testLatLngI = new google.maps.LatLng(31.208955,121.468806);
+	var myPos = new google.maps.LatLng(mapInfo.currentLat,mapInfo.currentLng);
+	markers.push( new google.maps.Marker({
+		position : myPos,
+		map : map,
+		icon : 'img/xigua.png',
+	}));
+	markers.push( new google.maps.Marker({
+		position : testSBJiashan,
+		map : map,
+		icon : 'img/marker.png',
+	}));
+	markers.push( new google.maps.Marker({
+		position : testCostJiashan,
+		map : map,
+		icon : 'img/marker.png',
+	}));
+	markers.push( new google.maps.Marker({
+		position : testLatLngB,
+		map : map,
+		icon : 'img/150.png',
+	}));
+	markers.push( new google.maps.Marker({
+		position : testLatLngC,
+		map : map,
+		icon : 'img/150.png',
+	}));
+	markers.push( new google.maps.Marker({
+		position : testLatLngF,
+		map : map,
+		icon : 'img/150.png',
+	}));
+	markers.push( new google.maps.Marker({
+		position : testLatLngI,
+		map : map,
+		icon : 'img/150.png',
+	}));
 	if(storeInfo.id != null){
 		clickCurrentMarker();
 	}

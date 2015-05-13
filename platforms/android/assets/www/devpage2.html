@@ -6,8 +6,7 @@
 	content="width=device-width, initial-scale=1.0, user-scalable=no" />
 	<title>dev page</title>
 
-	<link rel="stylesheet"
-	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
 	<link rel="stylesheet" href="css/main.css" />
 
 	<script type="text/javascript" src="js/storage2.js"></script>
@@ -34,13 +33,13 @@
 				Style="padding: 5% 0px 3% 0px;" />
 			</div>
 		</div>
-			<!-- /header -->	
-			<!-- image for research bar later -->
+		<!-- /header -->	
+		<!-- image for research bar later -->
 		<div class="wrap">
 			<div class="banner">
 				<div id="inputdiv">
 					<form id="searchForm" action="devpage2.html">
-					 <input type="search" name="search-1" id="search-1" value=""/>
+						 <input type="search" name="search-1" id="search-1" value=""/>
 					</form>
 				</div>
 			</div>
@@ -55,7 +54,26 @@
 				<a id="goMap" class="ui-btn" href="#main"></a>
 			</div>
 		</div>
+<!-- ********************** -->
+<!-- ********************** -->
+		<!-- TEST -->
+		<div id="testtett">
+			<button class="testtetet">
+				<div class="container2"><img src="img/150.png"/></div>
+				<div class = "container1"><p>ollalalala</p><p>openeenenen</p></div>	
+			</button>
+		</div>
+<!-- ********************** -->
+<!-- ********************** -->
+		<!-- GPS band -->
+		<div id="gpsBand">
+			<div class="gps container">
+				<button id="getLocation2" class="ui-btn  ui-btn-icon-right ui-icon-refresh" style="border: none; font-size: 13px;"> Close to your position (last update 2Hrs)</button>
+			</div>
+		</div>
 
+
+		<!-- Main content-->
 		<div data-role="content">
 			<div class="list-wrapper">
 				<ul data-role="listview" id="store-list">
@@ -67,9 +85,13 @@
 			<div data-theme="a" data-role="footer" data-position="fixed"
 			id="homefooter" hidden="true">
 			<div data-role="navbar" class="custom-navbar">
-				<ul>
-					<li><a href="#main" class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-top">Map</a></li>
-					<li><a id="getLocation2" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-refresh ui-btn-icon-top">Position</a></li>
+				<ul style="border: none">
+					<li class="lifoot"><a href="#main"
+					class="ui-btn ui-btn-icon-notext ui-btn-inline ui-icon-location"></a></li>
+					<li id="midbutt" class="lifoot"><a id="getLocation1" href="#"
+					class="ui-btn ui-btn-icon-notext ui-btn-inline ui-icon-navigation"></a></li>
+					<li class="lifoot"><a href="#more"
+					class="ui-btn ui-btn-icon-notext ui-btn-inline ui-icon-gear"></a></li>
 				</ul>
 			</div>
 			<!-- /first navbar --></div>
@@ -101,11 +123,9 @@
 						class="ui-btn ui-corner-all ui-shadow"><span>Show on Map</span></a></div>
 					</div>
 
+					<!-- //////////////////////// MORE /////////////////////////////////// -->
 
-
-					<!-- //////////////////////// MAIN /////////////////////////////////// -->
-
-					<div data-role="page" id="main">
+					<div data-role="page" id="more">
 						<div data-role="header" data-position="fixed" class="header-div">
 							<h1 class="header-title"></h1>
 							<a href="#homepage"
@@ -115,11 +135,50 @@
 							src="img/logo-coffee.png" alt="cup-logo"></a></div>
 							<!-- /header -->
 
-							<div data-role="content" id="content">
-								<div id="map_canvas" style="height: 100%"></div>
+							<div data-role="content">
+								<div  class="banana-wrapper">
+									<img src="img/dancing-banana.gif">
+								</div>
+
+
+								<div class="list-wrapper">
+									<ul data-role="listview" data-inset="true">
+										 <li class="ui-field-contain">
+											 <label for="flip1">Map loaded in background:</label>
+											            <select name="flip1" id="flip1" data-role="slider">
+												                <option value="off">no</option>
+												                <option value="on">yes</option>
+											            </select>
+										        </li>
+										<li class="ui-field-contain">
+											            <label for="flip2">Get my position automatically:</label>
+											            <select name="flip2" id="flip2" data-role="slider">
+												                <option value="off">no</option>
+												                <option value="on">yes</option>
+											            </select>
+										        </li>
+									    </ul>
+								</div>
 							</div>
-							<!-- /content -->
-							<div data-role="footer" data-position="fixed"
+						</div>
+
+						<!-- //////////////////////// MAIN /////////////////////////////////// -->
+
+						<div data-role="page" id="main">
+							<div data-role="header" data-position="fixed" class="header-div">
+								<h1 class="header-title"></h1>
+								<a href="#homepage" id="back-home"
+								class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
+								data-transition="slide" data-direction="reverse"
+								style="border: none; background-color: transparent;"><img
+								src="img/logo-coffee.png" alt="cup-logo"></a></div>
+								<!-- /header -->
+
+								<div data-role="content" id="content">
+									<div id="map_canvas" style="height: 100%"></div>
+								</div>
+								<!-- /content -->
+								<div data-role="footer" data-position="fixed"
 	style="text-align: center;"><!--<a href="#" class="ui-btn ui-corner-all ui-shadow"><span>My location</span></a>
 -->
 <button id="test" class="ui-btn">My location</button>
