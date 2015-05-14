@@ -39,7 +39,7 @@
 									});
 								},errorHandler);
 						};
-				},errorHandler);
+					},errorHandler);
 },function(){alert("No search result, please enter a valid subway station")});
 },errorHandler, displaySearchResult);
 }	
@@ -53,26 +53,63 @@ function displaySearchResult() {
 	$("#homefooter").show();
 	// remove previous content of the list
 	$('#store-list').empty();
+	// //TEST hide navbar footer
+	// $("#footernav").hide();
+	// //TEST hide navbar footer
+	// $("#gpsLoading").show();
+
 	console.log("number of line in display: " + mapInfo.distances.length);
 
-	for ( var i = 0; i < mapInfo.distances.length && i<40 ; i++) {
+var i = 0; 
+var lastAdded = null;                    //  set your counter to 1
+function myLoop () {           //  create a loop function
+   setTimeout(function () {    //  call a 3s setTimeout when the loop is called
+		console.log("wow timeout");
+		// $('#store-list').css("border-bottom", "solid");
 		var tmpId = Number(mapInfo.distances[i].id);
 		var tmpDistance = mapInfo.distances[i].distanceText;
 		var tmpIndex = getStoreIndexById(tmpId);
-		
 		var storeId = storeInfo.result[tmpIndex].id;
 		var tmpName = storeInfo.result[tmpIndex].name;
 		var tmpBrand = storeInfo.result[tmpIndex].brand;
 		var tmpAddress = storeInfo.result[tmpIndex].address;
 		$('#store-list').append(
-			'<li data-icon="false"><a href="#headline" data-transition="slide" data-id="'
+			'<li data-icon="false">'
+			+'<a id="'+ storeId + '" href="#headline" data-transition="slide" data-id="'
 			+ storeId + '" data-dist="'+tmpDistance+'">' 
-			+ '<img src="img/' + tmpBrand + '.png"/>'
+			+ '<img src="img/' + tmpBrand + '2.png"/>'
 			+ '<h3>' + tmpName + '</h3><p>' + tmpAddress
 			+ '</p><span class="ui-li-count">' + tmpDistance
 			+ '</span></a></li>');
-	}
-	$('#store-list').listview('refresh');
-	storeCurrentList();	
-	
+
+		// apply style to the last added DON'T WORK
+		if(lastAdded!=null){
+			//reset default font and background
+			$('#'+lastAdded+'').css("background", "#FFFFFF");
+			$('#'+lastAdded+'').css("color", "black");
+		}
+		lastAdded = storeId;
+		$('#'+lastAdded+'').css("background", "#f0fff6");
+		// $('#'+lastAdded+'').css("color", "#FFFFFF");
+      // increment counter
+      i++; 
+                          //  increment the counter
+      if (i < mapInfo.distances.length && i<30 ) {  // call the loop function
+         myLoop();             //  ..  again which will trigger another 
+     	$('#store-list').listview('refresh');
+      }else{
+      	//end of the list
+      	$('#'+lastAdded+'').css("background", "#FFFFFF");
+      	$('#'+lastAdded+'').css("color", "black");
+      	$('#store-list').css("border-bottom", "none");
+      	$('#store-list').listview('refresh');
+      }
+  }, 80)
+}
+
+myLoop(); 
+
+$('#store-list').listview('refresh');
+storeCurrentList();	
+
 }

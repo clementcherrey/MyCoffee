@@ -9,23 +9,33 @@ function initMap() {
 	myInfoWindow = new google.maps.InfoWindow( {
 		content : null
 	});
+	myInfoWindow.close();
 	console.log("in intiMap !");
-	// add listener for return cleaning markers
-	$("#back-home").on('click', function() {
-		console.log("back button taped");
-		if(myInfoWindow){
-			alert(myInfoWindow.getContent());
-			alert(myInfoWindow.getContent());
-			myInfoWindow.close();
-			google.maps.event.trigger(myInfoWindow, 'closeclick');
-		}
-		deleteMarkers();
-		alert("back-home");
-	});
+
 	// init the map if no map
 	if (mapInfo.createNb == 0) {
 		console.log("in no map created !");
+	//initialize button behaviour
+	$("#test").on('click', function() {
+		myInfoWindow.close();
+	});
+	// add listener for return cleaning markers
+	$("#back-home").on('click', function() {
+		deleteMarkers();
+		storeInfo.id = null;
+		console.log("back-home");
+	});
+
 		var mapOptions = {
+			mapTypeControl: false,
+			streetViewControl: false,
+			panControl: false,
+			scaleControl: false,
+    		zoomControl: true,
+    		zoomControlOptions: {
+        	style: google.maps.ZoomControlStyle.LARGE,
+        	position: google.maps.ControlPosition.RIGHT_BOTTOM
+   			 },
 			zoom : mapInfo.mapZoom,
 			center : new google.maps.LatLng(mapInfo.centerLat,
 				mapInfo.centerLng)
@@ -43,6 +53,7 @@ function initMap() {
 }
 
 function clickCurrentMarker(){
+console.log("click Marker");
 	for ( var i = 0; i < markers.length; i++) {
 		// console.log(" storeInfo.result[i].id: "+storeInfo.result[i].id+" , storeInfo.id:"+storeInfo.id);
 		if( markers[i].markerId == storeInfo.id){
@@ -96,6 +107,16 @@ function initMarkers(){
 	var testLatLngF = new google.maps.LatLng(31.208515,121.467329);
 	var testLatLngI = new google.maps.LatLng(31.208955,121.468806);
 	var myPos = new google.maps.LatLng(mapInfo.currentLat,mapInfo.currentLng);
+	mapInfo.currentLat =  31.205451999999998;
+	mapInfo.currentLng = 121.4577775;
+	var customlat = mapInfo.currentLat - 0.0021;
+	var customlng = mapInfo.currentLng + 0.0042;
+	var custompos = new google.maps.LatLng(customlat,customlng);
+	markers.push( new google.maps.Marker({
+		position : custompos,
+		map : map,
+		icon : 'img/xigua.png',
+	}));
 	markers.push( new google.maps.Marker({
 		position : myPos,
 		map : map,
@@ -142,9 +163,6 @@ function setAllMap(map) {
 	for (var i = 0; i < markers.length; i++) {
 		markers[i].setMap(map);
 	}
-	if (map == null) {
-		initMarkers();
-	};
 }
 
 // Removes the markers from the map, but keeps them in the array.
@@ -154,7 +172,7 @@ function clearMarkers() {
 
 // Deletes all markers in the array by removing references to them.
 function deleteMarkers() {
-	console.log("in delete marker")
+	console.log("in delete marker");
 	clearMarkers();
 	markers = [];
 }

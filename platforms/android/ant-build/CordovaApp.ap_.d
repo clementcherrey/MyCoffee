@@ -298,6 +298,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/distancesub.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/downloadImg.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/geocoding.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/gmapLocal.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/headline.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/index.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/Init.js \

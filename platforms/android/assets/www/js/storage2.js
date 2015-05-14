@@ -4,9 +4,9 @@
  function init() {
  	console.log("in init");
  	//****FOR BROWSER*****//
- 	$( document ).ready(function() {
- 		deviceready();
- 	}); 	
+ 	// $( document ).ready(function() {
+ 	// 	deviceready();
+ 	// }); 	
 
  	//****FOR PHONE*****//
  	document.addEventListener("deviceready", deviceready, true);
@@ -15,17 +15,28 @@
 
  function deviceready() {
  	console.log("in deviceready");
+ 	// loadScript();
  	db = window.openDatabase("store", "1.0", "store_list", 10000000);
  	db.transaction(setup, errorHandler, dbReady);
  }
 
- function setup(tx) {
 
+// function loadScript() {
+//   var script = document.createElement('script');
+//   script.type = 'text/javascript';
+//   script.src = 'http://maps.google.cn/maps/api/js?region=cn&language=en-US&sensor=true';
+//   document.body.appendChild(script);
+// }
+
+
+ function setup(tx) {
+//TEST hide navbar footer
+	$("#gpsLoading").hide();
  // suppress drop table
- tx.executeSql('DROP TABLE store');
- tx.executeSql('DROP TABLE subway');
- tx.executeSql('DROP TABLE storeSub');
- // tx.1executeSql('DROP TABLE contentList');
+ // tx.executeSql('DROP TABLE store');
+ // tx.executeSql('DROP TABLE subway');
+ // tx.executeSql('DROP TABLE storeSub');
+ // tx.executeSql('DROP TABLE contentList');
 
 
 
@@ -257,7 +268,7 @@ function getMyPos() {
 	console.log("in getMyPos");
 	var options = {
 		enableHighAccuracy : true,
-		maximumAge : 3000,
+		maximumAge : 1000,
 		timeout : 4000
 	};
 

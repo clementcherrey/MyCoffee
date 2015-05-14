@@ -15,9 +15,19 @@
 
  function deviceready() {
  	console.log("in deviceready");
+ 	// loadScript();
  	db = window.openDatabase("store", "1.0", "store_list", 10000000);
  	db.transaction(setup, errorHandler, dbReady);
  }
+
+
+// function loadScript() {
+//   var script = document.createElement('script');
+//   script.type = 'text/javascript';
+//   script.src = 'http://maps.google.cn/maps/api/js?region=cn&language=en-US&sensor=true';
+//   document.body.appendChild(script);
+// }
+
 
  function setup(tx) {
 //TEST hide navbar footer
@@ -258,7 +268,7 @@ function getMyPos() {
 	console.log("in getMyPos");
 	var options = {
 		enableHighAccuracy : true,
-		maximumAge : 3000,
+		maximumAge : 1000,
 		timeout : 4000
 	};
 

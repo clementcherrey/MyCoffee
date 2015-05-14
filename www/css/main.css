@@ -1,4 +1,4 @@
-2.ui-page {
+.ui-page {
 	
 }
 
@@ -364,7 +364,7 @@
 }
 
 #store-list li a {
-	background: #FFFFFF !important;
+	background: #FFFFFF;
 }
 
 #store-list li a img {
