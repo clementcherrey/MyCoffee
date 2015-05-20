@@ -56,7 +56,7 @@ function displaySearchResult() {
 	// //TEST hide navbar footer
 	// $("#footernav").hide();
 	// //TEST hide navbar footer
-	// $("#gpsLoading").show();
+	// $("#gpsLoading").show()           ;
 
 	console.log("number of line in display: " + mapInfo.distances.length);
 
@@ -93,7 +93,7 @@ function myLoop () {           //  create a loop function
 		// $('#'+lastAdded+'').css("color", "#FFFFFF");
       // increment counter
       i++; 
-                          //  increment the counter
+      //  increment the counter
       if (i < mapInfo.distances.length && i<30 ) {  // call the loop function
          myLoop();             //  ..  again which will trigger another 
      	$('#store-list').listview('refresh');

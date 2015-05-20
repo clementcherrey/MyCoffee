@@ -1,0 +1,49 @@
+#store-data li{
+/*border: none !important;*/
+}
+
+#detail-head{
+margin: 8px;
+padding: 8px;
+}
+
+#detail-name{
+font-size: 20px !important;
+padding: 5px;
+}
+
+#detail-distance{
+font-size: 16px;
+padding: 5px;
+color: white;
+margin: 5px;
+background: #629d2a !important;
+}
+#detail-close{
+font-size: 16px;
+color: #548e3f;
+}
+
+#detail-position{
+padding: 5px;
+font-size: 12px;
+color: grey;
+}
+
+
+
+/*TEST TEST TEST*/
+.detail-multiline img{
+ position: absolute;
+  top: 50% !important;
+  max-height: 1em
+  max-width: 1em;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.detail-multiline p{
+padding: 0 !important;
+margin: 0 !important;
+}

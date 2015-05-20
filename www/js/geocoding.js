@@ -1,13 +1,12 @@
 
 var addressArray = [];
 
-
+//to get the coordinate from the address
 function jsonTransform() {
 	console.log("in json function");
-	$.getJSON("ajax/SBpregeocode.json",function(data) {
+	$.getJSON("ajax/SBpregeocod.json",function(data) {
 		$.each(data,function(key, val) {	
-			addressArray.push({id: val.id, name: val.name, address: val.address});
-			// codeAddress(val.address);
+			addressArray.push({id: val.id, name: val.name,addresseng: val.addresseng, addresscn: val.addresscn});
 		});
 		initializeGeo();	
 	});
@@ -26,18 +25,18 @@ function testCoordinate(){
 
 //need a loop on all the line of the JSON
 function initializeGeo() {
-	alert("in initializeGeo function");
-	alert(addressArray.length);
+	console.log("in initializeGeo function");
+	console.log(addressArray.length);
 	syncLoop(addressArray.length, function(loop){
-		// console.log("loop : " + loop.iteration());
-			var tmpId = loop.iteration();
+	// console.log("loop : " + loop.iteration());
+	var tmpId = loop.iteration();
 		function callnext() {
 			loop.next();
 		}
-		codeAddress(addressArray[loop.iteration()].address, tmpId, callnext);
+		codeAddress(addressArray[loop.iteration()].addresscn, tmpId, callnext);
 
 	}, function (){
-		// alert("finish !")
+		// console.log("finish !")
 	});
 
 }
@@ -51,7 +50,7 @@ function codeAddress(address, tmpId, callback) {
 		function(results, status) {
 			if (status == google.maps.GeocoderStatus.OK) { 
 				// alert(results[0].geometry.location);
-				alert("lat: " +results[0].geometry.location.lat());
+				// console.log("lat: " +results[0].geometry.location.lat());
 				var tmplat = results[0].geometry.location.lat();
 				var tmplng = results[0].geometry.location.lng();
 				console.log("/" + tmpId + "/" + address+ "/" + tmplat + "/" + tmplng);
@@ -63,8 +62,9 @@ function codeAddress(address, tmpId, callback) {
 			// console.log("OVER_QUERY_LIMIT"); 
             setTimeout(function() {
                 codeAddress(address, tmpId, callback);
-            }, 1000);
+            }, 1500);
         	} else {
+        		console.log('Geocode fail for the address: ' + address);
 				console.log('Geocode was not successful for the following reason: ' + status);
 			} 
 			callback();
