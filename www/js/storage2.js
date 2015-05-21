@@ -263,6 +263,16 @@ function gotlog(tx, results) {
 }
 };
 
+
+function populateSubList(tx, results) {
+for (var i = results.rows.length - 1; i >= 0; i--) {
+	var tmpStation = results.rows.item(i).station;
+	$('#autocomplete').append(
+		'<li>'+ tmpStation +'</li>');	
+}
+$('#autocomplete').listview('refresh');
+};
+
 function getMyPos() {
 
 	console.log("in getMyPos");
@@ -357,11 +367,7 @@ function jsonpopulate() {
 					});
 				// alert("insert subway lol");
 				tx.executeSql("select * from subway",
-					[], function(tx,result){
-						// alert("select subway");
-						// insertCosta();
-					}
-					,errorHandler);
+					[], populateSubList,errorHandler);
 			});
 		});
 

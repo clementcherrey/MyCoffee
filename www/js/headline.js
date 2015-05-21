@@ -74,10 +74,6 @@ function headlineNewDisplay(sublines) {
 			//----------------------- Key Info---------------------------
 			$('#store-data')
 			.append(
-				'<li data-role="list-divider">'
-				+ 'Key Info</li>');
-			$('#store-data')
-			.append(
 				'<li style="white-space:normal;">'
 				+'<img src = "img/150.png" alt ="wifi" class="ui-li-icon ui-corner-none>"'
 				+'<span>'
@@ -99,7 +95,7 @@ function headlineNewDisplay(sublines) {
 				+ '</p></li>');
 			$('#store-data')
 			.append(
-				'<li class="containerSubway" style="white-space:normal;">'
+				'<li style="white-space:normal;">'
 				+'<img src = "img/150.png" alt ="opening" class="ui-li-icon ui-corner-none>"'
 				+'<div>'	
 				+ tmpOpen

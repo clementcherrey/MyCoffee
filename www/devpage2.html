@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/headline.css" />
+	<link rel="stylesheet" href="css/search.css" />
+
 
 
 	<script type="text/javascript" src="js/storage2.js"></script>
@@ -40,9 +42,13 @@
 			<div class="banner">
 				<div id="inputdiv">
 					<form id="searchForm" action="devpage2.html">
-						 <input type="search" name="search-1" id="search-1" value=""/>
+						 <input type="search" name="search-1" id="search-1" placeholder="Enter a station"value=""/>
 					</form>
 				</div>
+			</div>
+			<div id="div-suggestion">
+				<ul id="autocomplete" data-role="listview" data-inset="true" data-filter-reveal="true" data-filter="true" data-input="#search-1">
+				<li>Apple</li><li>Banana</li><li>Cherr</li><li>Cranberry</li><li>Grape</li><li>Orange</li></ul>
 			</div>
 		</div>
 
@@ -52,16 +58,6 @@
 				<span id="span-pos" style="font-weight:bold;"> Your Position</span></a>
 				</li>
 			</ul>
-
-	<!-- TEST AUTO COMPLETE -->
-	<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search fruits..." data-inset="true">
-    <li>Apple</li>
-    <li>Banana</li>
-    <li>Cherr</li>
-    <li>Cranberry</li>
-    <li>Grape</li>
-    <li>Orange</li>
-	</ul>
 
 			<!-- Main content-->
 			<div data-role="content">

@@ -56,34 +56,6 @@
 	border-color: #5da92a !important;
 }
 
-.wrap {
-	border: none;
-	margin: 0px !important;
-	padding: 0px !important;
-
-}
-
-.banner {
-	background-image: url('../img/search-background.png') !important;
-	padding: 0 !important;
-	margin: 0 !important;
-	width: 100% !important;
-	height: 90px ;
-	overflow: hidden;
-	border-top: none;
-	border-right: none;
-	border-bottom: solid;
-	border-left: none;
-	border-width: 3px !important;
-	border-color: #5da92a !important;
-	display: table;
-}
-
-#inputdiv{
-	margin: auto;
-	width: 80% !important;
-}
-
 
 /*CSS for the location band*/
 #band-container{
