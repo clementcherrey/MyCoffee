@@ -34,7 +34,7 @@ function initMap() {
     		zoomControl: true,
     		zoomControlOptions: {
         	style: google.maps.ZoomControlStyle.LARGE,
-        	position: google.maps.ControlPosition.LEFT_BOTTOM
+        	position: google.maps.ControlPosition.RIGHT_BOTTOM
    			 },
 			zoom : mapInfo.mapZoom,
 			center : new google.maps.LatLng(mapInfo.centerLat,

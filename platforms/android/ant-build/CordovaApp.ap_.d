@@ -48,13 +48,16 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/prepocess2.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/ajax/costa.json \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/ajax/phones.json \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/ajax/SBpregeocod.json \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/ajax/starbucks.json \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/ajax/storeSub.json \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/ajax/subway.json \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/headline.css \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/images \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/index.css \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/jquery.mobile-1.4.5.css \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/main.css \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/search.css \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/images/ajax-loader.gif \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/images/icons-png \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/css/images/icons-svg \

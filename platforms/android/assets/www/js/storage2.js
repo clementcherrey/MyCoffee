@@ -4,9 +4,9 @@
  function init() {
  	console.log("in init");
  	//****FOR BROWSER*****//
- 	// $( document ).ready(function() {
- 	// 	deviceready();
- 	// }); 	
+ 	$( document ).ready(function() {
+ 		deviceready();
+ 	}); 	
 
  	//****FOR PHONE*****//
  	document.addEventListener("deviceready", deviceready, true);
@@ -19,7 +19,6 @@
  	db = window.openDatabase("store", "1.0", "store_list", 10000000);
  	db.transaction(setup, errorHandler, dbReady);
  }
-
 
 // function loadScript() {
 //   var script = document.createElement('script');
@@ -105,6 +104,13 @@ function dbReady() {
 		search();
 	});
 
+
+	$("#autocomplete").on('vclick', 'li', function() {
+		var searchvalue = $(this).text();
+		$("#search-1").val(searchvalue);
+		search();
+	});
+
 	$("#headline").on('pagebeforeshow',headlinePreDisplay);
 
 	$("#main").on('pageshow', initMap);
@@ -158,6 +164,7 @@ function populatedb(tx, results) {
 	} else {
 		//old version data loading
 		console.log("db already full");
+		tx.executeSql("select * from subway",[], populateSubList,errorHandler);
 		gotlog(tx, results);
 	}
 }
@@ -263,6 +270,16 @@ function gotlog(tx, results) {
 }
 };
 
+
+function populateSubList(tx, results) {
+for (var i = results.rows.length - 1; i >= 0; i--) {
+	var tmpStation = results.rows.item(i).station;
+	$('#autocomplete').append(
+		'<li>'+ tmpStation +'</li>');	
+}
+$('#autocomplete').listview('refresh');
+};
+
 function getMyPos() {
 
 	console.log("in getMyPos");
@@ -357,11 +374,7 @@ function jsonpopulate() {
 					});
 				// alert("insert subway lol");
 				tx.executeSql("select * from subway",
-					[], function(tx,result){
-						// alert("select subway");
-						// insertCosta();
-					}
-					,errorHandler);
+					[], populateSubList,errorHandler);
 			});
 		});
 

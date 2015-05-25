@@ -20,7 +20,6 @@
  	db.transaction(setup, errorHandler, dbReady);
  }
 
-
 // function loadScript() {
 //   var script = document.createElement('script');
 //   script.type = 'text/javascript';
@@ -46,9 +45,15 @@
  	+ ' latte TEXT,'
  	+ ' name TEXT,'
  	+ ' brand TEXT,' 
- 	+ ' address TEXT,' 
- 	+ ' open TEXT,' 
- 	+ ' description TEXT,' 
+ 	+ ' addresseng TEXT,'
+ 	+ ' addresscn TEXT,'  
+ 	+ ' open1 TEXT,' 
+ 	+ ' open2 TEXT,' 
+ 	+ ' open3 TEXT,' 
+ 	+ ' open4 TEXT,' 
+ 	+ ' description TEXT,'
+ 	+ ' phone TEXT,' 
+ 	+ ' website TEXT,'  
  	+ ' lat FLOAT,'
  	+ ' lng FLOAT)');
 
@@ -105,6 +110,13 @@ function dbReady() {
 		search();
 	});
 
+
+	$("#autocomplete").on('vclick', 'li', function() {
+		var searchvalue = $(this).text();
+		$("#search-1").val(searchvalue);
+		search();
+	});
+
 	$("#headline").on('pagebeforeshow',headlinePreDisplay);
 
 	$("#main").on('pageshow', initMap);
@@ -158,6 +170,7 @@ function populatedb(tx, results) {
 	} else {
 		//old version data loading
 		console.log("db already full");
+		tx.executeSql("select * from subway",[], populateSubList,errorHandler);
 		gotlog(tx, results);
 	}
 }
@@ -191,7 +204,7 @@ function displayList() {
 }
 
 function checkPreviousList(){
-	console.log("in check previous List");
+	alert("in check previous List");
 	db.transaction(function(tx) {
 		tx.executeSql("select * from contentList", [], loadOldList,
 			errorHandler);
@@ -200,7 +213,7 @@ function checkPreviousList(){
 
 // Save the current home Page
 function storeCurrentList(){
-	console.log("in save current list");
+	alert("in save current list");
 	db.transaction(function(tx) {
 		var tmpContent = $('#store-list').html();
 		var contentString = new String(tmpContent);
@@ -381,16 +394,22 @@ function jsonpopulate() {
 					function(key, val) {
 						tx
 						.executeSql(
-							"insert into store(id,wifi,latte,brand,name,address,open,description,lat,lng) values(?,?,?,?,?,?,?,?,?,?)",
+							"insert into store(id,wifi,latte,brand,name,addresseng,addresscn,open1,open2,open3,open4,description,phone,website,lat,lng) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
 							[
-							val.id +90,
+							val.id,
 							val.wifi,
 							val.latte,
 							val.brand,
 							val.name,
-							val.address,
-							val.open,
+							val.addresseng,
+							val.addresscn,
+							val.open1,
+							val.open2,
+							val.open3,
+							val.open4,
 							val.description,
+							val.phone,
+							val.website,
 							val.lat,
 							val.lng ]);
 					});
@@ -412,7 +431,7 @@ function jsonpopulate() {
 					function(key, val) {
 						tx
 						.executeSql(
-							"insert into store(id,wifi,latte,brand,name,address,lat,lng) values(?,?,?,?,?,?,?,?)",
+							"insert into store(id,wifi,latte,brand,name,addresseng,lat,lng) values(?,?,?,?,?,?,?,?)",
 							[
 							val.id,
 							val.wifi,

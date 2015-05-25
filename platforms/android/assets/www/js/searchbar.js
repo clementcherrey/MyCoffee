@@ -1,7 +1,12 @@
 	function search(){
 		// alert("Something happened!");
 		var searchTerm = $("#search-1").val();
-		// alert("You're trying to search for "+searchTerm);
+		// reset serch field
+		$("#search-1").val("");
+		$('#autocomplete').listview('refresh');
+		// update reference 
+		$("#span-pos").text(searchTerm);
+		// search in DB
 		db.transaction(function(tx) {
 			tx.executeSql("select id from subway where station = ?", [searchTerm], function(tx, result){
 				// alert("StationId = " + result.rows.item(0).id);
@@ -56,7 +61,7 @@ function displaySearchResult() {
 	// //TEST hide navbar footer
 	// $("#footernav").hide();
 	// //TEST hide navbar footer
-	// $("#gpsLoading").show();
+	// $("#gpsLoading").show()           ;
 
 	console.log("number of line in display: " + mapInfo.distances.length);
 
@@ -77,7 +82,7 @@ function myLoop () {           //  create a loop function
 			'<li data-icon="false">'
 			+'<a id="'+ storeId + '" href="#headline" data-transition="slide" data-id="'
 			+ storeId + '" data-dist="'+tmpDistance+'">' 
-			+ '<img src="img/' + tmpBrand + '2.png"/>'
+			+ '<img src="img/' + tmpBrand + '.png"/>'
 			+ '<h3>' + tmpName + '</h3><p>' + tmpAddress
 			+ '</p><span class="ui-li-count">' + tmpDistance
 			+ '</span></a></li>');
@@ -93,7 +98,7 @@ function myLoop () {           //  create a loop function
 		// $('#'+lastAdded+'').css("color", "#FFFFFF");
       // increment counter
       i++; 
-                          //  increment the counter
+      //  increment the counter
       if (i < mapInfo.distances.length && i<30 ) {  // call the loop function
          myLoop();             //  ..  again which will trigger another 
      	$('#store-list').listview('refresh');
