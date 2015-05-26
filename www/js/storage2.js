@@ -122,6 +122,23 @@ function dbReady() {
 	$("#main").on('pageshow', initMap);
 }
 
+//////////**************************************************///////////////
+//////////******************* ASYNC LOADING ****************///////////////
+//link to the javascipt in the bottom of the html
+function ready() {
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = 'http://maps.google.cn/maps/api/js?region=cn&language=en-US&sensor=true&'+'callback=initialize';
+      document.body.appendChild(script);
+    };
+
+//callback after loading
+function initialize(){
+	console.log("google map script loaded");
+	// can put init map here directly maybe
+}
+//////////**************************************************///////////////
+
 
 function getStoreIndexById(theId){
 	// console.log("getStoreIndexById for id = "+theId);
@@ -189,7 +206,7 @@ function displayList() {
 		var myId = storeInfo.result.rows.item(tmpId).id;
 		var tmpName = storeInfo.result.rows.item(tmpId).name;
 		var tmpBrand = storeInfo.result.rows.item(tmpId).brand;
-		var tmpAddress = storeInfo.result.rows.item(tmpId).address;
+		var tmpAddress = storeInfo.result.rows.item(tmpId).addresseng;
 		$('#store-list').append(
 			'<li data-icon="false"><a href="#headline" data-transition="slide" data-id="'
 			+ myId + '">' + '<img src="img/' + tmpBrand + '.png"/>'
@@ -252,9 +269,14 @@ function loadOldList(tx,results){
 						latte: result.rows.item(0).latte,
 						brand: result.rows.item(0).brand,
 						name: result.rows.item(0).name,
-						address: result.rows.item(0).address,
-						open: result.rows.item(0).open,
+						address: result.rows.item(0).addresseng,
+						open1: result.rows.item(0).open1,
+						open2: result.rows.item(0).open2,
+						open3: result.rows.item(0).open3,
+						open4: result.rows.item(0).open4,
 						description: result.rows.item(0).description,
+						phone: result.rows.item(0).phone,
+						website: result.rows.item(0).website,
 						lat: result.rows.item(0).lat,
 						lng: result.rows.item(0).lng,
 					});

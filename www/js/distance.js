@@ -45,17 +45,21 @@ function preCalc(){
 				console.log("results length: "+results.rows.length);
 				for (var i = results.rows.length - 1; i >= 0; i--) {
 					storeInfo.result.push({
-						id : results.rows.item(i).id,
-						wifi: results.rows.item(i).wifi,
-						latte: results.rows.item(i).latte,
-						brand: results.rows.item(i).brand,
-						name: results.rows.item(i).name,
-						address: results.rows.item(i).address,
-						open: results.rows.item(i).open,
-						description: results.rows.item(i).description,
-						lat: results.rows.item(i).lat,
-						lng: results.rows.item(i).lng,
-					});
+						id : result.rows.item(i).id,
+						wifi: result.rows.item(i).wifi,
+						latte: result.rows.item(i).latte,
+						brand: result.rows.item(i).brand,
+						name: result.rows.item(i).name,
+						address: result.rows.item(i).addresseng,
+						open1: result.rows.item(i).open1,
+						open2: result.rows.item(i).open2,
+						open3: result.rows.item(i).open3,
+						open4: result.rows.item(i).open4,
+						description: result.rows.item(i).description,
+						phone: result.rows.item(i).phone,
+						website: result.rows.item(i).website,
+						lat: result.rows.item(i).lat,
+						lng: result.rows.item(i).lng,					});
 				};
 				initDistCalc();
 			});

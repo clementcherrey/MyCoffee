@@ -100,6 +100,8 @@ function initMarkers(){
 
 
 	// TEST FOR THE LAT LNG BAIDU
+	var testjiashan = new google.maps.LatLng(31.202855,121.460856);
+
 	var testSBJiashan = new google.maps.LatLng(31.203489,121.462607);
 	var testCostJiashan = new google.maps.LatLng(31.203513, 121.461977);
 	var testLatLngB = new google.maps.LatLng(31.208523,121.466471);
@@ -112,6 +114,12 @@ function initMarkers(){
 	var customlat = mapInfo.currentLat - 0.0021;
 	var customlng = mapInfo.currentLng + 0.0042;
 	var custompos = new google.maps.LatLng(customlat,customlng);
+
+	markers.push( new google.maps.Marker({
+		position : testjiashan,
+		map : map,
+		icon : 'img/marker-cup.png',
+	}));
 	markers.push( new google.maps.Marker({
 		position : custompos,
 		map : map,

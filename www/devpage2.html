@@ -21,9 +21,7 @@
 	<script type="text/javascript" src="cordova.js"></script>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
-	<script type="text/javascript"
-	src="http://maps.google.cn/maps/api/js?region=cn&language=en-US&sensor=true"></script>
-
+	
 </head>
 
 <body onload="init()">
@@ -171,4 +169,10 @@
 </div>
 
 </body>
+<!-- TEST async load google map script -->
+<script>
+    $.getScript("js/storage2.js",function(){
+          $(document).ready(ready);
+    });
+</script>
 </html>

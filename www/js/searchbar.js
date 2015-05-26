@@ -36,9 +36,14 @@
 										latte: result.rows.item(0).latte,
 										brand: result.rows.item(0).brand,
 										name: result.rows.item(0).name,
-										address: result.rows.item(0).address,
-										open: result.rows.item(0).open,
+										address: result.rows.item(0).addresseng,
+										open1: result.rows.item(0).open1,
+										open2: result.rows.item(0).open2,
+										open3: result.rows.item(0).open3,
+										open4: result.rows.item(0).open4,
 										description: result.rows.item(0).description,
+										phone: result.rows.item(0).phone,
+										website: result.rows.item(0).website,
 										lat: result.rows.item(0).lat,
 										lng: result.rows.item(0).lng,
 									});
@@ -65,11 +70,11 @@ function displaySearchResult() {
 
 	console.log("number of line in display: " + mapInfo.distances.length);
 
-var i = 0; 
+	var i = 0; 
 var lastAdded = null;                    //  set your counter to 1
 function myLoop () {           //  create a loop function
    setTimeout(function () {    //  call a 3s setTimeout when the loop is called
-		console.log("wow timeout");
+   	console.log("wow timeout");
 		// $('#store-list').css("border-bottom", "solid");
 		var tmpId = Number(mapInfo.distances[i].id);
 		var tmpDistance = mapInfo.distances[i].distanceText;
@@ -101,8 +106,8 @@ function myLoop () {           //  create a loop function
       //  increment the counter
       if (i < mapInfo.distances.length && i<30 ) {  // call the loop function
          myLoop();             //  ..  again which will trigger another 
-     	$('#store-list').listview('refresh');
-      }else{
+         $('#store-list').listview('refresh');
+     }else{
       	//end of the list
       	$('#'+lastAdded+'').css("background", "#FFFFFF");
       	$('#'+lastAdded+'').css("color", "black");
