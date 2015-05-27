@@ -36,7 +36,7 @@ function headlinePreDisplay(){
 }
 
 function headlineNewDisplay(sublines) {
-	console.log("in headline for display");
+	console.log("in headline for new display");
 	$('#store-data').empty();
 	$('.header-title').empty();
 
@@ -50,8 +50,8 @@ function headlineNewDisplay(sublines) {
 			var tmpWifi = storeInfo.result[i].wifi;
 			var tmpAddress = storeInfo.result[i].addresseng;
 			var tmpDescription = storeInfo.result[i].description;
-			console.log("open: "+ tmpAddress);
-			var tmpDistance = storeInfo.distance;
+			console.log("address: "+ tmpAddress);
+			var tmpDistance = new String(storeInfo.distance);
 			var tmpPrice = storeInfo.result[i].latte;
 			var tmpPhone = storeInfo.result[i].phone;
 			var tmpWebsite = storeInfo.result[i].website;
@@ -81,19 +81,19 @@ function headlineNewDisplay(sublines) {
 			$('#store-data')
 			.append(
 				'<li style="white-space:normal;">'
-				+'<img src = "img/150.png" alt ="wifi" class="ui-li-icon ui-corner-none>"'
+				+'<img src = "img/detail/wifi.png" alt ="wifi" class="ui-li-icon ui-corner-none>"'
 				+'<span>'
 				+ tmpWifi + '</span></li>');
 			$('#store-data')
 			.append(
 				'<li style="white-space:normal;">'
-				+'<img src = "img/150.png" alt ="address" class="ui-li-icon ui-corner-none>"'
+				+'<img src = "img/detail/address.png" alt ="address" class="ui-li-icon ui-corner-none>"'
 				+'<span>'
 				+ tmpAddress + '</span></li>');
 			$('#store-data')
 			.append(
 				'<li class="detail-multiline" style="white-space:normal;">'
-				+'<img src = "img/150.png" alt ="subway" class="ui-li-icon ui-corner-none>"'
+				+'<img src = "img/detail/subway.png" alt ="subway" class="ui-li-icon ui-corner-none>"'
 				+'<p class="detail-centerp">'	
 				+ tmpStation
 				+ '</br>'				
@@ -102,7 +102,7 @@ function headlineNewDisplay(sublines) {
 			$('#store-data')
 			.append(
 				'<li class="detail-multiline" style="white-space:normal;">'
-				+'<img src = "img/150.png" alt ="opening" class="ui-li-icon ui-corner-none>"'
+				+'<img src = "img/detail/open.png" alt ="opening" class="ui-li-icon ui-corner-none>"'
 				+'<div>'	
 				+ tmpOpen1
 				+ '</br>'				
@@ -120,22 +120,22 @@ function headlineNewDisplay(sublines) {
 			$('#store-data')
 			.append(
 				'<li class="detail-multiline" style="white-space:normal;">'
-				+'<img src = "img/150.png" alt ="description" class="ui-li-icon ui-corner-none>"'
+				+'<img src = "img/detail/description.png" alt ="description" class="ui-li-icon ui-corner-none>"'
 				+'<span>'
 				+ tmpDescription + '</span></li>');
 			$('#store-data')
 			.append(
 				'<li style="white-space:normal;">'
-				+'<img src = "img/150.png" alt ="phone" class="ui-li-icon ui-corner-none>"'
+				+'<img src = "img/detail/phone.png" alt ="phone" class="ui-li-icon ui-corner-none>"'
 				+'<span>'
 				+tmpPhone
 				+ '</span></li>');			
 			$('#store-data')
 			.append(
 				'<li style="white-space:normal;">'
-				+'<img src = "img/150.png" alt ="website" class="ui-li-icon ui-corner-none>"'
+				+'<img src = "img/detail/website.png" alt ="website" class="ui-li-icon ui-corner-none>"'
 				+'<span>'
-				+tmpPhone
+				+tmpWebsite
 				+ '</span></li>');
 
 			$('#store-data').listview('refresh');

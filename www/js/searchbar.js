@@ -82,7 +82,7 @@ function myLoop () {           //  create a loop function
 		var storeId = storeInfo.result[tmpIndex].id;
 		var tmpName = storeInfo.result[tmpIndex].name;
 		var tmpBrand = storeInfo.result[tmpIndex].brand;
-		var tmpAddress = storeInfo.result[tmpIndex].address;
+		var tmpAddress = storeInfo.result[tmpIndex].addresseng;
 		$('#store-list').append(
 			'<li data-icon="false">'
 			+'<a id="'+ storeId + '" href="#headline" data-transition="slide" data-id="'

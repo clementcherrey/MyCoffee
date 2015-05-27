@@ -5,6 +5,7 @@
 #detail-head{
 	margin: 8px;
 	padding: 12px;
+	border:none !important;
 }
 
 #detail-name{

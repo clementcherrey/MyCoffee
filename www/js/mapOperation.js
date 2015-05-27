@@ -77,7 +77,7 @@ function initMarkers(){
 
 		var tmpName = storeInfo.result[i].name;
 		var tmpBrand = storeInfo.result[i].brand;
-		var tmpAddress = storeInfo.result[i].address;
+		var tmpAddress = storeInfo.result[i].addresseng;
 
 		contents.push('<div>' + '<h3>'
 			+ tmpName + '</h3>'
