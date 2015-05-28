@@ -58,6 +58,7 @@ function codeAddress(address, tmpId, callback) {
 				addressArray[tmpId] = {lat: tmplat, lng: tmplng};
 
 				// alert("After push");
+				callback();
 			} else if (status === google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {   
 			// console.log("OVER_QUERY_LIMIT"); 
             setTimeout(function() {
@@ -67,7 +68,6 @@ function codeAddress(address, tmpId, callback) {
         		console.log('Geocode fail for the address: ' + address);
 				console.log('Geocode was not successful for the following reason: ' + status);
 			} 
-			callback();
 		});
 }
 

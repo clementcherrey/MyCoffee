@@ -1,6 +1,6 @@
-
 var subArray = [];
 var storeArray = [];
+var tempSubStore = [];
 
 function getsub(){
 	console.log("in get sub");
@@ -33,7 +33,7 @@ function getStore(){
 
 // loop on subway station: for each sub
 function loopOnSub(it){
-	// console.log("enter loop on sub");
+	console.log("enter loop on sub");
 	syncLoop(20
 	//process	
 	, function(loop) {
@@ -50,53 +50,82 @@ function loopOnSub(it){
 	}
 	//callback
 	,function() {
-		alert("finish loop");
+		console.log("finish loop");
 	});
 }
+// custom estimateDiff
+function estimateDiff2(origin,objArr){
+	// console.log("in init estimateDiff");
+	var diffOp = function (lat,lng){
+		return (origin.lat - lat) * (origin.lat - lat) + (origin.lng- lng)*(origin.lng- lng);
+	};
 
-var tempSubStore = [];
+	var diffArr = $.map(objArr, function(n,i){
+		return [{id: n.id, diff: diffOp(n.lat,n.lng)}];
+	})
+	// sort using diff
+	function compareDiff(a, b) {
+		if (a.diff < b.diff)
+			return -1;
+		if (a.diff > b.diff)
+			return 1;
+		return 0;
+	}
+	diffArr.sort(compareDiff);
+	return diffArr; 
+}
 
-// loop on subway store
+
+
+
+// ***** use the sync loop to launch the distances calc*******//
 function initDistCalc2(myOrigin, callcall) {
-	// console.log("before tempsubstore clean");
+	// console.log("in init calc");
 	tempSubStore = [];
-	// console.log("storeArray.length : "+ storeArray.length);
-	var divbytwenty = storeArray.length / 20;
-	
-	syncLoop(divbytwenty, function(loop) {
+	var currentDiff = estimateDiff2(myOrigin,storeArray);
+	// only send 20 locations per request for distqnces
+	// console.log ("number of store : " + currentDiff.length);
+	var divbytwenty = currentDiff.length / 20;
+	// test for new limit to replace divby twenty
+	var nbOfLoop = 2
+
+	syncLoop(nbOfLoop, function(loop) {
 		var j = loop.iteration() * 20;
 		// console.log("my counter equal" + j);
 		var tableLatLng = [];
-		var storesIDS = [];
-		for ( var i = 0; i < 20 && i <  storeArray.length - j; i++) {
-			var tmpId = j + i;
-			var tmpLat = storeArray[tmpId].lat;
-			var tmpLng = storeArray[tmpId].lng;
-			var tmpStore = storeArray[tmpId].id;
-			tableLatLng[i] = new google.maps.LatLng(tmpLat, tmpLng);
-			storesIDS[i] = tmpStore;
+		var valueId =[];
+		for ( var i = 0; i < 20 && i < storeArray.length - j; i++) {
+			var itID = j+i;
+			var tmpId = currentDiff[itID].id;
+			console.log("itID: "+itID +", tmpId: " + tmpId);
+			for ( var k = 0; k < storeArray.length ; k++) {
+				// console.log("storeInfo store id: " + storeInfo.result[k].id);
+				if (storeArray[k].id == tmpId) {
+					valueId.push(tmpId);
+					tableLatLng.push(new google.maps.LatLng(storeArray[k].lat, storeArray[k].lng));
+					break;
+				};
+			}
 		}
+
 
 		function callnext() {
-			// console.log("in call next");
 			loop.next();
 		}
-		// console.log(tableLatLng);
-		// console.log(callbackBase);
-		calculateDistances2(myOrigin, storesIDS, tableLatLng, callnext);
-		// callnext();
+		calculateDistances2(myOrigin,valueId, tableLatLng, callnext);
 	}, function() {
-		sortDistance2();		
+		sortDistance2();
 		callcall();
-
 	});
 }
 
-function calculateDistances2(myOrigin, storesIDS, tableLL, callback) {
-	// console.log("in calculate 2");
+// ********************* calculate distances *************************//
+
+function calculateDistances2(myOrigin,valueId, tableLL, callback) {
+	// console.log("in calculate");
 	var service = new google.maps.DistanceMatrixService();
 	var origin = new google.maps.LatLng(myOrigin.lat, myOrigin.lng);
-	// console.log(myOrigin.lat + " , " + myOrigin.lng);
+
 	service.getDistanceMatrix( {
 		origins : [ origin ],
 		destinations : tableLL,
@@ -106,22 +135,15 @@ function calculateDistances2(myOrigin, storesIDS, tableLL, callback) {
 		avoidTolls : false
 	}, function(response, status) {
 		// console.log("in callbackDistance");
-		if (status != google.maps.DistanceMatrixStatus.OK) {
-			console.log('Error was: ' + status);
-			setTimeout(function() {
-				calculateDistances2(myOrigin, storesIDS, tableLL, callback);
-			}, 2000);
-		} else {
-			// console.log("status reponse OK");
-			callbackBase += 20;
+		if (status == google.maps.DistanceMatrixStatus.OK) {
 			for ( var i = 0; i < response.rows[0].elements.length; i++) {
-		// alert (response.rows[0].elements[i].status);
-		var valueId = storesIDS[i];
-		var distance = response.rows[0].elements[i].distance.value;
-				// if distance < 2 km
+				var myIndex = i;
+				var myId = valueId[myIndex];
+				var distance = response.rows[0].elements[i].distance.value;
+
 				if (distance < 2000) {
 					tempSubStore.push( {
-						storeId : valueId,
+						storeId : myId,
 						subID : myOrigin.id,
 						distanceText : new String(
 							response.rows[0].elements[i].distance.text),
@@ -129,8 +151,16 @@ function calculateDistances2(myOrigin, storesIDS, tableLL, callback) {
 					});
 				}
 			}
-			callback();
-		}
+		callback();
+		}else if (status === google.maps.DistanceMatrixStatus.OVER_QUERY_LIMIT) {   
+			console.log("OVER_QUERY_LIMIT"); 
+			setTimeout(function() {
+				calculateDistances2(myOrigin,valueId, tableLL, callback);
+			}, 2000);
+		}else {
+			console.log('distance calc was not successful for the following reason: ' + status);
+		} 
+		// callback();
 	});
 }
 
@@ -145,7 +175,7 @@ function sortDistance2() {
 	}
 	tempSubStore.sort(compare);
 	// console.log("///////////// TABLE /////////////");
-	for (var i = tempSubStore.length - 1; i >= 0; i--) {
+	for (var i =0; i<tempSubStore.length;i++){
 		console.log( ","+tempSubStore[i].storeId+","+tempSubStore[i].subID
 			+","+tempSubStore[i].distanceText+","+tempSubStore[i].distanceValue);
 
@@ -154,4 +184,3 @@ function sortDistance2() {
 };
 	// console.log("/////////////	/////////////");
 }
-
