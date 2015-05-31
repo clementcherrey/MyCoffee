@@ -62,12 +62,14 @@
  	+ 'content TEXT)');
 
  tx.executeSql('create table if not exists subway('
- 	+ ' id INTEGER PRIMARY KEY,' 
- 	+ ' lat FLOAT,'
- 	+ ' lng FLOAT,'
+ 	+ ' id INTEGER PRIMARY KEY,' 	
  	+ ' station TEXT,' 
- 	+ ' line INTEGER'
- 	+ ' test FLOAT)');
+ 	+ ' line1 INTEGER,'
+ 	+ ' line2 INTEGER,'
+ 	+ ' line3 INTEGER,'
+ 	+ ' line4 INTEGER,'
+ 	+ ' lat FLOAT,'
+ 	+ ' lng FLOAT)');
 
  tx.executeSql('create table if not exists storeSub('
  	+'storeId INTEGER NOT NULL,' 
@@ -386,19 +388,20 @@ function jsonpopulate() {
 			db.transaction(function(tx) {
 				$.each(data,
 					function(key, val) {
-						// console.log(val.id +", "+val.station+", "+val.line+", "+val.lat+", "+val.lng);
+						console.log(val.id +", "+val.station+", "+val.line1+", "+val.lat+", "+val.lng);
 
 						tx
 						.executeSql(
-							"insert into subway(id,station,line,lat,lng) values(?,?,?,?,?)",
+							"insert into subway(id,station,line1,line2,line3,line4,lat,lng) values(?,?,?,?,?,?,?,?)",
 							[
 							val.id,
 							val.station,
-							val.line,
+							val.line1,
+							val.line2,
+							val.line3,
+							val.line4,
 							val.lat,
 							val.lng]);
-
-						// console.log("lol");
 					});
 				// alert("insert subway lol");
 				tx.executeSql("select * from subway",

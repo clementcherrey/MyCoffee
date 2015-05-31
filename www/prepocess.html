@@ -21,15 +21,22 @@
 	src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript"
 	src="js/jquery.mobile-1.4.5.min.js"></script>
+
+	<script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=nfXjwqvucomlwsM2Pdq2Ik2Y&v=1.0"></script> 
+
+<style type="text/css">  
+body, html,#l-map {width: 100%;height: 100%;overflow: hidden;margin:0;}  
+</style> 
 </head>
 
 <script>
 function init() {
  	// alert("in init");
 	$( document ).ready(function() {
-		alert( "ready!" );
+		console.log( "ready!" );
 		// testCoordinate()
-		jsonTransform();
+		// jsonTransform();
+		jsonTransformSub();
 		// getsub();
 		//downloadFile();
 	}); 	
@@ -42,6 +49,6 @@ function init() {
 			 <input type="search" name="search-sub" id="search-sub" value=""/>
 		</form>
 	</div>
-
+<div id="l-map"></div>  
 </body>
 </html>

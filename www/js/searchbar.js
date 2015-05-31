@@ -87,7 +87,7 @@ function myLoop () {           //  create a loop function
 			'<li data-icon="false">'
 			+'<a id="'+ storeId + '" href="#headline" data-transition="slide" data-id="'
 			+ storeId + '" data-dist="'+tmpDistance+'">' 
-			+ '<img src="img/' + tmpBrand + '.png"/>'
+			+ '<img src="img/' + tmpBrand + '2.png"/>'
 			+ '<h3>' + tmpName + '</h3><p>' + tmpAddress
 			+ '</p><span class="ui-li-count">' + tmpDistance
 			+ '</span></a></li>');

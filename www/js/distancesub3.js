@@ -2,6 +2,7 @@ var subArray = [];
 var storeArray = [];
 var tempSubStore = [];
 
+
 function getsub(){
 	console.log("in get sub");
 	$.getJSON("ajax/subway.json",function(data) {
@@ -20,10 +21,8 @@ function getStore(){
 			storeArray.push({id: val.id, name: val.name, lat: val.lat, lng: val.lng });
 		});
 
-	$( "#search-sub").focus().tap();	
-
-	$( "#searchsub" ).submit(function( event ) {
-			console.log( "Handler for .submit() called." );
+		$( "#searchsub" ).submit(function( event ) {
+			alert( "Handler for .submit() called." );
 			event.preventDefault();
 			var searchid = $("#search-sub").val();
 			// alert(searchid);
@@ -31,7 +30,7 @@ function getStore(){
 		});
 		// loopOnSub(0);
 	});
-}	
+}
 
 // loop on subway station: for each sub
 function loopOnSub(it){
@@ -99,7 +98,7 @@ function initDistCalc2(myOrigin, callcall) {
 		for ( var i = 0; i < 20 && i < storeArray.length - j; i++) {
 			var itID = j+i;
 			var tmpId = currentDiff[itID].id;
-			// console.log("itID: "+itID +", tmpId: " + tmpId);
+			console.log("itID: "+itID +", tmpId: " + tmpId);
 			for ( var k = 0; k < storeArray.length ; k++) {
 				// console.log("storeInfo store id: " + storeInfo.result[k].id);
 				if (storeArray[k].id == tmpId) {
