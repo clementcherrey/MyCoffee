@@ -15,6 +15,7 @@
 					[StationId],function(tx, results){
 						storeInfo.result = [];
 						mapInfo.distances =[];
+						console.log("number of distance sub found : "+results.rows.length);
 						for (var i = results.rows.length - 1; i >= 0; i--) {
 							var tmpId = results.rows.item(i).storeId;
 							var tmpDistVal = results.rows.item(i).distanceValue;
@@ -57,6 +58,8 @@
 
 function displaySearchResult() {
 	console.log("in displaySearchResult");
+	// hide loading animation
+	$.mobile.loading( "hide");
 	// hide button for geolocation
 	$("#twobutt").empty();
 	// show footer

@@ -30,14 +30,13 @@
 
  function setup(tx) {
 //TEST hide navbar footer
-	$("#gpsLoading").hide();
+	// $("#gpsLoading").hide();
  // suppress drop table
  tx.executeSql('DROP TABLE store');
  tx.executeSql('DROP TABLE subway');
  tx.executeSql('DROP TABLE storeSub');
  tx.executeSql('DROP TABLE contentList');
-
-
+ tx.executeSql('DROP TABLE userParam');
 
  tx.executeSql('create table if not exists store('
  	+ ' id INTEGER  PRIMARY KEY, ' 
@@ -60,6 +59,11 @@
  tx.executeSql('create table if not exists contentList('
  	+ 'id INTEGER PRIMARY KEY,' 
  	+ 'content TEXT)');
+
+  tx.executeSql('create table if not exists userParam('
+ 	+ 'id INTEGER PRIMARY KEY,'
+ 	+ 'paramname TEXT,'
+ 	+ 'value TEXT)');
 
  tx.executeSql('create table if not exists subway('
  	+ ' id INTEGER PRIMARY KEY,' 	
@@ -87,7 +91,7 @@ function errorHandler(e) {
 
 function dbReady() {
  	// loadOldList();
- 	console.log("in db ready");
+ 	// console.log("in db ready");
  	db.transaction(function(tx) {
  		tx.executeSql("select * from store order by id asc", [], populatedb,
  			errorHandler);
@@ -223,7 +227,7 @@ function displayList() {
 }
 
 function checkPreviousList(){
-	alert("in check previous List");
+	console.log("in check previous List");
 	db.transaction(function(tx) {
 		tx.executeSql("select * from contentList", [], loadOldList,
 			errorHandler);
@@ -232,7 +236,7 @@ function checkPreviousList(){
 
 // Save the current home Page
 function storeCurrentList(){
-	alert("in save current list");
+	console.log("in save current list");
 	db.transaction(function(tx) {
 		var tmpContent = $('#store-list').html();
 		var contentString = new String(tmpContent);
@@ -245,7 +249,7 @@ function storeCurrentList(){
 }
 
 function loadOldList(tx,results){
-	console.log("in Load list");
+	// console.log("in Load list");
 	// hide button for geolocation
 	$("#twobutt").empty();
 	// show footer
@@ -290,7 +294,7 @@ function loadOldList(tx,results){
 
 
 function gotlog(tx, results) {
-	console.log("in gotlog");
+	// console.log("in gotlog");
 	if (results.rows.length == 0) {	
 		console.log("no data");
 		return false;
@@ -311,6 +315,14 @@ $('#autocomplete').listview('refresh');
 };
 
 function getMyPos() {
+
+    $.mobile.loading( "show", {
+            text: "custom",
+            textVisible: true,
+            theme: $.mobile.loader.prototype.options.theme,
+            textonly: true,
+            html: "<img style='width: 100%;' src='img/load-gps.gif'>"
+    });
 
 	console.log("in getMyPos");
 	var options = {
@@ -388,7 +400,7 @@ function jsonpopulate() {
 			db.transaction(function(tx) {
 				$.each(data,
 					function(key, val) {
-						console.log(val.id +", "+val.station+", "+val.line1+", "+val.lat+", "+val.lng);
+						// console.log(val.id +", "+val.station+", "+val.line1+", "+val.lat+", "+val.lng);
 
 						tx
 						.executeSql(
@@ -439,7 +451,7 @@ function jsonpopulate() {
 							val.lng ]);
 					});
 
-				alert("after insert");
+				// alert("after insert");
 				insertCosta();
 			});
 

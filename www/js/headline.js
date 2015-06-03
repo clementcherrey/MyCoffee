@@ -1,33 +1,28 @@
-var tmpSubwayDetail = null;
-var tmpStation = null;
 
 function headlinePreDisplay(){
-	console.log("in headline headlinePreDisplay");
-	var tmpSubwayLine = [];	
+var tmpStation = null;
+var tmpSubwayLine = [];	
+console.log("in headline headlinePreDisplay");
 	db.transaction(function(tx) {
 		tx.executeSql("select * from storeSub where storeId = ? order by distanceValue desc",
 			[storeInfo.id],function(tx, results){	
 				if (results.rows.length == 0) {
 					console.log(" no result for subway association");
-					tmpSubwayDetail = "No close subway station";
-					headlineNewDisplay(null);
+					headlineNewDisplay(tmpStation,tmpSubwayLine);
 				}else{
 					var closestSubId = results.rows.item(0).subwayId;
 					console.log("distance: " + results.rows.item(0).distanceValue + ", sub id : " + closestSubId);
-					tmpSubwayDetail = results.rows.item(0).distanceText + " from the station";
 					tx.executeSql("select * from subway where id = ? ",
 						[closestSubId],function(tx, result){
 							tmpStation = result.rows.item(0).station;
 							tx.executeSql("select * from subway where station = ? ",
 								[tmpStation],function(tx, resultsub){
-									console.log("nombres de lignes : "+resultsub.rows.length);
-									for (var i = resultsub.rows.length - 1; i >= 0; i--) {
-										tmpSubwayLine.push(resultsub.rows.item(i).line);
-										console.log("line number "+i+ " : "+tmpSubwayLine[i]);
-										console.log("subway line length: "+tmpSubwayLine.length);
-									}
-									headlineNewDisplay(tmpSubwayLine);
-									//headlineDisplay(tmpSubwayLine);
+									tmpSubwayLine.push(resultsub.rows.item(0).line1);
+									tmpSubwayLine.push(resultsub.rows.item(0).line2);
+									tmpSubwayLine.push(resultsub.rows.item(0).line3);
+									tmpSubwayLine.push(resultsub.rows.item(0).line4);
+									console.log("number of line insublines: "+ tmpSubwayLine.length);
+									headlineNewDisplay(tmpStation,tmpSubwayLine);
 								});
 						});
 				}				
@@ -35,7 +30,7 @@ function headlinePreDisplay(){
 });
 }
 
-function headlineNewDisplay(sublines) {
+function headlineNewDisplay(station,sublines) {
 	console.log("in headline for new display");
 	$('#store-data').empty();
 	$('.header-title').empty();
@@ -90,15 +85,33 @@ function headlineNewDisplay(sublines) {
 				+'<img src = "img/detail/address.png" alt ="address" class="ui-li-icon ui-corner-none>"'
 				+'<span>'
 				+ tmpAddress + '</span></li>');
+		if (station!=null) {	
 			$('#store-data')
 			.append(
 				'<li class="detail-multiline" style="white-space:normal;">'
 				+'<img src = "img/detail/subway.png" alt ="subway" class="ui-li-icon ui-corner-none>"'
-				+'<p class="detail-centerp">'	
-				+ tmpStation
-				+ '</br>'				
-				+ tmpStation
-				+ '</p></li>');
+				+'<div class="detail-centerp">'	
+				+ '</div><div style="display:table; class="detail-centerp">'
+				+'<span style="vertical-align: middle;display: table-cell">'
+				+ station	
+				+ '</span></div>'
+				+'</br><div id="mysublines"style="display:table;></div>'
+				+'</li>');
+
+			console.log("sublines length: "+ sublines.length+", sublines 0 = "+sublines[0]);
+			for (var i = 0; i< sublines.length; i++) {
+				alert("in for");
+				$('#mysublines').append(
+					'<span style="vertical-align: middle;display: table-cell;">'
+					// +'<img src="img/line2'
+					+ sublines[i]
+					// + '.png" />'
+					+ '</span>');
+			};
+			$('#store-data').listview('refresh');
+		}
+
+		if (tmpOpen1!=null) {
 			$('#store-data')
 			.append(
 				'<li class="detail-multiline" style="white-space:normal;">'
@@ -112,24 +125,32 @@ function headlineNewDisplay(sublines) {
 				+ '</br>'				
 				+ tmpOpen4
 				+ '</div></li>');
+		}
 			//----------------------- More Info-----------------------------
+		if (tmpPhone!=null && tmpDescription!=null && tmpWebsite!=null) {
 			$('#store-data')
 			.append(
 				'<li data-role="list-divider">'
 				+ 'More</li>');
+		};
+		if (tmpDescription!=null && tmpDescription!="null") {		
 			$('#store-data')
 			.append(
 				'<li class="detail-multiline" style="white-space:normal;">'
 				+'<img src = "img/detail/description.png" alt ="description" class="ui-li-icon ui-corner-none>"'
 				+'<span>'
 				+ tmpDescription + '</span></li>');
+		};
+		if (tmpPhone!=null && tmpPhone!="null") {
 			$('#store-data')
 			.append(
 				'<li style="white-space:normal;">'
 				+'<img src = "img/detail/phone.png" alt ="phone" class="ui-li-icon ui-corner-none>"'
 				+'<span>'
 				+tmpPhone
-				+ '</span></li>');			
+				+ '</span></li>');
+		};
+		if (tmpWebsite!=null && tmpWebsite!="null") {
 			$('#store-data')
 			.append(
 				'<li style="white-space:normal;">'
@@ -137,7 +158,7 @@ function headlineNewDisplay(sublines) {
 				+'<span>'
 				+tmpWebsite
 				+ '</span></li>');
-
+		};
 			$('#store-data').listview('refresh');
 
 			break;
