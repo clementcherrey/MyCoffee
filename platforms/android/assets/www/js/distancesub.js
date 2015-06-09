@@ -15,7 +15,7 @@ function getsub(){
 //put the brand as parmeter for futur version
 function getStore(){
 	console.log("in get store");
-	$.getJSON("ajax/costa.json",function(data) {
+	$.getJSON("ajax/starbucks.json",function(data) {
 		$.each(data,function(key, val) {	
 			storeArray.push({id: val.id, name: val.name, lat: val.lat, lng: val.lng });
 		});

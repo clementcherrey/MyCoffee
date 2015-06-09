@@ -50,6 +50,7 @@ function initMap() {
 		map.setZoom(mapInfo.mapZoom);
 	}
 	initMarkers();
+	getPointclicked();
 }
 
 function clickCurrentMarker(){
@@ -77,11 +78,12 @@ function initMarkers(){
 
 		var tmpName = storeInfo.result[i].name;
 		var tmpBrand = storeInfo.result[i].brand;
-		var tmpAddress = storeInfo.result[i].address;
+		var tmpAddress = storeInfo.result[i].addresseng;
 
 		contents.push('<div>' + '<h3>'
-			+ tmpName + '</h3>'
-			+ tmpAddress + '</div>');
+			+ tmpBrand + '</h3>'
+			+ tmpAddress 
+			+'</br><a href="#headline">view detail</a></div>');
 
 		markers.push( new google.maps.Marker({
 			position : tmpLatlng,
@@ -95,27 +97,47 @@ function initMarkers(){
 			myInfoWindow.content = "YO";
 			myInfoWindow.setContent(this.content);
 			myInfoWindow.open(map, this);
+			// TO CUSTOMIZE THE LAT AND LNG
+			getActiveMarker(this);
 		});
 	};
 
 
 	// TEST FOR THE LAT LNG BAIDU
+	var testjiashan = new google.maps.LatLng(31.202855,121.460856);
+
 	var testSBJiashan = new google.maps.LatLng(31.203489,121.462607);
 	var testCostJiashan = new google.maps.LatLng(31.203513, 121.461977);
 	var testLatLngB = new google.maps.LatLng(31.208523,121.466471);
 	var testLatLngC = new google.maps.LatLng(31.208907,121.468067);
 	var testLatLngF = new google.maps.LatLng(31.208515,121.467329);
 	var testLatLngI = new google.maps.LatLng(31.208955,121.468806);
+
+	var testLatLngb = new google.maps.LatLng(31.228867,121.526159);
+	var testLatLngc = new google.maps.LatLng(31.232997,121.475939);
+	var testLatLngf = new google.maps.LatLng(31.217996,121.414437);
+	var testLatLngi = new google.maps.LatLng(31.391508,121.237312);
+
+
+
+
 	var myPos = new google.maps.LatLng(mapInfo.currentLat,mapInfo.currentLng);
-	mapInfo.currentLat =  31.205451999999998;
-	mapInfo.currentLng = 121.4577775;
+	// mapInfo.currentLat =  31.205451999999998;
+	// mapInfo.currentLng = 121.4577775;
+	// test correction GPS
 	var customlat = mapInfo.currentLat - 0.0021;
 	var customlng = mapInfo.currentLng + 0.0042;
 	var custompos = new google.maps.LatLng(customlat,customlng);
+
+	markers.push( new google.maps.Marker({
+		position : testjiashan,
+		map : map,
+		icon : 'img/marker-cup.png',
+	}));
 	markers.push( new google.maps.Marker({
 		position : custompos,
 		map : map,
-		icon : 'img/xigua.png',
+		icon : 'img/size.png',
 	}));
 	markers.push( new google.maps.Marker({
 		position : myPos,
@@ -152,6 +174,30 @@ function initMarkers(){
 		map : map,
 		icon : 'img/150.png',
 	}));
+		markers.push( new google.maps.Marker({
+		position : testLatLngb,
+		map : map,
+		icon : 'img/150.png',
+	}));
+	markers.push( new google.maps.Marker({
+		position : testLatLngc,
+		map : map,
+		icon : 'img/150.png',
+	}));
+	markers.push( new google.maps.Marker({
+		position : testLatLngf,
+		map : map,
+		icon : 'img/150.png',
+	}));
+	markers.push( new google.maps.Marker({
+		position : testLatLngi,
+		map : map,
+		icon : 'img/150.png',
+	}));
+
+	// --------Test for the position of subwats
+	// printSubways();
+	//---------
 	if(storeInfo.id != null){
 		clickCurrentMarker();
 	}

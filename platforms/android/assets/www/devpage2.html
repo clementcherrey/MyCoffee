@@ -13,6 +13,7 @@
 
 
 
+	<script type="text/javascript" src="js/customLocation.js"></script>
 	<script type="text/javascript" src="js/storage2.js"></script>
 	<script type="text/javascript" src="js/mapOperation.js"></script>
 	<script type="text/javascript" src="js/headline.js"></script>
@@ -21,9 +22,7 @@
 	<script type="text/javascript" src="cordova.js"></script>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
-	<script type="text/javascript"
-	src="http://maps.google.cn/maps/api/js?region=cn&language=en-US&sensor=true"></script>
-
+	
 </head>
 
 <body onload="init()">
@@ -64,28 +63,20 @@
 						<!-- store list here -->
 					</ul>
 				</div>
-			</div>
+				</div>
 		<!-- /content -->
 			<div data-theme="a" data-role="footer" data-position="fixed"
 				id="homefooter" hidden="true">
 				<div id="footernav" data-role="navbar" class="custom-navbar">
 					<ul style="border: none">
-						<li class="lifoot"><a href="#main"
-								class="ui-btn ui-btn-icon-notext ui-btn-inline ui-icon-location"></a></li>
-						<li id="midbutt" class="lifoot"><a id="getLocation1" href="#popupGPS"
-								data-rel="popup" data-position-to="window"
-								class="ui-btn ui-btn-icon-notext ui-btn-inline ui-icon-navigation"></a></li>
-						<li class="lifoot"><a href="#more"
-								class="ui-btn ui-btn-icon-notext ui-btn-inline ui-icon-gear"></a></li>
+						<li class="lifoot"><a href="#main"><img  style="width: 30%;"  src="img/logo/map.png"></a></li>
+						<li id="midbutt" class="lifoot"><a id="getLocation1" href="#"><img style="width: 30%;" src="img/logo/gps.png"></a></li>
+						<li class="lifoot"><a href="#more"><img  style="width: 30%;"src="img/logo/gear.png"></a></li>
 					</ul>
 				</div>
-				<div data-role="popup" id="popupGPS" class="photopopup" data-overlay-theme="b" data-corners="false" data-tolerance="30,15">
+				<div data-role="popup" id="popupGPS" class="photopopup" data-overlay-theme="b" data-rolecorners="false" data-tolerance="30,15">
 				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
 				<img src="img/dancing-banana.gif" alt="Finding coffe shop near you...">
-				</div>
-
-				<div id="gpsLoading">
-					<!-- DIV FOR GPS Loading -->
 				</div>
 			</div>
 	</div>
@@ -115,7 +106,7 @@
 										class="ui-btn ui-corner-all ui-shadow"><span>Show on Map</span></a></div>
 									</div>
 
-									<!-- //////////////////////// MORE /////////////////////////////////// -->
+		<!-- //////////////////////// MORE /////////////////////////////////// -->
 
 									<div data-role="page" id="more">
 										<div data-role="header" data-position="fixed" class="header-div">
@@ -173,10 +164,16 @@
 												<div data-role="footer" data-position="fixed"
 	style="text-align: center;"><!--<a href="#" class="ui-btn ui-corner-all ui-shadow"><span>My location</span></a>
 -->
-<button id="test" class="ui-btn">TEST</button>
+<button id="printNewLatLng" class="ui-btn">Print</button>
 </div>
 </div>
 </div>
 
 </body>
+<!-- TEST async load google map script -->
+<script>
+    $.getScript("js/storage2.js",function(){
+          $(document).ready(ready);
+    });
+</script>
 </html>

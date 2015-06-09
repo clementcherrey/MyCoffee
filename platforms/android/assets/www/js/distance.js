@@ -50,12 +50,16 @@ function preCalc(){
 						latte: results.rows.item(i).latte,
 						brand: results.rows.item(i).brand,
 						name: results.rows.item(i).name,
-						address: results.rows.item(i).address,
-						open: results.rows.item(i).open,
+						addresseng: results.rows.item(i).addresseng,
+						open1: results.rows.item(i).open1,
+						open2: results.rows.item(i).open2,
+						open3: results.rows.item(i).open3,
+						open4: results.rows.item(i).open4,
 						description: results.rows.item(i).description,
+						phone: results.rows.item(i).phone,
+						website: results.rows.item(i).website,
 						lat: results.rows.item(i).lat,
-						lng: results.rows.item(i).lng,
-					});
+						lng: results.rows.item(i).lng,					});
 				};
 				initDistCalc();
 			});
@@ -135,7 +139,7 @@ function calculateDistances(valueId, tableLL, callback) {
 	service.getDistanceMatrix( {
 		origins : [ origin ],
 		destinations : tableLL,
-		travelMode : google.maps.TravelMode.DRIVING,
+		travelMode : google.maps.TravelMode.WALKING,
 		unitSystem : google.maps.UnitSystem.METRIC,
 		avoidHighways : false,
 		avoidTolls : false

@@ -86,7 +86,7 @@
 }
 
 function errorHandler(e) {
-	alert(e.message);
+	console.log("errorHandler report: " +e.message);
 }
 
 function dbReady() {
@@ -96,6 +96,9 @@ function dbReady() {
  		tx.executeSql("select * from store order by id asc", [], populatedb,
  			errorHandler);
  	});
+
+ 	// AFTER CUSTOMIZATION print the new coordinates in the console 
+	$('#printNewLatLng').on("tap", printNewCoordinates);
 
 	// the 2 buttons to use geolocation
 	$('#getLocation').on("tap", getMyPos);
@@ -134,12 +137,12 @@ function dbReady() {
 function ready() {
       var script = document.createElement('script');
       script.type = 'text/javascript';
-      script.src = 'http://maps.google.cn/maps/api/js?region=cn&language=en-US&sensor=true&'+'callback=initialize';
+      script.src = 'http://maps.google.cn/maps/api/js?region=cn&language=en-US&sensor=true&'+'callback=initialized';
       document.body.appendChild(script);
     };
 
 //callback after loading
-function initialize(){
+function initialized(){
 	console.log("google map script loaded");
 	// can put init map here directly maybe
 }
@@ -170,7 +173,7 @@ var mapInfo = {
 	createNb : 0,
 	centerLat : 31.225523,
 	centerLng : 121.491344,
-	mapZoom : 12,
+	mapZoom : 16,
 	currentLat : 32.0500,
 	currentLng : 118.7667,
 	distances : [],
@@ -380,7 +383,7 @@ function jsonpopulate() {
 							"insert into storeSub(storeId,subwayId,distanceText,distanceValue) values(?,?,?,?)",
 							[
 							val.storeId,
-							val.subId,
+							val.subwayId,
 							val.distanceText,
 							val.distanceValue]);
 					});
@@ -424,7 +427,7 @@ function jsonpopulate() {
 	$.getJSON(
 		"ajax/starbucks.json",
 		function(data) {
-			// alert(data);
+			// console.log(data);
 			db
 			.transaction(function(tx) {
 				$.each(data,

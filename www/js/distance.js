@@ -139,7 +139,7 @@ function calculateDistances(valueId, tableLL, callback) {
 	service.getDistanceMatrix( {
 		origins : [ origin ],
 		destinations : tableLL,
-		travelMode : google.maps.TravelMode.DRIVING,
+		travelMode : google.maps.TravelMode.WALKING,
 		unitSystem : google.maps.UnitSystem.METRIC,
 		avoidHighways : false,
 		avoidTolls : false

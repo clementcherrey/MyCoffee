@@ -50,6 +50,7 @@ function initMap() {
 		map.setZoom(mapInfo.mapZoom);
 	}
 	initMarkers();
+	getPointclicked();
 }
 
 function clickCurrentMarker(){
@@ -80,8 +81,9 @@ function initMarkers(){
 		var tmpAddress = storeInfo.result[i].addresseng;
 
 		contents.push('<div>' + '<h3>'
-			+ tmpName + '</h3>'
-			+ tmpAddress + '</div>');
+			+ tmpBrand + '</h3>'
+			+ tmpAddress 
+			+'</br><a href="#headline">view detail</a></div>');
 
 		markers.push( new google.maps.Marker({
 			position : tmpLatlng,
@@ -95,6 +97,8 @@ function initMarkers(){
 			myInfoWindow.content = "YO";
 			myInfoWindow.setContent(this.content);
 			myInfoWindow.open(map, this);
+			// TO CUSTOMIZE THE LAT AND LNG
+			getActiveMarker(this);
 		});
 	};
 
@@ -190,6 +194,10 @@ function initMarkers(){
 		map : map,
 		icon : 'img/150.png',
 	}));
+
+	// --------Test for the position of subwats
+	// printSubways();
+	//---------
 	if(storeInfo.id != null){
 		clickCurrentMarker();
 	}

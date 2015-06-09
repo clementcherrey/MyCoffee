@@ -1,6 +1,5 @@
 [
     {
-        "number": "1",
         "id": "68301",
         "name": "Henderson Metropolitan",
         "addresseng": "No.300,E.Nanjing RdHuangpu District",
@@ -9,7 +8,6 @@
         "addresscn": "上海市黄浦区名人大厦南京东路300号L114商铺"
     },
     {
-        "number": "2",
         "id": "92693",
         "name": "Bund Plaza",
         "addresseng": "No 233 East Nanjing RoadHuangpu District",
@@ -18,7 +16,6 @@
         "addresscn": "上海市黄浦区老介福南京东路233号"
     },
     {
-        "number": "3",
         "id": "1006355",
         "name": "Hong Yi Plaza",
         "addresseng": "No.299 E. Nanjing Rd.Huangpu District",
@@ -27,7 +24,6 @@
         "addresscn": "上海市黄浦区2楼S-215单元南京东路299号"
     },
     {
-        "number": "4",
         "id": "116349",
         "name": "Middle Fujian road",
         "addresseng": "No. 353-359, Fujianzhong Rd.Huangpu Distrct",
@@ -36,7 +32,6 @@
         "addresscn": "上海市黄浦区福建中路福建中路353号-359号1-2层1A02单元"
     },
     {
-        "number": "5",
         "id": "19084",
         "name": "Sail Tower",
         "addresseng": "No.266,Hankou Rd,Sail TowerHuangpu District",
@@ -45,7 +40,6 @@
         "addresscn": "上海市黄浦区申大厦102单元汉口路266号"
     },
     {
-        "number": "6",
         "id": "19397",
         "name": "Joy City - 3F",
         "addresseng": "No.180,Qufu RdZhabei district",
@@ -54,7 +48,6 @@
         "addresscn": "上海市闸北区大悦城曲阜路180号"
     },
     {
-        "number": "7",
         "id": "1008574",
         "name": "Sihang Tiandi",
         "addresseng": "NO.18 North Xi Zang RoadZhabei District",
@@ -63,7 +56,6 @@
         "addresscn": "上海市闸北区四行天地西藏北路18号105单元"
     },
     {
-        "number": "8",
         "id": "1801",
         "name": "Yongan",
         "addresseng": "No.635,East Nanjing RdHuangpu district",
@@ -72,7 +64,6 @@
         "addresscn": "上海市黄浦区永安百货一楼南京东路635号"
     },
     {
-        "number": "9",
         "id": "89911",
         "name": "The Bund Store - Ground Floor",
         "addresseng": "No.367,E. No.1 Zhongshan RdHuangpu Distric",
@@ -81,7 +72,6 @@
         "addresscn": "上海市黄浦区外滩中山东一路367号"
     },
     {
-        "number": "10",
         "id": "63283",
         "name": "Howard Johnson Plaza Hotel",
         "addresseng": "No.595,Jiujiang RdHuangpu District",
@@ -90,7 +80,6 @@
         "addresscn": "上海市黄浦区古象大酒店九江路595号一层"
     },
     {
-        "number": "11",
         "id": "1611",
         "name": "Amanda Plaza",
         "addresseng": "No.1118 Changshou RoadPutuo districtAmanda Plaza",
@@ -99,7 +88,6 @@
         "addresscn": "上海市普陀区芳汇广场F117号商铺长寿路1118号"
     },
     {
-        "number": "12",
         "id": "113412",
         "name": "The Point Jingan - Ground Floor",
         "addresseng": "No. 553, An Yuan RdJing'an District",
@@ -108,7 +96,6 @@
         "addresscn": "上海市静安区静安门大厦安远路553号"
     },
     {
-        "number": "13",
         "id": "1005514",
         "name": "Union Place",
         "addresseng": "No.555,Caoyang Rd.PuTuo District",
@@ -117,7 +104,6 @@
         "addresscn": "上海市普陀区汇融天地曹杨路555号"
     },
     {
-        "number": "14",
         "id": "18889",
         "name": "800 Show-ChangDe Rd ChangPing Rd",
         "addresseng": "No. 800 ChangDe RaodJing An District",
@@ -126,7 +112,6 @@
         "addresscn": "上海市静安区800秀常德路800号"
     },
     {
-        "number": "15",
         "id": "19282",
         "name": "Huge World - Ground Floor",
         "addresseng": "No.3018, North Zhongshan RoadPutuo district",
@@ -135,7 +120,6 @@
         "addresscn": "上海市普陀区长城大厦123单元中山北路3018号"
     },
     {
-        "number": "16",
         "id": "1005810",
         "name": "Yue Xing Intl Business Center",
         "addresseng": "No. 3300 North Zhongshan Road B1148-149Putuo District",
@@ -144,7 +128,6 @@
         "addresscn": "上海市普陀区月星环球港B1148-B1149中山北路3300号"
     },
     {
-        "number": "17",
         "id": "1011363",
         "name": "HK New World Dept - Changshou Rd",
         "addresseng": "NO115 Unit 110 Changshou RoadPu Tuo District",
@@ -153,7 +136,6 @@
         "addresscn": "上海市普陀区长寿路巴黎春天长寿路175号，179号L110单元"
     },
     {
-        "number": "18",
         "id": "1667",
         "name": "Fortune Times",
         "addresseng": "No.137,Changshou RdPutuo district",
@@ -162,7 +144,6 @@
         "addresscn": "上海市普陀区财富时代长寿路137号1楼02室"
     },
     {
-        "number": "19",
         "id": "1889",
         "name": "Jiang Su Rd , Yuyuan Rd-Changning D",
         "addresseng": "No.458,Jiangsu RdChangning District",
@@ -171,7 +152,6 @@
         "addresscn": "上海市长宁区舜元弘基天地江苏路458号1层116室"
     },
     {
-        "number": "20",
         "id": "1790",
         "name": "Zao-Fong World Trade Bldg-GF-Unit C",
         "addresseng": "No.369,Jiangsu RdChangning DistrictZao-Fong World Trade Building",
@@ -180,7 +160,6 @@
         "addresscn": "上海市长宁区兆丰世贸大厦江苏路369号"
     },
     {
-        "number": "21",
         "id": "1005409",
         "name": "The Third Space",
         "addresseng": "No.928 ZhenHua RoadBaoshan district",
@@ -189,7 +168,6 @@
         "addresscn": "上海市宝山区巴黎春天真华路928号一层101室"
     },
     {
-        "number": "22",
         "id": "1006538",
         "name": "Da Hua Rd",
         "addresseng": "No 518. Da Hua RoadBaoshan District",
@@ -198,7 +176,6 @@
         "addresscn": "上海市宝山区乐购大华店第一层的S1、S2单元大华路518号"
     },
     {
-        "number": "23",
         "id": "1591",
         "name": "Zhenguang Road",
         "addresseng": "No.1288,Zhenguang RdPutuo district",
@@ -207,7 +184,6 @@
         "addresscn": "上海市普陀区百联购物广场真光路1288号"
     },
     {
-        "number": "24",
         "id": "113955",
         "name": "Meichuan Store",
         "addresseng": "No.1297 Meichuan Rd.PuTuo District",
@@ -216,7 +192,6 @@
         "addresscn": "上海市普陀区梅川路梅川路1297号"
     },
     {
-        "number": "25",
         "id": "87634",
         "name": "Central Mansion",
         "addresseng": "No.21-22,Lane 58,Tongchuan RdPutuo District",
@@ -225,16 +200,14 @@
         "addresscn": "上海市普陀区品尊国际广场铜川路58弄21-22号"
     },
     {
-        "number": "26",
         "id": "1011557",
         "name": "Da Hua Three Road",
         "addresseng": "Bao Shan District, Da Hua San RdNo.81",
         "open": "Monday to Sunday：07:00-22:00",
         "namecn": "大华三路店",
-        "addresscn": "Bao Shan District, Da Hua San RdNo.81"
+        "addresscn": "上海市宝山区大华三路81号"
     },
     {
-        "number": "27",
         "id": "1008410",
         "name": "MTR City Plaza",
         "addresseng": "No.1325 Jinshajiang Rd",
@@ -243,7 +216,6 @@
         "addresscn": "上海市普陀区近铁城市广场真北路818号B2层06\\22单元"
     },
     {
-        "number": "28",
         "id": "1006939",
         "name": "Ju Feng Yuan Road",
         "addresseng": "No.91 Ju Feng Yuan Road",
@@ -252,7 +224,6 @@
         "addresscn": "上海市宝山区1号楼116、117室聚丰园路91号"
     },
     {
-        "number": "29",
         "id": "1007856",
         "name": "Gu Cun Park",
         "addresseng": "NO.111 Lu Xiang road",
@@ -261,7 +232,6 @@
         "addresscn": "上海市宝山区陆翔路111弄119号"
     },
     {
-        "number": "30",
         "id": "1009548",
         "name": " Central Park Dream Port",
         "addresseng": "Unit118,No.801,Baoxiang RoadJiaDing District",
@@ -270,7 +240,6 @@
         "addresscn": "上海市嘉定区宝翔路801号118单元"
     },
     {
-        "number": "31",
         "id": "113402",
         "name": "MCC Shineton Plaza - Ground Floor",
         "addresseng": "No.3, Lane 31, Jiatong Rd.NanXiang Town, JiaDing district",
@@ -279,7 +248,6 @@
         "addresscn": "上海市嘉定区南翔祥腾广场佳通路31弄3号"
     },
     {
-        "number": "32",
         "id": "1011168",
         "name": "ZhongJi Building",
         "addresseng": "No.819 Yinxiang RdJiading District",
@@ -288,7 +256,6 @@
         "addresscn": "上海市嘉定区中暨大厦银翔路819弄1号04单元"
     },
     {
-        "number": "33",
         "id": "1007846",
         "name": "Jiangqiao Old Town",
         "addresseng": "No.101,Lane 505,Yu Ji Dun Rd",
@@ -297,7 +264,6 @@
         "addresscn": "上海市嘉定区4幢101、102、109铺位虞姬墩路505号"
     },
     {
-        "number": "34",
         "id": "1011556",
         "name": "E-mart",
         "addresseng": "NO.2211 West Changjiang RoadBaoshan District",
@@ -306,7 +272,6 @@
         "addresscn": "上海市宝山区纪蕴路38号A-68单元"
     },
     {
-        "number": "35",
         "id": "1009795",
         "name": "Lake Malaren",
         "addresseng": "NO.1088 Luo Feng RoadBaoshan District",
@@ -315,7 +280,6 @@
         "addresscn": "上海市宝山区世纪联华1F 7894F01001单元罗芬路1088号"
     },
     {
-        "number": "36",
         "id": "1006076",
         "name": "Liu Cheng International",
         "addresseng": "No.295,Tacheng Rd.Jiading District",
@@ -324,7 +288,6 @@
         "addresscn": "上海市嘉定区疁城国际塔城路295号"
     },
     {
-        "number": "37",
         "id": "1659",
         "name": "Robinsons",
         "addresseng": "CNo.138,ChengZhong Rd.JiaDing District",
@@ -333,7 +296,6 @@
         "addresscn": "上海市嘉定镇罗宾森购物广场L1-1、L2-1商铺城中路138号"
     },
     {
-        "number": "38",
         "id": "1006519",
         "name": "Jiaso Live Plaza",
         "addresseng": "No.6130 North Jiasong Rd.",
@@ -342,7 +304,6 @@
         "addresscn": "上海市嘉定区嘉松北路6130号"
     },
     {
-        "number": "39",
         "id": "113414",
         "name": "Taicang Wanda Plaza - Ground Floor",
         "addresseng": "TaicangNo.188, dong Rd.Chengxiang Town",
@@ -351,7 +312,6 @@
         "addresscn": "太仓市城厢镇万达广场1层1023铺位上海东路188号"
     },
     {
-        "number": "40",
         "id": "1010198",
         "name": "Suzhou Taicang Hai Yundi-1F,2F",
         "addresseng": "SuzhouNo.86 Haiyundi RdTaicang",
@@ -360,16 +320,14 @@
         "addresscn": "太仓市城厢镇南郊海运堤路86-4号"
     },
     {
-        "number": "41",
         "id": "20379",
         "name": "Taicang HuaXu Fortune Centre - GF",
         "addresseng": "TaicangNo. 95 South Renmin RdChengxiang TownTaicang HuaXu Fortune Centre",
         "open": "Monday to Friday：07:00-22:30,Saturday to Sunday：08:00-22:30",
         "namecn": "#N/A",
-        "addresscn": "#N/A"
+        "addresscn": "太仓95号人民南路城厢镇太仓华旭财富中心"
     },
     {
-        "number": "42",
         "id": "88712",
         "name": "Jia Ting Hui- Ground Floor",
         "addresseng": "No.1055,S.Moyu RdJiading District",
@@ -378,7 +336,6 @@
         "addresscn": "上海市嘉定区嘉亭荟城市生活广场108室墨玉南路1055号"
     },
     {
-        "number": "43",
         "id": "90031",
         "name": "Kunshan Huaqiao Alibaba - GF",
         "addresseng": "KunshanNo.183,Huaan RdHuaqiao TownElectronic Business Building",
@@ -387,7 +344,6 @@
         "addresscn": "昆山市花桥镇1层2#1~2#4铺位花安路183号"
     },
     {
-        "number": "44",
         "id": "51996",
         "name": "Jiangqiao Wanda",
         "addresseng": "No. 1051, West Jin Sha Jiang Rd.Jiading Distrct",
@@ -396,7 +352,6 @@
         "addresscn": "上海市嘉定区万达广场金沙江西路1051弄1-100号1100单元"
     },
     {
-        "number": "45",
         "id": "1843",
         "name": "Jin Feng Road",
         "addresseng": "No.447,JinFeng RdMinHang District",
@@ -405,7 +360,6 @@
         "addresscn": "上海市闵行区金丰路金丰路447号"
     },
     {
-        "number": "46",
         "id": "1852",
         "name": "Zhaoxiang",
         "addresseng": "NO.2888 Huqingping RoadQinpu District",
@@ -414,7 +368,6 @@
         "addresscn": "上海市青浦区青浦区赵巷休闲场所沪青平公路2888号B区101室"
     },
     {
-        "number": "47",
         "id": "1008558",
         "name": "The HUB-XTD",
         "addresseng": "Hongqiao CBD, Shenhong RdMinhang District",
@@ -423,7 +376,6 @@
         "addresscn": "上海市闵行区虹桥天地广场申长路900号2号楼一层103单元"
     },
     {
-        "number": "48",
         "id": "116439",
         "name": "HongQiao Railway Station-Dep",
         "addresseng": "Starting layer,Hongqiao Railway StationChangning District",
@@ -432,7 +384,6 @@
         "addresscn": "上海市长宁区虹桥火车站虹桥火车站出发层2F-北1，3F-C4"
     },
     {
-        "number": "49",
         "id": "90298",
         "name": "Hongqiao Traffic Cntr-Rail Station",
         "addresseng": "B1-19, HongQiao Railway Station arrivalChangning District",
@@ -441,7 +392,6 @@
         "addresscn": "上海市长宁区火车站到达区B1-19虹桥火车站到达区B1-19"
     },
     {
-        "number": "50",
         "id": "1009405",
         "name": "SHA Hong Qiao Airport T2 - Arrival",
         "addresseng": "Arrival Level, T2, Hong Qiao AirportMinhang District",
@@ -450,7 +400,6 @@
         "addresscn": "上海市长宁区虹桥机场二号航站楼申达一路1号虹桥机场T2航站楼到达公众区0L-1号商铺"
     },
     {
-        "number": "51",
         "id": "18962",
         "name": "SHA Hong Qiao Airport-Concourse",
         "addresseng": "No.1,Shendayi Rd,Hongqiao Airport T2Changning district",
@@ -459,7 +408,6 @@
         "addresscn": "上海市长宁区虹桥机场T2候机楼C3-M2-S28申达一路1号"
     },
     {
-        "number": "52",
         "id": "19247",
         "name": "SHA-Hong Qiao Airport-Departure Bay",
         "addresseng": "No.1,Shen Da Yi Rd,T2,Hongqiao AirportChangning DistrictSHA-Hong Qiao Airport",
@@ -468,7 +416,6 @@
         "addresscn": "上海市长宁区虹桥机场T2航站楼12.15米层B5-3-S1申达一路1号"
     },
     {
-        "number": "53",
         "id": "1534",
         "name": "Qi Xin",
         "addresseng": "No.3655,Qixin RdMinhang District",
@@ -477,7 +424,6 @@
         "addresscn": "上海市闵行区凯德七宝购物广场七莘路3655号"
     },
     {
-        "number": "54",
         "id": "1011481",
         "name": "SHA Hong Qiao Airport T1-Departure",
         "addresseng": "No.1 Shenda Yi RdChangning District",
@@ -486,7 +432,6 @@
         "addresscn": "上海市长宁区虹桥机场一号航站楼迎宾一路800号T1航站楼出发公众区B2-20店铺"
     },
     {
-        "number": "55",
         "id": "1008541",
         "name": "Songjiang Wanda Plaza",
         "addresseng": "Line.658 Guangfulin RdSongjiang",
@@ -495,7 +440,6 @@
         "addresscn": "上海市松江区万达广场广富林路658号1031-1032号单元"
     },
     {
-        "number": "56",
         "id": "1845",
         "name": "Mediterranean Sea",
         "addresseng": "No.1-000 Xinsongjiang RdSongJiang DistrictKaiyuan Plaza",
@@ -504,7 +448,6 @@
         "addresscn": "上海市松江区地中海商业广场1层1-000号新松江路925弄"
     },
     {
-        "number": "57",
         "id": "1006498",
         "name": "No.2 Mediterranean Sea",
         "addresseng": "Lane.925 Xinsongjiang Rd",
@@ -513,7 +456,6 @@
         "addresscn": "上海市松江区一层1168室1169室1176室新松江路925弄开元地中海商业广场"
     },
     {
-        "number": "58",
         "id": "1005661",
         "name": "East Plaza",
         "addresseng": "No.219 Song Dong RoadSongjiang District",
@@ -522,7 +464,6 @@
         "addresscn": "上海市松江区颐思殿广场松东路219号1F"
     },
     {
-        "number": "59",
         "id": "1008442",
         "name": "Innovative Life Plaza",
         "addresseng": "Ground Floor,Building 32,No.328,Xin Zhua",
@@ -531,7 +472,6 @@
         "addresscn": "上海市松江区莘砖公路328号32栋楼创新广场第1层"
     },
     {
-        "number": "60",
         "id": "113546",
         "name": "LOHSA",
         "addresseng": "No.568, Songhuizhong Rd.Song jiang District",
@@ -540,7 +480,6 @@
         "addresscn": "上海市松江区乐颂坊松汇中路568号B座"
     },
     {
-        "number": "61",
         "id": "68269",
         "name": "Min Hang Plaza",
         "addresseng": "No.6088,Huming RdMinhang district",
@@ -549,7 +488,6 @@
         "addresscn": "上海市闵行区莘庄凯德龙之梦1楼01-27号沪闵路6088号"
     },
     {
-        "number": "62",
         "id": "1009931",
         "name": "Minhang Plaza - Office Lobby",
         "addresseng": "No.6088 HuMin Road (1F01-1F02)Minhang District",
@@ -558,7 +496,6 @@
         "addresscn": "上海市闵行区沪闵路6088号1层01-02号"
     },
     {
-        "number": "63",
         "id": "1006117",
         "name": "Huibao Plaza",
         "addresseng": "No.3459,Caobao Rd.MinHang District",
@@ -567,16 +504,14 @@
         "addresscn": "上海市闵行区汇宝广场漕宝路3459号1C2-03"
     },
     {
-        "number": "64",
         "id": "1005418",
         "name": "Shang DuLi",
         "addresseng": "No.268., Xinfeng Rd.Qingpu District",
         "open": "Monday to Sunday：09:30-21:30",
         "namecn": "#N/A",
-        "addresscn": "#N/A"
+        "addresscn": "上海市青浦区新丰路268号"
     },
     {
-        "number": "65",
         "id": "1011522",
         "name": "JinShan Industrial Park",
         "addresseng": "Lane 818 NO 79 XiaNing RoadJin Shan district",
@@ -585,7 +520,6 @@
         "addresscn": "上海市金山区夏宁路818弄70号1层"
     },
     {
-        "number": "66",
         "id": "1011167",
         "name": "YiJia Plaza",
         "addresseng": "Unit3-101, No.230 Chenghe RdJinshan District",
@@ -594,7 +528,6 @@
         "addresscn": "上海市金山区易家中心城河路230号3-101单元"
     },
     {
-        "number": "67",
         "id": "19241",
         "name": "Jin Shan Shopping Mall - G/F",
         "addresseng": "No.18, West Weiqing RoadJinshan District",
@@ -603,7 +536,6 @@
         "addresscn": "上海市金山区金山百联卫清西路18号B101"
     },
     {
-        "number": "68",
         "id": "113898",
         "name": "Bai Lian Nan Qiao Shopping Mall",
         "addresseng": "No.588 Bai Qi RoadFengxian Disctrict",
@@ -612,7 +544,6 @@
         "addresscn": "上海市奉贤区百联南桥购物中心一楼南桥镇百齐路588号"
     },
     {
-        "number": "69",
         "id": "1006536",
         "name": "Nanqiao New City Life Plaza",
         "addresseng": "No.681-707 E. Huancheng Rd.",
@@ -621,7 +552,6 @@
         "addresscn": "上海市奉贤区环城东路681-707(单号)C-1-11"
     },
     {
-        "number": "70",
         "id": "1009586",
         "name": "Minhang Life Plaza",
         "addresseng": "No.900 Heqing RdMinhang District",
@@ -630,7 +560,6 @@
         "addresscn": "上海市闵行区老闵行生活广场鹤庆路900号A4单元"
     },
     {
-        "number": "71",
         "id": "1839",
         "name": "Max Mall",
         "addresseng": "No.1500,Lianhua RdMinhang District",
@@ -639,7 +568,6 @@
         "addresscn": "上海市闵行区梅陇镇新都会15-B单元莲花南路1500号"
     },
     {
-        "number": "72",
         "id": "19159",
         "name": "Sky Mall - Ground Floor",
         "addresseng": "No.5001,Dushi RdMinghang DistrictSky Mall",
@@ -648,7 +576,6 @@
         "addresscn": "上海市闵行区仲盛世界城都市路5001号"
     },
     {
-        "number": "73",
         "id": "1005819",
         "name": "WanDing Road",
         "addresseng": "No.118 WanDing RoadMinhang District",
@@ -657,7 +584,6 @@
         "addresscn": "上海市闵行区畹町路畹町路118号-122号"
     },
     {
-        "number": "74",
         "id": "1574",
         "name": "South Mart",
         "addresseng": "No.7388,Humin RdMinhang district",
@@ -666,7 +592,6 @@
         "addresscn": "上海市闵行区百联南方商城1楼沪闵路7388号"
     },
     {
-        "number": "75",
         "id": "1008508",
         "name": "Gumei Innovation Street",
         "addresseng": "No.555 Gumei RdMinhang",
@@ -675,7 +600,6 @@
         "addresscn": "上海市闵行区文化创意街古美路569号1F"
     },
     {
-        "number": "76",
         "id": "1940",
         "name": "Qiaoziwan",
         "addresseng": "No.700,Gongyuan RdQingpu District",
@@ -684,7 +608,6 @@
         "addresscn": "上海市青浦区东方商厦一楼公园路700号"
     },
     {
-        "number": "77",
         "id": "1010190",
         "name": "North Chengzhong Rd",
         "addresseng": "No.79 N.Chengzhong RdQingpu District",
@@ -693,7 +616,6 @@
         "addresscn": "上海市青浦区城中北路79号副楼1楼、2楼"
     },
     {
-        "number": "78",
         "id": "1011353",
         "name": "INJOY PLAZA",
         "addresseng": "1F-101 Lane.135 North CaoSui Road",
@@ -702,7 +624,6 @@
         "addresscn": "上海市青浦区吾悦广场淀山湖大道152弄41号-7室"
     },
     {
-        "number": "79",
         "id": "1009118",
         "name": "Kunshan Shimao Plaza-GF",
         "addresseng": "KunshanNo.199 East Qianjin RdDevelopment Zone",
@@ -711,7 +632,6 @@
         "addresscn": "昆山市开发区前进东路223号"
     },
     {
-        "number": "80",
         "id": "1956",
         "name": "Mirama Garden",
         "addresseng": "No.85,S.Shuicheng RdChangning district",
@@ -720,7 +640,6 @@
         "addresscn": "上海市长宁区美丽华花园水城南路85号"
     },
     {
-        "number": "81",
         "id": "1717",
         "name": "Gubei",
         "addresseng": "No.20, Shuicheng nan RoadChangning district",
@@ -729,7 +648,6 @@
         "addresscn": "上海市长宁区古北水城南路20号"
     },
     {
-        "number": "82",
         "id": "1008380",
         "name": "Star Life",
         "addresseng": "No.1665 Hongqiao Rd",
@@ -738,7 +656,6 @@
         "addresscn": "上海市长宁区星空生活广场虹桥路1665号A-104、A-105单元"
     },
     {
-        "number": "83",
         "id": "68785",
         "name": "Dawning Center Tower",
         "addresseng": "No. 500, Hongbaoshi RoadChangning districtDawning Center Tower",
@@ -747,7 +664,6 @@
         "addresscn": "上海市长宁区东银中心红宝石路500号1F-106"
     },
     {
-        "number": "84",
         "id": "1569",
         "name": "Hongmei",
         "addresseng": "No.3188-1,Hongmei RdChangning District",
@@ -756,7 +672,6 @@
         "addresscn": "上海市长宁区虹梅路虹梅路3188－1号"
     },
     {
-        "number": "85",
         "id": "116319",
         "name": "GIFC II",
         "addresseng": "No.1438 HongQiao Roadchangning District",
@@ -765,7 +680,6 @@
         "addresscn": "上海市长宁区高岛屋虹桥路1438号"
     },
     {
-        "number": "86",
         "id": "1572",
         "name": "mart",
         "addresseng": "No.2299,W.Yanan RdChangning district",
@@ -774,7 +688,6 @@
         "addresscn": "上海市长宁区世贸商城延安西路2299号"
     },
     {
-        "number": "87",
         "id": "1886",
         "name": "Hongqiao Bus Ctr-Changning Dst",
         "addresseng": "No 2270 Hongqiao RdChangning district",
@@ -783,7 +696,6 @@
         "addresscn": "上海市长宁区万豪大酒店A段101-1虹桥路2270"
     },
     {
-        "number": "88",
         "id": "94737",
         "name": "V-Capital",
         "addresseng": "No.333 Xian Xia Roadchangning district",
@@ -792,7 +704,6 @@
         "addresscn": "上海市长宁区东方维京大厦仙霞路333号1层S105单元"
     },
     {
-        "number": "89",
         "id": "1716",
         "name": "Far Eastern Plaza",
         "addresseng": "No. 299 Xianxia RoadChangning districtFar East International Building",
@@ -801,7 +712,6 @@
         "addresscn": "上海市长宁区远东国际大厦仙霞路299号"
     },
     {
-        "number": "90",
         "id": "1009412",
         "name": " Film Museum",
         "addresseng": "No.595 North Caoxi RdXuhui District",
@@ -810,7 +720,6 @@
         "addresscn": "上海市徐汇区上海电影博物馆漕溪北路595号"
     },
     {
-        "number": "91",
         "id": "88354",
         "name": "Hongwell International Plaza-GF",
         "addresseng": "No.1602,W.Zhongshan RdXuhui District",
@@ -819,7 +728,6 @@
         "addresscn": "上海市徐汇区宏汇国际广场中山西路1602号1层02室"
     },
     {
-        "number": "92",
         "id": "1009374",
         "name": "Foxtown international plaza",
         "addresseng": "No.899 Lingling RdXuhui District",
@@ -828,7 +736,6 @@
         "addresscn": "上海市徐汇区飞洲国际广场零陵路889号"
     },
     {
-        "number": "93",
         "id": "1011136",
         "name": "Zhong Jin International Plaza",
         "addresseng": "No.331 N.Caoxi RoadXuhui District",
@@ -837,7 +744,6 @@
         "addresscn": "上海市徐汇区漕溪北路331号1层03"
     },
     {
-        "number": "94",
         "id": "1957",
         "name": " Stadium",
         "addresseng": "No.1111,Caoxi RdXuhui district",
@@ -846,7 +752,6 @@
         "addresscn": "上海市徐汇区上海体育馆1楼1号扶梯漕溪路1111号"
     },
     {
-        "number": "95",
         "id": "1529",
         "name": "Grand Gateway",
         "addresseng": "No.1 Hong Qiao Rd.Xuhui district",
@@ -855,7 +760,6 @@
         "addresscn": "上海市徐汇区港汇广场虹桥路1号168铺位"
     },
     {
-        "number": "96",
         "id": "1008352",
         "name": "Ming Shi Garden",
         "addresseng": "No.98 West GuangYuan Road",
@@ -864,7 +768,6 @@
         "addresscn": "上海市徐汇区广元西路98号3-4室"
     },
     {
-        "number": "97",
         "id": "1006318",
         "name": "Grand Gateway 2",
         "addresseng": "No.1 Hongqiao RoadXuhui District",
@@ -873,7 +776,6 @@
         "addresscn": "上海市徐汇区虹桥路1号101铺位"
     },
     {
-        "number": "98",
         "id": "1708",
         "name": "Metro City - 2nd Floor",
         "addresseng": "No.1111,Zhaojiabang RdXuhui district",
@@ -882,7 +784,6 @@
         "addresscn": "上海市徐汇区美罗城肇家浜路1111号219单元"
     },
     {
-        "number": "99",
         "id": "68396",
         "name": "Grand Gateway Office Lobby",
         "addresseng": "No.1 Hong Qiao LuXuhui District",
@@ -891,7 +792,6 @@
         "addresscn": "上海市徐汇区港汇广场办公楼一座大堂虹桥路1号"
     },
     {
-        "number": "100",
         "id": "91309",
         "name": "New Huaihai Fang",
         "addresseng": "No.676, Huaihai West RoadChangning District",
@@ -900,7 +800,6 @@
         "addresscn": "上海市长宁区新淮海坊海西路676号1层01室"
     },
     {
-        "number": "101",
         "id": "1837",
         "name": " Film Centre",
         "addresseng": "No.160,Xinhua RdChangning District",
@@ -909,7 +808,6 @@
         "addresscn": "上海市长宁区上海影城底层001号商铺新华路160号"
     },
     {
-        "number": "102",
         "id": "1937",
         "name": "Xin Hua",
         "addresseng": "No.519,Xinhua RdChangning district",
@@ -918,7 +816,6 @@
         "addresscn": "上海市长宁区新华路新华路519号1B室"
     },
     {
-        "number": "103",
         "id": "1008418",
         "name": "HENG SHAN FANG",
         "addresseng": "No.890-1 Heng Shan RoadXuhui District",
@@ -927,7 +824,6 @@
         "addresscn": "上海市徐汇区衡山坊衡山路890弄3号"
     },
     {
-        "number": "104",
         "id": "1900",
         "name": "Friendship West",
         "addresseng": "No.88 West Xianxia RoadChangning District",
@@ -936,7 +832,6 @@
         "addresscn": "上海市长宁区百联西郊购物中心仙霞西路88号"
     },
     {
-        "number": "105",
         "id": "91318",
         "name": "President Business Building",
         "addresseng": "No.568, Tianshan West RoadChangning District",
@@ -945,7 +840,6 @@
         "addresscn": "上海市长宁区统一企业大厦天山西路568号1幢105-106"
     },
     {
-        "number": "106",
         "id": "1009406",
         "name": "Bingo Plaza",
         "addresseng": "No.341 Tianshan RdChangning District",
@@ -954,7 +848,6 @@
         "addresscn": "上海市长宁区天山路342号缤谷广场一层"
     },
     {
-        "number": "107",
         "id": "94437",
         "name": "LianQiang International Plaza",
         "addresseng": "No. 1068 West Tianshan RoadChangning District",
@@ -963,7 +856,6 @@
         "addresscn": "上海市长宁区联强国际二期1C单元天山西路1068号"
     },
     {
-        "number": "108",
         "id": "116323",
         "name": "JinSha Met",
         "addresseng": "No.619 South Qilianshan Rd.Putuo District",
@@ -972,7 +864,6 @@
         "addresscn": "上海市普陀区金沙广场祁连山南路619号"
     },
     {
-        "number": "109",
         "id": "1006923",
         "name": "118 Plaza",
         "addresseng": "NO 1685 Jinshajiang RdPutuo",
@@ -981,7 +872,6 @@
         "addresscn": "上海市普陀区金沙江路1685号-4区"
     },
     {
-        "number": "110",
         "id": "86953",
         "name": "Brilliant City",
         "addresseng": "No.71 Zhongtan RoadPu tuo District",
@@ -990,7 +880,6 @@
         "addresscn": "上海市普陀区中远两湾城中潭路71号"
     },
     {
-        "number": "111",
         "id": "89379",
         "name": "SMV",
         "addresseng": "No.65,Lane 777,W.Guangzhong RdZhabei district",
@@ -999,7 +888,6 @@
         "addresscn": "上海市闸北区多媒体谷产业园广中西路777弄65号102室"
     },
     {
-        "number": "112",
         "id": "1006474",
         "name": "May Flower",
         "addresseng": "No 518 Zhijiang RdZha Bei District",
@@ -1008,7 +896,6 @@
         "addresscn": "上海市闸北区一层101单元及二层201、239单元芷江西路518号"
     },
     {
-        "number": "113",
         "id": "1607",
         "name": "Daning",
         "addresseng": "No.1898,Gonghexin Rd,Zhabei district",
@@ -1017,7 +904,6 @@
         "addresscn": "上海市闸北区大宁国际广场5幢1层114－117室共和新路1898号"
     },
     {
-        "number": "114",
         "id": "69600",
         "name": "Centro Plaza 1F",
         "addresseng": "No.437,439, W.Tianmu RdZhabei district",
@@ -1026,7 +912,6 @@
         "addresscn": "上海市闸北区恒汇大厦天目西路437、439号"
     },
     {
-        "number": "115",
         "id": "19463",
         "name": "The Center",
         "addresseng": "No.989,Changle RdXuhui district",
@@ -1035,7 +920,6 @@
         "addresscn": "上海市徐汇区世纪商贸长乐路989号"
     },
     {
-        "number": "116",
         "id": "1637",
         "name": "Evergo Tower",
         "addresseng": "No.1325,Middle Huaihai RdXuhui District",
@@ -1044,7 +928,6 @@
         "addresscn": "上海市徐汇区爱美高大厦1F-103室淮海中路1325号"
     },
     {
-        "number": "117",
         "id": "1008538",
         "name": "Line2 Jing'An Temple",
         "addresseng": "Gate5,Line2 Jing'An TempleJing'An",
@@ -1053,7 +936,6 @@
         "addresscn": "上海市静安区轨道交通二号线静安寺车站五号出口2-130商铺"
     },
     {
-        "number": "118",
         "id": "1619",
         "name": "Fenyang Road",
         "addresseng": "138 Fengyang RoadHuangpu district",
@@ -1062,7 +944,6 @@
         "addresscn": "上海市卢湾区轻科大厦汾阳路138号1楼03单元"
     },
     {
-        "number": "119",
         "id": "1006669",
         "name": "Reel Department-3F-Unit 301",
         "addresseng": "Unit 301,3F,No.1601,West Nanjing Rd.Jing An District",
@@ -1071,7 +952,6 @@
         "addresscn": "上海市静安区越洋广场301,301-1室南京西路1601号"
     },
     {
-        "number": "120",
         "id": "18973",
         "name": "Pearl Hotel",
         "addresseng": "No.212,Zhaojiabang RdHuangpu District",
@@ -1080,7 +960,6 @@
         "addresscn": "上海市黄浦区明珠大酒店大堂肇嘉浜路212号"
     },
     {
-        "number": "121",
         "id": "1008539",
         "name": "Hope Hotel",
         "addresseng": "Lobby, No.500 Zhaojiabang RdXuhui",
@@ -1089,7 +968,6 @@
         "addresscn": "上海市徐汇区好望角酒店肇嘉浜路500号"
     },
     {
-        "number": "122",
         "id": "87185",
         "name": "SML Central Square-1F",
         "addresseng": "No.618,Xujiahui RdHuangpu DistrictSML Central Square",
@@ -1098,7 +976,6 @@
         "addresscn": "上海市黄浦区日月光广场一层1F-A08单元徐家汇路618号"
     },
     {
-        "number": "123",
         "id": "1566",
         "name": "Datong",
         "addresseng": "NO.593,Xiexu RoadLuwan District",
@@ -1107,7 +984,6 @@
         "addresscn": "上海市徐汇区斜徐路斜徐路593号"
     },
     {
-        "number": "124",
         "id": "1006522",
         "name": "Bridge 8",
         "addresseng": "Mid. Jian Guo RD",
@@ -1116,7 +992,6 @@
         "addresscn": "上海市建国中路8-10号"
     },
     {
-        "number": "125",
         "id": "1946",
         "name": "Ruijin Rd",
         "addresseng": "No. 101-107 Ruijin Second RdHuangpu Dist",
@@ -1125,7 +1000,6 @@
         "addresscn": "上海市卢湾区瑞金二路瑞金二路101－107号"
     },
     {
-        "number": "126",
         "id": "1006290",
         "name": "IAPM",
         "addresseng": "No.999 Middle HuaiHai Road 5F-507Huangpu Distrcti",
@@ -1134,7 +1008,6 @@
         "addresscn": "上海市徐汇区环贸广场L507室淮海中路999号"
     },
     {
-        "number": "127",
         "id": "1860",
         "name": "Junyao",
         "addresseng": "No.789 Zhaojiabang RoadXuhui district",
@@ -1143,7 +1016,6 @@
         "addresscn": "上海市徐汇区均瑶国际广场肇嘉浜路789号1F"
     },
     {
-        "number": "128",
         "id": "1011139",
         "name": "Feng Lin International Building",
         "addresseng": "No.380 Feng Lin RoadXuhui District",
@@ -1152,7 +1024,6 @@
         "addresscn": "上海市徐汇区枫林路380号102室"
     },
     {
-        "number": "129",
         "id": "1005192",
         "name": "TOUCHMALL",
         "addresseng": "No.599, Dongan RdXuhui district",
@@ -1161,7 +1032,6 @@
         "addresscn": "上海市徐汇区正大乐城1-104东安路599号"
     },
     {
-        "number": "130",
         "id": "1011138",
         "name": "Hui Jing Life Square Store",
         "addresseng": "No.988 Quxi RdHuangpu District",
@@ -1170,7 +1040,6 @@
         "addresscn": "上海市黄浦区汇暻生活广场鲁班路615号102-103室"
     },
     {
-        "number": "131",
         "id": "1009029",
         "name": "XieTu Rd",
         "addresseng": "XieTu RdXuhui District",
@@ -1179,7 +1048,6 @@
         "addresscn": "上海市徐汇区南丹东路8号第一层101室"
     },
     {
-        "number": "132",
         "id": "1734",
         "name": "Park 2 Space",
         "addresseng": "No.169,Mengzi RdHuangpu district",
@@ -1188,7 +1056,6 @@
         "addresscn": "上海市卢湾区丽园路口蒙自路169号"
     },
     {
-        "number": "133",
         "id": "94728",
         "name": "XuHui Garden",
         "addresseng": "No.1089, Zhongshannaner Rd.XuHui District",
@@ -1197,7 +1064,6 @@
         "addresscn": "上海市徐汇区徐汇苑中山南二路1089号1层101室"
     },
     {
-        "number": "134",
         "id": "1632",
         "name": "In Century Plaza - Room 101",
         "addresseng": "No 580 Tianyaoqiao RoadXuhui District",
@@ -1206,7 +1072,6 @@
         "addresscn": "上海市徐汇区星游城1F-13单元+2F-13单元天钥桥路580号"
     },
     {
-        "number": "135",
         "id": "1899",
         "name": "Jia Hui",
         "addresseng": "No.363,Tianyaoqiao RdXuhui district",
@@ -1215,7 +1080,6 @@
         "addresscn": "上海市徐汇区美城天地天钥桥路323号"
     },
     {
-        "number": "136",
         "id": "1743",
         "name": "Yong Xin Garden",
         "addresseng": "No.129,Xingen RdXuhui District",
@@ -1224,7 +1088,6 @@
         "addresscn": "上海市徐汇区永新坊辛耕路129号"
     },
     {
-        "number": "137",
         "id": "1008082",
         "name": "Huiyang Plaza",
         "addresseng": "No.55 East Tianlin Rd.Xuhui District",
@@ -1233,7 +1096,6 @@
         "addresscn": "上海市徐汇区汇阳广场田林东路75号1层105单元"
     },
     {
-        "number": "138",
         "id": "1006738",
         "name": "River Mall",
         "addresseng": "Ground Floor,No.1368,Shi Bo Da Rd",
@@ -1242,7 +1104,6 @@
         "addresscn": "上海市浦东新区L1层3L130室世博大道1368号"
     },
     {
-        "number": "139",
         "id": "1006948",
         "name": "China Art Museum",
         "addresseng": "No.205 Shangnan Rd",
@@ -1251,7 +1112,6 @@
         "addresscn": "上海市浦东新区1层序厅浦东新区\t上南路161号"
     },
     {
-        "number": "140",
         "id": "1635",
         "name": " South Railway Station",
         "addresseng": "B1-25, South Railway StationXuhui district",
@@ -1260,7 +1120,6 @@
         "addresscn": "上海市徐汇区上海南站地下商场南馆的第一层第B区南1-B25号店铺上海南站"
     },
     {
-        "number": "141",
         "id": "1005695",
         "name": "Surpass Space",
         "addresseng": "No. 140 TianLin RoadXuhui District",
@@ -1269,7 +1128,6 @@
         "addresscn": "上海市徐汇区越界商务楼田林路140号"
     },
     {
-        "number": "142",
         "id": "69692",
         "name": "New Caohejing Intl Business Center",
         "addresseng": "No.391,Guiping RdXuhui district",
@@ -1278,7 +1136,6 @@
         "addresscn": "上海市徐汇区漕河泾桂平路391号"
     },
     {
-        "number": "143",
         "id": "1005724",
         "name": "Phoenix Park - ",
         "addresseng": "No.1515 Gumei Rd.Xu hui District",
@@ -1287,7 +1144,6 @@
         "addresscn": "上海市徐汇区凤凰园古美路1515号19号楼102B室"
     },
     {
-        "number": "144",
         "id": "88878",
         "name": "Headquarter Park",
         "addresseng": "No.1528,Gumei RdXuhui District",
@@ -1296,7 +1152,6 @@
         "addresscn": "上海市徐汇区古美路古美路1528号7幢1层01商业101D室"
     },
     {
-        "number": "145",
         "id": "1009404",
         "name": "North Qinzhou Rd",
         "addresseng": "No.238 North Qinzhou RdXuhui District",
@@ -1305,7 +1160,6 @@
         "addresscn": "上海市徐汇区田尚坊钦州北路238-240号"
     },
     {
-        "number": "146",
         "id": "87129",
         "name": "Qin Jiang Road - ",
         "addresseng": "No 102 Qingjiang RoadXu hui District",
@@ -1314,7 +1168,6 @@
         "addresscn": "上海市徐汇区钦江路钦江路102号"
     },
     {
-        "number": "147",
         "id": "1610",
         "name": "Caohejing",
         "addresseng": "No. 1009 Yishan RoadXuhui district",
@@ -1323,7 +1176,6 @@
         "addresscn": "上海市闵行区创新大厦1F宜山路1009号"
     },
     {
-        "number": "148",
         "id": "19429",
         "name": "Metro Tower",
         "addresseng": "No. 30 Tianyaoqiao RoadXuhui District",
@@ -1332,7 +1184,6 @@
         "addresscn": "上海市徐汇区美罗大厦天钥桥路30号"
     },
     {
-        "number": "149",
         "id": "66366",
         "name": "XiangYang Park",
         "addresseng": "No.1088 Middle Huai hai RoadXuhui District",
@@ -1341,7 +1192,6 @@
         "addresscn": "上海市徐汇区海中路1008号"
     },
     {
-        "number": "150",
         "id": "1006346",
         "name": "Jing An Kerry Center-B2",
         "addresseng": "No.1218, Middle Yanan RdJing An District",
@@ -1350,7 +1200,6 @@
         "addresscn": "上海市静安区静安嘉里中心商场SB2-06室延安中路1218号"
     },
     {
-        "number": "151",
         "id": "92871",
         "name": "Park Place - Mall B2",
         "addresseng": "No.1601,W.Nanjing RdJingan DistrictPark Place - Mall",
@@ -1359,7 +1208,6 @@
         "addresscn": "上海市静安区越洋广场商场B210室南京西路1601号"
     },
     {
-        "number": "152",
         "id": "1007423",
         "name": "Jiuguang Lifestyle Plaza",
         "addresseng": "No.1618,West Nanjing Rd",
@@ -1368,7 +1216,6 @@
         "addresscn": "上海市静安区南京西路1618号1层S103室"
     },
     {
-        "number": "153",
         "id": "1862",
         "name": "Cloud Nine Mall 1",
         "addresseng": "No.1018,Changning RdChangning distrist",
@@ -1377,7 +1224,6 @@
         "addresscn": "上海市长宁区龙之梦1018号B2F002商铺"
     },
     {
-        "number": "154",
         "id": "1803",
         "name": "Cloud Nine Mall 2",
         "addresseng": "No. 18 Changnin RoadChangning district",
@@ -1386,7 +1232,6 @@
         "addresscn": "上海市长宁区龙之梦长宁路1018号1F1073号商铺"
     },
     {
-        "number": "155",
         "id": "1945",
         "name": "Zhongshan Park",
         "addresseng": "No.999 Changning RoadChangning district",
@@ -1395,7 +1240,6 @@
         "addresscn": "上海市长宁区中山公园长宁路999号1F"
     },
     {
-        "number": "156",
         "id": "1608",
         "name": "Dingxi Road",
         "addresseng": "No.1328,Dingxi RdChangning district",
@@ -1404,7 +1248,6 @@
         "addresscn": "上海市长宁区巴黎春天百货1F定西路1328号"
     },
     {
-        "number": "157",
         "id": "70001",
         "name": "The North Shopping Mall",
         "addresseng": "No.136,Lane 168,Daduhe RdPutuo DistrictThe North Shopping Mall",
@@ -1413,7 +1256,6 @@
         "addresscn": "上海市普陀区长风景畔广场大渡河路168弄136号1层101A室"
     },
     {
-        "number": "158",
         "id": "51989",
         "name": "BM InterContinental Center",
         "addresseng": "No.100 Yu Tong RoadZhabei districtBM InterContinental Center",
@@ -1422,7 +1264,6 @@
         "addresscn": "上海市闸北区洲际中心裕通路100号"
     },
     {
-        "number": "159",
         "id": "1009301",
         "name": " Railway Station - NS",
         "addresseng": " Railway Station, the North SquaZhabei District",
@@ -1431,7 +1272,6 @@
         "addresscn": "上海市闸北区秣陵路303号50幢N2单元"
     },
     {
-        "number": "160",
         "id": "1768",
         "name": "Pacific of Zha Bei",
         "addresseng": "No. 218 West Tian Mu Road,Zhabei District",
@@ -1440,7 +1280,6 @@
         "addresscn": "上海市闸北区太平洋百货天目西路218号一楼A-1号"
     },
     {
-        "number": "161",
         "id": "1006140",
         "name": "Sun City",
         "addresseng": "No. 299 Hengfeng RoadZha Bei District",
@@ -1449,7 +1288,6 @@
         "addresscn": "上海市闸北区“隆宇国际商务广场”中101-07号商铺恒丰路299号"
     },
     {
-        "number": "162",
         "id": "91088",
         "name": "Plaza 66 Office Tower 1-Lobby",
         "addresseng": "No 1266, West Nanjing RdJing'an districtPlaza 66 Office",
@@ -1458,7 +1296,6 @@
         "addresscn": "上海市静安区恒隆广场1号楼1层南京西路1266号"
     },
     {
-        "number": "163",
         "id": "91087",
         "name": "Plaza 66 Office Tower 2-Lobby",
         "addresseng": "No.1226,Nanjingxi RdJing'an districtPlaza 66 Office Tower 2",
@@ -1467,7 +1304,6 @@
         "addresscn": "上海市静安区恒隆广场二期大堂南京西路1266号"
     },
     {
-        "number": "164",
         "id": "1872",
         "name": "Citic Square",
         "addresseng": "No 1168 West Nanjing Road,Jing'an District",
@@ -1476,7 +1312,6 @@
         "addresscn": "上海市静安区中信泰富广场南京西路1168号"
     },
     {
-        "number": "165",
         "id": "1704",
         "name": "(Portman)  Center",
         "addresseng": "No.1376,W.Nanjing RdJingan district Mall",
@@ -1485,7 +1320,6 @@
         "addresscn": "上海市静安区上海商城一楼南京西路1376号"
     },
     {
-        "number": "166",
         "id": "1008162",
         "name": "Jin An Kerry Center - GF",
         "addresseng": "No. 1515 Nanjing Road WestUnit E1-02K,E1-03, Ground FloorJin An Kerry Center",
@@ -1494,7 +1328,6 @@
         "addresscn": "上海市静安区静安嘉里中心商场E1-03、E1-06K室南京西路1515号"
     },
     {
-        "number": "167",
         "id": "1011496",
         "name": "Xinzha Road Store",
         "addresseng": "No.1250,xinzha Rdjingan",
@@ -1503,7 +1336,6 @@
         "addresscn": "上海市静安区源创创意园新闸路1250号10号楼一层5室-10室"
     },
     {
-        "number": "168",
         "id": "1005487",
         "name": "Jing An Zi Yuan",
         "addresseng": "No.388,Jiangning RdJing An District",
@@ -1512,7 +1344,6 @@
         "addresscn": "上海市静安区紫苑江宁路388号1_2层"
     },
     {
-        "number": "169",
         "id": "1697",
         "name": "Xin Tian Di",
         "addresseng": "No.18 Building Lane 181, Taicang RoadHuangpu district",
@@ -1521,7 +1352,6 @@
         "addresscn": "上海市卢湾区新天地太仓路181弄18号楼"
     },
     {
-        "number": "170",
         "id": "76319",
         "name": "Central Plaza (Lu Wan District)",
         "addresseng": "No.381 Huai'an RdLuwan District",
@@ -1530,7 +1360,6 @@
         "addresscn": "上海市黄浦区中环广场108-112室淮海中路381号"
     },
     {
-        "number": "171",
         "id": "1008537",
         "name": "Hongkong Plaza",
         "addresseng": "No.283,Middle HuaiHai RoadHuangpu",
@@ -1539,7 +1368,6 @@
         "addresscn": "上海市黄浦区香港广场北楼1-106淮海中路283号"
     },
     {
-        "number": "172",
         "id": "1011012",
         "name": "FuXing Plaza",
         "addresseng": "C103,No.393, M.Fuxing RdHuangpu District",
@@ -1548,7 +1376,6 @@
         "addresscn": "上海市黄浦区复兴广场复兴中路393号C103室"
     },
     {
-        "number": "173",
         "id": "92696",
         "name": "Silver Count Building - GF",
         "addresseng": "No.218,Xicangnan RoadHuangpu district",
@@ -1557,7 +1384,6 @@
         "addresscn": "上海市黄浦区永银大厦1F西藏南路218号"
     },
     {
-        "number": "174",
         "id": "1006698",
         "name": "No.99 Yan Dang Rd",
         "addresseng": "No.99 Yan Dang Rd",
@@ -1566,7 +1392,6 @@
         "addresscn": "上海市雁荡路99号"
     },
     {
-        "number": "175",
         "id": "1008391",
         "name": "Lan sheng Cinema",
         "addresseng": "No.2-8,middle Huaihai Rd",
@@ -1575,7 +1400,6 @@
         "addresscn": "上海市黄浦区兰生电影院淮海中路2-8号"
     },
     {
-        "number": "176",
         "id": "86964",
         "name": "Lotus Life Station Huaihai Rd",
         "addresseng": "No.68,E.Huaihai RdHuangpu District",
@@ -1584,7 +1408,6 @@
         "addresscn": "上海市黄浦区淮海东路淮海东路68号101单元"
     },
     {
-        "number": "177",
         "id": "116528",
         "name": "Yalong International Plaza",
         "addresseng": "No.500, Jin ling dong Rd.Haungpu District",
@@ -1593,7 +1416,6 @@
         "addresscn": "上海市黄浦区亚龙国际广场1f-102A金陵东路500号"
     },
     {
-        "number": "178",
         "id": "1006164",
         "name": "Yong Ye Apartments",
         "addresseng": "No. 193-199,  Xujiahui Rd.Huangpu District",
@@ -1602,7 +1424,6 @@
         "addresscn": "上海市黄浦区永业公寓徐家汇路193-199号"
     },
     {
-        "number": "179",
         "id": "1009415",
         "name": "Huang Pu Garden",
         "addresseng": "No.1130 S.Xizang RdHuangpu District",
@@ -1611,7 +1432,6 @@
         "addresscn": "上海市黄浦区黄浦新苑西藏南路1130号"
     },
     {
-        "number": "180",
         "id": "1008153",
         "name": " EXPO UBPA",
         "addresseng": "No.564 Nan Che Zhan Rd.Huang pu District",
@@ -1620,7 +1440,6 @@
         "addresscn": "上海市黄浦区南车站路564号"
     },
     {
-        "number": "181",
         "id": "89383",
         "name": "J-Mall-Ground Floor",
         "addresseng": "No.4467,Shangnan RdPudong District",
@@ -1629,7 +1448,6 @@
         "addresscn": "上海市浦东新区金谊广场1层-1室上南路4467号"
     },
     {
-        "number": "182",
         "id": "18974",
         "name": " World Expo Entertainment C",
         "addresseng": "Expo Site XiYing Road , BeilHuan RoadPudong District",
@@ -1638,7 +1456,6 @@
         "addresscn": "上海市浦东新区文化中心一楼西门 L111商铺世博大道1200号"
     },
     {
-        "number": "183",
         "id": "1005227",
         "name": "Wukang Road Store",
         "addresseng": "No.420, Wukang Rd.XuHui District",
@@ -1647,7 +1464,6 @@
         "addresscn": "上海市徐汇区1F武康路420号"
     },
     {
-        "number": "184",
         "id": "1612",
         "name": "Hua Shan Centre",
         "addresseng": "No.1568,Huashan RdChangning district",
@@ -1656,7 +1472,6 @@
         "addresscn": "上海市长宁区华山国际华山路1568号1层102室"
     },
     {
-        "number": "185",
         "id": "1809",
         "name": "Baguio Mansion",
         "addresseng": "1166 Middle Yan An RoadChangning District",
@@ -1665,7 +1480,6 @@
         "addresscn": "上海市长宁区碧瑶行政公寓延安西路1166号"
     },
     {
-        "number": "186",
         "id": "1006711",
         "name": "W.Yanan Rd",
         "addresseng": "1F Dingxi 1026 RdChangning District",
@@ -1674,7 +1488,6 @@
         "addresscn": "上海市长宁区定西路1026号"
     },
     {
-        "number": "187",
         "id": "116334",
         "name": "ShiBei Headquarters Park Store",
         "addresseng": "No.238, Jiang Chang San Rd.Zhabei District",
@@ -1683,7 +1496,6 @@
         "addresscn": "上海市闸北区市北高新园区江场三路238号1层"
     },
     {
-        "number": "188",
         "id": "1786",
         "name": "Shimao Shopping Center",
         "addresseng": "No.528,Jinhui RdMinhang District",
@@ -1692,7 +1504,6 @@
         "addresscn": "上海市闵行区世贸虹桥购物中心金汇路528号"
     },
     {
-        "number": "189",
         "id": "1009375",
         "name": "Lehongfang",
         "addresseng": "No.288 Hongjing RdMinhang District",
@@ -1701,7 +1512,6 @@
         "addresscn": "上海市闵行区乐虹坊虹井路288号乐虹坊一楼103单元"
     },
     {
-        "number": "190",
         "id": "113297",
         "name": "Science , Technology Building",
         "addresseng": "No.900 Yi shan roadXuhui district",
@@ -1710,7 +1520,6 @@
         "addresscn": "上海市徐汇区科产大厦A座1F宜山路900号"
     },
     {
-        "number": "191",
         "id": "1761",
         "name": "Ya Fan",
         "addresseng": "Unit 1,No.1169,Wuzhong RdMinhang District",
@@ -1719,7 +1528,6 @@
         "addresscn": "上海市闵行区吴中路吴中路1169号-1"
     },
     {
-        "number": "192",
         "id": "116537",
         "name": "Ren min Fang Store",
         "addresseng": "No. 835 mid Huaihai RoadHuangpu District",
@@ -1728,7 +1536,6 @@
         "addresscn": "上海市黄浦区人民坊淮海中路835号1-3F"
     },
     {
-        "number": "193",
         "id": "1646",
         "name": "Wei Hai Rd , Shimen Rd-Jing",
         "addresseng": "No.433,439,Weihai RdJingan District",
@@ -1737,7 +1544,6 @@
         "addresscn": "上海市静安区威海路威海路433、439号"
     },
     {
-        "number": "194",
         "id": "1011209",
         "name": "China Merchants Plaza Store",
         "addresseng": "NO.333 N.ChengDuJingan",
@@ -1746,7 +1552,6 @@
         "addresscn": "上海市静安区招商局广场成都北路333号104A室"
     },
     {
-        "number": "195",
         "id": "1783",
         "name": "Wu Ding Rd , Changhua Rd - ",
         "addresseng": "No 68 Changhua RdJing'an District",
@@ -1755,7 +1560,6 @@
         "addresscn": "上海市静安区远中风华昌化路68号"
     },
     {
-        "number": "196",
         "id": "1006127",
         "name": "Pu Jiang Hi-tech Plaza Retail",
         "addresseng": "No.2388, Chen Hang Rd.Min hang District",
@@ -1764,7 +1568,6 @@
         "addresscn": "上海市闵行区浦江园内陈行路2388号1幢1层101室"
     },
     {
-        "number": "197",
         "id": "89870",
         "name": "ICC",
         "addresseng": "No.999,M.Huaihai RdXuhui District",
@@ -1773,7 +1576,6 @@
         "addresscn": "上海市徐汇区环贸广场淮海中路999号"
     },
     {
-        "number": "198",
         "id": "1699",
         "name": "Mei Chen",
         "addresseng": "No.937,M.Huaihai RdHuangpu district",
@@ -1782,7 +1584,6 @@
         "addresscn": "上海市卢湾区美臣大楼一楼淮海中路937号"
     },
     {
-        "number": "199",
         "id": "1009403",
         "name": "Red Sun",
         "addresseng": "Cross Tonghe Rd., Huma RdBaoshan District",
@@ -1791,7 +1592,6 @@
         "addresscn": "上海市宝山区通河路539、537-1号"
     },
     {
-        "number": "200",
         "id": "1007868",
         "name": "Baosteel Mall",
         "addresseng": "No1738,MuDanjiang RdBaoshan District",
@@ -1800,7 +1600,6 @@
         "addresscn": "上海市宝山区牡丹江路1738号"
     },
     {
-        "number": "201",
         "id": "1879",
         "name": "Anderson Plaza 1st , 2nd Floors",
         "addresseng": "No.1238,Mudanjiang RdBaoshan DistrictAnderson Plaza",
@@ -1809,7 +1608,6 @@
         "addresscn": "上海市宝山区宝山安信牡丹江路1238号-B区-106室"
     },
     {
-        "number": "202",
         "id": "1006497",
         "name": "Noah XinTianDi",
         "addresseng": "No 318. Mudanjiang road",
@@ -1818,7 +1616,6 @@
         "addresscn": "上海市牡丹江路318号诺亚新天地一楼"
     },
     {
-        "number": "203",
         "id": "89378",
         "name": "Baoshan Wanda Plaza 1003",
         "addresseng": "No.1,Lane 988,Yi Er Ba Ji Nian RdBaoshan district",
@@ -1827,7 +1624,6 @@
         "addresscn": "上海市宝山区万达广场一二八纪念路988弄1号1层119号铺位"
     },
     {
-        "number": "204",
         "id": "116362",
         "name": "Gong Kang Road",
         "addresseng": "No.5,Lane.5000,Gong He Xin RoadZhabei District",
@@ -1836,7 +1632,6 @@
         "addresscn": "上海市宝山区绿地风尚天地广场共和新路5000 弄5号105、106、107室"
     },
     {
-        "number": "205",
         "id": "19069",
         "name": "Star Mall-Unit 1010",
         "addresseng": "No 1574 Caobao Rd.Minhang District",
@@ -1845,7 +1640,6 @@
         "addresscn": "上海市闵行区漕宝路漕宝路1574号"
     },
     {
-        "number": "206",
         "id": "1011184",
         "name": "HK New World Department - Tianshan",
         "addresseng": "No.762 Tianshan RdChangning District",
@@ -1854,7 +1648,6 @@
         "addresscn": "上海市长宁区巴黎春天天山路店天山路762号1层15号商铺"
     },
     {
-        "number": "207",
         "id": "1550",
         "name": "Tomorrow Square",
         "addresseng": "No.399,W.Nanjing RdHuangpu district",
@@ -1863,7 +1656,6 @@
         "addresscn": "上海市黄浦区明天广场南京西路399号1楼"
     },
     {
-        "number": "208",
         "id": "91327",
         "name": "CIROS Plaza - Ground Floor",
         "addresseng": "No.388 West Nanjing RoadHuangpu DistrictCIROS Plaza",
@@ -1872,7 +1664,6 @@
         "addresscn": "上海市黄浦区南京西路388号"
     },
     {
-        "number": "209",
         "id": "1776",
         "name": "Wujiang Road - ",
         "addresseng": "No. 128 Wu Jiang RoadJing An District",
@@ -1881,7 +1672,6 @@
         "addresscn": "上海市静安区吴江路吴江路128号"
     },
     {
-        "number": "210",
         "id": "1718",
         "name": "People's Park",
         "addresseng": "No.189,W.Nanjing RdHuangpu district",
@@ -1890,7 +1680,6 @@
         "addresscn": "上海市黄浦区人民公园南京西路189号"
     },
     {
-        "number": "211",
         "id": "1005195",
         "name": "Hui Yin Store",
         "addresseng": "No.726, Nanjingxi Rd.Jing'an District",
@@ -1899,7 +1688,6 @@
         "addresscn": "上海市静安区汇银大厦南京西路762号1楼D座"
     },
     {
-        "number": "212",
         "id": "116355",
         "name": "Baoshan Road store",
         "addresseng": "No 202 Baoshan roadZhabei Distrct",
@@ -1908,7 +1696,6 @@
         "addresscn": "上海市闸北区近地铁4号线宝山路站宝山路202号"
     },
     {
-        "number": "213",
         "id": "1006116",
         "name": "SOHO Zhongshan Plaza",
         "addresseng": "No.1065 W.Zhongshan RdChangning District",
@@ -1917,7 +1704,6 @@
         "addresscn": "上海市长宁区中山广场中山西路1065号104室"
     },
     {
-        "number": "214",
         "id": "1005320",
         "name": "L'AVENUE",
         "addresseng": "No.99, Xianxia Rd.Changning District",
@@ -1926,7 +1712,6 @@
         "addresscn": "上海市长宁区尚嘉中心(商场)地下第2层B1-B11仙霞路99 号"
     },
     {
-        "number": "215",
         "id": "1656",
         "name": "Maxdo",
         "addresseng": "No.8,Xingyi RdChangning District",
@@ -1935,7 +1720,6 @@
         "addresscn": "上海市长宁区万都中心大厦一层S102、S106商铺兴义路8号"
     },
     {
-        "number": "216",
         "id": "1010731",
         "name": "ARCH",
         "addresseng": "No.533 Loushanguan RdChangning District",
@@ -1944,7 +1728,6 @@
         "addresscn": "上海市长宁区金虹桥国际中心茅台路179号商场L1楼 L113号商铺"
     },
     {
-        "number": "217",
         "id": "1006660",
         "name": "venture International Park",
         "addresseng": "No.2679 HeChuang RoadMinghag",
@@ -1953,7 +1736,6 @@
         "addresscn": "上海市闵行区B座101室合川路2679号"
     },
     {
-        "number": "218",
         "id": "1738",
         "name": "Tian Du Mall",
         "addresseng": "No 919, Tianshan RoadChangning District",
@@ -1962,7 +1744,6 @@
         "addresscn": "上海市长宁区虹桥天都101号商铺天山路919号"
     },
     {
-        "number": "219",
         "id": "1009771",
         "name": "Novel Plaza - 1F",
         "addresseng": "No.128 W.Nanjing RdHuangpu District",
@@ -1971,16 +1752,14 @@
         "addresscn": "上海市黄浦区南京西路128号永新广场1F"
     },
     {
-        "number": "220",
         "id": "1652",
         "name": "New World ",
         "addresseng": "No.2-68,W.Nanjing RdHuangpu district",
         "open": "Monday to Sunday：09:30-22:00",
         "namecn": "#N/A",
-        "addresscn": "#N/A"
+        "addresscn": "上海市黄浦区南京西路2-68号"
     },
     {
-        "number": "221",
         "id": "1005580",
         "name": "Bailiance ShiMao International Plaz",
         "addresseng": "No.819 East Nanjing Rd.Huang pu District",
@@ -1989,34 +1768,30 @@
         "addresscn": "上海市黄浦区百联世茂国际广场1层102号商铺南京东路819号"
     },
     {
-        "number": "222",
         "id": "1835",
         "name": "Shimao Store",
         "addresseng": "No.819,E. Nanjing RdHuang Pu District",
         "open": "Monday to Sunday：07:00-23:00",
         "namecn": "#N/A",
-        "addresscn": "#N/A"
+        "addresscn": "上海市黄浦区南京东路819号"
     },
     {
-        "number": "223",
         "id": "1603",
         "name": "New Golden Bridge",
         "addresseng": "No.579-591,Xizhang RdHuangpu district",
         "open": "Monday to Friday：07:00-22:00,Saturday to Sunday：08:00-22:00",
         "namecn": "#N/A",
-        "addresscn": "#N/A"
+        "addresscn": "上海市黄浦区西漳路579-591号"
     },
     {
-        "number": "224",
         "id": "113989",
         "name": "East Nanjing road Orient Shopping C",
         "addresseng": "No.800 East nan jing roadHuang pu District",
         "open": "Monday to Sunday：08:30-22:00",
         "namecn": "#N/A",
-        "addresscn": "#N/A"
+        "addresscn": "上海市黄浦区南京东路800号"
     },
     {
-        "number": "225",
         "id": "1769",
         "name": "People's Park Xizang Road",
         "addresseng": "No.231,W. Xizang RdHuangpu District",
@@ -2025,7 +1800,6 @@
         "addresscn": "上海市黄浦区西藏中路289号"
     },
     {
-        "number": "226",
         "id": "1551",
         "name": "Raffles City ",
         "addresseng": "No.268,M.Xizang RdHuang Pu district",
@@ -2034,7 +1808,6 @@
         "addresscn": "上海市黄浦区来福士广场01-12室西藏中路268号"
     },
     {
-        "number": "227",
         "id": "1005672",
         "name": "Innovative Factory",
         "addresseng": "Building 3, No.695, Lingshi RoadZhabei district",
@@ -2043,7 +1816,6 @@
         "addresscn": "上海市闸北区珠江创意中心灵石路695号3号楼1楼大堂"
     },
     {
-        "number": "228",
         "id": "1009372",
         "name": "District 6 shopping mall",
         "addresseng": "No.333 West YinGao RdBaoshan District",
@@ -2052,7 +1824,6 @@
         "addresscn": "上海市宝山区殷高西路333号3-152、3-153单元"
     },
     {
-        "number": "229",
         "id": "1567",
         "name": "Redhouse",
         "addresseng": "No.37,S.Shanxi RdHuangpu district",
@@ -2061,7 +1832,6 @@
         "addresscn": "上海市卢湾区红房子陕西南路37号"
     },
     {
-        "number": "230",
         "id": "1007862",
         "name": "Henderson 688",
         "addresseng": "No.688 W.Nanjing Rd",
@@ -2070,7 +1840,6 @@
         "addresscn": "上海市静安区恒基688广场南京西路688号L106B室"
     },
     {
-        "number": "231",
         "id": "1707",
         "name": "East Ocean Centre Store",
         "addresseng": "No. 588 East Yan An Dong Rd.Huangpu district",
@@ -2079,7 +1848,6 @@
         "addresscn": "上海市黄浦区东海商业中心延安东路588号"
     },
     {
-        "number": "232",
         "id": "91735",
         "name": "Ascendas Ocean Tower - Ground Floor",
         "addresseng": "No.550 East Yan'an RoadHuangpu District",
@@ -2088,7 +1856,6 @@
         "addresscn": "上海市黄浦区海洋大厦1F延安东路550号"
     },
     {
-        "number": "233",
         "id": "1008369",
         "name": "M2",
         "addresseng": "No.489 South Henan RdHuangpu District",
@@ -2097,7 +1864,6 @@
         "addresscn": "上海市黄浦区L138和L140单元河南南路489号"
     },
     {
-        "number": "234",
         "id": "1010187",
         "name": "Hongkou sport loft",
         "addresseng": "No.723 Tongxin RdHongkou District",
@@ -2106,7 +1872,6 @@
         "addresscn": "上海市虹口区虹口运动loft同心路723号11幢102室"
     },
     {
-        "number": "235",
         "id": "1011315",
         "name": "Hongkou plaza store 2",
         "addresseng": "shanghaiNO388 West JiangWan Rd.officeHongkou district",
@@ -2115,7 +1880,6 @@
         "addresscn": "上海市虹口区虹口龙之梦西江湾路388号(A)01层56号"
     },
     {
-        "number": "236",
         "id": "1006126",
         "name": "HongKou Plaza",
         "addresseng": "No.388 West JiangWan Rd.Hongkou  District",
@@ -2124,7 +1888,6 @@
         "addresscn": "上海市虹口区虹口龙之梦西江湾路388号 (A)01层10/55号"
     },
     {
-        "number": "237",
         "id": "1009326",
         "name": "Dabaishu Store",
         "addresseng": "No.351 E.Wenshui RdHongkou District",
@@ -2133,7 +1896,6 @@
         "addresscn": "上海市虹口区1876老站创意园汶水东路351号1幢101室、102室"
     },
     {
-        "number": "238",
         "id": "1914",
         "name": "Tian'ai Rd Store",
         "addresseng": "No.2258,N. Sichuan RdHongkou district",
@@ -2142,7 +1904,6 @@
         "addresscn": "上海市虹口区甜爱路四川北路2258号"
     },
     {
-        "number": "239",
         "id": "65760",
         "name": "Zhoupu Wanda Plaza - Unit 156-157",
         "addresseng": "No.518, Nianjia Bang RdPudong District",
@@ -2151,7 +1912,6 @@
         "addresscn": "上海市周浦镇周浦万达广场157商铺年家浜路518号"
     },
     {
-        "number": "240",
         "id": "113547",
         "name": "Yu Qiao East Shopping Center",
         "addresseng": "NO.2420 HUNAN ROADPudong Distrct",
@@ -2160,7 +1920,6 @@
         "addresscn": "上海市浦东新区百联沪南路2420号"
     },
     {
-        "number": "241",
         "id": "19461",
         "name": "HK New World Department Store",
         "addresseng": "No.1993 Chengshan RdPudong DistrictHK New World Department Store",
@@ -2169,7 +1928,6 @@
         "addresscn": "上海市浦东新区巴黎春天成山路1993号1F"
     },
     {
-        "number": "242",
         "id": "66114",
         "name": "GE Office Center",
         "addresseng": "No. 1, HuaTuo RdPudong DistrictGE Office Center",
@@ -2178,7 +1936,6 @@
         "addresscn": "上海市浦东新区通用电气中国科技园华佗路1号"
     },
     {
-        "number": "243",
         "id": "1869",
         "name": "Cailun Road",
         "addresseng": "780 Cailun RoadPudong District",
@@ -2187,7 +1944,6 @@
         "addresscn": "上海市浦东新区蔡伦路蔡伦路780号一楼"
     },
     {
-        "number": "244",
         "id": "1008497",
         "name": "Bi Bo Road Store",
         "addresseng": "No.889 Bi Bo RDPudong District",
@@ -2196,7 +1952,6 @@
         "addresscn": "上海市浦东新区碧波路889号E106-E107"
     },
     {
-        "number": "245",
         "id": "1006136",
         "name": "Star River",
         "addresseng": "No.2580, JinXiu Rd.Pudong Distrct",
@@ -2205,7 +1960,6 @@
         "addresscn": "上海市浦东新区星河湾商业街1号 101铺位锦绣路2580号"
     },
     {
-        "number": "246",
         "id": "1595",
         "name": " Legend",
         "addresseng": "No. 635, Bilbo RoadPudong District",
@@ -2214,7 +1968,6 @@
         "addresscn": "上海市浦东新区上海传奇碧波路635号104 1F24-23B室"
     },
     {
-        "number": "247",
         "id": "19436",
         "name": "Century Corridor-Lujiazi CBD",
         "addresseng": "No.55,Century AvePudong DistrictEntrance of Lujiazui Station",
@@ -2223,7 +1976,6 @@
         "addresscn": "上海市浦东新区（临）“东方浮庭”2F-4室陆家嘴中心区世纪大道55号"
     },
     {
-        "number": "248",
         "id": "1006511",
         "name": "SUPER BRAND MALL B2",
         "addresseng": "NO.168 West lu Jia Zui rd",
@@ -2232,7 +1984,6 @@
         "addresscn": "上海市浦东新区正大广场B2-05单元陆家嘴西路168号"
     },
     {
-        "number": "249",
         "id": "1932",
         "name": "Super Brand Mall 1F II",
         "addresseng": "1F,No.168,W.Lujiazui RdPudong District",
@@ -2241,7 +1992,6 @@
         "addresscn": "上海市浦东新区正大广场陆家嘴西路168号1F"
     },
     {
-        "number": "250",
         "id": "1838",
         "name": "Super Brand Mall - 3 Floor",
         "addresseng": "3F,No.168,W.Lujiazui RdPudong District",
@@ -2250,7 +2000,6 @@
         "addresscn": "上海市浦东新区正大广场陆家嘴西路168号3F"
     },
     {
-        "number": "251",
         "id": "19248",
         "name": "IFC-SH Shopping Mall Store - B2",
         "addresseng": "No 8 Century AvenuePudong District",
@@ -2259,7 +2008,6 @@
         "addresscn": "上海市浦东新区上海国金中心D座商场裙房B2层LG2-29室世纪大道8号"
     },
     {
-        "number": "252",
         "id": "69691",
         "name": "AZIA Center",
         "addresseng": "No.1233,Lujiazui Ring RdPudong DistrictAZIA Center",
@@ -2268,7 +2016,6 @@
         "addresscn": "上海市浦东新区汇亚大厦陆家嘴环路1233号101"
     },
     {
-        "number": "253",
         "id": "90302",
         "name": "Mirae Asset Tower - Ground Floor",
         "addresseng": "Unit 102, No.166, Lujiazui Ring RoadPudong Area District",
@@ -2277,7 +2024,6 @@
         "addresscn": "上海市浦东新区未来资产大厦陆家嘴环路166号102室"
     },
     {
-        "number": "254",
         "id": "1587",
         "name": "Citigroup Tower",
         "addresseng": "1F,Citigroup Tower,No.33,Shiqiao RdPudong District",
@@ -2286,7 +2032,6 @@
         "addresscn": "上海市浦东新区花旗集团大厦1楼花园石桥路33号"
     },
     {
-        "number": "255",
         "id": "1698",
         "name": "Bin Jiang",
         "addresseng": "FFudu Part,Binjiang RdPudong District",
@@ -2295,7 +2040,6 @@
         "addresscn": "上海市浦东新区滨江大道滨江大道富都段"
     },
     {
-        "number": "256",
         "id": "1625",
         "name": "1 LuJiaZui-Pudong Dist-1F-",
         "addresseng": "No. 68 Middle Yincheng RoadPudong District",
@@ -2304,7 +2048,6 @@
         "addresscn": "上海市浦东新区时代金融大厦2楼银城中路68号"
     },
     {
-        "number": "257",
         "id": "1009342",
         "name": "Gongping Rd",
         "addresseng": "Room.3-2 No.36 Gongping RdHongkou District",
@@ -2313,7 +2056,6 @@
         "addresscn": "上海市虹口区公平路38号地下一层3-2单元"
     },
     {
-        "number": "258",
         "id": "92812",
         "name": "North American Square",
         "addresseng": "No.508 Kun Ming RoadYangpu District",
@@ -2322,7 +2064,6 @@
         "addresscn": "上海市杨浦区安莉芳大厦昆明路508号"
     },
     {
-        "number": "259",
         "id": "1005547",
         "name": "Baoland Plaza - Ground Floor",
         "addresseng": "No.1018 Tangshan RdYangpu District",
@@ -2331,7 +2072,6 @@
         "addresscn": "上海市杨浦区A幢102单元,大连路688号宝地广场"
     },
     {
-        "number": "260",
         "id": "1011325",
         "name": "Wentong plaza",
         "addresseng": "NO.739 Kun Ming RoadYangPu District",
@@ -2340,7 +2080,6 @@
         "addresscn": "上海市杨浦区文通大厦昆明路739号一楼101单元"
     },
     {
-        "number": "261",
         "id": "1651",
         "name": "Ruihong",
         "addresseng": "No.1, Lingpin RoadHongkou district",
@@ -2349,7 +2088,6 @@
         "addresscn": "上海市虹口区瑞虹新城临平路1号1层10,11单元"
     },
     {
-        "number": "262",
         "id": "1011347",
         "name": "Ruihong Tiandi",
         "addresseng": "No.328 Tianhong RdHongkou District",
@@ -2358,7 +2096,6 @@
         "addresscn": "上海市虹口区瑞虹天地天虹路320号、天宝路280弄1号"
     },
     {
-        "number": "263",
         "id": "1705",
         "name": "Mori",
         "addresseng": "No.1000,Circle Lujiazui RdPudong District Senmao International Bldg",
@@ -2367,7 +2104,6 @@
         "addresscn": "上海市浦东新区森茂陆家嘴环路1000号"
     },
     {
-        "number": "264",
         "id": "113397",
         "name": "International Port Building",
         "addresseng": "No. 358 DongDaMing RdHongkou District",
@@ -2376,7 +2112,6 @@
         "addresscn": "上海市虹口区国际港务大厦东大名路358号1楼"
     },
     {
-        "number": "265",
         "id": "1008329",
         "name": "Nike Campus",
         "addresseng": "No.99 Jiangwan Cheng RoadYangpu District",
@@ -2385,7 +2120,6 @@
         "addresscn": "上海市杨浦区新江湾城江湾城路99号一幢"
     },
     {
-        "number": "266",
         "id": "1011296",
         "name": "Zhongyuan City Plaza",
         "addresseng": "NO.777 Guo He RoadYangpu district",
@@ -2394,7 +2128,6 @@
         "addresscn": "上海市杨浦区中原城市广场国和路701号5105室"
     },
     {
-        "number": "267",
         "id": "1010227",
         "name": "Zhengli Road Store",
         "addresseng": "No.125 Guotong RdYangpu District",
@@ -2403,7 +2136,6 @@
         "addresscn": "上海市杨浦区创智科技中心国通路125号1层101单元"
     },
     {
-        "number": "268",
         "id": "1820",
         "name": "Knowledge , Innovation Community",
         "addresseng": "No.252-256,Songhu RdYangpu District",
@@ -2412,7 +2144,6 @@
         "addresscn": "上海市杨浦区创智天地淞沪路252-256号A1-24"
     },
     {
-        "number": "269",
         "id": "18832",
         "name": "New Eir",
         "addresseng": "No.8 Songhu RoadYangpu district",
@@ -2421,7 +2152,6 @@
         "addresscn": "上海市杨浦区百联又一城凇沪路8号"
     },
     {
-        "number": "270",
         "id": "65761",
         "name": "Wu jiao Chang Wanda Cinema",
         "addresseng": "No.58 Guobin RdYangpu District",
@@ -2430,7 +2160,6 @@
         "addresscn": "上海市杨浦区上海五角场万达商业广场万达影城国宾路58号3楼"
     },
     {
-        "number": "271",
         "id": "1601",
         "name": "Wujiaochang",
         "addresseng": "1F,No.600,Handan RdYangpu District",
@@ -2439,7 +2168,6 @@
         "addresscn": "上海市杨浦区五角场邯郸路600号一楼"
     },
     {
-        "number": "272",
         "id": "1011565",
         "name": "Xia Bi Road Store",
         "addresseng": "Xia Bi Road, Pudong DistrictNo.261",
@@ -2448,7 +2176,6 @@
         "addresscn": "上海市浦东新区3777F01042单元夏碧路261号1楼"
     },
     {
-        "number": "273",
         "id": "89859",
         "name": "TangChen Office Building-No.2 Gate",
         "addresseng": "No.1 Jilong RdPudong DistrictTangChen Office Building",
@@ -2457,7 +2184,6 @@
         "addresscn": "上海市浦东新区基隆路1号汤臣国贸大厦"
     },
     {
-        "number": "274",
         "id": "1915",
         "name": "Waigaoqiao",
         "addresseng": "No 24, Jiafeng RoadWaigaoqiao Bonded Area",
@@ -2466,7 +2192,6 @@
         "addresscn": "上海市浦东新区外高桥高桥保税区加枫路24号"
     },
     {
-        "number": "275",
         "id": "1009906",
         "name": "Li Jin Rd",
         "addresseng": "Li Jin RdNo.1275,1277",
@@ -2475,7 +2200,6 @@
         "addresscn": "上海市浦东新区利津路1275、1277号1F"
     },
     {
-        "number": "276",
         "id": "1008498",
         "name": "Chen Da Square",
         "addresseng": "No.2 Lane 1058 Ju Feng RD",
@@ -2484,7 +2208,6 @@
         "addresscn": "上海市浦东新区晨达广场巨峰路1058弄2号"
     },
     {
-        "number": "277",
         "id": "1005962",
         "name": "Wen Feng Square",
         "addresseng": "No.801 North Zhang Yang rd.Pudong District",
@@ -2493,7 +2216,6 @@
         "addresscn": "上海市浦东新区文峰广场张杨北路801号"
     },
     {
-        "number": "278",
         "id": "113538",
         "name": " Fashion Center",
         "addresseng": "No.2688, Yangshupu RdYangPu District",
@@ -2502,7 +2224,6 @@
         "addresscn": "上海市杨浦区时尚中心杨树浦路2688号"
     },
     {
-        "number": "279",
         "id": "1009490",
         "name": "Tangzhen Heng Sheng Plaza",
         "addresseng": "No. 1702 Shang Feng Rd.Rm 101",
@@ -2511,7 +2232,6 @@
         "addresscn": "上海市浦东新区唐镇恒生广场上丰路1702号101室"
     },
     {
-        "number": "280",
         "id": "1744",
         "name": "Zhonghui Plaza",
         "addresseng": "No.1088,Xinjingqiao RdPudong District",
@@ -2520,7 +2240,6 @@
         "addresscn": "上海市浦东新区中惠广场新金桥路1088号B100室"
     },
     {
-        "number": "281",
         "id": "1006001",
         "name": "Dimond Court- Ground Floor",
         "addresseng": "No.1156 , No.1160, Biyun Rd.Pudong District",
@@ -2529,7 +2248,6 @@
         "addresscn": "上海市浦东新区碧云路碧云路1156号,1160号"
     },
     {
-        "number": "282",
         "id": "1005692",
         "name": "Sandhill Plaza-Ground Floor",
         "addresseng": "Alley 2288, Zu Chong Zhi Rd.Pudong District",
@@ -2538,7 +2256,6 @@
         "addresscn": "上海市浦东新区展想大厦祖冲之路2290弄"
     },
     {
-        "number": "283",
         "id": "1010418",
         "name": "Jin Qiao Square",
         "addresseng": "No.2 Lane 3611 Zhang Yang RDPudong New Area",
@@ -2547,7 +2264,6 @@
         "addresscn": "上海市浦东新区张杨路3611弄2号212、213、214、217、218室"
     },
     {
-        "number": "284",
         "id": "1548",
         "name": "Golden Bridge",
         "addresseng": "633 Bi Yun RoadPudong District",
@@ -2556,7 +2272,6 @@
         "addresscn": "上海市浦东新区碧云国际社区碧云路633号"
     },
     {
-        "number": "285",
         "id": "1010448",
         "name": "Hui Zhi Plaza",
         "addresseng": "No.3057 Jin Ke RDPudong District",
@@ -2565,7 +2280,6 @@
         "addresscn": "上海市浦东新区汇智广场金科路3057号1F(L1-1A)"
     },
     {
-        "number": "286",
         "id": "1008425",
         "name": "Chamtime Plaza - Unit E1-04C",
         "addresseng": "Unit E1-04CJinke Rd,Zuchongzhi Rd.",
@@ -2574,7 +2288,6 @@
         "addresscn": "上海市浦东新区祖冲之路1239弄6号10号楼1层05-159单元"
     },
     {
-        "number": "287",
         "id": "116462",
         "name": " Pudong Software Park -GF",
         "addresseng": "No. 1000 Chen Hui RdPudong Distrct",
@@ -2583,7 +2296,6 @@
         "addresscn": "上海市浦东新区浦东软件园晨晖路1000号1号楼116-A室"
     },
     {
-        "number": "288",
         "id": "1009652",
         "name": "Pudong Airport T1 domestic depart.",
         "addresseng": "Pudong Airport",
@@ -2592,7 +2304,6 @@
         "addresscn": "上海市浦东新区浦东国际机场T1航站楼国内出发禁区"
     },
     {
-        "number": "289",
         "id": "1008377",
         "name": " Pudong Airport T1",
         "addresseng": "Internatioanl Departure Hall,3rd FloorTerminal 1, Pudong Airport",
@@ -2601,7 +2312,6 @@
         "addresscn": "上海市浦东新区浦一号候机楼国际出发禁区商业区域餐饮项目迎宾大道6000号"
     },
     {
-        "number": "290",
         "id": "1005744",
         "name": " Pudong Air-T2 TX Arrival",
         "addresseng": "2F, Arrival, Terminal 2Pudong District",
@@ -2610,7 +2320,6 @@
         "addresscn": "上海市浦东新区上海浦东机场迎宾大道8000号二号候机楼到达公众商业区域餐饮项目"
     },
     {
-        "number": "291",
         "id": "1009651",
         "name": "Pudong Airport T2 domestic No.1",
         "addresseng": "Pudong Airport",
@@ -2619,7 +2328,6 @@
         "addresscn": "上海市浦东新区浦东国际机场T2航站楼国内出发禁区"
     },
     {
-        "number": "292",
         "id": "1011188",
         "name": "Florence Town",
         "addresseng": "No.66-68 Zhu Pan RdPudong District",
@@ -2628,7 +2336,6 @@
         "addresscn": "上海市浦东新区64/1丘、2丘2楼H26单元机场镇103街坊"
     },
     {
-        "number": "293",
         "id": "1011023",
         "name": "Hui Nan Century Mart",
         "addresseng": "No.388 Mid Cheng Dong RdPudong District",
@@ -2637,7 +2344,6 @@
         "addresscn": "上海市浦东新区惠南世纪联华城东路384号1楼MSGC2单元"
     },
     {
-        "number": "294",
         "id": "1008566",
         "name": "Hong Yin Plaza",
         "addresseng": "No.7 Lane.1755 Nan Lu Gong rdPudong New Area",
@@ -2646,7 +2352,6 @@
         "addresscn": "上海市浦东新区南芦公路1755弄7号楼1-2层"
     },
     {
-        "number": "295",
         "id": "1011203",
         "name": "Lingang Howard Johnson Plaza store",
         "addresseng": "Shang HaiSouth Xin Yuan Rd Pudong1F",
@@ -2655,7 +2360,6 @@
         "addresscn": "上海市浦东新区临港豪生酒店(浦东)新元南路555弄1-60号"
     },
     {
-        "number": "296",
         "id": "1005446",
         "name": "No.10 Office Lobby-Innovation Park",
         "addresseng": "No.399 KeYuan Rd, Building No.10Pudong DistrictNo.10 Office Lobby",
@@ -2664,7 +2368,6 @@
         "addresscn": "上海市浦东新区1层109单元科苑路399号10号楼"
     },
     {
-        "number": "297",
         "id": "1931",
         "name": "Big Thumb",
         "addresseng": "No.197,Fangdian RdPudong District",
@@ -2673,7 +2376,6 @@
         "addresscn": "上海市浦东新区大拇指芳甸路197号"
     },
     {
-        "number": "298",
         "id": "1005679",
         "name": "Lian Yang Square",
         "addresseng": "No.226,Fangdian Rd.Pudong District",
@@ -2682,7 +2384,6 @@
         "addresscn": "上海市浦东新区联洋广场芳甸路198—206、208—232、268—286号（双）、258弄13—37号"
     },
     {
-        "number": "299",
         "id": "1009480",
         "name": "Wu Dao Kou Square",
         "addresseng": "No.1  Lane 1199  Min Sheng RdUnit 105A",
@@ -2691,7 +2392,6 @@
         "addresscn": "上海市浦东新区证大五道口广场民生路1199号1号楼105A"
     },
     {
-        "number": "300",
         "id": "1009911",
         "name": "Department Of Business Building",
         "addresseng": "No.1286 Min Sheng RDPudong New Area",
@@ -2700,7 +2400,6 @@
         "addresscn": "上海市浦东新区民生路1286号102、103、105单元"
     },
     {
-        "number": "301",
         "id": "20297",
         "name": "Kerry Centre Mall - 1st floor",
         "addresseng": "No.1378,Huamu RdPudong District",
@@ -2709,7 +2408,6 @@
         "addresscn": "上海市浦东新区浦东嘉里城商场一层L110单元花木路1378号"
     },
     {
-        "number": "302",
         "id": "1010226",
         "name": " Bamboo Square",
         "addresseng": "No.1088 Fang Dian RDPudong New Area",
@@ -2718,7 +2416,6 @@
         "addresscn": "上海市浦东新区芳甸路1088号"
     },
     {
-        "number": "303",
         "id": "113928",
         "name": "Science , Tech Museum Metro Station",
         "addresseng": "Exit 3, Technology Museum Station,Line 2Pudong District Sci , Tech Museum",
@@ -2727,16 +2424,14 @@
         "addresscn": "上海市浦东新区地铁2号线科技馆站3号出口世纪大道2002号KJ008 009商铺"
     },
     {
-        "number": "304",
         "id": "1008280",
         "name": "Lu Jia Zui Residence store",
         "addresseng": "No.1550 Zhang Yang Road",
         "open": "Monday to Sunday：07:00-22:00",
         "namecn": "陆家嘴公馆店",
-        "addresscn": "No.1550 Zhang Yang Road"
+        "addresscn": "上海市张杨路550号"
     },
     {
-        "number": "305",
         "id": "1800",
         "name": "Intl Ocean Ship , Finance Ctr",
         "addresseng": "No 720 Pudong AvePudong DistrictIntl Ocean Shipping , Finance Center",
@@ -2745,7 +2440,6 @@
         "addresscn": "上海市浦东新区国际航运金融中心大厦大堂浦东大道720号"
     },
     {
-        "number": "306",
         "id": "1009716",
         "name": "Bailian Binjiang shopping mall",
         "addresseng": "No.228 Ningguo RdYangpu District",
@@ -2754,7 +2448,6 @@
         "addresscn": "上海市杨浦区杨浦百联滨江购物中心宁国路218号L1层1A-024室"
     },
     {
-        "number": "307",
         "id": "1645",
         "name": "CIFC Off Bldg-Pudong Dist-Lobby-Sha",
         "addresseng": "No.1589,Century StPudong District",
@@ -2763,7 +2456,6 @@
         "addresscn": "上海市浦东新区长泰国际金融大厦1楼07单元世纪大道1589号"
     },
     {
-        "number": "308",
         "id": "1593",
         "name": "Tangchen",
         "addresseng": "No. 710 Dongfang RoadPudong District",
@@ -2772,7 +2464,6 @@
         "addresscn": "上海市浦东新区汤臣金融中心东方路710号"
     },
     {
-        "number": "309",
         "id": "1856",
         "name": "Pos Plaza",
         "addresseng": "No.1600,Century Rd.Pudong District",
@@ -2781,7 +2472,6 @@
         "addresscn": "上海市浦东新区浦项世纪大道1600号"
     },
     {
-        "number": "310",
         "id": "1011018",
         "name": "Zhong Jian Tower",
         "addresseng": "No.1568 Century Avenue Pudong",
@@ -2790,7 +2480,6 @@
         "addresscn": "上海市浦东新区世纪大道1568、1588号102A单元"
     },
     {
-        "number": "311",
         "id": "1737",
         "name": "Jin Yan Road",
         "addresseng": "No. 219 Jinyan RoadPudong District",
@@ -2799,7 +2488,6 @@
         "addresscn": "上海市浦东新区近上海科技馆锦延路219号"
     },
     {
-        "number": "312",
         "id": "87530",
         "name": "Youyou Centry Place-Building A",
         "addresseng": "No.428,S.Yanggao RdPudong District",
@@ -2808,7 +2496,6 @@
         "addresscn": "上海市浦东新区由由世纪广场杨高南路428号1号楼1层A单元"
     },
     {
-        "number": "313",
         "id": "68879",
         "name": "No.1 Office Building LSP",
         "addresseng": "No.98,Lane 91,Eshan RdPudong DistrictNo.1 Office Building LSP",
@@ -2817,7 +2504,6 @@
         "addresscn": "上海市浦东新区陆家嘴软件园1号楼1楼峨山路91弄98号"
     },
     {
-        "number": "314",
         "id": "1942",
         "name": "Dongying",
         "addresseng": "No.200 North Linyi RoadPudong District",
@@ -2826,7 +2512,6 @@
         "addresscn": "上海市浦东新区东樱花苑临沂北路200号"
     },
     {
-        "number": "315",
         "id": "114048",
         "name": "Lujiazui Financial Svc Plz - Lobby",
         "addresseng": "No.1217, Dongfang Rd.Pudong Distrct",
@@ -2835,7 +2520,6 @@
         "addresscn": "上海市浦东新区陆家嘴软件园东方路1217号1楼100单元"
     },
     {
-        "number": "316",
         "id": "1598",
         "name": "UC Tower",
         "addresseng": "No. 500 Fushan RoadPudong District",
@@ -2844,7 +2528,6 @@
         "addresscn": "上海市浦东新区城建国际中心福山路500号"
     },
     {
-        "number": "317",
         "id": "1890",
         "name": "The Cool Docks - 101 Room -",
         "addresseng": "No.479 Lane,South Zhongshan RdHuangpu District",
@@ -2853,7 +2536,6 @@
         "addresscn": "上海市黄浦区老码头中山南路479弄5号楼101室"
     },
     {
-        "number": "318",
         "id": "1011058",
         "name": "West Wei Fang Rd",
         "addresseng": "Shang HaiWest Wei Fang RdNo.92",
@@ -2862,7 +2544,6 @@
         "addresscn": "上海市浦东新区潍坊西路92号"
     },
     {
-        "number": "319",
         "id": "94957",
         "name": " Bay Ordos Building",
         "addresseng": "No.1138, Pudongnan Rd.Pudong District",
@@ -2871,7 +2552,6 @@
         "addresscn": "上海市浦东新区上海湾浦东南路1138号181-184"
     },
     {
-        "number": "320",
         "id": "1634",
         "name": " Times Square",
         "addresseng": "No. 500 Zhang Yang RoadPudong District",
@@ -2880,7 +2560,6 @@
         "addresscn": "上海市浦东新区华润时代广场张杨路500号"
     },
     {
-        "number": "321",
         "id": "1008507",
         "name": "Golden Waterfront Garden",
         "addresseng": "No.1 Lane200 S.Zhongshan RdHuangpu",
@@ -2889,7 +2568,6 @@
         "addresscn": "上海市黄浦区老太平弄100号"
     },
     {
-        "number": "322",
         "id": "1010255",
         "name": "Zhong Rong Plaza",
         "addresseng": "South Pudong RoadNo.1088",
@@ -2898,7 +2576,6 @@
         "addresscn": "上海市浦东新区浦东南路1078号1楼09A室"
     },
     {
-        "number": "323",
         "id": "1604",
         "name": "New Century Cinema",
         "addresseng": "10F,No.501,Zhangyang RdPudong District",
@@ -2907,7 +2584,6 @@
         "addresscn": "上海市浦东新区八佰伴影城张扬路501号10楼"
     },
     {
-        "number": "324",
         "id": "113875",
         "name": "Yong An Golden Store",
         "addresseng": "No.655, Zhangyang Rd.Pudong District",
@@ -2916,7 +2592,6 @@
         "addresscn": "上海市浦东新区永安金店101、201铺位张杨路655号"
     },
     {
-        "number": "325",
         "id": "1011020",
         "name": "Xin Da Lu Plaza",
         "addresseng": "No.588, North Nan Quan Rd.,S1-08, South Building",
@@ -2925,7 +2600,6 @@
         "addresscn": "上海市浦东新区新大陆广场南泉北路588号S1-08"
     },
     {
-        "number": "326",
         "id": "89196",
         "name": "Century Avenue , South Pudong Rd",
         "addresseng": "No.800,Century AvenuePudong District",
@@ -2934,7 +2608,6 @@
         "addresscn": "上海市浦东新区南洋商业银行大厦世纪大道800号"
     },
     {
-        "number": "327",
         "id": "69596",
         "name": "PuFa Bank Building - Lobby",
         "addresseng": "No.588 South Pudong RoadPudong District",
@@ -2943,7 +2616,6 @@
         "addresscn": "上海市浦东区浦发大厦浦东南路588号"
     },
     {
-        "number": "328",
         "id": "1580",
         "name": "Information Tower",
         "addresseng": "No.211,Century RdPudong District",
@@ -2952,7 +2624,6 @@
         "addresscn": "上海市浦东新区信息大厦世纪大道211号"
     },
     {
-        "number": "329",
         "id": "1749",
         "name": " World Financial Center",
         "addresseng": "No.100,Century StPudong District",
@@ -2961,7 +2632,6 @@
         "addresscn": "上海市浦东新区环球金融世纪大道100号101"
     },
     {
-        "number": "330",
         "id": "19151",
         "name": "Jin Mao Tower - 3rd Floor",
         "addresseng": "No.88,Centery StPudong District",
@@ -2970,7 +2640,6 @@
         "addresscn": "上海市浦东新区裙房２楼2C-08、2C-10铺位世纪大道88号"
     },
     {
-        "number": "331",
         "id": "1008524",
         "name": "Yangpu Orient Shopping Centre",
         "addresseng": "No.2500 Siping RdYangpu",
@@ -2979,7 +2648,6 @@
         "addresscn": "上海市杨浦区第 L1 层B19-F01-1-030 室四平路2500号"
     },
     {
-        "number": "332",
         "id": "1008042",
         "name": "Basin 3",
         "addresseng": "No 333 Guoding RdYangPu",
@@ -2988,7 +2656,6 @@
         "addresscn": "上海市杨浦区3号湾国定路319号F135单元"
     },
     {
-        "number": "333",
         "id": "1011033",
         "name": "Green Milan Outlet",
         "addresseng": "No.39 Guoquan RdYangpu District",
@@ -2997,16 +2664,14 @@
         "addresscn": "上海市杨浦区绿色米兰广场国权路73号"
     },
     {
-        "number": "334",
         "id": "1012055",
         "name": "Siping Rd",
         "addresseng": "Rm113,116,No.188,Siping RdHongkou",
         "open": "Monday to Sunday：07:00-22:00",
         "namecn": "四平路店",
-        "addresscn": "Rm113,116,No.188,Siping RdHongkou"
+        "addresscn": "上海市虹口区四平路188号113室"
     },
     {
-        "number": "335",
         "id": "1597",
         "name": "North Sichuan Road",
         "addresseng": "No.1661,N.Shichuan RdHongkou district",
@@ -3015,7 +2680,6 @@
         "addresscn": "上海市虹口区凯鸿广场四川北路1661号"
     },
     {
-        "number": "336",
         "id": "1005278",
         "name": "Citic Plaza ShenHong",
         "addresseng": "No. 1350, Sichuanbei RdHongkou District",
@@ -3024,7 +2688,6 @@
         "addresscn": "上海市虹口区申虹广场四川北路1350商场一层110-112室"
     },
     {
-        "number": "337",
         "id": "1006554",
         "name": "One Prime",
         "addresseng": "NO 1363 North Sichuan RdHongkou",
@@ -3033,7 +2696,6 @@
         "addresscn": "上海市虹口区商场B2层B01、B05、B23室四川北路1363"
     },
     {
-        "number": "338",
         "id": "1826",
         "name": "Yao Jiang Plaza",
         "addresseng": "No.258,Wusong RdHongkou District",
@@ -3042,7 +2704,6 @@
         "addresscn": "上海市虹口区耀江广场吴淞路258号1楼102室"
     },
     {
-        "number": "339",
         "id": "1006429",
         "name": " International Building",
         "addresseng": "No.99, Huangpu Rd.Hongkou Distrct",
@@ -3051,7 +2712,6 @@
         "addresscn": "上海市虹口区黄浦路99号111室"
     },
     {
-        "number": "340",
         "id": "19420",
         "name": "BEA Finance Tower - Lobby",
         "addresseng": "No.66 Rd,Huayuanshiqiao RdPudong DistrictBEA Finance Tower",
@@ -3060,7 +2720,6 @@
         "addresscn": "上海市浦东新区东亚银行大厦花园石桥路66号101A单元"
     },
     {
-        "number": "341",
         "id": "18897",
         "name": "Bund Center , Westin Store",
         "addresseng": "No.88,M.Henan RdHuangpu District",
@@ -3069,7 +2728,6 @@
         "addresscn": "上海市黄浦区外滩中心河南中路88号"
     },
     {
-        "number": "342",
         "id": "1586",
         "name": "Yu Garden 2",
         "addresseng": "No.100,Yuyuan RdHuangpu District",
@@ -3078,7 +2736,6 @@
         "addresscn": "上海市黄浦区豫园豫园路100号（和丰楼）东侧"
     },
     {
-        "number": "343",
         "id": "1713",
         "name": "Yu Yuan",
         "addresseng": "No. 100 Yu Yuan RoadHuangpu district",
@@ -3087,7 +2744,6 @@
         "addresscn": "上海市黄浦区豫园豫园路100号"
     },
     {
-        "number": "344",
         "id": "90289",
         "name": "Hong Jia Tower - Ground Floor",
         "addresseng": "No.388 Fushan RdPudong District",
@@ -3096,7 +2752,6 @@
         "addresscn": "上海市浦东新区宏嘉大厦福山路388号101A单元"
     },
     {
-        "number": "345",
         "id": "1633",
         "name": " City of Books",
         "addresseng": "No.465,Fuzhou RdHuangpu District",

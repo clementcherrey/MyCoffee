@@ -1,6 +1,7 @@
+var searchTerm;
 	function search(){
 		// alert("Something happened!");
-		var searchTerm = $("#search-1").val();
+		searchTerm = $("#search-1").val();
 		// reset serch field
 		$("#search-1").val("");
 		$('#autocomplete').listview('refresh');
@@ -26,18 +27,18 @@
 								distanceText : new String(tmpDistText),
 								distanceValue: tmpDistVal
 							});
-							console.log("mapInfo.distances test: "+ mapInfo.distances[0].id+", "+mapInfo.distances[0].distanceText);
-							console.log(tmpId);
+							// console.log("mapInfo.distances test: "+ mapInfo.distances[0].id+", "+mapInfo.distances[0].distanceText);
+							// console.log(tmpId);
 							tx.executeSql("select * from store where id = ?",
 								[tmpId],function(tx, result){
-									console.log("name: " + result.rows.item(0).name + "latte: "+ result.rows.item(0).latte);
+									// console.log("name: " + result.rows.item(0).name + "latte: "+ result.rows.item(0).latte);
 									storeInfo.result.push({
 										id : result.rows.item(0).id,
 										wifi: result.rows.item(0).wifi,
 										latte: result.rows.item(0).latte,
 										brand: result.rows.item(0).brand,
 										name: result.rows.item(0).name,
-										address: result.rows.item(0).addresseng,
+										addresseng: result.rows.item(0).addresseng,
 										open1: result.rows.item(0).open1,
 										open2: result.rows.item(0).open2,
 										open3: result.rows.item(0).open3,
@@ -57,7 +58,12 @@
 
 
 function displaySearchResult() {
+	// FOR CUSTOMIZATION LAT,LNG
+	loadAllinCache();
+
 	console.log("in displaySearchResult");
+	// sort the distance
+	sortDistance();
 	// hide loading animation
 	$.mobile.loading( "hide");
 	// hide button for geolocation
@@ -74,11 +80,10 @@ function displaySearchResult() {
 	console.log("number of line in display: " + mapInfo.distances.length);
 
 	var i = 0; 
-var lastAdded = null;                    //  set your counter to 1
+	var lastAdded = null;                    //  set your counter to 1
 function myLoop () {           //  create a loop function
    setTimeout(function () {    //  call a 3s setTimeout when the loop is called
-   	console.log("wow timeout");
-		// $('#store-list').css("border-bottom", "solid");
+   	// console.log("wow timeout");
 		var tmpId = Number(mapInfo.distances[i].id);
 		var tmpDistance = mapInfo.distances[i].distanceText;
 		var tmpIndex = getStoreIndexById(tmpId);

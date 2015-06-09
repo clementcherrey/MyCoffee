@@ -12,6 +12,16 @@ function jsonTransform() {
 	});
 }
 
+function jsonTransformSub() {
+	console.log("in json function");
+	$.getJSON("ajax/subwayPreGeocode.json",function(data) {
+		$.each(data,function(key, val) {	
+			addressArray.push({id: val.id, station: val.station});
+		});
+		initializeGeo();	
+	});
+}
+
 
 function testCoordinate(){
 	var myAddress = "上海市黄浦区肇嘉浜路212号";
@@ -33,7 +43,11 @@ function initializeGeo() {
 		function callnext() {
 			loop.next();
 		}
-		codeAddress(addressArray[loop.iteration()].addresscn, tmpId, callnext);
+		// SUBWAY GOOGLE
+		codeAddressGoogle(addressArray[loop.iteration()].station, tmpId, callnext);
+
+		// STORE BAIDU
+		// codeAddressBaidu(addressArray[loop.iteration()].addresscn, tmpId, callnext);
 
 	}, function (){
 		// console.log("finish !")
@@ -41,8 +55,25 @@ function initializeGeo() {
 
 }
 
+// BAIDU Geocoding
+function codeAddressBaidu(address, tmpId, callback) {
+	// console.log("in BAIDU geocode");
+	var myGeo = new BMap.Geocoder(); 
+	myGeo.getPoint(address, function(point){
+		if (point) {  
+			console.log("/" + tmpId + "/" + address+ "/" + point.lat + "/" + point.lng);
+		callback();	
+		}else{
+			alert("No point for address: "+address);
+			console.log("No point for address: "+address);
+			codeAddressBaidu(address, tmpId, callback);
+		}
+	}, "上海市");
+}
 
-function codeAddress(address, tmpId, callback) {
+
+// OLD VERSION TO GEOCOD AN ADDRESS
+function codeAddressGoogle(address, tmpId, callback) {
 	// alert("in codeAddress function");
 	// console.log(address);
 	var geocoder = new google.maps.Geocoder();
@@ -58,16 +89,16 @@ function codeAddress(address, tmpId, callback) {
 				addressArray[tmpId] = {lat: tmplat, lng: tmplng};
 
 				// alert("After push");
+				callback();
 			} else if (status === google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {   
 			// console.log("OVER_QUERY_LIMIT"); 
             setTimeout(function() {
-                codeAddress(address, tmpId, callback);
+                codeAddressGoogle(address, tmpId, callback);
             }, 1500);
         	} else {
         		console.log('Geocode fail for the address: ' + address);
 				console.log('Geocode was not successful for the following reason: ' + status);
 			} 
-			callback();
 		});
 }
 

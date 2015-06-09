@@ -10,19 +10,19 @@
 	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<link rel="stylesheet" href="css/main.css" />
 
+	<script type="text/javascript" src="cordova.js"></script>
 	<script type="text/javascript" src="js/distance.js"></script>
 	<script type="text/javascript" src="js/distancesub2.js"></script>
 	<script type="text/javascript" src="js/geocoding.js"></script>
 	<script type="text/javascript" src="js/storage2.js"></script>
-	<script type="text/javascript" src="js/downloadImg.js"></script>
-	<script type="text/javascript"
-	src="http://maps.google.cn/maps/api/js?region=cn&language=en-US&sensor=true"></script>
+	<script type="text/javascript" src="js/loadingfile.js"></script>
+
 	<script type="text/javascript"
 	src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript"
 	src="js/jquery.mobile-1.4.5.min.js"></script>
 
-	<script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=nfXjwqvucomlwsM2Pdq2Ik2Y&v=1.0"></script> 
+<!-- script for map to include again -->
 
 <style type="text/css">  
 body, html,#l-map {width: 100%;height: 100%;overflow: hidden;margin:0;}  
@@ -32,14 +32,14 @@ body, html,#l-map {width: 100%;height: 100%;overflow: hidden;margin:0;}
 <script>
 function init() {
  	// alert("in init");
-	$( document ).ready(function() {
-		console.log( "ready!" );
-		// testCoordinate()
-		// jsonTransform();
-		jsonTransformSub();
-		// getsub();
-		//downloadFile();
-	}); 	
+ 	document.addEventListener("deviceready", downloadFile, true);
+	// $( document ).ready(function() {
+	// 	console.log( "ready!" );
+	// 	// testCoordinate()
+	// 	// jsonTransform();
+	// 	// jsonTransformSub();
+	// 	// getsub();
+	// }); 	
 }
 </script>
 

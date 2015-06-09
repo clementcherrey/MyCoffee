@@ -1,8 +1,8 @@
 
 function headlinePreDisplay(){
-var tmpStation = null;
-var tmpSubwayLine = [];	
-console.log("in headline headlinePreDisplay");
+	var tmpStation = null;
+	var tmpSubwayLine = [];	
+	console.log("in headline headlinePreDisplay");
 	db.transaction(function(tx) {
 		tx.executeSql("select * from storeSub where storeId = ? order by distanceValue desc",
 			[storeInfo.id],function(tx, results){	
@@ -39,9 +39,10 @@ function headlineNewDisplay(station,sublines) {
 		if (storeInfo.result[i].id == storeInfo.id) {
 			console.log("storeInfo.id: " + storeInfo.id);
 			var tmpName = storeInfo.result[i].name;
-			$('.header-title').append(tmpName);
-
+			// $('.header-title').append(tmpName);
 			var tmpBrand = storeInfo.result[i].brand;
+			alert(tmpBrand);
+			$('.header-title').append(tmpBrand);
 			var tmpWifi = storeInfo.result[i].wifi;
 			var tmpAddress = storeInfo.result[i].addresseng;
 			var tmpDescription = storeInfo.result[i].description;
@@ -59,7 +60,7 @@ function headlineNewDisplay(station,sublines) {
 
 			mapInfo.centerLat = storeInfo.result[i].lat;
 			mapInfo.centerLng = storeInfo.result[i].lng;
-			mapInfo.mapZoom = 14;
+			mapInfo.mapZoom = 18;
 
 			//------------------ TEST ------------------------
 
@@ -68,8 +69,8 @@ function headlineNewDisplay(station,sublines) {
 			.append(
 				'<li id="detail-head"style="white-space:normal;">'
 				+'<span id="detail-name">'+ tmpName + '</span></br></br>'
-				+'<span id="detail-distance">'+ tmpDistance + '</span><span detail-close> Close</span></br></br>'
-				+'<span id="detail-position"> from your last position</span>'
+				+'<span id="detail-distance">'+ tmpDistance + '</span></br></br>'
+				+'<span id="detail-position"> from '+ searchTerm +' station</span>'
 				+'</li>');
 
 			//----------------------- Key Info---------------------------
@@ -85,80 +86,94 @@ function headlineNewDisplay(station,sublines) {
 				+'<img src = "img/detail/address.png" alt ="address" class="ui-li-icon ui-corner-none>"'
 				+'<span>'
 				+ tmpAddress + '</span></li>');
-		if (station!=null) {	
-			$('#store-data')
-			.append(
-				'<li class="detail-multiline" style="white-space:normal;">'
-				+'<img src = "img/detail/subway.png" alt ="subway" class="ui-li-icon ui-corner-none>"'
-				+'<div class="detail-centerp">'	
-				+ '</div><div style="display:table; class="detail-centerp">'
-				+'<span style="vertical-align: middle;display: table-cell">'
-				+ station	
-				+ '</span></div>'
-				+'</br><div id="mysublines"style="display:table;></div>'
-				+'</li>');
+			if (station!=null) {	
+				$('#store-data')
+				.append(
+					'<li class="detail-multiline" style="white-space:normal;">'
+					+'<img src = "img/detail/subway.png" alt ="subway" class="ui-li-icon ui-corner-none>"'
+					+'<div id="detail-subway">'
+					+'<table><tr><td id="detail-station">'
+					+ station
+					+'</td>'
+					+'<td id="line1" class="detail-subline"></td>'
+					+'<td id="line2" class="detail-subline"></td>'
+					+'<td id="line3" class="detail-subline"></td>'
+					+'<td id="line4" class="detail-subline"></td>'
+					+'</tr></table>'
+					+'</div>'
+					+'</li>');
 
-			console.log("sublines length: "+ sublines.length+", sublines 0 = "+sublines[0]);
-			for (var i = 0; i< sublines.length; i++) {
-				alert("in for");
-				$('#mysublines').append(
-					'<span style="vertical-align: middle;display: table-cell;">'
-					// +'<img src="img/line2'
-					+ sublines[i]
-					// + '.png" />'
-					+ '</span>');
-			};
-			$('#store-data').listview('refresh');
-		}
+				console.log("sublines length: "+ sublines.length+", sublines 0 = "+sublines[0]);
+				for (var i = 1; i< sublines.length+1; i++) {
+					if(sublines[i-1]!=""){
+						console.log(sublines[i-1]);
+						$('#line'+i).append(
+							'<img src="img/line2'
+							+ sublines[i]
+							+ '.png" />');
+					}
+				};
+				$('#store-data').listview('refresh');
+			}
 
-		if (tmpOpen1!=null) {
-			$('#store-data')
-			.append(
-				'<li class="detail-multiline" style="white-space:normal;">'
-				+'<img src = "img/detail/open.png" alt ="opening" class="ui-li-icon ui-corner-none>"'
-				+'<div>'	
-				+ tmpOpen1
-				+ '</br>'				
-				+ tmpOpen2
-				+ '</br>'				
-				+ tmpOpen3
-				+ '</br>'				
-				+ tmpOpen4
-				+ '</div></li>');
-		}
+			//------------------------ Opening-----------------------------
+			if (tmpOpen1!=null && tmpOpen1!="") {
+				var openings = tmpOpen1;
+				if (tmpOpen2!="") {
+					openings = openings+ '</br>'+ tmpOpen2;
+					if (tmpOpen3!=""){
+						openings = openings+ '</br>'+ tmpOpen3;
+						if (tmpOpen4!=""){
+							openings = openings+ '</br>'+ tmpOpen4;
+						}
+					}
+				}
+				console.log("tmpOpen1: "+ tmpOpen1+", tmpOpen2 : "+tmpOpen2
+					+", tmpOpen3 : "+tmpOpen3+", tmpOpen4 : "+tmpOpen4);
+				console.log("openings = " + openings);
+				$('#store-data')
+				.append(
+					'<li id="detail-opendiv" class="detail-multiline" style="white-space:normal;">'
+					+'<img src = "img/detail/open.png" alt ="opening" class="ui-li-icon ui-corner-none>"'
+					+'<div>'	
+					+ openings
+					+ '</div>'
+					+'</li>');
+			}
+
 			//----------------------- More Info-----------------------------
-		if (tmpPhone!=null && tmpDescription!=null && tmpWebsite!=null) {
-			$('#store-data')
-			.append(
-				'<li data-role="list-divider">'
-				+ 'More</li>');
-		};
-		if (tmpDescription!=null && tmpDescription!="null") {		
-			$('#store-data')
-			.append(
-				'<li class="detail-multiline" style="white-space:normal;">'
-				+'<img src = "img/detail/description.png" alt ="description" class="ui-li-icon ui-corner-none>"'
-				+'<span>'
-				+ tmpDescription + '</span></li>');
-		};
-		if (tmpPhone!=null && tmpPhone!="null") {
-			$('#store-data')
-			.append(
-				'<li style="white-space:normal;">'
-				+'<img src = "img/detail/phone.png" alt ="phone" class="ui-li-icon ui-corner-none>"'
-				+'<span>'
-				+tmpPhone
-				+ '</span></li>');
-		};
-		if (tmpWebsite!=null && tmpWebsite!="null") {
-			$('#store-data')
-			.append(
-				'<li style="white-space:normal;">'
-				+'<img src = "img/detail/website.png" alt ="website" class="ui-li-icon ui-corner-none>"'
-				+'<span>'
-				+tmpWebsite
-				+ '</span></li>');
-		};
+			if (tmpPhone!=null && tmpDescription!=null && tmpWebsite!=null) {
+				$('#store-data')
+				.append(
+					'<li data-role="list-divider">'
+					+ 'More</li>');
+			};
+			if (tmpDescription!=null && tmpDescription!="") {		
+				$('#store-data')
+				.append(
+					'<li class="detail-multiline" style="white-space:normal;">'
+					+'<img src = "img/detail/description.png" alt ="description" class="ui-li-icon ui-corner-none>"'
+					+'<span>'
+					+ tmpDescription + '</span></li>');
+			};
+			if (tmpPhone!=null && tmpPhone!="") {
+				$('#store-data')
+				.append(
+					'<li style="white-space:normal;">'
+					+'<img src = "img/detail/phone.png" alt ="phone" class="ui-li-icon ui-corner-none>"'
+					+'<span>'
+					+tmpPhone
+					+ '</span></li>');
+			};
+			if (tmpWebsite!=null && tmpWebsite!="") {
+				$('#store-data')
+				.append(
+					'<li style="white-space:normal;">'
+					+'<img src = "img/detail/website.png" alt ="website" class="ui-li-icon ui-corner-none>"'
+					+'<span>'
+					+tmpWebsite
+					+ '</span></li>');
+			};
 			$('#store-data').listview('refresh');
 
 			break;
@@ -181,9 +196,10 @@ function headlineDisplay(sublines) {
 		if (storeInfo.result[i].id == storeInfo.id) {
 			console.log("storeInfo.id: " + storeInfo.id);
 			var tmpName = storeInfo.result[i].name;
-			$('.header-title').append(tmpName);
-
+			// $('.header-title').append(tmpName);
 			var tmpBrand = storeInfo.result[i].brand;
+			alert(tmpBrand);
+			$('.header-title').append(tmpBrand);
 			var tmpNote = "2";
 			var tmpWifi = storeInfo.result[i].wifi;
 			var tmpAddress = storeInfo.result[i].address;

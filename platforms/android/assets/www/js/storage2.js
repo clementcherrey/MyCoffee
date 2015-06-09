@@ -30,14 +30,13 @@
 
  function setup(tx) {
 //TEST hide navbar footer
-	$("#gpsLoading").hide();
+	// $("#gpsLoading").hide();
  // suppress drop table
- // tx.executeSql('DROP TABLE store');
- // tx.executeSql('DROP TABLE subway');
- // tx.executeSql('DROP TABLE storeSub');
- // tx.executeSql('DROP TABLE contentList');
-
-
+ tx.executeSql('DROP TABLE store');
+ tx.executeSql('DROP TABLE subway');
+ tx.executeSql('DROP TABLE storeSub');
+ tx.executeSql('DROP TABLE contentList');
+ tx.executeSql('DROP TABLE userParam');
 
  tx.executeSql('create table if not exists store('
  	+ ' id INTEGER  PRIMARY KEY, ' 
@@ -45,9 +44,15 @@
  	+ ' latte TEXT,'
  	+ ' name TEXT,'
  	+ ' brand TEXT,' 
- 	+ ' address TEXT,' 
- 	+ ' open TEXT,' 
- 	+ ' description TEXT,' 
+ 	+ ' addresseng TEXT,'
+ 	+ ' addresscn TEXT,'  
+ 	+ ' open1 TEXT,' 
+ 	+ ' open2 TEXT,' 
+ 	+ ' open3 TEXT,' 
+ 	+ ' open4 TEXT,' 
+ 	+ ' description TEXT,'
+ 	+ ' phone TEXT,' 
+ 	+ ' website TEXT,'  
  	+ ' lat FLOAT,'
  	+ ' lng FLOAT)');
 
@@ -55,13 +60,20 @@
  	+ 'id INTEGER PRIMARY KEY,' 
  	+ 'content TEXT)');
 
+  tx.executeSql('create table if not exists userParam('
+ 	+ 'id INTEGER PRIMARY KEY,'
+ 	+ 'paramname TEXT,'
+ 	+ 'value TEXT)');
+
  tx.executeSql('create table if not exists subway('
- 	+ ' id INTEGER PRIMARY KEY,' 
- 	+ ' lat FLOAT,'
- 	+ ' lng FLOAT,'
+ 	+ ' id INTEGER PRIMARY KEY,' 	
  	+ ' station TEXT,' 
- 	+ ' line INTEGER'
- 	+ ' test FLOAT)');
+ 	+ ' line1 INTEGER,'
+ 	+ ' line2 INTEGER,'
+ 	+ ' line3 INTEGER,'
+ 	+ ' line4 INTEGER,'
+ 	+ ' lat FLOAT,'
+ 	+ ' lng FLOAT)');
 
  tx.executeSql('create table if not exists storeSub('
  	+'storeId INTEGER NOT NULL,' 
@@ -74,16 +86,19 @@
 }
 
 function errorHandler(e) {
-	alert(e.message);
+	console.log("errorHandler report: " +e.message);
 }
 
 function dbReady() {
  	// loadOldList();
- 	console.log("in db ready");
+ 	// console.log("in db ready");
  	db.transaction(function(tx) {
  		tx.executeSql("select * from store order by id asc", [], populatedb,
  			errorHandler);
  	});
+
+ 	// AFTER CUSTOMIZATION print the new coordinates in the console 
+	$('#printNewLatLng').on("tap", printNewCoordinates);
 
 	// the 2 buttons to use geolocation
 	$('#getLocation').on("tap", getMyPos);
@@ -116,6 +131,23 @@ function dbReady() {
 	$("#main").on('pageshow', initMap);
 }
 
+//////////**************************************************///////////////
+//////////******************* ASYNC LOADING ****************///////////////
+//link to the javascipt in the bottom of the html
+function ready() {
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = 'http://maps.google.cn/maps/api/js?region=cn&language=en-US&sensor=true&'+'callback=initialized';
+      document.body.appendChild(script);
+    };
+
+//callback after loading
+function initialized(){
+	console.log("google map script loaded");
+	// can put init map here directly maybe
+}
+//////////**************************************************///////////////
+
 
 function getStoreIndexById(theId){
 	// console.log("getStoreIndexById for id = "+theId);
@@ -141,7 +173,7 @@ var mapInfo = {
 	createNb : 0,
 	centerLat : 31.225523,
 	centerLng : 121.491344,
-	mapZoom : 12,
+	mapZoom : 16,
 	currentLat : 32.0500,
 	currentLng : 118.7667,
 	distances : [],
@@ -183,7 +215,7 @@ function displayList() {
 		var myId = storeInfo.result.rows.item(tmpId).id;
 		var tmpName = storeInfo.result.rows.item(tmpId).name;
 		var tmpBrand = storeInfo.result.rows.item(tmpId).brand;
-		var tmpAddress = storeInfo.result.rows.item(tmpId).address;
+		var tmpAddress = storeInfo.result.rows.item(tmpId).addresseng;
 		$('#store-list').append(
 			'<li data-icon="false"><a href="#headline" data-transition="slide" data-id="'
 			+ myId + '">' + '<img src="img/' + tmpBrand + '.png"/>'
@@ -220,7 +252,7 @@ function storeCurrentList(){
 }
 
 function loadOldList(tx,results){
-	console.log("in Load list");
+	// console.log("in Load list");
 	// hide button for geolocation
 	$("#twobutt").empty();
 	// show footer
@@ -246,9 +278,14 @@ function loadOldList(tx,results){
 						latte: result.rows.item(0).latte,
 						brand: result.rows.item(0).brand,
 						name: result.rows.item(0).name,
-						address: result.rows.item(0).address,
-						open: result.rows.item(0).open,
+						address: result.rows.item(0).addresseng,
+						open1: result.rows.item(0).open1,
+						open2: result.rows.item(0).open2,
+						open3: result.rows.item(0).open3,
+						open4: result.rows.item(0).open4,
 						description: result.rows.item(0).description,
+						phone: result.rows.item(0).phone,
+						website: result.rows.item(0).website,
 						lat: result.rows.item(0).lat,
 						lng: result.rows.item(0).lng,
 					});
@@ -260,7 +297,7 @@ function loadOldList(tx,results){
 
 
 function gotlog(tx, results) {
-	console.log("in gotlog");
+	// console.log("in gotlog");
 	if (results.rows.length == 0) {	
 		console.log("no data");
 		return false;
@@ -281,6 +318,14 @@ $('#autocomplete').listview('refresh');
 };
 
 function getMyPos() {
+
+    $.mobile.loading( "show", {
+            text: "custom",
+            textVisible: true,
+            theme: $.mobile.loader.prototype.options.theme,
+            textonly: true,
+            html: "<img style='width: 100%;' src='img/load-gps.gif'>"
+    });
 
 	console.log("in getMyPos");
 	var options = {
@@ -338,7 +383,7 @@ function jsonpopulate() {
 							"insert into storeSub(storeId,subwayId,distanceText,distanceValue) values(?,?,?,?)",
 							[
 							val.storeId,
-							val.subId,
+							val.subwayId,
 							val.distanceText,
 							val.distanceValue]);
 					});
@@ -358,19 +403,20 @@ function jsonpopulate() {
 			db.transaction(function(tx) {
 				$.each(data,
 					function(key, val) {
-						// console.log(val.id +", "+val.station+", "+val.line+", "+val.lat+", "+val.lng);
+						// console.log(val.id +", "+val.station+", "+val.line1+", "+val.lat+", "+val.lng);
 
 						tx
 						.executeSql(
-							"insert into subway(id,station,line,lat,lng) values(?,?,?,?,?)",
+							"insert into subway(id,station,line1,line2,line3,line4,lat,lng) values(?,?,?,?,?,?,?,?)",
 							[
 							val.id,
 							val.station,
-							val.line,
+							val.line1,
+							val.line2,
+							val.line3,
+							val.line4,
 							val.lat,
 							val.lng]);
-
-						// console.log("lol");
 					});
 				// alert("insert subway lol");
 				tx.executeSql("select * from subway",
@@ -381,28 +427,34 @@ function jsonpopulate() {
 	$.getJSON(
 		"ajax/starbucks.json",
 		function(data) {
-			// alert(data);
+			// console.log(data);
 			db
 			.transaction(function(tx) {
 				$.each(data,
 					function(key, val) {
 						tx
 						.executeSql(
-							"insert into store(id,wifi,latte,brand,name,address,open,description,lat,lng) values(?,?,?,?,?,?,?,?,?,?)",
+							"insert into store(id,wifi,latte,brand,name,addresseng,addresscn,open1,open2,open3,open4,description,phone,website,lat,lng) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
 							[
-							val.id +90,
+							val.id,
 							val.wifi,
 							val.latte,
 							val.brand,
 							val.name,
-							val.address,
-							val.open,
+							val.addresseng,
+							val.addresscn,
+							val.open1,
+							val.open2,
+							val.open3,
+							val.open4,
 							val.description,
+							val.phone,
+							val.website,
 							val.lat,
 							val.lng ]);
 					});
 
-				alert("after insert");
+				// alert("after insert");
 				insertCosta();
 			});
 
@@ -419,7 +471,7 @@ function jsonpopulate() {
 					function(key, val) {
 						tx
 						.executeSql(
-							"insert into store(id,wifi,latte,brand,name,address,lat,lng) values(?,?,?,?,?,?,?,?)",
+							"insert into store(id,wifi,latte,brand,name,addresseng,lat,lng) values(?,?,?,?,?,?,?,?)",
 							[
 							val.id,
 							val.wifi,

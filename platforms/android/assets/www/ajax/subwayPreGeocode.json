@@ -1,0 +1,2314 @@
+[
+    {
+        "id": "0",
+        "station": "Aiguo Road",
+        "line1": "12",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "1",
+        "station": "Anshan Xincun",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "2",
+        "station": "Anting",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "3",
+        "station": "Baiyin Road",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "4",
+        "station": "Bao'an Highway",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "5",
+        "station": "Baoshan Road",
+        "line1": "3",
+        "line2": "4",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "6",
+        "station": "Baoyang Road",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "7",
+        "station": "Beiqiao",
+        "line1": "5",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "8",
+        "station": "Beixinjing",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "9",
+        "station": "Beiyangjing Road",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "10",
+        "station": "Boxing Road",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "11",
+        "station": "Caobao Road",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "12",
+        "station": "Caohejing Hi",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "13",
+        "station": "Caoxi Road",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "14",
+        "station": "Caoyang Road",
+        "line1": "3",
+        "line2": "4",
+        "line3": "11",
+        "line4": ""
+    },
+    {
+        "id": "15",
+        "station": "Century Avenue",
+        "line1": "2",
+        "line2": "4",
+        "line3": "6",
+        "line4": "9"
+    },
+    {
+        "id": "16",
+        "station": "Century Park",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "17",
+        "station": "Changping Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "18",
+        "station": "Changqing Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "19",
+        "station": "Changshou Road",
+        "line1": "7",
+        "line2": "13",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "20",
+        "station": "Changshu Road",
+        "line1": "1",
+        "line2": "7",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "21",
+        "station": "Changzhong Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "22",
+        "station": "Chengshan Road",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "23",
+        "station": "Chifeng Road",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "24",
+        "station": "China Art Museum",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "25",
+        "station": "Chuansha",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "26",
+        "station": "Chunshen Road",
+        "line1": "5",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "27",
+        "station": "Dabaishu",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "28",
+        "station": "Dachang Town",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "29",
+        "station": "Daduhe Road",
+        "line1": "13",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "30",
+        "station": "Dahuasan Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "31",
+        "station": "Dalian Road",
+        "line1": "4",
+        "line2": "12",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "32",
+        "station": "Damuqiao Road",
+        "line1": "4",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "33",
+        "station": "Dapuqiao",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "34",
+        "station": "Dashijie",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "35",
+        "station": "Deping Road",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "36",
+        "station": "Dishui Lake",
+        "line1": "16",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "37",
+        "station": "Dong'an Road",
+        "line1": "4",
+        "line2": "7",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "38",
+        "station": "Dongbaoxing Road",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "39",
+        "station": "Dongchang Road",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "40",
+        "station": "Dongchuan Road",
+        "line1": "5",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "41",
+        "station": "Dongjing",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "42",
+        "station": "Dongjing Road",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "43",
+        "station": "Donglu Road",
+        "line1": "12",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "44",
+        "station": "Dongming Road",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "45",
+        "station": "East Changji Road",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "46",
+        "station": "East Hangtou",
+        "line1": "16",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "47",
+        "station": "East Huaxia Road",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "48",
+        "station": "East Huinan",
+        "line1": "16",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "49",
+        "station": "East Nanjing Road",
+        "line1": "2",
+        "line2": "10",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "50",
+        "station": "East Sanlin",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "51",
+        "station": "East Xujing",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "52",
+        "station": "East Yingao Road",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "53",
+        "station": "East Zhoupu",
+        "line1": "16",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "54",
+        "station": "Fanghua Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "55",
+        "station": "Fengqiao Road",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "56",
+        "station": "Fengzhuang",
+        "line1": "13",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "57",
+        "station": "Fujin Road",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "58",
+        "station": "Fuxing Island",
+        "line1": "12",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "59",
+        "station": "Gangcheng Road",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "60",
+        "station": "Gaoqing Road",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "61",
+        "station": "Gongfu Xincun",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "62",
+        "station": "Gongkang Road",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "63",
+        "station": "Guanglan Road",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "64",
+        "station": "Guangming Road",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "65",
+        "station": "Gucun Park",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "66",
+        "station": "Guilin Road",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "67",
+        "station": "Guoquan Road",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "68",
+        "station": "Hailun Road",
+        "line1": "4",
+        "line2": "10",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "69",
+        "station": "Haitiansan Road",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "70",
+        "station": "Hangjin Road",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "71",
+        "station": "Hangzhong Road",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "72",
+        "station": "Hanzhong Road",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "73",
+        "station": "Hechuan Road",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "74",
+        "station": "Hengshan Road",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "75",
+        "station": "Heshahangcheng",
+        "line1": "16",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "76",
+        "station": "Hongkou Football Stadium",
+        "line1": "3",
+        "line2": "8",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "77",
+        "station": "Hongqiao Airport Terminal 1",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "78",
+        "station": "Hongqiao Airport Terminal 2",
+        "line1": "2",
+        "line2": "10",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "79",
+        "station": "Hongqiao Railway Station",
+        "line1": "2",
+        "line2": "10",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "80",
+        "station": "Hongqiao Road",
+        "line1": "3",
+        "line2": "4",
+        "line3": "10",
+        "line4": ""
+    },
+    {
+        "id": "81",
+        "station": "Houtan",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "82",
+        "station": "Huamu Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "83",
+        "station": "Huangxing Park",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "84",
+        "station": "Huangxing Road",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "85",
+        "station": "Huaning Road",
+        "line1": "5",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "86",
+        "station": "Huaqiao",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "87",
+        "station": "Huinan",
+        "line1": "16",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "88",
+        "station": "Hulan Road",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "89",
+        "station": "International Cruise Terminal",
+        "line1": "12",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "90",
+        "station": "Jiading Xincheng",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "91",
+        "station": "Jianchuan Road",
+        "line1": "5",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "92",
+        "station": "Jiangpu Park",
+        "line1": "12",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "93",
+        "station": "Jiangpu Road",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "94",
+        "station": "Jiangsu Road",
+        "line1": "2",
+        "line2": "11",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "95",
+        "station": "Jiangwan Stadium",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "96",
+        "station": "Jiangwan Town",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "97",
+        "station": "Jiangyue Road",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "98",
+        "station": "Jiaotong University",
+        "line1": "10",
+        "line2": "11",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "99",
+        "station": "Jiashan Road",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "100",
+        "station": "Jing'an Temple",
+        "line1": "2",
+        "line2": "7",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "101",
+        "station": "Jinhai Road",
+        "line1": "12",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "102",
+        "station": "Jinjiang Park",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "103",
+        "station": "Jinjing Road",
+        "line1": "12",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "104",
+        "station": "Jinke Road",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "105",
+        "station": "Jinping Road",
+        "line1": "5",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "106",
+        "station": "Jinqiao Road",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "107",
+        "station": "Jinshajiang Road",
+        "line1": "3",
+        "line2": "4",
+        "line3": "13",
+        "line4": ""
+    },
+    {
+        "id": "108",
+        "station": "Jinxiu Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "109",
+        "station": "Jinyun Road",
+        "line1": "13",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "110",
+        "station": "Jiuting",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "111",
+        "station": "Jufeng Road",
+        "line1": "6",
+        "line2": "12",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "112",
+        "station": "Lancun Road",
+        "line1": "4",
+        "line2": "6",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "113",
+        "station": "Langao Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "114",
+        "station": "Laoximen",
+        "line1": "8",
+        "line2": "10",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "115",
+        "station": "Lianhang Road",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "116",
+        "station": "Lianhua Road",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "117",
+        "station": "Lingang Avenue",
+        "line1": "16",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "118",
+        "station": "Lingkong Road",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "119",
+        "station": "Lingzhao Xincun",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "120",
+        "station": "Linping Road",
+        "line1": "4",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "121",
+        "station": "Linyi Xincun",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "122",
+        "station": "Liuhang",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "123",
+        "station": "Liziyuan",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "124",
+        "station": "Longbai Xincun",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "125",
+        "station": "Longcao Road",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "126",
+        "station": "Longchang Road",
+        "line1": "12",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "127",
+        "station": "Longde Road",
+        "line1": "11",
+        "line2": "13",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "128",
+        "station": "Longhua",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "129",
+        "station": "Longxi Road",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "130",
+        "station": "Longyang Road",
+        "line1": "2",
+        "line2": "7",
+        "line3": "16",
+        "line4": ""
+    },
+    {
+        "id": "131",
+        "station": "longyao Road",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "132",
+        "station": "Loushanguan Road",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "133",
+        "station": "Luban Road",
+        "line1": "4",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "134",
+        "station": "Luheng Road",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "135",
+        "station": "Lujiabang Road",
+        "line1": "8",
+        "line2": "9",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "136",
+        "station": "Lujiazui",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "137",
+        "station": "Luonan Xincun",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "138",
+        "station": "Luoshan Road",
+        "line1": "11",
+        "line2": "16",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "139",
+        "station": "Madang Road",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "140",
+        "station": "Malu",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "141",
+        "station": "Meilan Lake",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "142",
+        "station": "Middle Chuangxin Road",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "143",
+        "station": "Middle Huaxia Road",
+        "line1": "16",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "144",
+        "station": "Middle Longhua Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "145",
+        "station": "Middle Yanggao Road",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "146",
+        "station": "Middle Yanji Road",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "147",
+        "station": "Minhang Development Zone",
+        "line1": "5",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "148",
+        "station": "Minsheng Road",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "149",
+        "station": "Nanchen Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "150",
+        "station": "Nanpu Bridge",
+        "line1": "4",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "151",
+        "station": "Nanxiang",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "152",
+        "station": "Nenjiang Road",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "153",
+        "station": "Ningguo Road",
+        "line1": "12",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "154",
+        "station": "North Jiading",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "155",
+        "station": "North Jiangyang Road",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "156",
+        "station": "North Sichuan Road",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "157",
+        "station": "North Waigaoqiao Free Trade Zone",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "158",
+        "station": "North Xizang Road",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "159",
+        "station": "North Yanggao Road",
+        "line1": "12",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "160",
+        "station": "North Zhongshan Road",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "161",
+        "station": "Oriental Sports Center",
+        "line1": "6",
+        "line2": "8",
+        "line3": "11",
+        "line4": ""
+    },
+    {
+        "id": "162",
+        "station": "Panguang Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "163",
+        "station": "Pengpu Xincun",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "164",
+        "station": "People's Square",
+        "line1": "1",
+        "line2": "2",
+        "line3": "8",
+        "line4": ""
+    },
+    {
+        "id": "165",
+        "station": "Pudian Road",
+        "line1": "4",
+        "line2": "6",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "166",
+        "station": "Pudong Avenue",
+        "line1": "4",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "167",
+        "station": "Pudong International Airport",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "168",
+        "station": "Pujiang Town",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "169",
+        "station": "Pusan Road",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "170",
+        "station": "Qibao",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "171",
+        "station": "Qihua Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "172",
+        "station": "Qilianshan Road",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "173",
+        "station": "Qufu Road",
+        "line1": "8",
+        "line2": "12",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "174",
+        "station": "Quyang Road",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "175",
+        "station": "Sanlin",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "176",
+        "station": "Sanmen Road",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "177",
+        "station": "Shangcheng Road",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "178",
+        "station": "Shangda Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "179",
+        "station": "Shanghai Automobile City",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "180",
+        "station": "Shanghai Children's Medical Center",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "181",
+        "station": "Shanghai Circuit",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "182",
+        "station": "Shanghai Circus World",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "183",
+        "station": "Shanghai Indoor Stadium",
+        "line1": "1",
+        "line2": "4",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "184",
+        "station": "Shanghai Library",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "185",
+        "station": "Shanghai Railway Station",
+        "line1": "1",
+        "line2": "3",
+        "line3": "4",
+        "line4": ""
+    },
+    {
+        "id": "186",
+        "station": "Shanghai Science And Technology Museum",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "187",
+        "station": "Shanghai South Railway Station",
+        "line1": "1",
+        "line2": "3",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "188",
+        "station": "Shanghai Stadium",
+        "line1": "4",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "189",
+        "station": "Shanghai Swimming Center",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "190",
+        "station": "Shanghai University",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "191",
+        "station": "Shanghai Zoo",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "192",
+        "station": "Shangnan Road",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "193",
+        "station": "Shendu Highway",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "194",
+        "station": "Shenjiang Road",
+        "line1": "12",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "195",
+        "station": "Sheshan",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "196",
+        "station": "Shiguang Road",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "197",
+        "station": "Shilong Road",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "198",
+        "station": "Shuichan Road",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "199",
+        "station": "Shuicheng Road",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "200",
+        "station": "Shuyuan",
+        "line1": "16",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "201",
+        "station": "Sijing",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "202",
+        "station": "Siping Road",
+        "line1": "8",
+        "line2": "10",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "203",
+        "station": "Songbin Road",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "204",
+        "station": "Songfa Road",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "205",
+        "station": "Songhong Road",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "206",
+        "station": "Songjiang South Railway Station",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "207",
+        "station": "Songjiang Sports Center",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "208",
+        "station": "Songjiang University Town",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "209",
+        "station": "Songjiang Xincheng",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "210",
+        "station": "Songyuan Road",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "211",
+        "station": "South Changjiang Road",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "212",
+        "station": "South Huangpi Road",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "213",
+        "station": "South Lingyan Road",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "214",
+        "station": "South Qilianshan Road",
+        "line1": "13",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "215",
+        "station": "South Shaanxi Road",
+        "line1": "1",
+        "line2": "10",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "216",
+        "station": "South Waigaoqiao Free Trade Zone",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "217",
+        "station": "South Xizang Road",
+        "line1": "4",
+        "line2": "8",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "218",
+        "station": "South Yanggao Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "219",
+        "station": "Tangqiao",
+        "line1": "4",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "220",
+        "station": "Tangzhen",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "221",
+        "station": "Taopu Xincun",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "222",
+        "station": "Tech Park",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "223",
+        "station": "Tiantong Road",
+        "line1": "10",
+        "line2": "12",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "224",
+        "station": "Tieli Road",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "225",
+        "station": "Tilanqiao",
+        "line1": "12",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "226",
+        "station": "Tonghe Xincun",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "227",
+        "station": "Tongji University",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "228",
+        "station": "Waihuanlu",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "229",
+        "station": "Weining Road",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "230",
+        "station": "Wenjing Road",
+        "line1": "5",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "231",
+        "station": "Wenshui Road",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "232",
+        "station": "West Gaoke Road",
+        "line1": "6",
+        "line2": "7",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "233",
+        "station": "West Huaxia Road",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "234",
+        "station": "West Jiading",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "235",
+        "station": "West Jinshajiang Road",
+        "line1": "13",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "236",
+        "station": "West Nanjing Road",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "237",
+        "station": "West Shanghai Railway Station",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "238",
+        "station": "West Yan'an Road",
+        "line1": "3",
+        "line2": "4",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "239",
+        "station": "West Yingao Road",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "240",
+        "station": "West Youyi Road",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "241",
+        "station": "Wild Animal Park",
+        "line1": "16",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "242",
+        "station": "Wujiaochang",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "243",
+        "station": "Wulian Road",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "244",
+        "station": "Wuning Road",
+        "line1": "13",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "245",
+        "station": "Wuwei Road",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "246",
+        "station": "Wuzhou Avenue",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "247",
+        "station": "Xiangyin Road",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "248",
+        "station": "Xiaonanmen",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "249",
+        "station": "Xinchang",
+        "line1": "16",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "250",
+        "station": "Xincun Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "251",
+        "station": "Xingzhi Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "252",
+        "station": "Xingzhong Road",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "253",
+        "station": "Xinjiangwancheng",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "254",
+        "station": "Xintiandi",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "255",
+        "station": "Xinzha Road",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "256",
+        "station": "Xinzhuang",
+        "line1": "1",
+        "line2": "5",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "257",
+        "station": "Xujiahui",
+        "line1": "1",
+        "line2": "9",
+        "line3": "11",
+        "line4": ""
+    },
+    {
+        "id": "258",
+        "station": "Yanchang Road ",
+        "line1": "1",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "259",
+        "station": "Yangshupu Road",
+        "line1": "4",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "260",
+        "station": "Yangsi",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "261",
+        "station": "Yaohua Road",
+        "line1": "7",
+        "line2": "8",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "262",
+        "station": "Yili Road",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "263",
+        "station": "Yindu Road",
+        "line1": "5",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "264",
+        "station": "Yishan Road",
+        "line1": "3",
+        "line2": "4",
+        "line3": "9",
+        "line4": ""
+    },
+    {
+        "id": "265",
+        "station": "Youdian Xincun",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "266",
+        "station": "Youyi Road",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "267",
+        "station": "Yuandong Avenue",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "268",
+        "station": "Yuanshen Stadium",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "269",
+        "station": "Yunjin Road",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "270",
+        "station": "Yunshan Road",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "271",
+        "station": "Yuntai Road",
+        "line1": "7",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "272",
+        "station": "Yuqiao",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "273",
+        "station": "Yuyuan Garden",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "274",
+        "station": "Zhanghuabang",
+        "line1": "3",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "275",
+        "station": "Zhangjiang High Technology Park",
+        "line1": "2",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "276",
+        "station": "Zhaofeng Road",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "277",
+        "station": "Zhaojiabang Road",
+        "line1": "7",
+        "line2": "9",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "278",
+        "station": "Zhenbei Road",
+        "line1": "13",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "279",
+        "station": "Zhenping Road",
+        "line1": "3",
+        "line2": "4",
+        "line3": "7",
+        "line4": ""
+    },
+    {
+        "id": "280",
+        "station": "Zhenru",
+        "line1": "11",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "281",
+        "station": "Zhongchun Road",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "282",
+        "station": "Zhongshan Park",
+        "line1": "2",
+        "line2": "3",
+        "line3": "4",
+        "line4": ""
+    },
+    {
+        "id": "283",
+        "station": "Zhongtan Road",
+        "line1": "3",
+        "line2": "4",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "284",
+        "station": "Zhongxing Road",
+        "line1": "8",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "285",
+        "station": "Zhouhai Road",
+        "line1": "6",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "286",
+        "station": "Zhuanqiao",
+        "line1": "5",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "287",
+        "station": "Ziteng Road",
+        "line1": "10",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    },
+    {
+        "id": "288",
+        "station": "Zuibaichi Park",
+        "line1": "9",
+        "line2": "",
+        "line3": "",
+        "line4": ""
+    }
+]
