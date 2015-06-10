@@ -1,33 +1,40 @@
-function downloadFile(){
-console.log("in downloadFile");
-window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, 
-    function onFileSystemSuccess(fileSystem) {
-        console.log("in onFileSystemSuccess");
-        fileSystem.root.getFile(
-        "dummy.html", {create: true, exclusive: false}, 
-        function gotFileEntry(fileEntry) {
-            var sPath = fileEntry.toURL().replace("dummy.html","");
-            var fileTransfer = new FileTransfer();
-            fileEntry.remove();
-            console.log("sPath: "+sPath);
-            fileTransfer.download(
-                "http://www.w3.org/2011/web-apps-ws/papers/Nitobi.pdf",
-                sPath + "theFile.pdf",
-                function(theFile) {
-                    console.log("download complete: " + theFile.toURI());
-                    showLink(theFile.toURI());
-                },
-                function(error) {
-                    console.log("download error source " + error.source);
-                    console.log("download error target " + error.target);
-                    console.log("upload error code: " + error.code);
-                    console.log("upload error exception: " + error.exception);
-                }
-            );
-        }, fail);
-    }, fail);
-};
+function downloadInCustomDirectory(){
+    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail); 
+}
+
+function gotFS(fileSystem) {
+ fileSystem.root.getDirectory("example2", {create: true}, gotDir);
+}
+
+function gotDir(dirEntry) {
+    dirEntry.getFile("dummy.html", {create: true, exclusive: true}, gotFile);
+}
+
+function gotFile(fileEntry) {
+    var sPath = fileEntry.toURL().replace("dummy.html","");
+    var fileTransfer = new FileTransfer();
+    fileEntry.remove();
+    console.log("sPath: "+sPath);
+    fileTransfer.download(
+        "http://www.icosky.com/icon/png/Animal/Care%20Bears/Funshine%20Bear.png",
+        sPath + "myImage.png",
+        function(theFile) {
+            console.log("download complete: " + theFile.toURI());
+            showLink(theFile.toURI());
+        },
+        function(error) {
+            console.log("download error source " + error.source);
+            console.log("download error target " + error.target);
+            console.log("upload error code: " + error.code);
+            console.log("upload error exception: " + error.exception);
+        }
+        );
+}
 
 function fail(){
     console.log("download FAIL !!");
+}
+
+function downloadInCustomDirectory(){
+    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail); 
 }
