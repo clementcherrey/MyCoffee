@@ -9,7 +9,7 @@
  	}); 	
 
  	//****FOR PHONE*****//
- 	document.addEventListener("deviceready", deviceready, true);
+ 	// document.addEventListener("deviceready", deviceready, true);
  }
  var db;
 
@@ -134,7 +134,7 @@ function dbReady() {
 //////////**************************************************///////////////
 //////////******************* ASYNC LOADING ****************///////////////
 //link to the javascipt in the bottom of the html
-function ready() {
+function loadTheMapScript() {
       var script = document.createElement('script');
       script.type = 'text/javascript';
       script.src = 'http://maps.google.cn/maps/api/js?region=cn&language=en-US&sensor=true&'+'callback=initialized';
@@ -329,7 +329,7 @@ function getMyPos() {
 
 	console.log("in getMyPos");
 	var options = {
-		enableHighAccuracy : true,
+		enableHighAccuracy : false,
 		maximumAge : 1000,
 		timeout : 4000
 	};

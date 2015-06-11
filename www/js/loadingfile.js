@@ -7,7 +7,7 @@ function gotFS(fileSystem) {
 }
 
 function gotDir(dirEntry) {
-    dirEntry.getFile("dummy.html", {create: true, exclusive: true}, gotFile);
+    dirEntry.getFile("dummy.html", {create: true, exclusive:true}, gotFile);
 }
 
 function gotFile(fileEntry) {
@@ -19,7 +19,8 @@ function gotFile(fileEntry) {
         "http://www.icosky.com/icon/png/Animal/Care%20Bears/Funshine%20Bear.png",
         sPath + "myImage.png",
         function(theFile) {
-            console.log("download complete: " + theFile.toURI());
+            $('#mybigdivforimage').css('background-image', 'url(\'' + sPath + '/' +  'myImage.png'+ '\')'); 
+            console.log("download complete: " + theFile.toURL());
             showLink(theFile.toURI());
         },
         function(error) {
@@ -33,8 +34,4 @@ function gotFile(fileEntry) {
 
 function fail(){
     console.log("download FAIL !!");
-}
-
-function downloadInCustomDirectory(){
-    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail); 
 }
