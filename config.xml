@@ -15,7 +15,7 @@
               <icon src="res/android/icon-xhdpi.png" density="xhdpi" />
      </platform>
     
-    <content src="prepocess.html" />
+    <content src="devpage2.html" />
     <access origin="*" />
 </widget>
 	

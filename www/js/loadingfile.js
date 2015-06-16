@@ -3,7 +3,7 @@ function downloadInCustomDirectory(){
 }
 
 function gotFS(fileSystem) {
- fileSystem.root.getDirectory("example2", {create: true}, gotDir);
+ fileSystem.root.getDirectory("maptest", {create: true}, gotDir);
 }
 
 function gotDir(dirEntry) {
@@ -16,7 +16,7 @@ function gotFile(fileEntry) {
     fileEntry.remove();
     console.log("sPath: "+sPath);
     fileTransfer.download(
-        "http://www.icosky.com/icon/png/Animal/Care%20Bears/Funshine%20Bear.png",
+        "https://maps.googleapis.com/maps/api/staticmap?region=cn&language=en-US&center=31.232844,%20121.47537&zoom=17&size=640x640&markers=color:orange%7Clabel:A%7C31.232844,%20121.47537&sensor=false",
         sPath + "myImage.png",
         function(theFile) {
             $('#mybigdivforimage').css('background-image', 'url(\'' + sPath + '/' +  'myImage.png'+ '\')'); 

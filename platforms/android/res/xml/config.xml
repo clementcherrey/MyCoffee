@@ -20,6 +20,6 @@
         Apache Cordova Team
     </author>
     <icon src="res/icon.png" />
-    <content src="prepocess.html" />
+    <content src="devpage2.html" />
     <access origin="*" />
 </widget>

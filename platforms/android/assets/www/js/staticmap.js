@@ -1,0 +1,1 @@
+https://maps.googleapis.com/maps/api/staticmap?region=cn&language=en-US&center=31.232844,%20121.47537&zoom=17&size=640x640&markers=color:orange%7Clabel:A%7C31.232844,%20121.47537&sensor=false

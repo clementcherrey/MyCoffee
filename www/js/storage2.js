@@ -4,12 +4,12 @@
  function init() {
  	console.log("in init");
  	//****FOR BROWSER*****//
- 	$( document ).ready(function() {
- 		deviceready();
- 	}); 	
+ 	// $( document ).ready(function() {
+ 	// 	deviceready();
+ 	// }); 	
 
  	//****FOR PHONE*****//
- 	// document.addEventListener("deviceready", deviceready, true);
+ 	document.addEventListener("deviceready", deviceready, true);
  }
  var db;
 
@@ -32,11 +32,11 @@
 //TEST hide navbar footer
 	// $("#gpsLoading").hide();
  // suppress drop table
- tx.executeSql('DROP TABLE store');
- tx.executeSql('DROP TABLE subway');
- tx.executeSql('DROP TABLE storeSub');
- tx.executeSql('DROP TABLE contentList');
- tx.executeSql('DROP TABLE userParam');
+ // tx.executeSql('DROP TABLE store');
+ // tx.executeSql('DROP TABLE subway');
+ // tx.executeSql('DROP TABLE storeSub');
+ // tx.executeSql('DROP TABLE contentList');
+ // tx.executeSql('DROP TABLE userParam');
 
  tx.executeSql('create table if not exists store('
  	+ ' id INTEGER  PRIMARY KEY, ' 

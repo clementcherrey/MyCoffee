@@ -89,7 +89,7 @@ function initDistCalc2(myOrigin, callcall) {
 	// console.log ("number of store : " + currentDiff.length);
 	var divbytwenty = currentDiff.length / 20;
 	// test for new limit to replace divby twenty
-	var nbOfLoop = 2
+	var nbOfLoop = 3
 
 	syncLoop(nbOfLoop, function(loop) {
 		var j = loop.iteration() * 20;
@@ -131,7 +131,7 @@ function calculateDistances2(myOrigin,valueId, tableLL, callback) {
 	service.getDistanceMatrix( {
 		origins : [ origin ],
 		destinations : tableLL,
-		travelMode : google.maps.TravelMode.DRIVING,
+		travelMode : google.maps.TravelMode.WALKING,
 		unitSystem : google.maps.UnitSystem.METRIC,
 		avoidHighways : false,
 		avoidTolls : false

@@ -48,6 +48,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/prepocess.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/prepocess2.html \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/ajax/costa.json \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/ajax/costaPregeo.json \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/ajax/phones.json \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/ajax/SBpregeocod.json \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/ajax/starbucks.json \
@@ -334,9 +335,11 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/mapshop.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/mapshop2.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/searchbar.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/staticmap.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/storage2.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/storage3.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/testsub.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/testWalkingDistance.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/org.apache.cordova.file \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/org.apache.cordova.file/www \

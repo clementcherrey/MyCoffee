@@ -4,7 +4,7 @@ var addressArray = [];
 //to get the coordinate from the address
 function jsonTransform() {
 	console.log("in json function");
-	$.getJSON("ajax/SBpregeocod.json",function(data) {
+	$.getJSON("ajax/costaPregeo.json",function(data) {
 		$.each(data,function(key, val) {	
 			addressArray.push({id: val.id, name: val.name,addresseng: val.addresseng, addresscn: val.addresscn});
 		});
@@ -44,10 +44,10 @@ function initializeGeo() {
 			loop.next();
 		}
 		// SUBWAY GOOGLE
-		codeAddressGoogle(addressArray[loop.iteration()].station, tmpId, callnext);
+		// codeAddressGoogle(addressArray[loop.iteration()].station, tmpId, callnext);
 
 		// STORE BAIDU
-		// codeAddressBaidu(addressArray[loop.iteration()].addresscn, tmpId, callnext);
+		codeAddressBaidu(addressArray[loop.iteration()].addresscn, tmpId, callnext);
 
 	}, function (){
 		// console.log("finish !")
