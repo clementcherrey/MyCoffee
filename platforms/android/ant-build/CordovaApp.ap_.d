@@ -334,6 +334,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/mapOperation.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/mapshop.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/mapshop2.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/morePage.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/searchbar.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/staticmap.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/storage2.js \

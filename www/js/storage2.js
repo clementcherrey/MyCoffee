@@ -4,12 +4,12 @@
  function init() {
  	console.log("in init");
  	//****FOR BROWSER*****//
- 	// $( document ).ready(function() {
- 	// 	deviceready();
- 	// }); 	
+ 	$( document ).ready(function() {
+ 		deviceready();
+ 	}); 	
 
  	//****FOR PHONE*****//
- 	document.addEventListener("deviceready", deviceready, true);
+ 	// document.addEventListener("deviceready", deviceready, true);
  }
  var db;
 
@@ -32,11 +32,11 @@
 //TEST hide navbar footer
 	// $("#gpsLoading").hide();
  // suppress drop table
- // tx.executeSql('DROP TABLE store');
- // tx.executeSql('DROP TABLE subway');
- // tx.executeSql('DROP TABLE storeSub');
- // tx.executeSql('DROP TABLE contentList');
- // tx.executeSql('DROP TABLE userParam');
+ tx.executeSql('DROP TABLE store');
+ tx.executeSql('DROP TABLE subway');
+ tx.executeSql('DROP TABLE storeSub');
+ tx.executeSql('DROP TABLE contentList');
+ tx.executeSql('DROP TABLE userParam');
 
  tx.executeSql('create table if not exists store('
  	+ ' id INTEGER  PRIMARY KEY, ' 
@@ -129,6 +129,8 @@ function dbReady() {
 	$("#headline").on('pagebeforeshow',headlinePreDisplay);
 
 	$("#main").on('pageshow', initMap);
+
+	$("#emailMe").on('vclick', emailMeFunction);
 }
 
 //////////**************************************************///////////////
@@ -469,18 +471,33 @@ function jsonpopulate() {
 			.transaction(function(tx) {
 				$.each(data,
 					function(key, val) {
+	console.log(val.id +", "+val.wifi+", "+val.latte+", "+val.brand+", "+val.lat+", "+val.lng+", "+val.addresseng+", "+val.addresscn+", "
+		+val.open1 +", "+val.description+", "+val.phone+", "+val.website+", "+val.name);
+
 						tx
 						.executeSql(
-							"insert into store(id,wifi,latte,brand,name,addresseng,lat,lng) values(?,?,?,?,?,?,?,?)",
+							"insert into store(id,wifi,latte,brand,name,addresseng,addresscn,open1,open2,open3,open4,description,phone,website,lat,lng) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
 							[
 							val.id,
 							val.wifi,
 							val.latte,
 							val.brand,
 							val.name,
-							val.address,
+							val.addresseng,
+							val.addresscn,
+							val.open1,
+							val.open2,
+							val.open3,
+							val.open4,
+							val.description,
+							val.phone,
+							val.website,
 							val.lat,
-							val.lng ]);
+							val.lng ], 
+							function(){console.log("Success!");},
+							function errorHandler(transaction, error) {
+       						 alert("Error : " + error.message);
+   							 });
 					});
 
 				console.log("after insert");

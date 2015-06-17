@@ -3,9 +3,9 @@ var fs = require('fs');
 var http = require('http');
 
 // -------------- START TEST -------------
-var file = fs.createWriteStream("mypng.png");
-var baiduUrl = "blob:https%3A//mega.co.nz/417d98b4-b731-40f3-9363-26dfc58d8187";
-var request = https.get(baiduUrl,
+var file = fs.createWriteStream("myGODpng.png");
+var baiduUrl = "http://mycoffee.site11.com/1633.png";
+var request = http.get(baiduUrl,
  function(response) {
   response.pipe(file);
 });
@@ -27,8 +27,8 @@ fs.readFile('./www/ajax/starbucks.json', 'utf8', function (err, data) {
     if (err) throw err; // we'll not consider error handling for now
     var json = JSON.parse(data);
     console.log(json.length);
-    for (var i = json.length - 1; i >= json.length - 3; i--) {
+    for (var i = json.length - 1; i >= json.length - 50; i--) {
     	console.log("id: "+json[i].id +", store name: "+ json[i].name);
-    	// downloadStaticMap(json[i].id,json[i].lat,json[i].lng);
+    			downloadStaticMap(json[i].id,json[i].lat,json[i].lng);
     };
 });

@@ -129,6 +129,8 @@ function dbReady() {
 	$("#headline").on('pagebeforeshow',headlinePreDisplay);
 
 	$("#main").on('pageshow', initMap);
+
+	$("#emailMe").on('vclick', emailMeFunction);
 }
 
 //////////**************************************************///////////////
