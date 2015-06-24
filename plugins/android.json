@@ -33,6 +33,16 @@
                         {
                             "xml": "<feature name=\"FileTransfer\"><param name=\"android-package\" value=\"org.apache.cordova.filetransfer.FileTransfer\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"EmailComposer\"><param name=\"android-package\" value=\"de.appplant.cordova.emailcomposer.EmailComposer\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"Zip\"><param name=\"android-package\" value=\"org.apache.cordova.Zip\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -47,6 +57,12 @@
             "PACKAGE_NAME": "com.coffe.mycoffee"
         },
         "org.apache.cordova.file-transfer": {
+            "PACKAGE_NAME": "com.coffe.mycoffee"
+        },
+        "org.chromium.zip": {
+            "PACKAGE_NAME": "com.coffe.mycoffee"
+        },
+        "de.appplant.cordova.plugin.email-composer": {
             "PACKAGE_NAME": "com.coffe.mycoffee"
         }
     },

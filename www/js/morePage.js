@@ -1,4 +1,16 @@
 function emailMeFunction(){
-	console.log("in emailMeFunction");
-	window.location.href = "mailto:?subject=Something to share with you...";
+	console.log("emailMeFunction triggered!");
+	cordova.plugins.email.isAvailable(
+		function (isAvailable) {
+			console.log("isAvailable: " +isAvailable);
+			console.log('Email service isAvailable');
+			cordova.plugins.email.open({
+				to:      'clementcherrey518@163.com',
+				cc:      '',
+				bcc:     '',
+				subject: 'Greetings',
+				body:    'How are you? Nice greetings from my app'
+			});
+		}
+		);
 }

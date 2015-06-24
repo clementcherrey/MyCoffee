@@ -83,6 +83,9 @@
  	+'FOREIGN KEY (storeId) REFERENCES store (id),' 
  	+'FOREIGN KEY (subwayId) REFERENCES subway (id),' 
  	+'PRIMARY KEY (storeId, subwayId))');
+
+// tx.executeSql("insert into userParam(id,paramname,value) values(?,?,?)",[1,"mapLoaded","no"]);
+
 }
 
 function errorHandler(e) {
@@ -130,6 +133,14 @@ function dbReady() {
 
 	$("#main").on('pageshow', initMap);
 
+	// FOR EMAIL PLUGIN TEST
+	// emailMeFunction();
+
+	// FOR DOWNLOAD AND UNZIP TEST
+	// if(userInfo.mapLoaded != "yes"){
+	// 	downloadStaticMap();
+	// }
+
 	$("#emailMe").on('vclick', emailMeFunction);
 }
 
@@ -165,6 +176,10 @@ var storeInfo = {
 	id : null,
 	distance: null,
 	result : null
+};
+
+var userInfo = {
+	mapLoaded : null
 };
 
 var subway ={
@@ -352,11 +367,11 @@ function getMyPos() {
 		console.log(test1 + " " + test2 + " " + test3 + " " + test4);
 		if (test1 && test2 && test3 && test4) {
 			console.log("test succeed");
-			mapInfo.currentLat = position.coords.latitude;
-			mapInfo.currentLng = position.coords.longitude;
+			mapInfo.currentLat = position.coords.latitude - 0.0021;
+			mapInfo.currentLng = position.coords.longitude + 0.0042;
 			preCalc();
 		} else {
-			// alert(" You are not in Shanghai. Impossible to calculate distances from your current position");
+			console.log("You are not in Shanghai");
 			preCalc();
 		}
 	};
@@ -374,6 +389,9 @@ function getMyPos() {
 
 function jsonpopulate() {
 	// alert("in json function");
+
+
+
 	$.getJSON("ajax/storeSub.json",
 		function(data) {
 			// alert(data);
@@ -471,18 +489,35 @@ function jsonpopulate() {
 			.transaction(function(tx) {
 				$.each(data,
 					function(key, val) {
+	// console.log(val.id +", "+val.wifi+", "+val.latte+", "+val.brand+", "+val.lat+", "+val.lng+", "+val.addresseng+", "+val.addresscn+", "
+	// 	+val.open1 +", "+val.description+", "+val.phone+", "+val.website+", "+val.name);
+
 						tx
 						.executeSql(
-							"insert into store(id,wifi,latte,brand,name,addresseng,lat,lng) values(?,?,?,?,?,?,?,?)",
+							"insert into store(id,wifi,latte,brand,name,addresseng,addresscn,open1,open2,open3,open4,description,phone,website,lat,lng) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
 							[
 							val.id,
 							val.wifi,
 							val.latte,
 							val.brand,
 							val.name,
-							val.address,
+							val.addresseng,
+							val.addresscn,
+							val.open1,
+							val.open2,
+							val.open3,
+							val.open4,
+							val.description,
+							val.phone,
+							val.website,
 							val.lat,
-							val.lng ]);
+							val.lng ], 
+							function(){
+								// console.log("Success!");
+							},
+							function errorHandler(transaction, error) {
+       						 alert("Error : " + error.message);
+   							 });
 					});
 
 				console.log("after insert");

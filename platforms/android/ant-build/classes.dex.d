@@ -6,6 +6,9 @@
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/com/coffe/mycoffee/R$string.class \
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/com/coffe/mycoffee/R$xml.class \
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/com/coffe/mycoffee/R.class \
+/Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/de/appplant/cordova/emailcomposer/EmailComposer$1.class \
+/Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/de/appplant/cordova/emailcomposer/EmailComposer$2.class \
+/Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/de/appplant/cordova/emailcomposer/EmailComposer.class \
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/org/apache/cordova/file/AssetFilesystem.class \
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/org/apache/cordova/file/ContentFilesystem.class \
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/org/apache/cordova/file/DirectoryManager.class \
@@ -62,4 +65,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$TrackingInputStream.class \
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer.class \
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileUploadResult.class \
+/Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/org/apache/cordova/Zip$1.class \
+/Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/org/apache/cordova/Zip$ProgressEvent.class \
+/Users/admin/Desktop/mycoffee/platforms/android/ant-build/classes/org/apache/cordova/Zip.class \
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/dexedLibs/classes-6769d2b1bb3f2024940d6bf96fa9181c.jar \

@@ -159,6 +159,25 @@ module.exports = [
         "clobbers": [
             "window.FileTransfer"
         ]
+    },
+    {
+        "file": "plugins/org.chromium.zip/zip.js",
+        "id": "org.chromium.zip.Zip",
+        "clobbers": [
+            "zip"
+        ]
+    },
+    {
+        "file": "plugins/org.chromium.zip/tests/tests.js",
+        "id": "org.chromium.zip.tests"
+    },
+    {
+        "file": "plugins/de.appplant.cordova.plugin.email-composer/www/email_composer.js",
+        "id": "de.appplant.cordova.plugin.email-composer.EmailComposer",
+        "clobbers": [
+            "cordova.plugins.email",
+            "plugin.email"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -166,7 +185,9 @@ module.exports.metadata =
 {
     "org.apache.cordova.geolocation": "0.3.12",
     "org.apache.cordova.file": "1.3.3",
-    "org.apache.cordova.file-transfer": "0.5.0"
+    "org.apache.cordova.file-transfer": "0.5.0",
+    "org.chromium.zip": "2.1.0",
+    "de.appplant.cordova.plugin.email-composer": "0.8.2"
 }
 // BOTTOM OF METADATA
 });

@@ -4,12 +4,12 @@
  function init() {
  	console.log("in init");
  	//****FOR BROWSER*****//
- 	$( document ).ready(function() {
- 		deviceready();
- 	}); 	
+ 	// $( document ).ready(function() {
+ 	// 	deviceready();
+ 	// }); 	
 
  	//****FOR PHONE*****//
- 	// document.addEventListener("deviceready", deviceready, true);
+ 	document.addEventListener("deviceready", deviceready, true);
  }
  var db;
 
@@ -32,11 +32,11 @@
 //TEST hide navbar footer
 	// $("#gpsLoading").hide();
  // suppress drop table
- tx.executeSql('DROP TABLE store');
- tx.executeSql('DROP TABLE subway');
- tx.executeSql('DROP TABLE storeSub');
- tx.executeSql('DROP TABLE contentList');
- tx.executeSql('DROP TABLE userParam');
+ // tx.executeSql('DROP TABLE store');
+ // tx.executeSql('DROP TABLE subway');
+ // tx.executeSql('DROP TABLE storeSub');
+ // tx.executeSql('DROP TABLE contentList');
+ // tx.executeSql('DROP TABLE userParam');
 
  tx.executeSql('create table if not exists store('
  	+ ' id INTEGER  PRIMARY KEY, ' 
@@ -83,6 +83,9 @@
  	+'FOREIGN KEY (storeId) REFERENCES store (id),' 
  	+'FOREIGN KEY (subwayId) REFERENCES subway (id),' 
  	+'PRIMARY KEY (storeId, subwayId))');
+
+// tx.executeSql("insert into userParam(id,paramname,value) values(?,?,?)",[1,"mapLoaded","no"]);
+
 }
 
 function errorHandler(e) {
@@ -130,6 +133,14 @@ function dbReady() {
 
 	$("#main").on('pageshow', initMap);
 
+	// FOR EMAIL PLUGIN TEST
+	// emailMeFunction();
+
+	// FOR DOWNLOAD AND UNZIP TEST
+	// if(userInfo.mapLoaded != "yes"){
+	// 	downloadStaticMap();
+	// }
+
 	$("#emailMe").on('vclick', emailMeFunction);
 }
 
@@ -165,6 +176,10 @@ var storeInfo = {
 	id : null,
 	distance: null,
 	result : null
+};
+
+var userInfo = {
+	mapLoaded : null
 };
 
 var subway ={
@@ -352,11 +367,11 @@ function getMyPos() {
 		console.log(test1 + " " + test2 + " " + test3 + " " + test4);
 		if (test1 && test2 && test3 && test4) {
 			console.log("test succeed");
-			mapInfo.currentLat = position.coords.latitude;
-			mapInfo.currentLng = position.coords.longitude;
+			mapInfo.currentLat = position.coords.latitude - 0.0021;
+			mapInfo.currentLng = position.coords.longitude + 0.0042;
 			preCalc();
 		} else {
-			// alert(" You are not in Shanghai. Impossible to calculate distances from your current position");
+			console.log("You are not in Shanghai");
 			preCalc();
 		}
 	};
@@ -374,6 +389,9 @@ function getMyPos() {
 
 function jsonpopulate() {
 	// alert("in json function");
+
+
+
 	$.getJSON("ajax/storeSub.json",
 		function(data) {
 			// alert(data);
@@ -471,8 +489,8 @@ function jsonpopulate() {
 			.transaction(function(tx) {
 				$.each(data,
 					function(key, val) {
-	console.log(val.id +", "+val.wifi+", "+val.latte+", "+val.brand+", "+val.lat+", "+val.lng+", "+val.addresseng+", "+val.addresscn+", "
-		+val.open1 +", "+val.description+", "+val.phone+", "+val.website+", "+val.name);
+	// console.log(val.id +", "+val.wifi+", "+val.latte+", "+val.brand+", "+val.lat+", "+val.lng+", "+val.addresseng+", "+val.addresscn+", "
+	// 	+val.open1 +", "+val.description+", "+val.phone+", "+val.website+", "+val.name);
 
 						tx
 						.executeSql(
@@ -494,7 +512,9 @@ function jsonpopulate() {
 							val.website,
 							val.lat,
 							val.lng ], 
-							function(){console.log("Success!");},
+							function(){
+								// console.log("Success!");
+							},
 							function errorHandler(transaction, error) {
        						 alert("Error : " + error.message);
    							 });

@@ -1,37 +1,28 @@
-function downloadInCustomDirectory(){
-    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail); 
-}
+function loadStaticMap(storeID,divID,listID){
+	console.log("loadStaticMap");
+	window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
 
-function gotFS(fileSystem) {
- fileSystem.root.getDirectory("maptest", {create: true}, gotDir);
-}
+	function gotFS (fileSystem) {
+		console.log("in gotFS");
+ 		fileSystem.root.getDirectory("example2", {create: false}, gotDir);
+	}
 
-function gotDir(dirEntry) {
-    dirEntry.getFile("dummy.html", {create: true, exclusive:true}, gotFile);
-}
+	var gotDir = function(dirEntry) {
+		console.log("in gotDir");
+		var tmpFile = "myImage.png";
+        dirEntry.getFile(tmpFile, {create: false, exclusive:true}, gotFile);
+	}
 
-function gotFile(fileEntry) {
-    var sPath = fileEntry.toURL().replace("dummy.html","");
-    var fileTransfer = new FileTransfer();
-    fileEntry.remove();
-    console.log("sPath: "+sPath);
-    fileTransfer.download(
-        "https://maps.googleapis.com/maps/api/staticmap?region=cn&language=en-US&center=31.232844,%20121.47537&zoom=17&size=640x640&markers=color:orange%7Clabel:A%7C31.232844,%20121.47537&sensor=false",
-        sPath + "myImage.png",
-        function(theFile) {
-            $('#mybigdivforimage').css('background-image', 'url(\'' + sPath + '/' +  'myImage.png'+ '\')'); 
-            console.log("download complete: " + theFile.toURL());
-            showLink(theFile.toURI());
-        },
-        function(error) {
-            console.log("download error source " + error.source);
-            console.log("download error target " + error.target);
-            console.log("upload error code: " + error.code);
-            console.log("upload error exception: " + error.exception);
-        }
-        );
-}
+	var gotFile = function(fileEntry) {
+		console.log("in gotFile");
+    	var sPath = fileEntry.toURL();
+    	console.log("sPath = "+ sPath);
+    	$('#'+divID).css('height','400px');
+    	$('#'+divID).css('background-image', 'url(\'' + sPath + '\')');
+    	$('#'+listID).listview('refresh');
+	}
 
-function fail(){
-    console.log("download FAIL !!");
+	var fail = function(){
+    	console.log("loadStaticMap FAIL somewhere!!");
+	}
 }

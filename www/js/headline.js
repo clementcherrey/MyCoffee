@@ -174,13 +174,19 @@ function headlineNewDisplay(station,sublines) {
 					+tmpWebsite
 					+ '</span></li>');
 			};
-			$('#store-data').listview('refresh');
 
+			$('#store-data').listview('refresh');
+			
+			$('#store-data')
+				.append(
+					'<li style="white-space:normal;">'
+					+'<div id="detail-staticMap">'
+					+ '</div></li>');
 			break;
 		}
 	}
 	$('#store-data').listview('refresh');
-
+	loadStaticMap(storeInfo.id,"detail-staticMap","store-data");
 }
 
 ///////////////*******************************//////////////////

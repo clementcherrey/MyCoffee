@@ -320,6 +320,8 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/distancesub2.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/distancesub3.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/downloadImg.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/downloading.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/downloadingFile.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/geocoding.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/gmapLocal.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/headline.js \
@@ -327,8 +329,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/Init.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/jquery-1.11.1.min.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/jquery.mobile-1.4.5.min.js \
-/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/loading.js \
-/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/loadingfile.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/loadingFile.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/main.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/map.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/mapOperation.js \
@@ -341,8 +342,12 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/storage3.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/testsub.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/js/testWalkingDistance.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/de.appplant.cordova.plugin.email-composer \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/org.apache.cordova.file \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/org.chromium.zip \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/de.appplant.cordova.plugin.email-composer/www \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/de.appplant.cordova.plugin.email-composer/www/email_composer.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/org.apache.cordova.file/www \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/org.apache.cordova.file/www/android \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/org.apache.cordova.file/www/DirectoryEntry.js \
@@ -369,4 +374,7 @@
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www/FileTransfer.js \
 /Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www/FileTransferError.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/org.chromium.zip/tests \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/org.chromium.zip/zip.js \
+/Users/admin/Desktop/mycoffee/platforms/android/assets/www/plugins/org.chromium.zip/tests/tests.js \
 /Users/admin/Desktop/mycoffee/platforms/android/ant-build/AndroidManifest.xml \

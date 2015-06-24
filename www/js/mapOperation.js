@@ -124,9 +124,9 @@ function initMarkers(){
 	var myPos = new google.maps.LatLng(mapInfo.currentLat,mapInfo.currentLng);
 	// mapInfo.currentLat =  31.205451999999998;
 	// mapInfo.currentLng = 121.4577775;
-	// test correction GPS
-	var customlat = mapInfo.currentLat - 0.0021;
-	var customlng = mapInfo.currentLng + 0.0042;
+	// remove GPS correction
+	var customlat = mapInfo.currentLat + 0.0021;
+	var customlng = mapInfo.currentLng - 0.0042;
 	var custompos = new google.maps.LatLng(customlat,customlng);
 
 	markers.push( new google.maps.Marker({
