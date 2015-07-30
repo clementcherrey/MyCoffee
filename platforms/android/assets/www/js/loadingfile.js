@@ -3,13 +3,15 @@ function loadStaticMap(storeID,divID,listID){
 	window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
 
 	function gotFS (fileSystem) {
+		console.log("storeID= " +storeID);
+		console.log("divID= " +divID);
 		console.log("in gotFS");
- 		fileSystem.root.getDirectory("example2", {create: false}, gotDir);
+ 		fileSystem.root.getDirectory("coffeeMap", {create: false}, gotDir);
 	}
 
 	var gotDir = function(dirEntry) {
 		console.log("in gotDir");
-		var tmpFile = "myImage.png";
+		var tmpFile = storeID+".png";
         dirEntry.getFile(tmpFile, {create: false, exclusive:true}, gotFile);
 	}
 

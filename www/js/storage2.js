@@ -17,7 +17,10 @@
  	console.log("in deviceready");
  	// loadScript();
  	db = window.openDatabase("store", "1.0", "store_list", 10000000);
- 	db.transaction(setup, errorHandler, dbReady);
+ 	db.transaction(setupDatabase, errorHandler, tableCreated);
+ 	// init listener and graphics
+ 	initHomeDisplay();
+ 	loadTheMapScript();
  }
 
 // function loadScript() {
@@ -28,15 +31,16 @@
 // }
 
 
- function setup(tx) {
-//TEST hide navbar footer
-	// $("#gpsLoading").hide();
+ function setupDatabase(tx) {
  // suppress drop table
- // tx.executeSql('DROP TABLE store');
- // tx.executeSql('DROP TABLE subway');
- // tx.executeSql('DROP TABLE storeSub');
- // tx.executeSql('DROP TABLE contentList');
- // tx.executeSql('DROP TABLE userParam');
+	 // tx.executeSql('DROP TABLE store');
+	 // tx.executeSql('DROP TABLE subway');
+	 // tx.executeSql('DROP TABLE storeSub');
+	 // tx.executeSql('DROP TABLE contentList');
+	 // tx.executeSql('DROP TABLE userParam');
+	 // tx.executeSql('DROP TABLE brand');
+	 // tx.executeSql('DROP TABLE onlinePack');
+
 
  tx.executeSql('create table if not exists store('
  	+ ' id INTEGER  PRIMARY KEY, ' 
@@ -60,10 +64,29 @@
  	+ 'id INTEGER PRIMARY KEY,' 
  	+ 'content TEXT)');
 
+tx.executeSql('create table if not exists brand('
+ 	+ 'id INTEGER PRIMARY KEY,' 
+ 	+ 'name TEXT)');
+
+tx.executeSql('create table if not exists onlinePack('
+ 	+ 'id INTEGER PRIMARY KEY,' 
+ 	+ 'url TEXT,'
+ 	+ 'brand_id INTEGER,'
+ 	+ 'complete BOOLEAN,'
+ 	+ 'FOREIGN KEY (brand_id) REFERENCES brand (id))');
+
   tx.executeSql('create table if not exists userParam('
  	+ 'id INTEGER PRIMARY KEY,'
- 	+ 'paramname TEXT,'
- 	+ 'value TEXT)');
+ 	+ 'userName TEXT,'
+ 	+ 'firstTime BOOLEAN,'
+ 	+ 'geolocTap BOOLEAN,'
+ 	+ 'searchTap BOOLEAN,'
+ 	+ 'downloadSM BOOLEAN,'
+ 	+ 'unzipSM BOOLEAN,'
+ 	+ 'welcomeMsg INTEGER,'
+ 	+ 'lastLat FLOAT,'
+ 	+ 'lastLng FLOAT,'
+ 	+ 'vpn BOOLEAN)');
 
  tx.executeSql('create table if not exists subway('
  	+ ' id INTEGER PRIMARY KEY,' 	
@@ -84,24 +107,19 @@
  	+'FOREIGN KEY (subwayId) REFERENCES subway (id),' 
  	+'PRIMARY KEY (storeId, subwayId))');
 
-// tx.executeSql("insert into userParam(id,paramname,value) values(?,?,?)",[1,"mapLoaded","no"]);
-
 }
 
 function errorHandler(e) {
 	console.log("errorHandler report: " +e.message);
 }
 
-function dbReady() {
+function tableCreated() {
  	// loadOldList();
  	// console.log("in db ready");
  	db.transaction(function(tx) {
  		tx.executeSql("select * from store order by id asc", [], populatedb,
  			errorHandler);
  	});
-
- 	// AFTER CUSTOMIZATION print the new coordinates in the console 
-	$('#printNewLatLng').on("tap", printNewCoordinates);
 
 	// the 2 buttons to use geolocation
 	$('#getLocation').on("tap", getMyPos);
@@ -132,16 +150,7 @@ function dbReady() {
 	$("#headline").on('pagebeforeshow',headlinePreDisplay);
 
 	$("#main").on('pageshow', initMap);
-
-	// FOR EMAIL PLUGIN TEST
-	// emailMeFunction();
-
-	// FOR DOWNLOAD AND UNZIP TEST
-	// if(userInfo.mapLoaded != "yes"){
-	// 	downloadStaticMap();
-	// }
-
-	$("#emailMe").on('vclick', emailMeFunction);
+	
 }
 
 //////////**************************************************///////////////
@@ -209,7 +218,26 @@ var contents = [];
 function populatedb(tx, results) {
 	if (results.rows.length == 0) {
 		// alert("no data");
-		jsonpopulate();
+		jsonpopulate();	
+		// Create a new user
+		tx.executeSql("insert into userParam(id,userName,firstTime,geolocTap,searchTap,downloadSM,unzipSM,welcomeMsg,vpn) values(?,?,?,?,?,?,?,?,?)",
+			[0,"localUser",false,false,false,false,false,0,false]);
+
+		tx.executeSql("insert into brand(name) values(?)",
+			["costa"]);
+
+		tx.executeSql("insert into brand(name) values(?)",
+			["starbucks"]);
+
+		tx.executeSql("insert into onlinePack(url,brand_id,complete) values(?,?,?)",
+			["http://mycoffee.site11.com/costaMap.zip",1,false]);
+
+		tx.executeSql("insert into onlinePack(url,brand_id,complete) values(?,?,?)",
+			["http://mycoffee.site11.com/SB_1.zip",2,false]);
+
+		// tx.executeSql("insert into onlinePack(url,brand_id,complete) values(?,?,?)",
+		// 	["http://mycoffee.site11.com/SB_2.zip",2,false]);
+ 	initListener();
 	} else {
 		//old version data loading
 		console.log("db already full");
@@ -258,26 +286,42 @@ function checkPreviousList(){
 function storeCurrentList(){
 	console.log("in save current list");
 	db.transaction(function(tx) {
-		var tmpContent = $('#store-list').html();
-		var contentString = new String(tmpContent);
-		// console.log(tmpContent);		
-		tx.executeSql("insert into contentList(id,content) values(?,?)",
-			[0, tmpContent]);
-		tx.executeSql("insert into contentList(id,content) values(?,?)",
-			[1, "test test"]);
+		tx.executeSql("DROP TABLE contentList",[], 
+    		function(tx,results){console.log("Successfully Dropped")},
+    		function(tx,error){console.log("Could not delete")}
+		);
+		tx.executeSql('create table contentList('
+ 			+ 'id INTEGER PRIMARY KEY,' 
+ 			+ 'content TEXT)',[], 
+    		function(tx,results){console.log("Successfully created contentList")},
+    		function(tx,error){console.log("Could not create contentList")}
+		);
+
+		console.log("number of li selected: "+ $( '#store-list li').length);
+
+		$('#store-list li').each(function(i) {
+			console.log("this = "+ this);
+  			var tmpContent = new String($(this).html());
+  			console.log(tmpContent);		
+  			tx.executeSql("insert into contentList(content) values(?)",
+			[tmpContent], 
+    		function(tx,results){console.log("Successfully inserted")},
+    		function(tx,error){console.log("Could not insert")});
+		});
 	});
 }
 
 function loadOldList(tx,results){
 	// console.log("in Load list");
-	// hide button for geolocation
-	$("#twobutt").empty();
-	// show footer
-	$("#homefooter").show();
 	if (results.rows.length == 0) {
 		console.log("no list before");
+		// display welcome message here
 	} else {
-		$('#store-list').append(results.rows.item(0).content);
+		for (var i = 0; i < results.rows.length; i++) {
+			$('#store-list').append('<li data-icon="false">'
+				+results.rows.item(i).content+'</li>');
+		}
+		$('#store-list').listview('refresh');
 		console.log("after puttting the html");
 		storeInfo.result =[];
 		$('#store-list > li > a').each(function () {
@@ -286,9 +330,6 @@ function loadOldList(tx,results){
 			// console.log("current data-id fetch: " + tmpId);
 			tx.executeSql("select * from store where id = ?",
 				[tmpId],function(tx, result){
-					// console.log("number of result: "+result.rows.length);
-					// console.log("item 0: "+result.rows.item(0));
-					// console.log("name: " + result.rows.item(0).name + "latte: "+ result.rows.item(0).latte);
 					storeInfo.result.push({
 						id : result.rows.item(0).id,
 						wifi: result.rows.item(0).wifi,
@@ -391,7 +432,7 @@ function jsonpopulate() {
 	// alert("in json function");
 
 
-
+// populate storeSub
 	$.getJSON("ajax/storeSub.json",
 		function(data) {
 			// alert(data);
@@ -417,6 +458,7 @@ function jsonpopulate() {
 
 		});
 
+// populate subway
 	$.getJSON("ajax/subway.json",
 		function(data) {
 			// alert(data);
@@ -444,6 +486,7 @@ function jsonpopulate() {
 			});
 		});
 
+// populate starbucks
 	$.getJSON(
 		"ajax/starbucks.json",
 		function(data) {
@@ -480,6 +523,7 @@ function jsonpopulate() {
 
 		});
 
+// populate costa
 	function insertCosta(){
 		$.getJSON(
 			"ajax/costa.json",

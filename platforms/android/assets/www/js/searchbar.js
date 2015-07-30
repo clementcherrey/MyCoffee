@@ -9,9 +9,13 @@ var searchTerm;
 		$("#span-pos").text(searchTerm);
 		// search in DB
 		db.transaction(function(tx) {
-			tx.executeSql("select id from subway where station = ?", [searchTerm], function(tx, result){
+			tx.executeSql("select * from subway where station = ?", [searchTerm], function(tx, result){
 				// alert("StationId = " + result.rows.item(0).id);
 				var StationId = result.rows.item(0).id;
+				console.log("lat and lng = "+ result.rows.item(0).lat+ ", "+result.rows.item(0).lng);
+				mapInfo.currentLat = result.rows.item(0).lat;
+				mapInfo.currentLng = result.rows.item(0).lng;
+
 				tx.executeSql("select storeId, distanceValue, distanceText from storeSub where subwayId = ?",
 					[StationId],function(tx, results){
 						storeInfo.result = [];
@@ -56,27 +60,26 @@ var searchTerm;
 },errorHandler, displaySearchResult);
 }	
 
+function getStoreIndexById(theId){
+	// console.log("getStoreIndexById for id = "+theId);
+	for ( var k = 0; k < storeInfo.result.length ; k++) {
+		if (storeInfo.result[k].id == theId) {
+			return k;
+		};
+	}
+	return null;
+}
 
 function displaySearchResult() {
-	// FOR CUSTOMIZATION LAT,LNG
-	loadAllinCache();
-
 	console.log("in displaySearchResult");
 	// sort the distance
 	sortDistance();
+	// 	hide welcome message
+	$("#message-wrapper").hide();
 	// hide loading animation
 	$.mobile.loading( "hide");
-	// hide button for geolocation
-	$("#twobutt").empty();
-	// show footer
-	$("#homefooter").show();
 	// remove previous content of the list
 	$('#store-list').empty();
-	// //TEST hide navbar footer
-	// $("#footernav").hide();
-	// //TEST hide navbar footer
-	// $("#gpsLoading").show()           ;
-
 	console.log("number of line in display: " + mapInfo.distances.length);
 
 	var i = 0; 
@@ -95,7 +98,7 @@ function myLoop () {           //  create a loop function
 			'<li data-icon="false">'
 			+'<a id="'+ storeId + '" href="#headline" data-transition="slide" data-id="'
 			+ storeId + '" data-dist="'+tmpDistance+'">' 
-			+ '<img src="img/' + tmpBrand + '2.png"/>'
+			+ '<img src="img/icons/' + tmpBrand + '2.png"/>'
 			+ '<h3>' + tmpName + '</h3><p>' + tmpAddress
 			+ '</p><span class="ui-li-count">' + tmpDistance
 			+ '</span></a></li>');
@@ -121,6 +124,7 @@ function myLoop () {           //  create a loop function
       	$('#'+lastAdded+'').css("color", "black");
       	$('#store-list').css("border-bottom", "none");
       	$('#store-list').listview('refresh');
+      	storeCurrentList();	
       }
   }, 80)
 }
@@ -128,6 +132,4 @@ function myLoop () {           //  create a loop function
 myLoop(); 
 
 $('#store-list').listview('refresh');
-storeCurrentList();	
-
 }

@@ -14,3 +14,10 @@ function emailMeFunction(){
 		}
 		);
 }
+
+
+function rateSimple(){
+	console.log("simple rate called");
+	var url = encodeURI("https://play.google.com/store/apps/details?id=com.dotc.lockbooster");
+	window.open(url,'_system','location=yes');
+}

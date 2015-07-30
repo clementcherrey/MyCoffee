@@ -1,0 +1,33 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "de.appplant.cordova.plugin.email-composer": {
+            "PACKAGE_NAME": "com.coffe.mycoffee"
+        },
+        "nl.x-services.plugins.socialsharing": {
+            "PACKAGE_NAME": "com.coffe.mycoffee"
+        },
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "com.coffe.mycoffee"
+        },
+        "org.apache.cordova.geolocation": {
+            "PACKAGE_NAME": "com.coffe.mycoffee"
+        },
+        "org.chromium.zip": {
+            "PACKAGE_NAME": "com.coffe.mycoffee"
+        },
+        "org.apache.cordova.file-transfer": {
+            "PACKAGE_NAME": "com.coffe.mycoffee"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "com.coffe.mycoffee"
+        }
+    },
+    "dependent_plugins": {}
+}

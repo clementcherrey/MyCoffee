@@ -1,5828 +1,2258 @@
 [
     {
-        "storeId": "1011325",
-        "subwayId": "1",
-        "distanceText": "1.8 km",
-        "distanceValue": "1755"
-    },
-    {
-        "storeId": "1651",
-        "subwayId": "1",
-        "distanceText": "1.9 km",
-        "distanceValue": "1928"
-    },
-    {
-        "storeId": "1005547",
+        "storeId": "2165808180",
         "subwayId": "1",
         "distanceText": "2.0 km",
-        "distanceValue": "1970"
+        "distanceValue": "1965"
     },
     {
-        "storeId": "88712",
+        "storeId": "2169503640",
         "subwayId": "2",
         "distanceText": "0.4 km",
         "distanceValue": "362"
     },
     {
-        "storeId": "116355",
-        "subwayId": "5",
-        "distanceText": "0.4 km",
-        "distanceValue": "413"
-    },
-    {
-        "storeId": "1006554",
+        "storeId": "2136336229",
         "subwayId": "5",
         "distanceText": "1.1 km",
-        "distanceValue": "1072"
+        "distanceValue": "1079"
     },
     {
-        "storeId": "1005278",
+        "storeId": "2156982819",
         "subwayId": "5",
-        "distanceText": "1.1 km",
-        "distanceValue": "1082"
+        "distanceText": "1.2 km",
+        "distanceValue": "1165"
     },
     {
-        "storeId": "1597",
-        "subwayId": "5",
-        "distanceText": "1.1 km",
-        "distanceValue": "1111"
-    },
-    {
-        "storeId": "68301",
-        "subwayId": "5",
+        "storeId": "2168660886",
+        "subwayId": "9",
         "distanceText": "2.0 km",
-        "distanceValue": "1960"
+        "distanceValue": "1982"
     },
     {
-        "storeId": "1879",
-        "subwayId": "6",
-        "distanceText": "1.3 km",
-        "distanceValue": "1299"
+        "storeId": "2164826126",
+        "subwayId": "11",
+        "distanceText": "1.4 km",
+        "distanceValue": "1405"
     },
     {
-        "storeId": "1009406",
-        "subwayId": "8",
-        "distanceText": "1.6 km",
-        "distanceValue": "1569"
-    },
-    {
-        "storeId": "1900",
-        "subwayId": "8",
-        "distanceText": "1.9 km",
-        "distanceValue": "1870"
-    },
-    {
-        "storeId": "1010418",
-        "subwayId": "10",
+        "storeId": "2132520392",
+        "subwayId": "14",
         "distanceText": "1.0 km",
-        "distanceValue": "1018"
+        "distanceValue": "957"
     },
     {
-        "storeId": "66366",
-        "subwayId": "11",
-        "distanceText": "1.2 km",
-        "distanceValue": "1182"
-    },
-    {
-        "storeId": "1008082",
-        "subwayId": "11",
-        "distanceText": "1.3 km",
-        "distanceValue": "1266"
-    },
-    {
-        "storeId": "113297",
-        "subwayId": "12",
-        "distanceText": "1.1 km",
-        "distanceValue": "1078"
-    },
-    {
-        "storeId": "1610",
-        "subwayId": "12",
-        "distanceText": "1.2 km",
-        "distanceValue": "1157"
-    },
-    {
-        "storeId": "88878",
-        "subwayId": "12",
-        "distanceText": "1.4 km",
-        "distanceValue": "1414"
-    },
-    {
-        "storeId": "69692",
-        "subwayId": "12",
-        "distanceText": "1.5 km",
-        "distanceValue": "1460"
-    },
-    {
-        "storeId": "1005724",
-        "subwayId": "12",
-        "distanceText": "1.5 km",
-        "distanceValue": "1543"
-    },
-    {
-        "storeId": "1006660",
-        "subwayId": "12",
-        "distanceText": "1.6 km",
-        "distanceValue": "1617"
-    },
-    {
-        "storeId": "1761",
-        "subwayId": "12",
-        "distanceText": "1.8 km",
-        "distanceValue": "1819"
-    },
-    {
-        "storeId": "1008082",
-        "subwayId": "13",
-        "distanceText": "0.7 km",
-        "distanceValue": "672"
-    },
-    {
-        "storeId": "1957",
-        "subwayId": "13",
-        "distanceText": "1.5 km",
-        "distanceValue": "1539"
-    },
-    {
-        "storeId": "1009374",
-        "subwayId": "13",
-        "distanceText": "1.6 km",
-        "distanceValue": "1584"
-    },
-    {
-        "storeId": "66366",
-        "subwayId": "13",
-        "distanceText": "1.8 km",
-        "distanceValue": "1786"
-    },
-    {
-        "storeId": "1009412",
-        "subwayId": "13",
-        "distanceText": "1.9 km",
-        "distanceValue": "1945"
-    },
-    {
-        "storeId": "1005514",
+        "storeId": "2162145972",
         "subwayId": "14",
+        "distanceText": "1.4 km",
+        "distanceValue": "1426"
+    },
+    {
+        "storeId": "2161590113",
+        "subwayId": "15",
+        "distanceText": "0.6 km",
+        "distanceValue": "601"
+    },
+    {
+        "storeId": "2120233063",
+        "subwayId": "15",
         "distanceText": "0.8 km",
-        "distanceValue": "833"
+        "distanceValue": "786"
     },
     {
-        "storeId": "19282",
-        "subwayId": "14",
-        "distanceText": "1.3 km",
-        "distanceValue": "1314"
-    },
-    {
-        "storeId": "90289",
+        "storeId": "2160456277",
         "subwayId": "15",
-        "distanceText": "1.2 km",
-        "distanceValue": "1206"
+        "distanceText": "0.8 km",
+        "distanceValue": "807"
     },
     {
-        "storeId": "1011020",
+        "storeId": "2150811182",
         "subwayId": "15",
-        "distanceText": "1.2 km",
-        "distanceValue": "1211"
+        "distanceText": "0.9 km",
+        "distanceValue": "908"
     },
     {
-        "storeId": "1008280",
-        "subwayId": "15",
-        "distanceText": "1.4 km",
-        "distanceValue": "1386"
-    },
-    {
-        "storeId": "1634",
-        "subwayId": "15",
-        "distanceText": "1.5 km",
-        "distanceValue": "1511"
-    },
-    {
-        "storeId": "1604",
-        "subwayId": "15",
-        "distanceText": "1.5 km",
-        "distanceValue": "1527"
-    },
-    {
-        "storeId": "94957",
-        "subwayId": "15",
-        "distanceText": "1.5 km",
-        "distanceValue": "1539"
-    },
-    {
-        "storeId": "89196",
-        "subwayId": "15",
-        "distanceText": "1.5 km",
-        "distanceValue": "1541"
-    },
-    {
-        "storeId": "69596",
-        "subwayId": "15",
-        "distanceText": "1.6 km",
-        "distanceValue": "1557"
-    },
-    {
-        "storeId": "113875",
-        "subwayId": "15",
-        "distanceText": "1.6 km",
-        "distanceValue": "1575"
-    },
-    {
-        "storeId": "1593",
-        "subwayId": "15",
-        "distanceText": "1.6 km",
-        "distanceValue": "1575"
-    },
-    {
-        "storeId": "1010255",
-        "subwayId": "15",
-        "distanceText": "1.6 km",
-        "distanceValue": "1583"
-    },
-    {
-        "storeId": "1011018",
-        "subwayId": "15",
-        "distanceText": "1.6 km",
-        "distanceValue": "1584"
-    },
-    {
-        "storeId": "1856",
-        "subwayId": "15",
-        "distanceText": "1.7 km",
-        "distanceValue": "1656"
-    },
-    {
-        "storeId": "1580",
-        "subwayId": "15",
-        "distanceText": "1.7 km",
-        "distanceValue": "1679"
-    },
-    {
-        "storeId": "1598",
-        "subwayId": "15",
-        "distanceText": "2.0 km",
-        "distanceValue": "1985"
-    },
-    {
-        "storeId": "1800",
-        "subwayId": "15",
-        "distanceText": "2.0 km",
-        "distanceValue": "1994"
-    },
-    {
-        "storeId": "1010226",
-        "subwayId": "16",
-        "distanceText": "1.4 km",
-        "distanceValue": "1376"
-    },
-    {
-        "storeId": "20297",
-        "subwayId": "16",
-        "distanceText": "1.4 km",
-        "distanceValue": "1382"
-    },
-    {
-        "storeId": "1737",
-        "subwayId": "16",
-        "distanceText": "1.6 km",
-        "distanceValue": "1626"
-    },
-    {
-        "storeId": "18889",
-        "subwayId": "17",
-        "distanceText": "0.2 km",
-        "distanceValue": "210"
-    },
-    {
-        "storeId": "113412",
-        "subwayId": "17",
-        "distanceText": "0.7 km",
-        "distanceValue": "714"
-    },
-    {
-        "storeId": "1011363",
+        "storeId": "2152919871",
         "subwayId": "17",
         "distanceText": "1.2 km",
-        "distanceValue": "1181"
+        "distanceValue": "1217"
     },
     {
-        "storeId": "1005487",
-        "subwayId": "17",
-        "distanceText": "1.2 km",
-        "distanceValue": "1238"
-    },
-    {
-        "storeId": "1007423",
-        "subwayId": "17",
-        "distanceText": "1.4 km",
-        "distanceValue": "1376"
-    },
-    {
-        "storeId": "1006669",
-        "subwayId": "17",
-        "distanceText": "1.4 km",
-        "distanceValue": "1391"
-    },
-    {
-        "storeId": "92871",
-        "subwayId": "17",
-        "distanceText": "1.4 km",
-        "distanceValue": "1391"
-    },
-    {
-        "storeId": "1008162",
-        "subwayId": "17",
-        "distanceText": "1.4 km",
-        "distanceValue": "1399"
-    },
-    {
-        "storeId": "1783",
-        "subwayId": "17",
-        "distanceText": "1.4 km",
-        "distanceValue": "1439"
-    },
-    {
-        "storeId": "1011496",
-        "subwayId": "17",
-        "distanceText": "1.5 km",
-        "distanceValue": "1454"
-    },
-    {
-        "storeId": "1008538",
+        "storeId": "2132527900",
         "subwayId": "17",
         "distanceText": "1.6 km",
-        "distanceValue": "1562"
+        "distanceValue": "1552"
     },
     {
-        "storeId": "1006346",
-        "subwayId": "17",
-        "distanceText": "1.6 km",
-        "distanceValue": "1623"
-    },
-    {
-        "storeId": "91088",
+        "storeId": "2152399185",
         "subwayId": "17",
         "distanceText": "1.8 km",
-        "distanceValue": "1796"
+        "distanceValue": "1832"
     },
     {
-        "storeId": "91087",
-        "subwayId": "17",
-        "distanceText": "1.8 km",
-        "distanceValue": "1796"
-    },
-    {
-        "storeId": "1704",
-        "subwayId": "17",
-        "distanceText": "1.8 km",
-        "distanceValue": "1810"
-    },
-    {
-        "storeId": "1667",
+        "storeId": "2152288196",
         "subwayId": "17",
         "distanceText": "1.9 km",
-        "distanceValue": "1941"
+        "distanceValue": "1866"
     },
     {
-        "storeId": "1872",
-        "subwayId": "17",
-        "distanceText": "2.0 km",
-        "distanceValue": "1989"
-    },
-    {
-        "storeId": "1006948",
+        "storeId": "2131078732",
         "subwayId": "18",
-        "distanceText": "1.5 km",
-        "distanceValue": "1540"
+        "distanceText": "1.7 km",
+        "distanceValue": "1739"
     },
     {
-        "storeId": "113412",
+        "storeId": "2131078731",
+        "subwayId": "18",
+        "distanceText": "1.7 km",
+        "distanceValue": "1739"
+    },
+    {
+        "storeId": "2131078733",
+        "subwayId": "18",
+        "distanceText": "1.7 km",
+        "distanceValue": "1739"
+    },
+    {
+        "storeId": "2152919871",
         "subwayId": "19",
         "distanceText": "0.6 km",
-        "distanceValue": "632"
+        "distanceValue": "562"
     },
     {
-        "storeId": "1011363",
+        "storeId": "2132527900",
         "subwayId": "19",
-        "distanceText": "0.7 km",
-        "distanceValue": "674"
+        "distanceText": "1.7 km",
+        "distanceValue": "1706"
     },
     {
-        "storeId": "18889",
-        "subwayId": "19",
-        "distanceText": "1.0 km",
-        "distanceValue": "973"
-    },
-    {
-        "storeId": "1611",
-        "subwayId": "19",
-        "distanceText": "1.8 km",
-        "distanceValue": "1763"
-    },
-    {
-        "storeId": "1667",
-        "subwayId": "19",
-        "distanceText": "1.8 km",
-        "distanceValue": "1799"
-    },
-    {
-        "storeId": "1005487",
-        "subwayId": "19",
-        "distanceText": "1.9 km",
-        "distanceValue": "1879"
-    },
-    {
-        "storeId": "1637",
+        "storeId": "2164226862",
         "subwayId": "20",
         "distanceText": "0.5 km",
-        "distanceValue": "479"
+        "distanceValue": "525"
     },
     {
-        "storeId": "1006290",
+        "storeId": "2164160683",
+        "subwayId": "20",
+        "distanceText": "0.7 km",
+        "distanceValue": "719"
+    },
+    {
+        "storeId": "2154030089",
         "subwayId": "20",
         "distanceText": "0.8 km",
-        "distanceValue": "799"
+        "distanceValue": "757"
     },
     {
-        "storeId": "1699",
+        "storeId": "2164741223",
         "subwayId": "20",
         "distanceText": "0.9 km",
-        "distanceValue": "904"
+        "distanceValue": "894"
     },
     {
-        "storeId": "89870",
+        "storeId": "2154037951",
         "subwayId": "20",
-        "distanceText": "1.0 km",
-        "distanceValue": "1021"
+        "distanceText": "0.9 km",
+        "distanceValue": "923"
     },
     {
-        "storeId": "19463",
+        "storeId": "2152382901",
         "subwayId": "20",
-        "distanceText": "1.2 km",
-        "distanceValue": "1173"
-    },
-    {
-        "storeId": "116537",
-        "subwayId": "20",
-        "distanceText": "1.2 km",
-        "distanceValue": "1186"
-    },
-    {
-        "storeId": "1619",
-        "subwayId": "20",
-        "distanceText": "1.6 km",
-        "distanceValue": "1562"
-    },
-    {
-        "storeId": "1567",
-        "subwayId": "20",
-        "distanceText": "1.7 km",
-        "distanceValue": "1680"
-    },
-    {
-        "storeId": "1008162",
-        "subwayId": "20",
-        "distanceText": "1.9 km",
-        "distanceValue": "1935"
-    },
-    {
-        "storeId": "1006669",
-        "subwayId": "20",
-        "distanceText": "1.9 km",
-        "distanceValue": "1939"
-    },
-    {
-        "storeId": "92871",
-        "subwayId": "20",
-        "distanceText": "1.9 km",
-        "distanceValue": "1939"
-    },
-    {
-        "storeId": "1009326",
-        "subwayId": "23",
         "distanceText": "1.5 km",
-        "distanceValue": "1521"
+        "distanceValue": "1497"
     },
     {
-        "storeId": "1006126",
-        "subwayId": "23",
+        "storeId": "2131078733",
+        "subwayId": "22",
         "distanceText": "1.9 km",
-        "distanceValue": "1856"
+        "distanceValue": "1930"
     },
     {
-        "storeId": "1011315",
-        "subwayId": "23",
+        "storeId": "2131078731",
+        "subwayId": "22",
         "distanceText": "1.9 km",
-        "distanceValue": "1856"
+        "distanceValue": "1930"
     },
     {
-        "storeId": "1010187",
+        "storeId": "2131078732",
+        "subwayId": "22",
+        "distanceText": "1.9 km",
+        "distanceValue": "1930"
+    },
+    {
+        "storeId": "2161736102",
         "subwayId": "23",
-        "distanceText": "2.0 km",
-        "distanceValue": "1990"
-    },
-    {
-        "storeId": "1006738",
-        "subwayId": "24",
-        "distanceText": "0.5 km",
-        "distanceValue": "523"
-    },
-    {
-        "storeId": "1006948",
-        "subwayId": "24",
-        "distanceText": "0.6 km",
-        "distanceValue": "574"
-    },
-    {
-        "storeId": "18974",
-        "subwayId": "24",
-        "distanceText": "1.1 km",
-        "distanceValue": "1076"
-    },
-    {
-        "storeId": "68269",
-        "subwayId": "26",
-        "distanceText": "1.4 km",
-        "distanceValue": "1360"
-    },
-    {
-        "storeId": "1009931",
-        "subwayId": "26",
-        "distanceText": "1.6 km",
-        "distanceValue": "1555"
-    },
-    {
-        "storeId": "19159",
-        "subwayId": "26",
-        "distanceText": "2.0 km",
-        "distanceValue": "1970"
-    },
-    {
-        "storeId": "1009326",
-        "subwayId": "27",
-        "distanceText": "1.6 km",
-        "distanceValue": "1627"
-    },
-    {
-        "storeId": "1011557",
-        "subwayId": "30",
-        "distanceText": "0.5 km",
-        "distanceValue": "509"
-    },
-    {
-        "storeId": "1006538",
-        "subwayId": "30",
         "distanceText": "1.3 km",
-        "distanceValue": "1266"
+        "distanceValue": "1294"
     },
     {
-        "storeId": "1005409",
+        "storeId": "2166053389",
+        "subwayId": "23",
+        "distanceText": "1.6 km",
+        "distanceValue": "1565"
+    },
+    {
+        "storeId": "2131078732",
+        "subwayId": "24",
+        "distanceText": "0.3 km",
+        "distanceValue": "344"
+    },
+    {
+        "storeId": "2131078733",
+        "subwayId": "24",
+        "distanceText": "0.3 km",
+        "distanceValue": "344"
+    },
+    {
+        "storeId": "2131078731",
+        "subwayId": "24",
+        "distanceText": "0.3 km",
+        "distanceValue": "344"
+    },
+    {
+        "storeId": "2134978366",
+        "subwayId": "26",
+        "distanceText": "1.0 km",
+        "distanceValue": "993"
+    },
+    {
+        "storeId": "2156618967",
         "subwayId": "30",
-        "distanceText": "1.8 km",
-        "distanceValue": "1817"
+        "distanceText": "1.9 km",
+        "distanceValue": "1925"
     },
     {
-        "storeId": "1005547",
-        "subwayId": "31",
-        "distanceText": "0.4 km",
-        "distanceValue": "411"
-    },
-    {
-        "storeId": "92812",
-        "subwayId": "31",
-        "distanceText": "0.6 km",
-        "distanceValue": "650"
-    },
-    {
-        "storeId": "1011325",
-        "subwayId": "31",
-        "distanceText": "0.8 km",
-        "distanceValue": "815"
-    },
-    {
-        "storeId": "1009342",
-        "subwayId": "31",
-        "distanceText": "1.2 km",
-        "distanceValue": "1232"
-    },
-    {
-        "storeId": "1651",
-        "subwayId": "31",
-        "distanceText": "1.8 km",
-        "distanceValue": "1829"
-    },
-    {
-        "storeId": "1011139",
+        "storeId": "2153078562",
         "subwayId": "32",
-        "distanceText": "2.0 km",
-        "distanceValue": "1961"
+        "distanceText": "1.2 km",
+        "distanceValue": "1235"
     },
     {
-        "storeId": "87185",
+        "storeId": "2164668081",
+        "subwayId": "32",
+        "distanceText": "1.7 km",
+        "distanceValue": "1664"
+    },
+    {
+        "storeId": "2160752058",
+        "subwayId": "32",
+        "distanceText": "1.7 km",
+        "distanceValue": "1744"
+    },
+    {
+        "storeId": "2160752058",
         "subwayId": "33",
         "distanceText": "7 m",
         "distanceValue": "7"
     },
     {
-        "storeId": "18973",
+        "storeId": "2164668081",
         "subwayId": "33",
-        "distanceText": "0.6 km",
-        "distanceValue": "613"
+        "distanceText": "0.1 km",
+        "distanceValue": "130"
     },
     {
-        "storeId": "1566",
+        "storeId": "2133161051",
         "subwayId": "33",
-        "distanceText": "0.8 km",
-        "distanceValue": "762"
+        "distanceText": "1.1 km",
+        "distanceValue": "1052"
     },
     {
-        "storeId": "1006522",
+        "storeId": "2164047144",
         "subwayId": "33",
+        "distanceText": "1.5 km",
+        "distanceValue": "1539"
+    },
+    {
+        "storeId": "2153078562",
+        "subwayId": "33",
+        "distanceText": "1.8 km",
+        "distanceValue": "1819"
+    },
+    {
+        "storeId": "2163129135",
+        "subwayId": "34",
         "distanceText": "0.9 km",
-        "distanceValue": "948"
+        "distanceValue": "889"
     },
     {
-        "storeId": "1946",
-        "subwayId": "33",
-        "distanceText": "1.2 km",
-        "distanceValue": "1220"
+        "storeId": "2163512916",
+        "subwayId": "34",
+        "distanceText": "1.0 km",
+        "distanceValue": "1017"
     },
     {
-        "storeId": "1734",
-        "subwayId": "33",
+        "storeId": "2153088773",
+        "subwayId": "34",
         "distanceText": "1.3 km",
-        "distanceValue": "1312"
+        "distanceValue": "1278"
     },
     {
-        "storeId": "1006164",
-        "subwayId": "33",
-        "distanceText": "1.4 km",
-        "distanceValue": "1435"
+        "storeId": "2133660057",
+        "subwayId": "34",
+        "distanceText": "1.3 km",
+        "distanceValue": "1316"
     },
     {
-        "storeId": "1008539",
-        "subwayId": "33",
+        "storeId": "2163346035",
+        "subwayId": "34",
         "distanceText": "1.6 km",
-        "distanceValue": "1610"
+        "distanceValue": "1589"
     },
     {
-        "storeId": "1011012",
-        "subwayId": "33",
-        "distanceText": "1.8 km",
-        "distanceValue": "1850"
+        "storeId": "2162308226",
+        "subwayId": "34",
+        "distanceText": "1.9 km",
+        "distanceValue": "1906"
     },
     {
-        "storeId": "116537",
-        "subwayId": "33",
+        "storeId": "2164047144",
+        "subwayId": "34",
         "distanceText": "2.0 km",
-        "distanceValue": "1952"
+        "distanceValue": "1974"
     },
     {
-        "storeId": "116528",
-        "subwayId": "34",
-        "distanceText": "0.4 km",
-        "distanceValue": "410"
-    },
-    {
-        "storeId": "1707",
-        "subwayId": "34",
-        "distanceText": "0.7 km",
-        "distanceValue": "661"
-    },
-    {
-        "storeId": "86964",
-        "subwayId": "34",
-        "distanceText": "0.7 km",
-        "distanceValue": "679"
-    },
-    {
-        "storeId": "1835",
-        "subwayId": "34",
-        "distanceText": "0.9 km",
-        "distanceValue": "855"
-    },
-    {
-        "storeId": "1008391",
-        "subwayId": "34",
-        "distanceText": "0.9 km",
-        "distanceValue": "862"
-    },
-    {
-        "storeId": "92696",
-        "subwayId": "34",
-        "distanceText": "0.9 km",
-        "distanceValue": "890"
-    },
-    {
-        "storeId": "1551",
-        "subwayId": "34",
-        "distanceText": "0.9 km",
-        "distanceValue": "890"
-    },
-    {
-        "storeId": "113989",
-        "subwayId": "34",
-        "distanceText": "0.9 km",
-        "distanceValue": "927"
-    },
-    {
-        "storeId": "1633",
-        "subwayId": "34",
-        "distanceText": "0.9 km",
-        "distanceValue": "929"
-    },
-    {
-        "storeId": "1005580",
-        "subwayId": "34",
-        "distanceText": "0.9 km",
-        "distanceValue": "944"
-    },
-    {
-        "storeId": "63283",
-        "subwayId": "34",
-        "distanceText": "1.1 km",
-        "distanceValue": "1129"
-    },
-    {
-        "storeId": "1008537",
-        "subwayId": "34",
-        "distanceText": "1.1 km",
-        "distanceValue": "1132"
-    },
-    {
-        "storeId": "1652",
-        "subwayId": "34",
-        "distanceText": "1.4 km",
-        "distanceValue": "1395"
-    },
-    {
-        "storeId": "1697",
-        "subwayId": "34",
-        "distanceText": "1.5 km",
-        "distanceValue": "1458"
-    },
-    {
-        "storeId": "116349",
-        "subwayId": "34",
-        "distanceText": "1.5 km",
-        "distanceValue": "1470"
-    },
-    {
-        "storeId": "1769",
-        "subwayId": "34",
-        "distanceText": "1.5 km",
-        "distanceValue": "1504"
-    },
-    {
-        "storeId": "91327",
-        "subwayId": "34",
-        "distanceText": "1.5 km",
-        "distanceValue": "1549"
-    },
-    {
-        "storeId": "1009771",
-        "subwayId": "34",
-        "distanceText": "1.6 km",
-        "distanceValue": "1550"
-    },
-    {
-        "storeId": "91735",
-        "subwayId": "34",
-        "distanceText": "1.6 km",
-        "distanceValue": "1566"
-    },
-    {
-        "storeId": "18897",
-        "subwayId": "34",
-        "distanceText": "1.7 km",
-        "distanceValue": "1651"
-    },
-    {
-        "storeId": "19084",
-        "subwayId": "34",
-        "distanceText": "1.7 km",
-        "distanceValue": "1691"
-    },
-    {
-        "storeId": "1801",
-        "subwayId": "34",
-        "distanceText": "1.8 km",
-        "distanceValue": "1753"
-    },
-    {
-        "storeId": "92693",
-        "subwayId": "34",
-        "distanceText": "1.8 km",
-        "distanceValue": "1771"
-    },
-    {
-        "storeId": "1713",
-        "subwayId": "34",
-        "distanceText": "1.9 km",
-        "distanceValue": "1929"
-    },
-    {
-        "storeId": "1586",
-        "subwayId": "34",
-        "distanceText": "1.9 km",
-        "distanceValue": "1929"
-    },
-    {
-        "storeId": "1011139",
+        "storeId": "2164268826",
         "subwayId": "37",
-        "distanceText": "0.3 km",
-        "distanceValue": "343"
+        "distanceText": "1.5 km",
+        "distanceValue": "1498"
     },
     {
-        "storeId": "1005192",
-        "subwayId": "37",
-        "distanceText": "0.8 km",
-        "distanceValue": "838"
-    },
-    {
-        "storeId": "1009029",
-        "subwayId": "37",
-        "distanceText": "1.9 km",
-        "distanceValue": "1943"
-    },
-    {
-        "storeId": "1597",
-        "subwayId": "38",
-        "distanceText": "0.4 km",
-        "distanceValue": "432"
-    },
-    {
-        "storeId": "1006554",
-        "subwayId": "38",
-        "distanceText": "1.1 km",
-        "distanceValue": "1076"
-    },
-    {
-        "storeId": "1914",
+        "storeId": "2166053389",
         "subwayId": "38",
         "distanceText": "1.2 km",
         "distanceValue": "1169"
     },
     {
-        "storeId": "1005278",
+        "storeId": "2136336229",
         "subwayId": "38",
         "distanceText": "1.2 km",
-        "distanceValue": "1222"
+        "distanceValue": "1215"
     },
     {
-        "storeId": "116355",
+        "storeId": "2161736102",
         "subwayId": "38",
-        "distanceText": "1.2 km",
-        "distanceValue": "1238"
-    },
-    {
-        "storeId": "1012055",
-        "subwayId": "38",
-        "distanceText": "1.6 km",
-        "distanceValue": "1560"
-    },
-    {
-        "storeId": "1010187",
-        "subwayId": "38",
-        "distanceText": "1.6 km",
-        "distanceValue": "1626"
-    },
-    {
-        "storeId": "1826",
-        "subwayId": "38",
-        "distanceText": "1.8 km",
-        "distanceValue": "1841"
-    },
-    {
-        "storeId": "1006126",
-        "subwayId": "38",
-        "distanceText": "1.9 km",
-        "distanceValue": "1930"
-    },
-    {
-        "storeId": "1011315",
-        "subwayId": "38",
-        "distanceText": "1.9 km",
-        "distanceValue": "1930"
-    },
-    {
-        "storeId": "69596",
-        "subwayId": "39",
-        "distanceText": "0.4 km",
-        "distanceValue": "369"
-    },
-    {
-        "storeId": "1580",
-        "subwayId": "39",
-        "distanceText": "0.5 km",
-        "distanceValue": "490"
-    },
-    {
-        "storeId": "89196",
-        "subwayId": "39",
-        "distanceText": "1.1 km",
-        "distanceValue": "1121"
-    },
-    {
-        "storeId": "1010255",
-        "subwayId": "39",
-        "distanceText": "1.1 km",
-        "distanceValue": "1141"
-    },
-    {
-        "storeId": "94957",
-        "subwayId": "39",
-        "distanceText": "1.2 km",
-        "distanceValue": "1151"
-    },
-    {
-        "storeId": "1749",
-        "subwayId": "39",
-        "distanceText": "1.2 km",
-        "distanceValue": "1159"
-    },
-    {
-        "storeId": "1604",
-        "subwayId": "39",
-        "distanceText": "1.2 km",
-        "distanceValue": "1182"
-    },
-    {
-        "storeId": "1011020",
-        "subwayId": "39",
-        "distanceText": "1.2 km",
-        "distanceValue": "1238"
-    },
-    {
-        "storeId": "1705",
-        "subwayId": "39",
         "distanceText": "1.3 km",
         "distanceValue": "1284"
     },
     {
-        "storeId": "19151",
-        "subwayId": "39",
-        "distanceText": "1.3 km",
-        "distanceValue": "1332"
+        "storeId": "2156982819",
+        "subwayId": "38",
+        "distanceText": "1.7 km",
+        "distanceValue": "1666"
     },
     {
-        "storeId": "1008280",
+        "storeId": "2120233063",
         "subwayId": "39",
-        "distanceText": "1.4 km",
-        "distanceValue": "1376"
+        "distanceText": "1.0 km",
+        "distanceValue": "987"
     },
     {
-        "storeId": "69691",
+        "storeId": "2161590113",
         "subwayId": "39",
-        "distanceText": "1.5 km",
-        "distanceValue": "1481"
+        "distanceText": "1.2 km",
+        "distanceValue": "1193"
     },
     {
-        "storeId": "1634",
-        "subwayId": "39",
-        "distanceText": "1.5 km",
-        "distanceValue": "1486"
-    },
-    {
-        "storeId": "19436",
+        "storeId": "2134757177",
         "subwayId": "39",
         "distanceText": "1.5 km",
-        "distanceValue": "1518"
+        "distanceValue": "1472"
     },
     {
-        "storeId": "1625",
+        "storeId": "2150117436",
         "subwayId": "39",
-        "distanceText": "1.5 km",
-        "distanceValue": "1532"
+        "distanceText": "1.7 km",
+        "distanceValue": "1652"
     },
     {
-        "storeId": "1011058",
+        "storeId": "2160875383",
         "subwayId": "39",
-        "distanceText": "1.8 km",
-        "distanceValue": "1785"
+        "distanceText": "1.7 km",
+        "distanceValue": "1702"
     },
     {
-        "storeId": "1587",
-        "subwayId": "39",
-        "distanceText": "1.8 km",
-        "distanceValue": "1838"
-    },
-    {
-        "storeId": "19420",
+        "storeId": "2150811182",
         "subwayId": "39",
         "distanceText": "1.9 km",
-        "distanceValue": "1859"
+        "distanceValue": "1923"
     },
     {
-        "storeId": "19248",
+        "storeId": "2160456277",
         "subwayId": "39",
         "distanceText": "2.0 km",
-        "distanceValue": "1979"
+        "distanceValue": "1996"
     },
     {
-        "storeId": "1009906",
-        "subwayId": "42",
-        "distanceText": "1.7 km",
-        "distanceValue": "1724"
-    },
-    {
-        "storeId": "1009906",
-        "subwayId": "43",
-        "distanceText": "2.0 km",
-        "distanceValue": "1975"
-    },
-    {
-        "storeId": "68301",
-        "subwayId": "49",
-        "distanceText": "7 m",
-        "distanceValue": "7"
-    },
-    {
-        "storeId": "1006355",
-        "subwayId": "49",
-        "distanceText": "68 m",
-        "distanceValue": "68"
-    },
-    {
-        "storeId": "19084",
-        "subwayId": "49",
-        "distanceText": "0.2 km",
-        "distanceValue": "220"
-    },
-    {
-        "storeId": "92693",
-        "subwayId": "49",
-        "distanceText": "0.4 km",
-        "distanceValue": "358"
-    },
-    {
-        "storeId": "116349",
+        "storeId": "2153210007",
         "subwayId": "49",
         "distanceText": "0.7 km",
-        "distanceValue": "661"
+        "distanceValue": "691"
     },
     {
-        "storeId": "63283",
-        "subwayId": "49",
-        "distanceText": "0.9 km",
-        "distanceValue": "889"
-    },
-    {
-        "storeId": "1801",
-        "subwayId": "49",
-        "distanceText": "0.9 km",
-        "distanceValue": "916"
-    },
-    {
-        "storeId": "1633",
-        "subwayId": "49",
-        "distanceText": "0.9 km",
-        "distanceValue": "933"
-    },
-    {
-        "storeId": "18897",
-        "subwayId": "49",
-        "distanceText": "0.9 km",
-        "distanceValue": "935"
-    },
-    {
-        "storeId": "1005580",
+        "storeId": "2163512916",
         "subwayId": "49",
         "distanceText": "1.1 km",
-        "distanceValue": "1063"
+        "distanceValue": "1136"
     },
     {
-        "storeId": "89911",
+        "storeId": "2156982819",
         "subwayId": "49",
-        "distanceText": "1.1 km",
-        "distanceValue": "1097"
+        "distanceText": "1.3 km",
+        "distanceValue": "1324"
     },
     {
-        "storeId": "1835",
-        "subwayId": "49",
-        "distanceText": "1.2 km",
-        "distanceValue": "1151"
-    },
-    {
-        "storeId": "1551",
-        "subwayId": "49",
-        "distanceText": "1.2 km",
-        "distanceValue": "1179"
-    },
-    {
-        "storeId": "91735",
-        "subwayId": "49",
-        "distanceText": "1.2 km",
-        "distanceValue": "1214"
-    },
-    {
-        "storeId": "113989",
-        "subwayId": "49",
-        "distanceText": "1.2 km",
-        "distanceValue": "1224"
-    },
-    {
-        "storeId": "1707",
+        "storeId": "2153088773",
         "subwayId": "49",
         "distanceText": "1.4 km",
-        "distanceValue": "1354"
+        "distanceValue": "1386"
     },
     {
-        "storeId": "1006429",
+        "storeId": "2136336229",
         "subwayId": "49",
-        "distanceText": "1.7 km",
-        "distanceValue": "1685"
+        "distanceText": "1.6 km",
+        "distanceValue": "1645"
     },
     {
-        "storeId": "1652",
-        "subwayId": "49",
-        "distanceText": "1.7 km",
-        "distanceValue": "1692"
-    },
-    {
-        "storeId": "1826",
-        "subwayId": "49",
-        "distanceText": "1.8 km",
-        "distanceValue": "1770"
-    },
-    {
-        "storeId": "1769",
-        "subwayId": "49",
-        "distanceText": "1.8 km",
-        "distanceValue": "1801"
-    },
-    {
-        "storeId": "1009771",
-        "subwayId": "49",
-        "distanceText": "1.8 km",
-        "distanceValue": "1847"
-    },
-    {
-        "storeId": "1006554",
+        "storeId": "2163346035",
         "subwayId": "49",
         "distanceText": "1.9 km",
-        "distanceValue": "1868"
+        "distanceValue": "1911"
     },
     {
-        "storeId": "1713",
-        "subwayId": "49",
-        "distanceText": "1.9 km",
-        "distanceValue": "1900"
-    },
-    {
-        "storeId": "1586",
-        "subwayId": "49",
-        "distanceText": "1.9 km",
-        "distanceValue": "1900"
-    },
-    {
-        "storeId": "116528",
-        "subwayId": "49",
-        "distanceText": "1.9 km",
-        "distanceValue": "1910"
-    },
-    {
-        "storeId": "1008369",
-        "subwayId": "49",
-        "distanceText": "2.0 km",
-        "distanceValue": "1985"
-    },
-    {
-        "storeId": "89383",
+        "storeId": "2158446297",
         "subwayId": "50",
-        "distanceText": "1.9 km",
-        "distanceValue": "1868"
-    },
-    {
-        "storeId": "1008329",
-        "subwayId": "52",
-        "distanceText": "1.4 km",
-        "distanceValue": "1402"
-    },
-    {
-        "storeId": "1006136",
-        "subwayId": "54",
-        "distanceText": "1.5 km",
-        "distanceValue": "1451"
-    },
-    {
-        "storeId": "1005514",
-        "subwayId": "55",
         "distanceText": "1.2 km",
-        "distanceValue": "1242"
+        "distanceValue": "1178"
     },
     {
-        "storeId": "19282",
+        "storeId": "2132520392",
         "subwayId": "55",
-        "distanceText": "1.7 km",
-        "distanceValue": "1689"
-    },
-    {
-        "storeId": "89859",
-        "subwayId": "59",
         "distanceText": "1.5 km",
-        "distanceValue": "1548"
+        "distanceValue": "1508"
     },
     {
-        "storeId": "1011556",
-        "subwayId": "62",
-        "distanceText": "1.9 km",
-        "distanceValue": "1944"
+        "storeId": "2162145972",
+        "subwayId": "55",
+        "distanceText": "1.6 km",
+        "distanceValue": "1571"
     },
     {
-        "storeId": "1005692",
-        "subwayId": "63",
-        "distanceText": "0.8 km",
-        "distanceValue": "805"
+        "storeId": "2158446297",
+        "subwayId": "60",
+        "distanceText": "1.0 km",
+        "distanceValue": "968"
     },
     {
-        "storeId": "1007856",
+        "storeId": "2166033016",
         "subwayId": "65",
         "distanceText": "0.3 km",
         "distanceValue": "278"
     },
     {
-        "storeId": "1005695",
+        "storeId": "2134691978",
         "subwayId": "66",
-        "distanceText": "1.0 km",
-        "distanceValue": "970"
-    },
-    {
-        "storeId": "87129",
-        "subwayId": "66",
-        "distanceText": "1.0 km",
-        "distanceValue": "1044"
-    },
-    {
-        "storeId": "1009404",
-        "subwayId": "66",
-        "distanceText": "1.5 km",
-        "distanceValue": "1486"
-    },
-    {
-        "storeId": "113297",
-        "subwayId": "66",
-        "distanceText": "2.0 km",
-        "distanceValue": "1963"
-    },
-    {
-        "storeId": "1011033",
-        "subwayId": "67",
         "distanceText": "0.8 km",
-        "distanceValue": "801"
+        "distanceValue": "752"
     },
     {
-        "storeId": "1008042",
+        "storeId": "2155233015",
         "subwayId": "67",
-        "distanceText": "1.0 km",
-        "distanceValue": "992"
+        "distanceText": "1.5 km",
+        "distanceValue": "1468"
     },
     {
-        "storeId": "1008524",
+        "storeId": "2165379893",
         "subwayId": "67",
-        "distanceText": "1.1 km",
-        "distanceValue": "1128"
-    },
-    {
-        "storeId": "65761",
-        "subwayId": "67",
-        "distanceText": "1.8 km",
-        "distanceValue": "1758"
-    },
-    {
-        "storeId": "1012055",
-        "subwayId": "68",
-        "distanceText": "0.7 km",
-        "distanceValue": "670"
-    },
-    {
-        "storeId": "1005278",
-        "subwayId": "68",
-        "distanceText": "1.0 km",
-        "distanceValue": "1028"
-    },
-    {
-        "storeId": "1597",
-        "subwayId": "68",
-        "distanceText": "1.1 km",
-        "distanceValue": "1076"
-    },
-    {
-        "storeId": "1006554",
-        "subwayId": "68",
-        "distanceText": "1.1 km",
-        "distanceValue": "1079"
-    },
-    {
-        "storeId": "1826",
-        "subwayId": "68",
-        "distanceText": "1.4 km",
-        "distanceValue": "1408"
-    },
-    {
-        "storeId": "1651",
-        "subwayId": "68",
         "distanceText": "1.6 km",
-        "distanceValue": "1640"
+        "distanceValue": "1641"
     },
     {
-        "storeId": "1011347",
+        "storeId": "2136336229",
         "subwayId": "68",
-        "distanceText": "1.7 km",
-        "distanceValue": "1660"
-    },
-    {
-        "storeId": "1914",
-        "subwayId": "68",
-        "distanceText": "1.7 km",
-        "distanceValue": "1709"
-    },
-    {
-        "storeId": "1011565",
-        "subwayId": "70",
-        "distanceText": "1.0 km",
-        "distanceValue": "1032"
-    },
-    {
-        "storeId": "89859",
-        "subwayId": "70",
-        "distanceText": "1.9 km",
-        "distanceValue": "1852"
-    },
-    {
-        "storeId": "1534",
-        "subwayId": "71",
-        "distanceText": "2.0 km",
-        "distanceValue": "1954"
-    },
-    {
-        "storeId": "1006117",
-        "subwayId": "71",
-        "distanceText": "2.0 km",
-        "distanceValue": "1975"
-    },
-    {
-        "storeId": "1006140",
-        "subwayId": "72",
-        "distanceText": "0.5 km",
-        "distanceValue": "530"
-    },
-    {
-        "storeId": "1768",
-        "subwayId": "72",
-        "distanceText": "0.6 km",
-        "distanceValue": "609"
-    },
-    {
-        "storeId": "69600",
-        "subwayId": "72",
-        "distanceText": "1.1 km",
-        "distanceValue": "1071"
-    },
-    {
-        "storeId": "51989",
-        "subwayId": "72",
-        "distanceText": "1.1 km",
-        "distanceValue": "1133"
-    },
-    {
-        "storeId": "1009301",
-        "subwayId": "72",
         "distanceText": "1.2 km",
-        "distanceValue": "1151"
+        "distanceValue": "1218"
     },
     {
-        "storeId": "1008574",
+        "storeId": "2165808180",
+        "subwayId": "68",
+        "distanceText": "1.3 km",
+        "distanceValue": "1310"
+    },
+    {
+        "storeId": "2166053389",
+        "subwayId": "68",
+        "distanceText": "1.6 km",
+        "distanceValue": "1551"
+    },
+    {
+        "storeId": "2156982819",
+        "subwayId": "68",
+        "distanceText": "1.7 km",
+        "distanceValue": "1669"
+    },
+    {
+        "storeId": "2161736102",
+        "subwayId": "68",
+        "distanceText": "1.9 km",
+        "distanceValue": "1885"
+    },
+    {
+        "storeId": "2154867152",
+        "subwayId": "71",
+        "distanceText": "1.5 km",
+        "distanceValue": "1479"
+    },
+    {
+        "storeId": "2162308225",
+        "subwayId": "72",
+        "distanceText": "0.9 km",
+        "distanceValue": "872"
+    },
+    {
+        "storeId": "2162308226",
         "subwayId": "72",
         "distanceText": "1.6 km",
-        "distanceValue": "1645"
+        "distanceValue": "1617"
     },
     {
-        "storeId": "1783",
+        "storeId": "2161361404",
         "subwayId": "72",
         "distanceText": "1.8 km",
-        "distanceValue": "1802"
+        "distanceValue": "1780"
     },
     {
-        "storeId": "1011496",
+        "storeId": "2161361403",
+        "subwayId": "72",
+        "distanceText": "1.8 km",
+        "distanceValue": "1780"
+    },
+    {
+        "storeId": "2152399185",
+        "subwayId": "72",
+        "distanceText": "1.8 km",
+        "distanceValue": "1841"
+    },
+    {
+        "storeId": "2152288196",
         "subwayId": "72",
         "distanceText": "1.9 km",
         "distanceValue": "1875"
     },
     {
-        "storeId": "1005487",
+        "storeId": "2153088773",
         "subwayId": "72",
         "distanceText": "1.9 km",
-        "distanceValue": "1885"
+        "distanceValue": "1905"
     },
     {
-        "storeId": "1006660",
-        "subwayId": "73",
-        "distanceText": "0.3 km",
-        "distanceValue": "290"
+        "storeId": "2163346035",
+        "subwayId": "72",
+        "distanceText": "2.0 km",
+        "distanceValue": "1975"
     },
     {
-        "storeId": "1761",
-        "subwayId": "73",
+        "storeId": "2154037951",
+        "subwayId": "74",
+        "distanceText": "1.3 km",
+        "distanceValue": "1310"
+    },
+    {
+        "storeId": "2164226862",
+        "subwayId": "74",
+        "distanceText": "1.5 km",
+        "distanceValue": "1527"
+    },
+    {
+        "storeId": "2164693630",
+        "subwayId": "74",
         "distanceText": "1.6 km",
-        "distanceValue": "1578"
+        "distanceValue": "1554"
     },
     {
-        "storeId": "113297",
-        "subwayId": "73",
+        "storeId": "2154030089",
+        "subwayId": "74",
+        "distanceText": "1.6 km",
+        "distanceValue": "1617"
+    },
+    {
+        "storeId": "2152382901",
+        "subwayId": "74",
         "distanceText": "1.7 km",
-        "distanceValue": "1705"
+        "distanceValue": "1727"
     },
     {
-        "storeId": "1610",
-        "subwayId": "73",
-        "distanceText": "1.8 km",
-        "distanceValue": "1785"
-    },
-    {
-        "storeId": "88878",
-        "subwayId": "73",
-        "distanceText": "1.8 km",
-        "distanceValue": "1835"
-    },
-    {
-        "storeId": "1860",
+        "storeId": "2160857631",
         "subwayId": "74",
-        "distanceText": "0.8 km",
-        "distanceValue": "810"
+        "distanceText": "1.7 km",
+        "distanceValue": "1742"
     },
     {
-        "storeId": "1619",
+        "storeId": "2164160683",
         "subwayId": "74",
+        "distanceText": "1.8 km",
+        "distanceValue": "1826"
+    },
+    {
+        "storeId": "2161736102",
+        "subwayId": "76",
+        "distanceText": "0.1 km",
+        "distanceValue": "118"
+    },
+    {
+        "storeId": "2166053389",
+        "subwayId": "76",
+        "distanceText": "0.4 km",
+        "distanceValue": "415"
+    },
+    {
+        "storeId": "2151511067",
+        "subwayId": "78",
         "distanceText": "0.9 km",
         "distanceValue": "937"
     },
     {
-        "storeId": "1637",
-        "subwayId": "74",
-        "distanceText": "1.0 km",
-        "distanceValue": "971"
+        "storeId": "2154716359",
+        "subwayId": "79",
+        "distanceText": "0.1 km",
+        "distanceValue": "110"
     },
     {
-        "storeId": "1005227",
-        "subwayId": "74",
-        "distanceText": "1.4 km",
-        "distanceValue": "1442"
+        "storeId": "2162308227",
+        "subwayId": "80",
+        "distanceText": "1.6 km",
+        "distanceValue": "1565"
     },
     {
-        "storeId": "19463",
-        "subwayId": "74",
-        "distanceText": "1.5 km",
-        "distanceValue": "1529"
+        "storeId": "2152895880",
+        "subwayId": "80",
+        "distanceText": "1.6 km",
+        "distanceValue": "1565"
     },
     {
-        "storeId": "19429",
-        "subwayId": "74",
+        "storeId": "2152300972",
+        "subwayId": "80",
+        "distanceText": "1.6 km",
+        "distanceValue": "1644"
+    },
+    {
+        "storeId": "2164693630",
+        "subwayId": "80",
+        "distanceText": "1.9 km",
+        "distanceValue": "1892"
+    },
+    {
+        "storeId": "2168660886",
+        "subwayId": "82",
+        "distanceText": "1.8 km",
+        "distanceValue": "1774"
+    },
+    {
+        "storeId": "2162128618",
+        "subwayId": "94",
+        "distanceText": "1.1 km",
+        "distanceValue": "1139"
+    },
+    {
+        "storeId": "2152381955",
+        "subwayId": "94",
+        "distanceText": "1.1 km",
+        "distanceValue": "1141"
+    },
+    {
+        "storeId": "2152382901",
+        "subwayId": "94",
+        "distanceText": "1.3 km",
+        "distanceValue": "1257"
+    },
+    {
+        "storeId": "2132527900",
+        "subwayId": "94",
+        "distanceText": "1.3 km",
+        "distanceValue": "1278"
+    },
+    {
+        "storeId": "2152300972",
+        "subwayId": "94",
+        "distanceText": "1.8 km",
+        "distanceValue": "1788"
+    },
+    {
+        "storeId": "2155233015",
+        "subwayId": "95",
+        "distanceText": "0.2 km",
+        "distanceValue": "221"
+    },
+    {
+        "storeId": "2165379893",
+        "subwayId": "95",
+        "distanceText": "0.7 km",
+        "distanceValue": "666"
+    },
+    {
+        "storeId": "2164693630",
+        "subwayId": "98",
+        "distanceText": "1.1 km",
+        "distanceValue": "1084"
+    },
+    {
+        "storeId": "2160857631",
+        "subwayId": "98",
+        "distanceText": "1.3 km",
+        "distanceValue": "1333"
+    },
+    {
+        "storeId": "2152300972",
+        "subwayId": "98",
         "distanceText": "1.7 km",
         "distanceValue": "1699"
     },
     {
-        "storeId": "1529",
-        "subwayId": "74",
+        "storeId": "2152382901",
+        "subwayId": "98",
         "distanceText": "1.8 km",
-        "distanceValue": "1761"
+        "distanceValue": "1773"
     },
     {
-        "storeId": "68396",
-        "subwayId": "74",
-        "distanceText": "1.8 km",
-        "distanceValue": "1761"
-    },
-    {
-        "storeId": "1006318",
-        "subwayId": "74",
-        "distanceText": "1.8 km",
-        "distanceValue": "1761"
-    },
-    {
-        "storeId": "1008418",
-        "subwayId": "74",
-        "distanceText": "1.8 km",
-        "distanceValue": "1775"
-    },
-    {
-        "storeId": "1743",
-        "subwayId": "74",
-        "distanceText": "1.9 km",
-        "distanceValue": "1890"
-    },
-    {
-        "storeId": "1008352",
-        "subwayId": "74",
-        "distanceText": "1.9 km",
-        "distanceValue": "1902"
-    },
-    {
-        "storeId": "1006126",
-        "subwayId": "76",
-        "distanceText": "0.9 km",
-        "distanceValue": "928"
-    },
-    {
-        "storeId": "1011315",
-        "subwayId": "76",
-        "distanceText": "0.9 km",
-        "distanceValue": "928"
-    },
-    {
-        "storeId": "1010187",
-        "subwayId": "76",
-        "distanceText": "1.1 km",
-        "distanceValue": "1097"
-    },
-    {
-        "storeId": "1914",
-        "subwayId": "76",
-        "distanceText": "1.1 km",
-        "distanceValue": "1110"
-    },
-    {
-        "storeId": "1597",
-        "subwayId": "76",
-        "distanceText": "1.8 km",
-        "distanceValue": "1789"
-    },
-    {
-        "storeId": "1012055",
-        "subwayId": "76",
-        "distanceText": "2.0 km",
-        "distanceValue": "1963"
-    },
-    {
-        "storeId": "1011481",
-        "subwayId": "77",
-        "distanceText": "1.1 km",
-        "distanceValue": "1078"
-    },
-    {
-        "storeId": "1937",
-        "subwayId": "80",
-        "distanceText": "2.0 km",
-        "distanceValue": "1953"
-    },
-    {
-        "storeId": "20297",
-        "subwayId": "82",
-        "distanceText": "0.4 km",
-        "distanceValue": "445"
-    },
-    {
-        "storeId": "1010226",
-        "subwayId": "82",
-        "distanceText": "0.5 km",
-        "distanceValue": "505"
-    },
-    {
-        "storeId": "1931",
-        "subwayId": "82",
-        "distanceText": "1.8 km",
-        "distanceValue": "1833"
-    },
-    {
-        "storeId": "1005679",
-        "subwayId": "82",
-        "distanceText": "2.0 km",
-        "distanceValue": "1963"
-    },
-    {
-        "storeId": "1010227",
-        "subwayId": "83",
-        "distanceText": "1.6 km",
-        "distanceValue": "1551"
-    },
-    {
-        "storeId": "1011033",
-        "subwayId": "84",
-        "distanceText": "1.0 km",
-        "distanceValue": "1001"
-    },
-    {
-        "storeId": "1009586",
-        "subwayId": "85",
-        "distanceText": "1.3 km",
-        "distanceValue": "1267"
-    },
-    {
-        "storeId": "90031",
-        "subwayId": "86",
-        "distanceText": "1.6 km",
-        "distanceValue": "1633"
-    },
-    {
-        "storeId": "1011023",
-        "subwayId": "87",
-        "distanceText": "0.8 km",
-        "distanceValue": "758"
-    },
-    {
-        "storeId": "1009403",
-        "subwayId": "88",
-        "distanceText": "1.2 km",
-        "distanceValue": "1168"
-    },
-    {
-        "storeId": "1011556",
-        "subwayId": "88",
-        "distanceText": "1.5 km",
-        "distanceValue": "1483"
-    },
-    {
-        "storeId": "1011325",
-        "subwayId": "92",
-        "distanceText": "0.9 km",
-        "distanceValue": "928"
-    },
-    {
-        "storeId": "92812",
-        "subwayId": "92",
-        "distanceText": "1.4 km",
-        "distanceValue": "1386"
-    },
-    {
-        "storeId": "1005547",
-        "subwayId": "92",
-        "distanceText": "1.6 km",
-        "distanceValue": "1645"
-    },
-    {
-        "storeId": "1009716",
-        "subwayId": "92",
-        "distanceText": "1.9 km",
-        "distanceValue": "1924"
-    },
-    {
-        "storeId": "1011325",
-        "subwayId": "93",
-        "distanceText": "1.8 km",
-        "distanceValue": "1754"
-    },
-    {
-        "storeId": "1011033",
-        "subwayId": "93",
-        "distanceText": "1.9 km",
-        "distanceValue": "1915"
-    },
-    {
-        "storeId": "1889",
-        "subwayId": "94",
-        "distanceText": "0.2 km",
-        "distanceValue": "241"
-    },
-    {
-        "storeId": "1608",
-        "subwayId": "94",
-        "distanceText": "1.2 km",
-        "distanceValue": "1162"
-    },
-    {
-        "storeId": "1790",
-        "subwayId": "94",
-        "distanceText": "1.3 km",
-        "distanceValue": "1292"
-    },
-    {
-        "storeId": "1945",
-        "subwayId": "94",
-        "distanceText": "1.4 km",
-        "distanceValue": "1350"
-    },
-    {
-        "storeId": "1862",
-        "subwayId": "94",
-        "distanceText": "1.6 km",
-        "distanceValue": "1642"
-    },
-    {
-        "storeId": "1803",
-        "subwayId": "94",
-        "distanceText": "1.6 km",
-        "distanceValue": "1642"
-    },
-    {
-        "storeId": "1006711",
-        "subwayId": "94",
-        "distanceText": "1.7 km",
-        "distanceValue": "1688"
-    },
-    {
-        "storeId": "1008538",
-        "subwayId": "94",
-        "distanceText": "1.8 km",
-        "distanceValue": "1780"
-    },
-    {
-        "storeId": "1612",
-        "subwayId": "94",
-        "distanceText": "1.8 km",
-        "distanceValue": "1793"
-    },
-    {
-        "storeId": "1007423",
-        "subwayId": "94",
-        "distanceText": "1.9 km",
-        "distanceValue": "1886"
-    },
-    {
-        "storeId": "18832",
-        "subwayId": "95",
-        "distanceText": "0.3 km",
-        "distanceValue": "315"
-    },
-    {
-        "storeId": "1601",
-        "subwayId": "95",
-        "distanceText": "0.8 km",
-        "distanceValue": "782"
-    },
-    {
-        "storeId": "1820",
-        "subwayId": "95",
-        "distanceText": "0.8 km",
-        "distanceValue": "798"
-    },
-    {
-        "storeId": "65761",
-        "subwayId": "95",
-        "distanceText": "1.2 km",
-        "distanceValue": "1214"
-    },
-    {
-        "storeId": "1008524",
-        "subwayId": "95",
-        "distanceText": "1.5 km",
-        "distanceValue": "1484"
-    },
-    {
-        "storeId": "1008042",
-        "subwayId": "95",
-        "distanceText": "1.8 km",
-        "distanceValue": "1750"
-    },
-    {
-        "storeId": "1011296",
-        "subwayId": "95",
-        "distanceText": "1.8 km",
-        "distanceValue": "1849"
-    },
-    {
-        "storeId": "1006127",
-        "subwayId": "97",
-        "distanceText": "1.3 km",
-        "distanceValue": "1321"
-    },
-    {
-        "storeId": "1005227",
-        "subwayId": "98",
-        "distanceText": "0.4 km",
-        "distanceValue": "406"
-    },
-    {
-        "storeId": "1612",
-        "subwayId": "98",
-        "distanceText": "0.4 km",
-        "distanceValue": "434"
-    },
-    {
-        "storeId": "1837",
-        "subwayId": "98",
-        "distanceText": "0.6 km",
-        "distanceValue": "621"
-    },
-    {
-        "storeId": "1008352",
-        "subwayId": "98",
-        "distanceText": "0.8 km",
-        "distanceValue": "807"
-    },
-    {
-        "storeId": "1529",
-        "subwayId": "98",
-        "distanceText": "1.1 km",
-        "distanceValue": "1094"
-    },
-    {
-        "storeId": "1006318",
-        "subwayId": "98",
-        "distanceText": "1.1 km",
-        "distanceValue": "1094"
-    },
-    {
-        "storeId": "68396",
-        "subwayId": "98",
-        "distanceText": "1.1 km",
-        "distanceValue": "1094"
-    },
-    {
-        "storeId": "1708",
-        "subwayId": "98",
-        "distanceText": "1.1 km",
-        "distanceValue": "1097"
-    },
-    {
-        "storeId": "1937",
-        "subwayId": "98",
-        "distanceText": "1.3 km",
-        "distanceValue": "1284"
-    },
-    {
-        "storeId": "19429",
-        "subwayId": "98",
-        "distanceText": "1.4 km",
-        "distanceValue": "1421"
-    },
-    {
-        "storeId": "1008418",
-        "subwayId": "98",
-        "distanceText": "1.5 km",
-        "distanceValue": "1467"
-    },
-    {
-        "storeId": "1743",
-        "subwayId": "98",
-        "distanceText": "1.6 km",
-        "distanceValue": "1613"
-    },
-    {
-        "storeId": "1899",
+        "storeId": "2154037951",
         "subwayId": "98",
         "distanceText": "1.9 km",
-        "distanceValue": "1852"
+        "distanceValue": "1897"
     },
     {
-        "storeId": "1637",
+        "storeId": "2164268826",
         "subwayId": "98",
         "distanceText": "1.9 km",
-        "distanceValue": "1901"
+        "distanceValue": "1944"
     },
     {
-        "storeId": "1860",
-        "subwayId": "98",
-        "distanceText": "2.0 km",
-        "distanceValue": "1951"
-    },
-    {
-        "storeId": "1008539",
+        "storeId": "2164668081",
         "subwayId": "99",
-        "distanceText": "0.8 km",
-        "distanceValue": "829"
-    },
-    {
-        "storeId": "1860",
-        "subwayId": "99",
-        "distanceText": "1.4 km",
-        "distanceValue": "1391"
-    },
-    {
-        "storeId": "1006522",
-        "subwayId": "99",
-        "distanceText": "1.5 km",
-        "distanceValue": "1480"
-    },
-    {
-        "storeId": "18973",
-        "subwayId": "99",
-        "distanceText": "1.6 km",
-        "distanceValue": "1573"
-    },
-    {
-        "storeId": "1566",
-        "subwayId": "99",
-        "distanceText": "1.7 km",
-        "distanceValue": "1653"
-    },
-    {
-        "storeId": "1946",
-        "subwayId": "99",
-        "distanceText": "1.8 km",
-        "distanceValue": "1786"
-    },
-    {
-        "storeId": "1619",
-        "subwayId": "99",
-        "distanceText": "1.8 km",
-        "distanceValue": "1846"
-    },
-    {
-        "storeId": "1006290",
-        "subwayId": "99",
-        "distanceText": "1.9 km",
-        "distanceValue": "1915"
-    },
-    {
-        "storeId": "1008538",
-        "subwayId": "100",
-        "distanceText": "77 m",
-        "distanceValue": "77"
-    },
-    {
-        "storeId": "1007423",
-        "subwayId": "100",
-        "distanceText": "0.1 km",
-        "distanceValue": "124"
-    },
-    {
-        "storeId": "1006669",
-        "subwayId": "100",
-        "distanceText": "0.3 km",
-        "distanceValue": "286"
-    },
-    {
-        "storeId": "92871",
-        "subwayId": "100",
-        "distanceText": "0.3 km",
-        "distanceValue": "286"
-    },
-    {
-        "storeId": "1008162",
-        "subwayId": "100",
-        "distanceText": "0.3 km",
-        "distanceValue": "295"
-    },
-    {
-        "storeId": "1006346",
-        "subwayId": "100",
-        "distanceText": "0.5 km",
-        "distanceValue": "518"
-    },
-    {
-        "storeId": "1704",
-        "subwayId": "100",
         "distanceText": "0.7 km",
-        "distanceValue": "733"
+        "distanceValue": "738"
     },
     {
-        "storeId": "91088",
+        "storeId": "2160752058",
+        "subwayId": "99",
+        "distanceText": "0.8 km",
+        "distanceValue": "784"
+    },
+    {
+        "storeId": "2164226862",
+        "subwayId": "99",
+        "distanceText": "1.7 km",
+        "distanceValue": "1718"
+    },
+    {
+        "storeId": "2164741223",
+        "subwayId": "99",
+        "distanceText": "1.7 km",
+        "distanceValue": "1733"
+    },
+    {
+        "storeId": "2164160683",
+        "subwayId": "99",
+        "distanceText": "1.8 km",
+        "distanceValue": "1779"
+    },
+    {
+        "storeId": "2133161051",
+        "subwayId": "99",
+        "distanceText": "1.8 km",
+        "distanceValue": "1843"
+    },
+    {
+        "storeId": "2154030089",
         "subwayId": "100",
-        "distanceText": "1.1 km",
-        "distanceValue": "1074"
+        "distanceText": "0.8 km",
+        "distanceValue": "831"
     },
     {
-        "storeId": "91087",
+        "storeId": "2152288196",
         "subwayId": "100",
-        "distanceText": "1.1 km",
-        "distanceValue": "1074"
+        "distanceText": "1.2 km",
+        "distanceValue": "1173"
     },
     {
-        "storeId": "19463",
-        "subwayId": "100",
-        "distanceText": "1.1 km",
-        "distanceValue": "1085"
-    },
-    {
-        "storeId": "1872",
+        "storeId": "2152399185",
         "subwayId": "100",
         "distanceText": "1.2 km",
         "distanceValue": "1207"
     },
     {
-        "storeId": "1637",
+        "storeId": "2154037951",
         "subwayId": "100",
-        "distanceText": "1.5 km",
-        "distanceValue": "1474"
+        "distanceText": "1.2 km",
+        "distanceValue": "1241"
     },
     {
-        "storeId": "1567",
+        "storeId": "2152382901",
+        "subwayId": "100",
+        "distanceText": "1.3 km",
+        "distanceValue": "1322"
+    },
+    {
+        "storeId": "2161361403",
+        "subwayId": "100",
+        "distanceText": "1.4 km",
+        "distanceValue": "1436"
+    },
+    {
+        "storeId": "2161361404",
+        "subwayId": "100",
+        "distanceText": "1.4 km",
+        "distanceValue": "1436"
+    },
+    {
+        "storeId": "2164226862",
         "subwayId": "100",
         "distanceText": "1.6 km",
-        "distanceValue": "1615"
+        "distanceValue": "1636"
     },
     {
-        "storeId": "1776",
-        "subwayId": "100",
-        "distanceText": "1.6 km",
-        "distanceValue": "1647"
-    },
-    {
-        "storeId": "18889",
+        "storeId": "2164160683",
         "subwayId": "100",
         "distanceText": "1.7 km",
-        "distanceValue": "1685"
+        "distanceValue": "1701"
     },
     {
-        "storeId": "1011496",
-        "subwayId": "100",
-        "distanceText": "1.8 km",
-        "distanceValue": "1755"
-    },
-    {
-        "storeId": "1005195",
-        "subwayId": "100",
-        "distanceText": "1.8 km",
-        "distanceValue": "1806"
-    },
-    {
-        "storeId": "1889",
+        "storeId": "2164741223",
         "subwayId": "100",
         "distanceText": "1.9 km",
-        "distanceValue": "1853"
+        "distanceValue": "1877"
     },
     {
-        "storeId": "1005487",
-        "subwayId": "100",
-        "distanceText": "2.0 km",
-        "distanceValue": "1981"
+        "storeId": "2164122191",
+        "subwayId": "102",
+        "distanceText": "1.7 km",
+        "distanceValue": "1717"
     },
     {
-        "storeId": "1007862",
-        "subwayId": "100",
-        "distanceText": "2.0 km",
-        "distanceValue": "1996"
+        "storeId": "2134532153",
+        "subwayId": "102",
+        "distanceText": "1.8 km",
+        "distanceValue": "1756"
     },
     {
-        "storeId": "1008425",
-        "subwayId": "104",
-        "distanceText": "0.5 km",
-        "distanceValue": "458"
-    },
-    {
-        "storeId": "1010448",
+        "storeId": "2150272338",
         "subwayId": "104",
         "distanceText": "0.6 km",
-        "distanceValue": "593"
+        "distanceValue": "560"
     },
     {
-        "storeId": "116462",
+        "storeId": "2151355819",
         "subwayId": "104",
-        "distanceText": "1.0 km",
-        "distanceValue": "974"
+        "distanceText": "0.6 km",
+        "distanceValue": "573"
     },
     {
-        "storeId": "1005446",
-        "subwayId": "104",
-        "distanceText": "1.7 km",
-        "distanceValue": "1696"
-    },
-    {
-        "storeId": "1009586",
-        "subwayId": "105",
-        "distanceText": "1.3 km",
-        "distanceValue": "1347"
-    },
-    {
-        "storeId": "1010418",
-        "subwayId": "106",
-        "distanceText": "0.2 km",
-        "distanceValue": "182"
-    },
-    {
-        "storeId": "1005810",
+        "storeId": "2162145972",
         "subwayId": "107",
         "distanceText": "0.4 km",
         "distanceValue": "365"
     },
     {
-        "storeId": "1005514",
+        "storeId": "2132520392",
         "subwayId": "107",
-        "distanceText": "0.7 km",
-        "distanceValue": "734"
-    },
-    {
-        "storeId": "19282",
-        "subwayId": "107",
-        "distanceText": "1.0 km",
-        "distanceValue": "954"
-    },
-    {
-        "storeId": "1006136",
-        "subwayId": "108",
-        "distanceText": "0.7 km",
-        "distanceValue": "695"
-    },
-    {
-        "storeId": "19461",
-        "subwayId": "108",
-        "distanceText": "1.6 km",
-        "distanceValue": "1575"
-    },
-    {
-        "storeId": "51996",
-        "subwayId": "109",
-        "distanceText": "1.0 km",
-        "distanceValue": "952"
-    },
-    {
-        "storeId": "1005962",
-        "subwayId": "111",
         "distanceText": "1.3 km",
-        "distanceValue": "1289"
+        "distanceValue": "1281"
     },
     {
-        "storeId": "1009906",
-        "subwayId": "111",
-        "distanceText": "1.7 km",
-        "distanceValue": "1732"
+        "storeId": "2158660083",
+        "subwayId": "108",
+        "distanceText": "0.5 km",
+        "distanceValue": "489"
     },
     {
-        "storeId": "68879",
-        "subwayId": "112",
-        "distanceText": "0.8 km",
-        "distanceValue": "846"
-    },
-    {
-        "storeId": "114048",
+        "storeId": "2151925153",
         "subwayId": "112",
         "distanceText": "1.0 km",
-        "distanceValue": "986"
+        "distanceValue": "994"
     },
     {
-        "storeId": "1598",
+        "storeId": "2168739675",
         "subwayId": "112",
-        "distanceText": "1.4 km",
-        "distanceValue": "1409"
+        "distanceText": "1.2 km",
+        "distanceValue": "1188"
     },
     {
-        "storeId": "1942",
+        "storeId": "2150811182",
         "subwayId": "112",
         "distanceText": "1.5 km",
-        "distanceValue": "1511"
+        "distanceValue": "1470"
     },
     {
-        "storeId": "1737",
+        "storeId": "2160456277",
         "subwayId": "112",
         "distanceText": "1.7 km",
-        "distanceValue": "1717"
+        "distanceValue": "1715"
     },
     {
-        "storeId": "1011018",
+        "storeId": "2150762907",
         "subwayId": "112",
         "distanceText": "1.8 km",
-        "distanceValue": "1753"
+        "distanceValue": "1756"
     },
     {
-        "storeId": "1856",
-        "subwayId": "112",
-        "distanceText": "1.8 km",
-        "distanceValue": "1765"
-    },
-    {
-        "storeId": "90289",
-        "subwayId": "112",
-        "distanceText": "1.8 km",
-        "distanceValue": "1783"
-    },
-    {
-        "storeId": "1645",
-        "subwayId": "112",
-        "distanceText": "2.0 km",
-        "distanceValue": "1986"
-    },
-    {
-        "storeId": "87634",
+        "storeId": "2169568531",
         "subwayId": "113",
-        "distanceText": "0.4 km",
-        "distanceValue": "363"
+        "distanceText": "0.2 km",
+        "distanceValue": "184"
     },
     {
-        "storeId": "92696",
+        "storeId": "2133660057",
         "subwayId": "114",
-        "distanceText": "0.7 km",
-        "distanceValue": "702"
+        "distanceText": "1.1 km",
+        "distanceValue": "1101"
     },
     {
-        "storeId": "1011012",
+        "storeId": "2163129135",
         "subwayId": "114",
-        "distanceText": "0.9 km",
-        "distanceValue": "854"
+        "distanceText": "1.3 km",
+        "distanceValue": "1291"
     },
     {
-        "storeId": "1008391",
+        "storeId": "2164047144",
         "subwayId": "114",
-        "distanceText": "0.9 km",
-        "distanceValue": "918"
+        "distanceText": "1.3 km",
+        "distanceValue": "1321"
     },
     {
-        "storeId": "86964",
-        "subwayId": "114",
-        "distanceText": "0.9 km",
-        "distanceValue": "920"
-    },
-    {
-        "storeId": "116528",
-        "subwayId": "114",
-        "distanceText": "0.9 km",
-        "distanceValue": "942"
-    },
-    {
-        "storeId": "1009415",
-        "subwayId": "114",
-        "distanceText": "1.0 km",
-        "distanceValue": "1026"
-    },
-    {
-        "storeId": "1697",
-        "subwayId": "114",
-        "distanceText": "1.2 km",
-        "distanceValue": "1164"
-    },
-    {
-        "storeId": "1008537",
-        "subwayId": "114",
-        "distanceText": "1.4 km",
-        "distanceValue": "1368"
-    },
-    {
-        "storeId": "1008369",
-        "subwayId": "114",
-        "distanceText": "1.4 km",
-        "distanceValue": "1377"
-    },
-    {
-        "storeId": "1603",
-        "subwayId": "114",
-        "distanceText": "1.4 km",
-        "distanceValue": "1391"
-    },
-    {
-        "storeId": "1006164",
+        "storeId": "2133161051",
         "subwayId": "114",
         "distanceText": "1.7 km",
-        "distanceValue": "1652"
+        "distanceValue": "1693"
     },
     {
-        "storeId": "1707",
-        "subwayId": "114",
-        "distanceText": "1.7 km",
-        "distanceValue": "1669"
-    },
-    {
-        "storeId": "76319",
-        "subwayId": "114",
-        "distanceText": "1.7 km",
-        "distanceValue": "1684"
-    },
-    {
-        "storeId": "1586",
-        "subwayId": "114",
-        "distanceText": "1.7 km",
-        "distanceValue": "1743"
-    },
-    {
-        "storeId": "1713",
-        "subwayId": "114",
-        "distanceText": "1.7 km",
-        "distanceValue": "1743"
-    },
-    {
-        "storeId": "1946",
-        "subwayId": "114",
-        "distanceText": "1.8 km",
-        "distanceValue": "1822"
-    },
-    {
-        "storeId": "1835",
-        "subwayId": "114",
-        "distanceText": "1.9 km",
-        "distanceValue": "1862"
-    },
-    {
-        "storeId": "1551",
-        "subwayId": "114",
-        "distanceText": "1.9 km",
-        "distanceValue": "1898"
-    },
-    {
-        "storeId": "113989",
-        "subwayId": "114",
-        "distanceText": "1.9 km",
-        "distanceValue": "1935"
-    },
-    {
-        "storeId": "1633",
-        "subwayId": "114",
-        "distanceText": "1.9 km",
-        "distanceValue": "1947"
-    },
-    {
-        "storeId": "1005580",
-        "subwayId": "114",
-        "distanceText": "2.0 km",
-        "distanceValue": "1951"
-    },
-    {
-        "storeId": "1574",
+        "storeId": "2164122191",
         "subwayId": "116",
         "distanceText": "0.2 km",
-        "distanceValue": "241"
+        "distanceValue": "189"
     },
     {
-        "storeId": "1651",
-        "subwayId": "120",
+        "storeId": "2134532153",
+        "subwayId": "116",
         "distanceText": "0.2 km",
-        "distanceValue": "191"
+        "distanceValue": "228"
     },
     {
-        "storeId": "1011347",
+        "storeId": "2165808180",
         "subwayId": "120",
-        "distanceText": "1.0 km",
-        "distanceValue": "955"
+        "distanceText": "0.4 km",
+        "distanceValue": "450"
     },
     {
-        "storeId": "1012055",
-        "subwayId": "120",
-        "distanceText": "1.3 km",
-        "distanceValue": "1312"
+        "storeId": "2150762907",
+        "subwayId": "121",
+        "distanceText": "0.6 km",
+        "distanceValue": "556"
     },
     {
-        "storeId": "1009342",
-        "subwayId": "120",
-        "distanceText": "1.4 km",
-        "distanceValue": "1430"
+        "storeId": "2151925153",
+        "subwayId": "121",
+        "distanceText": "2.0 km",
+        "distanceValue": "1973"
     },
     {
-        "storeId": "1005547",
-        "subwayId": "120",
-        "distanceText": "1.6 km",
-        "distanceValue": "1616"
-    },
-    {
-        "storeId": "92812",
-        "subwayId": "120",
-        "distanceText": "1.8 km",
-        "distanceValue": "1798"
-    },
-    {
-        "storeId": "1011325",
-        "subwayId": "120",
-        "distanceText": "1.9 km",
-        "distanceValue": "1896"
-    },
-    {
-        "storeId": "1007856",
+        "storeId": "2166033016",
         "subwayId": "122",
         "distanceText": "1.5 km",
         "distanceValue": "1493"
     },
     {
-        "storeId": "1009375",
-        "subwayId": "124",
-        "distanceText": "0.2 km",
-        "distanceValue": "188"
+        "storeId": "2132520392",
+        "subwayId": "127",
+        "distanceText": "1.0 km",
+        "distanceValue": "1005"
     },
     {
-        "storeId": "1786",
-        "subwayId": "124",
+        "storeId": "2132527900",
+        "subwayId": "127",
+        "distanceText": "1.3 km",
+        "distanceValue": "1262"
+    },
+    {
+        "storeId": "2162145972",
+        "subwayId": "127",
         "distanceText": "1.5 km",
-        "distanceValue": "1466"
+        "distanceValue": "1519"
     },
     {
-        "storeId": "1761",
-        "subwayId": "124",
-        "distanceText": "1.9 km",
-        "distanceValue": "1941"
-    },
-    {
-        "storeId": "1008082",
-        "subwayId": "125",
-        "distanceText": "2.0 km",
-        "distanceValue": "1967"
-    },
-    {
-        "storeId": "113538",
-        "subwayId": "126",
-        "distanceText": "1.6 km",
-        "distanceValue": "1552"
-    },
-    {
-        "storeId": "1009716",
-        "subwayId": "126",
-        "distanceText": "1.9 km",
-        "distanceValue": "1880"
-    },
-    {
-        "storeId": "1005514",
+        "storeId": "2152381955",
         "subwayId": "127",
-        "distanceText": "0.9 km",
-        "distanceValue": "933"
-    },
-    {
-        "storeId": "19282",
-        "subwayId": "127",
-        "distanceText": "1.4 km",
-        "distanceValue": "1407"
-    },
-    {
-        "storeId": "1005810",
-        "subwayId": "127",
-        "distanceText": "1.7 km",
-        "distanceValue": "1684"
-    },
-    {
-        "storeId": "1005192",
-        "subwayId": "128",
         "distanceText": "1.8 km",
-        "distanceValue": "1813"
+        "distanceValue": "1784"
     },
     {
-        "storeId": "1886",
-        "subwayId": "129",
-        "distanceText": "0.8 km",
-        "distanceValue": "837"
-    },
-    {
-        "storeId": "1569",
-        "subwayId": "129",
-        "distanceText": "1.5 km",
-        "distanceValue": "1458"
-    },
-    {
-        "storeId": "1008380",
-        "subwayId": "129",
-        "distanceText": "1.6 km",
-        "distanceValue": "1573"
-    },
-    {
-        "storeId": "1956",
-        "subwayId": "129",
-        "distanceText": "1.7 km",
-        "distanceValue": "1662"
-    },
-    {
-        "storeId": "1010226",
-        "subwayId": "130",
-        "distanceText": "1.8 km",
-        "distanceValue": "1775"
-    },
-    {
-        "storeId": "20297",
-        "subwayId": "130",
+        "storeId": "2162128618",
+        "subwayId": "127",
         "distanceText": "1.9 km",
         "distanceValue": "1931"
     },
     {
-        "storeId": "1011184",
-        "subwayId": "132",
-        "distanceText": "77 m",
-        "distanceValue": "77"
-    },
-    {
-        "storeId": "1738",
-        "subwayId": "132",
-        "distanceText": "1.1 km",
-        "distanceValue": "1054"
-    },
-    {
-        "storeId": "1716",
-        "subwayId": "132",
+        "storeId": "2164065909",
+        "subwayId": "129",
         "distanceText": "1.2 km",
-        "distanceValue": "1197"
+        "distanceValue": "1233"
     },
     {
-        "storeId": "1005320",
+        "storeId": "2162186193",
+        "subwayId": "129",
+        "distanceText": "1.7 km",
+        "distanceValue": "1682"
+    },
+    {
+        "storeId": "2132521867",
         "subwayId": "132",
-        "distanceText": "1.6 km",
-        "distanceValue": "1626"
+        "distanceText": "1.0 km",
+        "distanceValue": "977"
     },
     {
-        "storeId": "1010731",
-        "subwayId": "132",
-        "distanceText": "1.8 km",
-        "distanceValue": "1814"
+        "storeId": "2153078562",
+        "subwayId": "133",
+        "distanceText": "1.2 km",
+        "distanceValue": "1221"
     },
     {
-        "storeId": "1656",
-        "subwayId": "132",
-        "distanceText": "1.8 km",
-        "distanceValue": "1840"
-    },
-    {
-        "storeId": "94737",
-        "subwayId": "132",
-        "distanceText": "1.9 km",
-        "distanceValue": "1882"
-    },
-    {
-        "storeId": "1011138",
+        "storeId": "2160752058",
         "subwayId": "133",
         "distanceText": "1.3 km",
-        "distanceValue": "1251"
+        "distanceValue": "1270"
     },
     {
-        "storeId": "1734",
-        "subwayId": "133",
-        "distanceText": "1.3 km",
-        "distanceValue": "1255"
-    },
-    {
-        "storeId": "87185",
-        "subwayId": "133",
-        "distanceText": "1.3 km",
-        "distanceValue": "1271"
-    },
-    {
-        "storeId": "1566",
+        "storeId": "2133161051",
         "subwayId": "133",
         "distanceText": "1.4 km",
-        "distanceValue": "1427"
+        "distanceValue": "1381"
     },
     {
-        "storeId": "1006164",
+        "storeId": "2164668081",
         "subwayId": "133",
-        "distanceText": "1.6 km",
-        "distanceValue": "1596"
-    },
-    {
-        "storeId": "18973",
-        "subwayId": "133",
-        "distanceText": "1.9 km",
-        "distanceValue": "1878"
-    },
-    {
-        "storeId": "1009415",
-        "subwayId": "135",
-        "distanceText": "0.2 km",
-        "distanceValue": "195"
-    },
-    {
-        "storeId": "1008153",
-        "subwayId": "135",
         "distanceText": "1.4 km",
-        "distanceValue": "1448"
+        "distanceValue": "1392"
     },
     {
-        "storeId": "1006164",
+        "storeId": "2133161051",
         "subwayId": "135",
-        "distanceText": "1.5 km",
-        "distanceValue": "1462"
+        "distanceText": "1.0 km",
+        "distanceValue": "1047"
     },
     {
-        "storeId": "92696",
-        "subwayId": "135",
-        "distanceText": "1.5 km",
-        "distanceValue": "1549"
-    },
-    {
-        "storeId": "1734",
-        "subwayId": "135",
-        "distanceText": "1.6 km",
-        "distanceValue": "1612"
-    },
-    {
-        "storeId": "1566",
-        "subwayId": "135",
-        "distanceText": "1.7 km",
-        "distanceValue": "1700"
-    },
-    {
-        "storeId": "1011012",
-        "subwayId": "135",
-        "distanceText": "1.7 km",
-        "distanceValue": "1733"
-    },
-    {
-        "storeId": "1008369",
-        "subwayId": "135",
-        "distanceText": "1.7 km",
-        "distanceValue": "1748"
-    },
-    {
-        "storeId": "1603",
-        "subwayId": "135",
-        "distanceText": "1.8 km",
-        "distanceValue": "1762"
-    },
-    {
-        "storeId": "1008391",
-        "subwayId": "135",
-        "distanceText": "1.8 km",
-        "distanceValue": "1765"
-    },
-    {
-        "storeId": "86964",
-        "subwayId": "135",
-        "distanceText": "1.8 km",
-        "distanceValue": "1768"
-    },
-    {
-        "storeId": "116528",
-        "subwayId": "135",
-        "distanceText": "1.8 km",
-        "distanceValue": "1790"
-    },
-    {
-        "storeId": "87185",
+        "storeId": "2160752058",
         "subwayId": "135",
         "distanceText": "2.0 km",
         "distanceValue": "1952"
     },
     {
-        "storeId": "1009795",
-        "subwayId": "137",
-        "distanceText": "1.9 km",
-        "distanceValue": "1894"
+        "storeId": "2133660057",
+        "subwayId": "135",
+        "distanceText": "2.0 km",
+        "distanceValue": "1953"
     },
     {
-        "storeId": "1566",
+        "storeId": "2134757177",
+        "subwayId": "136",
+        "distanceText": "1.3 km",
+        "distanceValue": "1334"
+    },
+    {
+        "storeId": "2160875383",
+        "subwayId": "136",
+        "distanceText": "1.6 km",
+        "distanceValue": "1576"
+    },
+    {
+        "storeId": "2150117436",
+        "subwayId": "136",
+        "distanceText": "1.7 km",
+        "distanceValue": "1651"
+    },
+    {
+        "storeId": "2133161051",
         "subwayId": "139",
-        "distanceText": "0.7 km",
-        "distanceValue": "718"
+        "distanceText": "0.1 km",
+        "distanceValue": "105"
     },
     {
-        "storeId": "1011012",
-        "subwayId": "139",
-        "distanceText": "0.8 km",
-        "distanceValue": "752"
-    },
-    {
-        "storeId": "87185",
+        "storeId": "2160752058",
         "subwayId": "139",
         "distanceText": "1.0 km",
         "distanceValue": "970"
     },
     {
-        "storeId": "1734",
+        "storeId": "2164668081",
         "subwayId": "139",
         "distanceText": "1.1 km",
-        "distanceValue": "1106"
+        "distanceValue": "1093"
     },
     {
-        "storeId": "1006164",
+        "storeId": "2133660057",
         "subwayId": "139",
-        "distanceText": "1.1 km",
-        "distanceValue": "1132"
-    },
-    {
-        "storeId": "1009415",
-        "subwayId": "139",
-        "distanceText": "1.3 km",
-        "distanceValue": "1260"
-    },
-    {
-        "storeId": "1697",
-        "subwayId": "139",
-        "distanceText": "1.4 km",
-        "distanceValue": "1369"
-    },
-    {
-        "storeId": "18973",
-        "subwayId": "139",
-        "distanceText": "1.6 km",
-        "distanceValue": "1577"
-    },
-    {
-        "storeId": "76319",
-        "subwayId": "139",
-        "distanceText": "1.6 km",
-        "distanceValue": "1588"
-    },
-    {
-        "storeId": "1946",
-        "subwayId": "139",
-        "distanceText": "1.8 km",
-        "distanceValue": "1803"
-    },
-    {
-        "storeId": "1008537",
-        "subwayId": "139",
-        "distanceText": "1.8 km",
-        "distanceValue": "1807"
-    },
-    {
-        "storeId": "1006522",
-        "subwayId": "139",
-        "distanceText": "1.9 km",
-        "distanceValue": "1911"
-    },
-    {
-        "storeId": "1009795",
-        "subwayId": "141",
-        "distanceText": "2.0 km",
-        "distanceValue": "1987"
-    },
-    {
-        "storeId": "1005192",
-        "subwayId": "144",
-        "distanceText": "0.2 km",
-        "distanceValue": "194"
-    },
-    {
-        "storeId": "1011139",
-        "subwayId": "144",
-        "distanceText": "1.1 km",
-        "distanceValue": "1060"
-    },
-    {
-        "storeId": "1009029",
-        "subwayId": "144",
-        "distanceText": "1.8 km",
-        "distanceValue": "1784"
-    },
-    {
-        "storeId": "1931",
-        "subwayId": "145",
-        "distanceText": "1.8 km",
-        "distanceValue": "1816"
-    },
-    {
-        "storeId": "1005679",
-        "subwayId": "145",
-        "distanceText": "1.9 km",
-        "distanceValue": "1917"
-    },
-    {
-        "storeId": "1009911",
-        "subwayId": "148",
-        "distanceText": "1.6 km",
-        "distanceValue": "1556"
-    },
-    {
-        "storeId": "1009480",
-        "subwayId": "148",
-        "distanceText": "1.6 km",
-        "distanceValue": "1565"
-    },
-    {
-        "storeId": "1008153",
-        "subwayId": "150",
-        "distanceText": "1.5 km",
-        "distanceValue": "1496"
-    },
-    {
-        "storeId": "1009415",
-        "subwayId": "150",
-        "distanceText": "1.5 km",
-        "distanceValue": "1513"
-    },
-    {
-        "storeId": "113402",
-        "subwayId": "151",
-        "distanceText": "0.6 km",
-        "distanceValue": "588"
-    },
-    {
-        "storeId": "1011168",
-        "subwayId": "151",
-        "distanceText": "1.6 km",
-        "distanceValue": "1623"
-    },
-    {
-        "storeId": "1009548",
-        "subwayId": "151",
-        "distanceText": "1.8 km",
-        "distanceValue": "1829"
-    },
-    {
-        "storeId": "1011296",
-        "subwayId": "152",
-        "distanceText": "1.1 km",
-        "distanceValue": "1147"
-    },
-    {
-        "storeId": "1009716",
-        "subwayId": "153",
-        "distanceText": "0.9 km",
-        "distanceValue": "944"
-    },
-    {
-        "storeId": "1011325",
-        "subwayId": "153",
-        "distanceText": "1.9 km",
-        "distanceValue": "1909"
-    },
-    {
-        "storeId": "1659",
-        "subwayId": "154",
-        "distanceText": "1.3 km",
-        "distanceValue": "1301"
-    },
-    {
-        "storeId": "1006554",
-        "subwayId": "156",
-        "distanceText": "0.2 km",
-        "distanceValue": "166"
-    },
-    {
-        "storeId": "1005278",
-        "subwayId": "156",
-        "distanceText": "0.2 km",
-        "distanceValue": "190"
-    },
-    {
-        "storeId": "1597",
-        "subwayId": "156",
-        "distanceText": "0.9 km",
-        "distanceValue": "887"
-    },
-    {
-        "storeId": "1826",
-        "subwayId": "156",
-        "distanceText": "1.1 km",
-        "distanceValue": "1120"
-    },
-    {
-        "storeId": "116355",
-        "subwayId": "156",
         "distanceText": "1.2 km",
-        "distanceValue": "1157"
+        "distanceValue": "1163"
     },
     {
-        "storeId": "1012055",
-        "subwayId": "156",
+        "storeId": "2164047144",
+        "subwayId": "139",
+        "distanceText": "1.2 km",
+        "distanceValue": "1241"
+    },
+    {
+        "storeId": "2163129135",
+        "subwayId": "139",
         "distanceText": "1.6 km",
-        "distanceValue": "1614"
+        "distanceValue": "1590"
     },
     {
-        "storeId": "1006429",
-        "subwayId": "156",
-        "distanceText": "1.6 km",
-        "distanceValue": "1650"
-    },
-    {
-        "storeId": "89911",
-        "subwayId": "156",
+        "storeId": "2153078562",
+        "subwayId": "144",
         "distanceText": "1.8 km",
-        "distanceValue": "1831"
+        "distanceValue": "1756"
     },
     {
-        "storeId": "68301",
-        "subwayId": "156",
-        "distanceText": "1.9 km",
-        "distanceValue": "1933"
+        "storeId": "2168660886",
+        "subwayId": "145",
+        "distanceText": "1.3 km",
+        "distanceValue": "1290"
     },
     {
-        "storeId": "113397",
-        "subwayId": "156",
-        "distanceText": "2.0 km",
-        "distanceValue": "1955"
-    },
-    {
-        "storeId": "19397",
-        "subwayId": "156",
-        "distanceText": "2.0 km",
-        "distanceValue": "1990"
-    },
-    {
-        "storeId": "1006355",
-        "subwayId": "156",
+        "storeId": "2160456277",
+        "subwayId": "145",
         "distanceText": "2.0 km",
         "distanceValue": "1994"
     },
     {
-        "storeId": "1011565",
-        "subwayId": "157",
-        "distanceText": "1.4 km",
-        "distanceValue": "1437"
-    },
-    {
-        "storeId": "1010187",
-        "subwayId": "158",
-        "distanceText": "1.0 km",
-        "distanceValue": "1007"
-    },
-    {
-        "storeId": "1011315",
-        "subwayId": "158",
-        "distanceText": "1.5 km",
-        "distanceValue": "1526"
-    },
-    {
-        "storeId": "1006126",
-        "subwayId": "158",
-        "distanceText": "1.5 km",
-        "distanceValue": "1526"
-    },
-    {
-        "storeId": "1006474",
-        "subwayId": "158",
-        "distanceText": "1.6 km",
-        "distanceValue": "1622"
-    },
-    {
-        "storeId": "1597",
-        "subwayId": "158",
-        "distanceText": "1.8 km",
-        "distanceValue": "1794"
-    },
-    {
-        "storeId": "1914",
-        "subwayId": "158",
-        "distanceText": "1.8 km",
-        "distanceValue": "1827"
-    },
-    {
-        "storeId": "1009906",
-        "subwayId": "159",
-        "distanceText": "1.3 km",
-        "distanceValue": "1274"
-    },
-    {
-        "storeId": "1006474",
-        "subwayId": "160",
-        "distanceText": "0.4 km",
-        "distanceValue": "421"
-    },
-    {
-        "storeId": "1718",
-        "subwayId": "164",
-        "distanceText": "0.6 km",
-        "distanceValue": "592"
-    },
-    {
-        "storeId": "116528",
-        "subwayId": "164",
-        "distanceText": "1.1 km",
-        "distanceValue": "1059"
-    },
-    {
-        "storeId": "86964",
-        "subwayId": "164",
-        "distanceText": "1.1 km",
-        "distanceValue": "1061"
-    },
-    {
-        "storeId": "1707",
-        "subwayId": "164",
-        "distanceText": "1.1 km",
-        "distanceValue": "1070"
-    },
-    {
-        "storeId": "1008391",
-        "subwayId": "164",
-        "distanceText": "1.2 km",
-        "distanceValue": "1198"
-    },
-    {
-        "storeId": "1835",
-        "subwayId": "164",
-        "distanceText": "1.2 km",
-        "distanceValue": "1203"
-    },
-    {
-        "storeId": "92696",
-        "subwayId": "164",
-        "distanceText": "1.2 km",
-        "distanceValue": "1225"
-    },
-    {
-        "storeId": "1551",
-        "subwayId": "164",
-        "distanceText": "1.2 km",
-        "distanceValue": "1238"
-    },
-    {
-        "storeId": "91327",
-        "subwayId": "164",
-        "distanceText": "1.2 km",
-        "distanceValue": "1240"
-    },
-    {
-        "storeId": "113989",
-        "subwayId": "164",
-        "distanceText": "1.3 km",
-        "distanceValue": "1275"
-    },
-    {
-        "storeId": "1633",
-        "subwayId": "164",
-        "distanceText": "1.3 km",
-        "distanceValue": "1277"
-    },
-    {
-        "storeId": "1005580",
-        "subwayId": "164",
-        "distanceText": "1.3 km",
-        "distanceValue": "1292"
-    },
-    {
-        "storeId": "63283",
-        "subwayId": "164",
-        "distanceText": "1.5 km",
-        "distanceValue": "1478"
-    },
-    {
-        "storeId": "1550",
-        "subwayId": "164",
-        "distanceText": "1.5 km",
-        "distanceValue": "1482"
-    },
-    {
-        "storeId": "1009771",
-        "subwayId": "164",
-        "distanceText": "1.5 km",
-        "distanceValue": "1500"
-    },
-    {
-        "storeId": "1008537",
-        "subwayId": "164",
-        "distanceText": "1.6 km",
-        "distanceValue": "1579"
-    },
-    {
-        "storeId": "1007862",
-        "subwayId": "164",
-        "distanceText": "1.7 km",
-        "distanceValue": "1651"
-    },
-    {
-        "storeId": "1652",
-        "subwayId": "164",
-        "distanceText": "1.7 km",
-        "distanceValue": "1655"
-    },
-    {
-        "storeId": "1011209",
-        "subwayId": "164",
-        "distanceText": "1.8 km",
-        "distanceValue": "1766"
-    },
-    {
-        "storeId": "1769",
-        "subwayId": "164",
-        "distanceText": "1.8 km",
-        "distanceValue": "1773"
-    },
-    {
-        "storeId": "1697",
-        "subwayId": "164",
-        "distanceText": "1.8 km",
-        "distanceValue": "1779"
-    },
-    {
-        "storeId": "116349",
-        "subwayId": "164",
-        "distanceText": "1.8 km",
-        "distanceValue": "1819"
-    },
-    {
-        "storeId": "1005195",
-        "subwayId": "164",
-        "distanceText": "2.0 km",
-        "distanceValue": "1953"
-    },
-    {
-        "storeId": "91735",
-        "subwayId": "164",
-        "distanceText": "2.0 km",
-        "distanceValue": "1975"
-    },
-    {
-        "storeId": "90289",
-        "subwayId": "165",
-        "distanceText": "0.3 km",
-        "distanceValue": "302"
-    },
-    {
-        "storeId": "1011018",
-        "subwayId": "165",
-        "distanceText": "0.4 km",
-        "distanceValue": "377"
-    },
-    {
-        "storeId": "1856",
-        "subwayId": "165",
-        "distanceText": "0.4 km",
-        "distanceValue": "390"
-    },
-    {
-        "storeId": "1645",
-        "subwayId": "165",
-        "distanceText": "0.6 km",
-        "distanceValue": "610"
-    },
-    {
-        "storeId": "1598",
-        "subwayId": "165",
-        "distanceText": "0.6 km",
-        "distanceValue": "619"
-    },
-    {
-        "storeId": "87530",
-        "subwayId": "165",
-        "distanceText": "1.5 km",
-        "distanceValue": "1491"
-    },
-    {
-        "storeId": "1593",
-        "subwayId": "165",
-        "distanceText": "1.5 km",
-        "distanceValue": "1527"
-    },
-    {
-        "storeId": "1737",
-        "subwayId": "165",
-        "distanceText": "1.9 km",
-        "distanceValue": "1897"
-    },
-    {
-        "storeId": "113875",
-        "subwayId": "165",
-        "distanceText": "1.9 km",
-        "distanceValue": "1916"
-    },
-    {
-        "storeId": "1008280",
-        "subwayId": "165",
-        "distanceText": "2.0 km",
-        "distanceValue": "1984"
-    },
-    {
-        "storeId": "1800",
-        "subwayId": "166",
-        "distanceText": "0.6 km",
-        "distanceValue": "598"
-    },
-    {
-        "storeId": "1705",
-        "subwayId": "166",
-        "distanceText": "1.5 km",
-        "distanceValue": "1495"
-    },
-    {
-        "storeId": "69596",
-        "subwayId": "166",
-        "distanceText": "1.6 km",
-        "distanceValue": "1575"
-    },
-    {
-        "storeId": "1580",
-        "subwayId": "166",
-        "distanceText": "1.7 km",
-        "distanceValue": "1696"
-    },
-    {
-        "storeId": "1593",
-        "subwayId": "166",
-        "distanceText": "1.7 km",
-        "distanceValue": "1720"
-    },
-    {
-        "storeId": "1011020",
-        "subwayId": "166",
-        "distanceText": "1.7 km",
-        "distanceValue": "1730"
-    },
-    {
-        "storeId": "69691",
-        "subwayId": "166",
-        "distanceText": "1.8 km",
-        "distanceValue": "1835"
-    },
-    {
-        "storeId": "113875",
-        "subwayId": "166",
-        "distanceText": "1.8 km",
-        "distanceValue": "1837"
-    },
-    {
-        "storeId": "1698",
-        "subwayId": "166",
-        "distanceText": "1.8 km",
-        "distanceValue": "1848"
-    },
-    {
-        "storeId": "1625",
-        "subwayId": "166",
-        "distanceText": "1.9 km",
-        "distanceValue": "1868"
-    },
-    {
-        "storeId": "19436",
-        "subwayId": "166",
-        "distanceText": "1.9 km",
-        "distanceValue": "1872"
-    },
-    {
-        "storeId": "1008377",
-        "subwayId": "167",
-        "distanceText": "0.4 km",
-        "distanceValue": "413"
-    },
-    {
-        "storeId": "1005744",
-        "subwayId": "167",
-        "distanceText": "1.3 km",
-        "distanceValue": "1309"
-    },
-    {
-        "storeId": "1006939",
-        "subwayId": "171",
-        "distanceText": "1.8 km",
-        "distanceValue": "1837"
-    },
-    {
-        "storeId": "1008574",
-        "subwayId": "173",
-        "distanceText": "0.3 km",
-        "distanceValue": "313"
-    },
-    {
-        "storeId": "19397",
-        "subwayId": "173",
-        "distanceText": "0.3 km",
-        "distanceValue": "348"
-    },
-    {
-        "storeId": "1652",
-        "subwayId": "173",
-        "distanceText": "1.0 km",
-        "distanceValue": "969"
-    },
-    {
-        "storeId": "1769",
-        "subwayId": "173",
-        "distanceText": "1.1 km",
-        "distanceValue": "1079"
-    },
-    {
-        "storeId": "1009771",
-        "subwayId": "173",
-        "distanceText": "1.1 km",
-        "distanceValue": "1125"
-    },
-    {
-        "storeId": "1005580",
-        "subwayId": "173",
-        "distanceText": "1.2 km",
-        "distanceValue": "1152"
-    },
-    {
-        "storeId": "1801",
-        "subwayId": "173",
-        "distanceText": "1.3 km",
-        "distanceValue": "1257"
-    },
-    {
-        "storeId": "1551",
-        "subwayId": "173",
-        "distanceText": "1.4 km",
-        "distanceValue": "1358"
-    },
-    {
-        "storeId": "63283",
-        "subwayId": "173",
-        "distanceText": "1.5 km",
-        "distanceValue": "1531"
-    },
-    {
-        "storeId": "116349",
-        "subwayId": "173",
-        "distanceText": "1.6 km",
-        "distanceValue": "1589"
-    },
-    {
-        "storeId": "91327",
-        "subwayId": "173",
-        "distanceText": "1.6 km",
-        "distanceValue": "1610"
-    },
-    {
-        "storeId": "1633",
-        "subwayId": "173",
-        "distanceText": "1.6 km",
-        "distanceValue": "1639"
-    },
-    {
-        "storeId": "1835",
-        "subwayId": "173",
-        "distanceText": "1.7 km",
-        "distanceValue": "1674"
-    },
-    {
-        "storeId": "1718",
-        "subwayId": "173",
-        "distanceText": "1.7 km",
-        "distanceValue": "1721"
-    },
-    {
-        "storeId": "113989",
-        "subwayId": "173",
-        "distanceText": "1.7 km",
-        "distanceValue": "1746"
-    },
-    {
-        "storeId": "1768",
-        "subwayId": "173",
-        "distanceText": "1.9 km",
-        "distanceValue": "1906"
-    },
-    {
-        "storeId": "68301",
-        "subwayId": "173",
-        "distanceText": "1.9 km",
-        "distanceValue": "1913"
-    },
-    {
-        "storeId": "91735",
-        "subwayId": "173",
-        "distanceText": "1.9 km",
-        "distanceValue": "1943"
-    },
-    {
-        "storeId": "1006355",
-        "subwayId": "173",
-        "distanceText": "2.0 km",
-        "distanceValue": "1974"
-    },
-    {
-        "storeId": "1006554",
-        "subwayId": "173",
-        "distanceText": "2.0 km",
-        "distanceValue": "1993"
-    },
-    {
-        "storeId": "1012055",
-        "subwayId": "174",
-        "distanceText": "2.0 km",
-        "distanceValue": "1961"
-    },
-    {
-        "storeId": "89383",
-        "subwayId": "175",
-        "distanceText": "0.5 km",
-        "distanceValue": "483"
-    },
-    {
-        "storeId": "1008329",
-        "subwayId": "176",
-        "distanceText": "0.8 km",
-        "distanceValue": "769"
-    },
-    {
-        "storeId": "89196",
-        "subwayId": "177",
-        "distanceText": "0.4 km",
-        "distanceValue": "442"
-    },
-    {
-        "storeId": "1010255",
-        "subwayId": "177",
-        "distanceText": "0.5 km",
-        "distanceValue": "483"
-    },
-    {
-        "storeId": "94957",
-        "subwayId": "177",
-        "distanceText": "0.5 km",
-        "distanceValue": "494"
-    },
-    {
-        "storeId": "1604",
-        "subwayId": "177",
-        "distanceText": "0.5 km",
-        "distanceValue": "525"
-    },
-    {
-        "storeId": "1011020",
-        "subwayId": "177",
-        "distanceText": "0.6 km",
-        "distanceValue": "569"
-    },
-    {
-        "storeId": "1008280",
-        "subwayId": "177",
-        "distanceText": "0.7 km",
-        "distanceValue": "719"
-    },
-    {
-        "storeId": "69596",
-        "subwayId": "177",
-        "distanceText": "0.7 km",
-        "distanceValue": "726"
-    },
-    {
-        "storeId": "1580",
-        "subwayId": "177",
-        "distanceText": "0.8 km",
-        "distanceValue": "847"
-    },
-    {
-        "storeId": "1634",
-        "subwayId": "177",
-        "distanceText": "0.9 km",
-        "distanceValue": "868"
-    },
-    {
-        "storeId": "1011058",
-        "subwayId": "177",
-        "distanceText": "1.1 km",
-        "distanceValue": "1128"
-    },
-    {
-        "storeId": "113875",
-        "subwayId": "177",
-        "distanceText": "1.2 km",
-        "distanceValue": "1216"
-    },
-    {
-        "storeId": "1593",
-        "subwayId": "177",
-        "distanceText": "1.3 km",
-        "distanceValue": "1316"
-    },
-    {
-        "storeId": "1749",
-        "subwayId": "177",
-        "distanceText": "1.5 km",
-        "distanceValue": "1516"
-    },
-    {
-        "storeId": "19151",
-        "subwayId": "177",
-        "distanceText": "1.5 km",
-        "distanceValue": "1543"
-    },
-    {
-        "storeId": "1705",
-        "subwayId": "177",
-        "distanceText": "1.6 km",
-        "distanceValue": "1641"
-    },
-    {
-        "storeId": "69691",
-        "subwayId": "177",
-        "distanceText": "2.0 km",
-        "distanceValue": "1981"
-    },
-    {
-        "storeId": "68879",
-        "subwayId": "180",
-        "distanceText": "1.8 km",
-        "distanceValue": "1844"
-    },
-    {
-        "storeId": "114048",
-        "subwayId": "180",
-        "distanceText": "2.0 km",
-        "distanceValue": "1984"
-    },
-    {
-        "storeId": "1607",
-        "subwayId": "182",
-        "distanceText": "0.6 km",
-        "distanceValue": "595"
-    },
-    {
-        "storeId": "1005672",
-        "subwayId": "182",
-        "distanceText": "0.8 km",
-        "distanceValue": "771"
-    },
-    {
-        "storeId": "1009374",
-        "subwayId": "183",
+        "storeId": "2136336229",
+        "subwayId": "156",
         "distanceText": "0.2 km",
-        "distanceValue": "208"
+        "distanceValue": "183"
     },
     {
-        "storeId": "1957",
-        "subwayId": "183",
-        "distanceText": "0.3 km",
-        "distanceValue": "255"
-    },
-    {
-        "storeId": "1009412",
-        "subwayId": "183",
+        "storeId": "2156982819",
+        "subwayId": "156",
         "distanceText": "0.6 km",
-        "distanceValue": "569"
+        "distanceValue": "634"
     },
     {
-        "storeId": "1632",
-        "subwayId": "183",
-        "distanceText": "0.8 km",
-        "distanceValue": "793"
-    },
-    {
-        "storeId": "1011136",
-        "subwayId": "183",
-        "distanceText": "1.1 km",
-        "distanceValue": "1131"
-    },
-    {
-        "storeId": "1008082",
-        "subwayId": "183",
-        "distanceText": "1.1 km",
-        "distanceValue": "1148"
-    },
-    {
-        "storeId": "1899",
-        "subwayId": "183",
-        "distanceText": "1.3 km",
-        "distanceValue": "1343"
-    },
-    {
-        "storeId": "68396",
-        "subwayId": "183",
-        "distanceText": "1.5 km",
-        "distanceValue": "1470"
-    },
-    {
-        "storeId": "1529",
-        "subwayId": "183",
-        "distanceText": "1.5 km",
-        "distanceValue": "1470"
-    },
-    {
-        "storeId": "1006318",
-        "subwayId": "183",
-        "distanceText": "1.5 km",
-        "distanceValue": "1470"
-    },
-    {
-        "storeId": "19429",
-        "subwayId": "183",
-        "distanceText": "1.5 km",
-        "distanceValue": "1512"
-    },
-    {
-        "storeId": "1008418",
-        "subwayId": "183",
+        "storeId": "2153210007",
+        "subwayId": "156",
         "distanceText": "1.8 km",
-        "distanceValue": "1826"
+        "distanceValue": "1782"
     },
     {
-        "storeId": "1743",
-        "subwayId": "183",
-        "distanceText": "1.9 km",
-        "distanceValue": "1893"
-    },
-    {
-        "storeId": "1009029",
-        "subwayId": "183",
-        "distanceText": "1.9 km",
-        "distanceValue": "1925"
-    },
-    {
-        "storeId": "1005227",
-        "subwayId": "184",
-        "distanceText": "0.8 km",
-        "distanceValue": "840"
-    },
-    {
-        "storeId": "1637",
-        "subwayId": "184",
-        "distanceText": "1.0 km",
-        "distanceValue": "1047"
-    },
-    {
-        "storeId": "1860",
-        "subwayId": "184",
-        "distanceText": "1.2 km",
-        "distanceValue": "1237"
-    },
-    {
-        "storeId": "1619",
-        "subwayId": "184",
-        "distanceText": "1.2 km",
-        "distanceValue": "1250"
-    },
-    {
-        "storeId": "19463",
-        "subwayId": "184",
+        "storeId": "2161736102",
+        "subwayId": "158",
         "distanceText": "1.5 km",
-        "distanceValue": "1464"
+        "distanceValue": "1451"
     },
     {
-        "storeId": "1612",
-        "subwayId": "184",
-        "distanceText": "1.5 km",
-        "distanceValue": "1490"
-    },
-    {
-        "storeId": "1837",
-        "subwayId": "184",
-        "distanceText": "1.7 km",
-        "distanceValue": "1692"
-    },
-    {
-        "storeId": "1008352",
-        "subwayId": "184",
-        "distanceText": "1.9 km",
-        "distanceValue": "1886"
-    },
-    {
-        "storeId": "1006290",
-        "subwayId": "184",
-        "distanceText": "1.9 km",
-        "distanceValue": "1909"
-    },
-    {
-        "storeId": "1006474",
-        "subwayId": "185",
-        "distanceText": "1.2 km",
-        "distanceValue": "1246"
-    },
-    {
-        "storeId": "87530",
-        "subwayId": "186",
-        "distanceText": "0.7 km",
-        "distanceValue": "722"
-    },
-    {
-        "storeId": "1645",
-        "subwayId": "186",
-        "distanceText": "0.8 km",
-        "distanceValue": "836"
-    },
-    {
-        "storeId": "1737",
-        "subwayId": "186",
-        "distanceText": "1.1 km",
-        "distanceValue": "1128"
-    },
-    {
-        "storeId": "90289",
-        "subwayId": "186",
-        "distanceText": "1.3 km",
-        "distanceValue": "1257"
-    },
-    {
-        "storeId": "1009911",
-        "subwayId": "186",
-        "distanceText": "1.4 km",
-        "distanceValue": "1384"
-    },
-    {
-        "storeId": "68879",
-        "subwayId": "186",
-        "distanceText": "1.4 km",
-        "distanceValue": "1431"
-    },
-    {
-        "storeId": "1011018",
-        "subwayId": "186",
-        "distanceText": "1.5 km",
-        "distanceValue": "1488"
-    },
-    {
-        "storeId": "114048",
-        "subwayId": "186",
-        "distanceText": "1.5 km",
-        "distanceValue": "1532"
-    },
-    {
-        "storeId": "1856",
-        "subwayId": "186",
+        "storeId": "2166053389",
+        "subwayId": "158",
         "distanceText": "1.6 km",
-        "distanceValue": "1559"
+        "distanceValue": "1616"
     },
     {
-        "storeId": "1009480",
-        "subwayId": "186",
+        "storeId": "2152944019",
+        "subwayId": "160",
         "distanceText": "1.6 km",
-        "distanceValue": "1623"
+        "distanceValue": "1574"
     },
     {
-        "storeId": "113928",
-        "subwayId": "186",
-        "distanceText": "1.9 km",
-        "distanceValue": "1887"
-    },
-    {
-        "storeId": "1598",
-        "subwayId": "186",
-        "distanceText": "1.9 km",
-        "distanceValue": "1892"
-    },
-    {
-        "storeId": "1635",
-        "subwayId": "187",
-        "distanceText": "1.4 km",
-        "distanceValue": "1434"
-    },
-    {
-        "storeId": "1632",
-        "subwayId": "188",
-        "distanceText": "0.4 km",
-        "distanceValue": "407"
-    },
-    {
-        "storeId": "1009029",
-        "subwayId": "188",
-        "distanceText": "0.8 km",
-        "distanceValue": "778"
-    },
-    {
-        "storeId": "1957",
-        "subwayId": "188",
-        "distanceText": "0.8 km",
-        "distanceValue": "823"
-    },
-    {
-        "storeId": "1009374",
-        "subwayId": "188",
-        "distanceText": "0.9 km",
-        "distanceValue": "882"
-    },
-    {
-        "storeId": "1009412",
-        "subwayId": "188",
-        "distanceText": "1.2 km",
-        "distanceValue": "1243"
-    },
-    {
-        "storeId": "1899",
-        "subwayId": "188",
-        "distanceText": "1.3 km",
-        "distanceValue": "1251"
-    },
-    {
-        "storeId": "1011139",
-        "subwayId": "188",
-        "distanceText": "1.6 km",
-        "distanceValue": "1591"
-    },
-    {
-        "storeId": "1743",
-        "subwayId": "188",
-        "distanceText": "1.7 km",
-        "distanceValue": "1690"
-    },
-    {
-        "storeId": "1011136",
-        "subwayId": "188",
-        "distanceText": "1.8 km",
-        "distanceValue": "1805"
-    },
-    {
-        "storeId": "1008082",
-        "subwayId": "188",
-        "distanceText": "1.8 km",
-        "distanceValue": "1822"
-    },
-    {
-        "storeId": "1632",
-        "subwayId": "189",
-        "distanceText": "0.9 km",
-        "distanceValue": "946"
-    },
-    {
-        "storeId": "1957",
-        "subwayId": "189",
-        "distanceText": "1.0 km",
-        "distanceValue": "1001"
-    },
-    {
-        "storeId": "1009374",
-        "subwayId": "189",
-        "distanceText": "1.4 km",
-        "distanceValue": "1374"
-    },
-    {
-        "storeId": "1009029",
-        "subwayId": "189",
-        "distanceText": "1.7 km",
-        "distanceValue": "1676"
-    },
-    {
-        "storeId": "1008082",
-        "subwayId": "189",
-        "distanceText": "1.7 km",
-        "distanceValue": "1706"
-    },
-    {
-        "storeId": "1009412",
-        "subwayId": "189",
-        "distanceText": "1.7 km",
-        "distanceValue": "1735"
-    },
-    {
-        "storeId": "1006939",
-        "subwayId": "190",
-        "distanceText": "1.8 km",
-        "distanceValue": "1844"
-    },
-    {
-        "storeId": "1886",
-        "subwayId": "191",
-        "distanceText": "1.0 km",
-        "distanceValue": "953"
-    },
-    {
-        "storeId": "1009375",
-        "subwayId": "191",
-        "distanceText": "1.8 km",
-        "distanceValue": "1839"
-    },
-    {
-        "storeId": "1786",
-        "subwayId": "191",
-        "distanceText": "1.9 km",
-        "distanceValue": "1885"
-    },
-    {
-        "storeId": "89383",
-        "subwayId": "192",
-        "distanceText": "1.2 km",
-        "distanceValue": "1245"
-    },
-    {
-        "storeId": "1011296",
-        "subwayId": "196",
-        "distanceText": "1.6 km",
-        "distanceValue": "1641"
-    },
-    {
-        "storeId": "1008380",
-        "subwayId": "199",
-        "distanceText": "1.1 km",
-        "distanceValue": "1105"
-    },
-    {
-        "storeId": "1956",
-        "subwayId": "199",
-        "distanceText": "1.2 km",
-        "distanceValue": "1194"
-    },
-    {
-        "storeId": "1717",
-        "subwayId": "199",
-        "distanceText": "1.7 km",
-        "distanceValue": "1746"
-    },
-    {
-        "storeId": "1012055",
-        "subwayId": "202",
-        "distanceText": "2.0 km",
-        "distanceValue": "1953"
-    },
-    {
-        "storeId": "94437",
-        "subwayId": "205",
-        "distanceText": "0.4 km",
-        "distanceValue": "383"
-    },
-    {
-        "storeId": "91318",
-        "subwayId": "205",
-        "distanceText": "0.8 km",
-        "distanceValue": "796"
-    },
-    {
-        "storeId": "1008541",
-        "subwayId": "208",
-        "distanceText": "1.6 km",
-        "distanceValue": "1578"
-    },
-    {
-        "storeId": "1845",
-        "subwayId": "209",
-        "distanceText": "1.9 km",
-        "distanceValue": "1928"
-    },
-    {
-        "storeId": "88354",
-        "subwayId": "210",
-        "distanceText": "2.0 km",
-        "distanceValue": "1957"
-    },
-    {
-        "storeId": "1006116",
-        "subwayId": "210",
-        "distanceText": "2.0 km",
-        "distanceValue": "1974"
-    },
-    {
-        "storeId": "1008537",
-        "subwayId": "212",
+        "storeId": "2163512916",
+        "subwayId": "164",
         "distanceText": "0.3 km",
-        "distanceValue": "254"
+        "distanceValue": "305"
     },
     {
-        "storeId": "1697",
-        "subwayId": "212",
-        "distanceText": "0.3 km",
-        "distanceValue": "259"
-    },
-    {
-        "storeId": "76319",
-        "subwayId": "212",
+        "storeId": "2153088773",
+        "subwayId": "164",
         "distanceText": "0.5 km",
-        "distanceValue": "462"
+        "distanceValue": "526"
     },
     {
-        "storeId": "1008391",
-        "subwayId": "212",
-        "distanceText": "0.7 km",
-        "distanceValue": "673"
-    },
-    {
-        "storeId": "1011012",
-        "subwayId": "212",
-        "distanceText": "0.8 km",
-        "distanceValue": "779"
-    },
-    {
-        "storeId": "86964",
-        "subwayId": "212",
+        "storeId": "2163346035",
+        "subwayId": "164",
         "distanceText": "0.9 km",
-        "distanceValue": "861"
+        "distanceValue": "853"
     },
     {
-        "storeId": "116528",
-        "subwayId": "212",
-        "distanceText": "0.9 km",
-        "distanceValue": "883"
-    },
-    {
-        "storeId": "92696",
-        "subwayId": "212",
-        "distanceText": "0.9 km",
-        "distanceValue": "916"
-    },
-    {
-        "storeId": "91327",
-        "subwayId": "212",
+        "storeId": "2162308226",
+        "subwayId": "164",
         "distanceText": "1.2 km",
-        "distanceValue": "1210"
+        "distanceValue": "1192"
     },
     {
-        "storeId": "1006698",
-        "subwayId": "212",
-        "distanceText": "1.3 km",
-        "distanceValue": "1345"
-    },
-    {
-        "storeId": "1550",
-        "subwayId": "212",
-        "distanceText": "1.4 km",
-        "distanceValue": "1414"
-    },
-    {
-        "storeId": "1009771",
-        "subwayId": "212",
+        "storeId": "2163129135",
+        "subwayId": "164",
         "distanceText": "1.5 km",
-        "distanceValue": "1470"
+        "distanceValue": "1524"
     },
     {
-        "storeId": "1946",
-        "subwayId": "212",
-        "distanceText": "1.5 km",
-        "distanceValue": "1520"
-    },
-    {
-        "storeId": "1007862",
-        "subwayId": "212",
-        "distanceText": "1.5 km",
-        "distanceValue": "1529"
-    },
-    {
-        "storeId": "1699",
-        "subwayId": "212",
-        "distanceText": "1.6 km",
-        "distanceValue": "1561"
-    },
-    {
-        "storeId": "1006164",
-        "subwayId": "212",
-        "distanceText": "1.6 km",
-        "distanceValue": "1579"
-    },
-    {
-        "storeId": "1652",
-        "subwayId": "212",
-        "distanceText": "1.6 km",
-        "distanceValue": "1625"
-    },
-    {
-        "storeId": "1011209",
-        "subwayId": "212",
-        "distanceText": "1.6 km",
-        "distanceValue": "1645"
-    },
-    {
-        "storeId": "89870",
-        "subwayId": "212",
-        "distanceText": "1.7 km",
-        "distanceValue": "1677"
-    },
-    {
-        "storeId": "1769",
-        "subwayId": "212",
-        "distanceText": "1.7 km",
-        "distanceValue": "1743"
-    },
-    {
-        "storeId": "1646",
-        "subwayId": "212",
-        "distanceText": "1.8 km",
-        "distanceValue": "1821"
-    },
-    {
-        "storeId": "1005195",
-        "subwayId": "212",
-        "distanceText": "1.8 km",
-        "distanceValue": "1832"
-    },
-    {
-        "storeId": "116537",
-        "subwayId": "212",
-        "distanceText": "1.8 km",
-        "distanceValue": "1842"
-    },
-    {
-        "storeId": "1776",
-        "subwayId": "212",
-        "distanceText": "1.9 km",
-        "distanceValue": "1878"
-    },
-    {
-        "storeId": "1707",
-        "subwayId": "212",
-        "distanceText": "1.9 km",
-        "distanceValue": "1897"
-    },
-    {
-        "storeId": "1006290",
-        "subwayId": "212",
-        "distanceText": "2.0 km",
-        "distanceValue": "1957"
-    },
-    {
-        "storeId": "116323",
-        "subwayId": "214",
-        "distanceText": "0.8 km",
-        "distanceValue": "780"
-    },
-    {
-        "storeId": "1008410",
-        "subwayId": "214",
-        "distanceText": "1.5 km",
-        "distanceValue": "1538"
-    },
-    {
-        "storeId": "1006923",
-        "subwayId": "214",
-        "distanceText": "1.6 km",
-        "distanceValue": "1570"
-    },
-    {
-        "storeId": "113955",
-        "subwayId": "214",
-        "distanceText": "1.9 km",
-        "distanceValue": "1922"
-    },
-    {
-        "storeId": "1915",
-        "subwayId": "216",
-        "distanceText": "1.4 km",
-        "distanceValue": "1384"
-    },
-    {
-        "storeId": "1009415",
-        "subwayId": "217",
-        "distanceText": "1.0 km",
-        "distanceValue": "987"
-    },
-    {
-        "storeId": "1008153",
-        "subwayId": "217",
-        "distanceText": "1.0 km",
-        "distanceValue": "1002"
-    },
-    {
-        "storeId": "1734",
-        "subwayId": "217",
-        "distanceText": "1.8 km",
-        "distanceValue": "1800"
-    },
-    {
-        "storeId": "1942",
-        "subwayId": "219",
-        "distanceText": "1.0 km",
-        "distanceValue": "976"
-    },
-    {
-        "storeId": "1011058",
-        "subwayId": "219",
-        "distanceText": "1.9 km",
-        "distanceValue": "1858"
-    },
-    {
-        "storeId": "68301",
-        "subwayId": "223",
-        "distanceText": "0.8 km",
-        "distanceValue": "760"
-    },
-    {
-        "storeId": "1006355",
-        "subwayId": "223",
-        "distanceText": "0.8 km",
-        "distanceValue": "822"
-    },
-    {
-        "storeId": "19084",
-        "subwayId": "223",
-        "distanceText": "1.0 km",
-        "distanceValue": "974"
-    },
-    {
-        "storeId": "1826",
-        "subwayId": "223",
-        "distanceText": "1.0 km",
-        "distanceValue": "1028"
-    },
-    {
-        "storeId": "19397",
-        "subwayId": "223",
-        "distanceText": "1.1 km",
-        "distanceValue": "1105"
-    },
-    {
-        "storeId": "92693",
-        "subwayId": "223",
-        "distanceText": "1.1 km",
-        "distanceValue": "1112"
-    },
-    {
-        "storeId": "1006554",
-        "subwayId": "223",
-        "distanceText": "1.1 km",
-        "distanceValue": "1145"
-    },
-    {
-        "storeId": "1006429",
-        "subwayId": "223",
-        "distanceText": "1.1 km",
-        "distanceValue": "1147"
-    },
-    {
-        "storeId": "1008574",
-        "subwayId": "223",
-        "distanceText": "1.3 km",
-        "distanceValue": "1283"
-    },
-    {
-        "storeId": "89911",
-        "subwayId": "223",
-        "distanceText": "1.3 km",
-        "distanceValue": "1328"
-    },
-    {
-        "storeId": "1005278",
-        "subwayId": "223",
-        "distanceText": "1.3 km",
-        "distanceValue": "1334"
-    },
-    {
-        "storeId": "116355",
-        "subwayId": "223",
-        "distanceText": "1.4 km",
-        "distanceValue": "1406"
-    },
-    {
-        "storeId": "116349",
-        "subwayId": "223",
-        "distanceText": "1.4 km",
-        "distanceValue": "1415"
-    },
-    {
-        "storeId": "1801",
-        "subwayId": "223",
-        "distanceText": "1.4 km",
-        "distanceValue": "1428"
-    },
-    {
-        "storeId": "113397",
-        "subwayId": "223",
-        "distanceText": "1.5 km",
-        "distanceValue": "1452"
-    },
-    {
-        "storeId": "63283",
-        "subwayId": "223",
-        "distanceText": "1.6 km",
-        "distanceValue": "1642"
-    },
-    {
-        "storeId": "1633",
-        "subwayId": "223",
-        "distanceText": "1.7 km",
-        "distanceValue": "1687"
-    },
-    {
-        "storeId": "18897",
-        "subwayId": "223",
-        "distanceText": "1.7 km",
-        "distanceValue": "1689"
-    },
-    {
-        "storeId": "1005580",
-        "subwayId": "223",
-        "distanceText": "1.8 km",
-        "distanceValue": "1816"
-    },
-    {
-        "storeId": "1597",
-        "subwayId": "223",
+        "storeId": "2161361403",
+        "subwayId": "164",
         "distanceText": "1.9 km",
         "distanceValue": "1865"
     },
     {
-        "storeId": "1835",
-        "subwayId": "223",
+        "storeId": "2161361404",
+        "subwayId": "164",
         "distanceText": "1.9 km",
-        "distanceValue": "1905"
+        "distanceValue": "1865"
     },
     {
-        "storeId": "1551",
-        "subwayId": "223",
+        "storeId": "2153210007",
+        "subwayId": "164",
         "distanceText": "1.9 km",
-        "distanceValue": "1933"
+        "distanceValue": "1891"
     },
     {
-        "storeId": "91735",
-        "subwayId": "223",
+        "storeId": "2133660057",
+        "subwayId": "164",
         "distanceText": "2.0 km",
-        "distanceValue": "1968"
+        "distanceValue": "1951"
     },
     {
-        "storeId": "113989",
-        "subwayId": "223",
+        "storeId": "2162308225",
+        "subwayId": "164",
         "distanceText": "2.0 km",
-        "distanceValue": "1977"
+        "distanceValue": "1953"
     },
     {
-        "storeId": "1009342",
-        "subwayId": "225",
-        "distanceText": "0.4 km",
-        "distanceValue": "438"
+        "storeId": "2160456277",
+        "subwayId": "165",
+        "distanceText": "0.3 km",
+        "distanceValue": "327"
     },
     {
-        "storeId": "1651",
-        "subwayId": "225",
-        "distanceText": "1.1 km",
-        "distanceValue": "1094"
+        "storeId": "2150811182",
+        "subwayId": "165",
+        "distanceText": "0.5 km",
+        "distanceValue": "512"
     },
     {
-        "storeId": "1005547",
-        "subwayId": "225",
-        "distanceText": "1.4 km",
-        "distanceValue": "1358"
+        "storeId": "2161590113",
+        "subwayId": "165",
+        "distanceText": "1.3 km",
+        "distanceValue": "1306"
     },
     {
-        "storeId": "113397",
-        "subwayId": "225",
-        "distanceText": "1.5 km",
-        "distanceValue": "1481"
+        "storeId": "2120233063",
+        "subwayId": "165",
+        "distanceText": "1.7 km",
+        "distanceValue": "1706"
     },
     {
-        "storeId": "92812",
-        "subwayId": "225",
-        "distanceText": "1.6 km",
-        "distanceValue": "1597"
+        "storeId": "2161590113",
+        "subwayId": "166",
+        "distanceText": "1.7 km",
+        "distanceValue": "1700"
     },
     {
-        "storeId": "1011325",
-        "subwayId": "225",
-        "distanceText": "1.8 km",
-        "distanceValue": "1762"
+        "storeId": "2134757177",
+        "subwayId": "166",
+        "distanceText": "1.7 km",
+        "distanceValue": "1748"
     },
     {
-        "storeId": "1826",
-        "subwayId": "225",
+        "storeId": "2120233063",
+        "subwayId": "166",
         "distanceText": "1.9 km",
-        "distanceValue": "1942"
+        "distanceValue": "1885"
     },
     {
-        "storeId": "1006429",
-        "subwayId": "225",
-        "distanceText": "2.0 km",
-        "distanceValue": "1958"
+        "storeId": "2153088773",
+        "subwayId": "173",
+        "distanceText": "0.9 km",
+        "distanceValue": "852"
     },
     {
-        "storeId": "1011556",
-        "subwayId": "226",
-        "distanceText": "0.4 km",
-        "distanceValue": "443"
-    },
-    {
-        "storeId": "1009403",
-        "subwayId": "226",
+        "storeId": "2163512916",
+        "subwayId": "173",
         "distanceText": "1.2 km",
-        "distanceValue": "1243"
+        "distanceValue": "1201"
     },
     {
-        "storeId": "116362",
-        "subwayId": "226",
+        "storeId": "2163346035",
+        "subwayId": "173",
+        "distanceText": "1.6 km",
+        "distanceValue": "1650"
+    },
+    {
+        "storeId": "2156982819",
+        "subwayId": "173",
+        "distanceText": "1.7 km",
+        "distanceValue": "1681"
+    },
+    {
+        "storeId": "2162308225",
+        "subwayId": "173",
+        "distanceText": "1.7 km",
+        "distanceValue": "1694"
+    },
+    {
+        "storeId": "2136336229",
+        "subwayId": "173",
+        "distanceText": "1.9 km",
+        "distanceValue": "1854"
+    },
+    {
+        "storeId": "2162308226",
+        "subwayId": "173",
+        "distanceText": "1.9 km",
+        "distanceValue": "1916"
+    },
+    {
+        "storeId": "2166053389",
+        "subwayId": "174",
+        "distanceText": "1.5 km",
+        "distanceValue": "1548"
+    },
+    {
+        "storeId": "2161736102",
+        "subwayId": "174",
+        "distanceText": "1.6 km",
+        "distanceValue": "1596"
+    },
+    {
+        "storeId": "2155233015",
+        "subwayId": "176",
+        "distanceText": "1.4 km",
+        "distanceValue": "1446"
+    },
+    {
+        "storeId": "2165379893",
+        "subwayId": "176",
+        "distanceText": "1.9 km",
+        "distanceValue": "1891"
+    },
+    {
+        "storeId": "2120233063",
+        "subwayId": "177",
+        "distanceText": "0.7 km",
+        "distanceValue": "715"
+    },
+    {
+        "storeId": "2161590113",
+        "subwayId": "177",
+        "distanceText": "1.1 km",
+        "distanceValue": "1102"
+    },
+    {
+        "storeId": "2150811182",
+        "subwayId": "177",
         "distanceText": "1.8 km",
-        "distanceValue": "1785"
+        "distanceValue": "1817"
     },
     {
-        "storeId": "1574",
-        "subwayId": "228",
+        "storeId": "2134757177",
+        "subwayId": "177",
         "distanceText": "1.8 km",
-        "distanceValue": "1754"
+        "distanceValue": "1835"
     },
     {
-        "storeId": "1009406",
-        "subwayId": "229",
-        "distanceText": "0.6 km",
-        "distanceValue": "586"
+        "storeId": "2160456277",
+        "subwayId": "177",
+        "distanceText": "1.9 km",
+        "distanceValue": "1890"
     },
     {
-        "storeId": "18974",
-        "subwayId": "232",
-        "distanceText": "2.0 km",
-        "distanceValue": "1974"
+        "storeId": "2150762907",
+        "subwayId": "180",
+        "distanceText": "0.7 km",
+        "distanceValue": "722"
     },
     {
-        "storeId": "51996",
-        "subwayId": "235",
+        "storeId": "2151925153",
+        "subwayId": "180",
+        "distanceText": "0.9 km",
+        "distanceValue": "932"
+    },
+    {
+        "storeId": "2168739675",
+        "subwayId": "180",
+        "distanceText": "1.0 km",
+        "distanceValue": "1036"
+    },
+    {
+        "storeId": "2169568530",
+        "subwayId": "181",
+        "distanceText": "0.7 km",
+        "distanceValue": "684"
+    },
+    {
+        "storeId": "2164268826",
+        "subwayId": "183",
+        "distanceText": "1.0 km",
+        "distanceValue": "991"
+    },
+    {
+        "storeId": "2160857631",
+        "subwayId": "183",
         "distanceText": "1.1 km",
         "distanceValue": "1058"
     },
     {
-        "storeId": "1776",
-        "subwayId": "236",
-        "distanceText": "0.2 km",
-        "distanceValue": "240"
+        "storeId": "2164693630",
+        "subwayId": "183",
+        "distanceText": "1.4 km",
+        "distanceValue": "1408"
     },
     {
-        "storeId": "1005195",
-        "subwayId": "236",
-        "distanceText": "0.4 km",
-        "distanceValue": "399"
-    },
-    {
-        "storeId": "1872",
-        "subwayId": "236",
-        "distanceText": "0.5 km",
-        "distanceValue": "468"
-    },
-    {
-        "storeId": "1007862",
-        "subwayId": "236",
-        "distanceText": "0.6 km",
-        "distanceValue": "589"
-    },
-    {
-        "storeId": "91088",
-        "subwayId": "236",
-        "distanceText": "0.7 km",
-        "distanceValue": "693"
-    },
-    {
-        "storeId": "91087",
-        "subwayId": "236",
-        "distanceText": "0.7 km",
-        "distanceValue": "693"
-    },
-    {
-        "storeId": "1646",
-        "subwayId": "236",
-        "distanceText": "0.7 km",
-        "distanceValue": "738"
-    },
-    {
-        "storeId": "1704",
-        "subwayId": "236",
-        "distanceText": "0.9 km",
-        "distanceValue": "893"
-    },
-    {
-        "storeId": "1011496",
-        "subwayId": "236",
+        "storeId": "2154037951",
+        "subwayId": "184",
         "distanceText": "1.0 km",
-        "distanceValue": "1020"
+        "distanceValue": "995"
     },
     {
-        "storeId": "1783",
-        "subwayId": "236",
-        "distanceText": "1.0 km",
-        "distanceValue": "1024"
-    },
-    {
-        "storeId": "1011209",
-        "subwayId": "236",
-        "distanceText": "1.1 km",
-        "distanceValue": "1119"
-    },
-    {
-        "storeId": "1005487",
-        "subwayId": "236",
-        "distanceText": "1.1 km",
-        "distanceValue": "1142"
-    },
-    {
-        "storeId": "1008162",
-        "subwayId": "236",
+        "storeId": "2152382901",
+        "subwayId": "184",
         "distanceText": "1.2 km",
-        "distanceValue": "1222"
+        "distanceValue": "1211"
     },
     {
-        "storeId": "1567",
-        "subwayId": "236",
-        "distanceText": "1.3 km",
-        "distanceValue": "1301"
-    },
-    {
-        "storeId": "1006346",
-        "subwayId": "236",
-        "distanceText": "1.3 km",
-        "distanceValue": "1313"
-    },
-    {
-        "storeId": "91327",
-        "subwayId": "236",
+        "storeId": "2154030089",
+        "subwayId": "184",
         "distanceText": "1.4 km",
-        "distanceValue": "1350"
+        "distanceValue": "1355"
     },
     {
-        "storeId": "1006669",
-        "subwayId": "236",
+        "storeId": "2164226862",
+        "subwayId": "184",
         "distanceText": "1.4 km",
-        "distanceValue": "1426"
+        "distanceValue": "1411"
     },
     {
-        "storeId": "92871",
-        "subwayId": "236",
-        "distanceText": "1.4 km",
-        "distanceValue": "1426"
-    },
-    {
-        "storeId": "1007423",
-        "subwayId": "236",
-        "distanceText": "1.5 km",
-        "distanceValue": "1489"
-    },
-    {
-        "storeId": "1009771",
-        "subwayId": "236",
-        "distanceText": "1.5 km",
-        "distanceValue": "1491"
-    },
-    {
-        "storeId": "116537",
-        "subwayId": "236",
-        "distanceText": "1.5 km",
-        "distanceValue": "1525"
-    },
-    {
-        "storeId": "1550",
-        "subwayId": "236",
+        "storeId": "2164160683",
+        "subwayId": "184",
         "distanceText": "1.6 km",
-        "distanceValue": "1634"
+        "distanceValue": "1615"
     },
     {
-        "storeId": "1652",
-        "subwayId": "236",
-        "distanceText": "1.6 km",
-        "distanceValue": "1647"
-    },
-    {
-        "storeId": "1769",
-        "subwayId": "236",
+        "storeId": "2164741223",
+        "subwayId": "184",
         "distanceText": "1.8 km",
-        "distanceValue": "1765"
+        "distanceValue": "1791"
     },
     {
-        "storeId": "1006140",
-        "subwayId": "236",
-        "distanceText": "1.8 km",
-        "distanceValue": "1780"
-    },
-    {
-        "storeId": "1699",
-        "subwayId": "236",
-        "distanceText": "1.8 km",
-        "distanceValue": "1804"
-    },
-    {
-        "storeId": "1005580",
-        "subwayId": "236",
-        "distanceText": "1.8 km",
-        "distanceValue": "1838"
-    },
-    {
-        "storeId": "89870",
-        "subwayId": "236",
-        "distanceText": "1.9 km",
-        "distanceValue": "1920"
-    },
-    {
-        "storeId": "1937",
-        "subwayId": "238",
-        "distanceText": "1.2 km",
-        "distanceValue": "1225"
-    },
-    {
-        "storeId": "1738",
-        "subwayId": "238",
-        "distanceText": "1.3 km",
-        "distanceValue": "1254"
-    },
-    {
-        "storeId": "1809",
-        "subwayId": "238",
-        "distanceText": "1.3 km",
-        "distanceValue": "1310"
-    },
-    {
-        "storeId": "1656",
-        "subwayId": "238",
-        "distanceText": "1.5 km",
-        "distanceValue": "1515"
-    },
-    {
-        "storeId": "1011184",
-        "subwayId": "238",
-        "distanceText": "1.5 km",
-        "distanceValue": "1528"
-    },
-    {
-        "storeId": "1005320",
-        "subwayId": "238",
-        "distanceText": "1.6 km",
-        "distanceValue": "1620"
-    },
-    {
-        "storeId": "1572",
-        "subwayId": "238",
-        "distanceText": "1.9 km",
-        "distanceValue": "1884"
-    },
-    {
-        "storeId": "1837",
-        "subwayId": "238",
-        "distanceText": "1.9 km",
-        "distanceValue": "1889"
-    },
-    {
-        "storeId": "1945",
-        "subwayId": "238",
-        "distanceText": "1.9 km",
-        "distanceValue": "1924"
-    },
-    {
-        "storeId": "1608",
-        "subwayId": "238",
+        "storeId": "2164693630",
+        "subwayId": "184",
         "distanceText": "2.0 km",
         "distanceValue": "1981"
     },
     {
-        "storeId": "1008524",
-        "subwayId": "242",
-        "distanceText": "0.3 km",
-        "distanceValue": "322"
-    },
-    {
-        "storeId": "1008042",
-        "subwayId": "242",
-        "distanceText": "0.8 km",
-        "distanceValue": "754"
-    },
-    {
-        "storeId": "65761",
-        "subwayId": "242",
-        "distanceText": "1.0 km",
-        "distanceValue": "952"
-    },
-    {
-        "storeId": "1601",
-        "subwayId": "242",
-        "distanceText": "1.2 km",
-        "distanceValue": "1242"
-    },
-    {
-        "storeId": "18832",
-        "subwayId": "242",
-        "distanceText": "1.2 km",
-        "distanceValue": "1245"
-    },
-    {
-        "storeId": "1820",
-        "subwayId": "242",
-        "distanceText": "1.3 km",
-        "distanceValue": "1258"
-    },
-    {
-        "storeId": "1011033",
-        "subwayId": "242",
-        "distanceText": "1.6 km",
-        "distanceValue": "1602"
-    },
-    {
-        "storeId": "1005962",
-        "subwayId": "243",
-        "distanceText": "1.6 km",
-        "distanceValue": "1581"
-    },
-    {
-        "storeId": "1010418",
-        "subwayId": "243",
-        "distanceText": "2.0 km",
-        "distanceValue": "1979"
-    },
-    {
-        "storeId": "1005514",
-        "subwayId": "244",
-        "distanceText": "1.6 km",
-        "distanceValue": "1551"
-    },
-    {
-        "storeId": "19282",
-        "subwayId": "244",
-        "distanceText": "2.0 km",
-        "distanceValue": "1998"
-    },
-    {
-        "storeId": "1601",
-        "subwayId": "247",
-        "distanceText": "1.6 km",
-        "distanceValue": "1591"
-    },
-    {
-        "storeId": "1820",
-        "subwayId": "247",
-        "distanceText": "1.6 km",
-        "distanceValue": "1608"
-    },
-    {
-        "storeId": "1008507",
-        "subwayId": "248",
-        "distanceText": "0.8 km",
-        "distanceValue": "813"
-    },
-    {
-        "storeId": "1890",
-        "subwayId": "248",
-        "distanceText": "1.3 km",
-        "distanceValue": "1251"
-    },
-    {
-        "storeId": "1008369",
-        "subwayId": "248",
-        "distanceText": "1.5 km",
-        "distanceValue": "1519"
-    },
-    {
-        "storeId": "1603",
-        "subwayId": "248",
-        "distanceText": "1.6 km",
-        "distanceValue": "1569"
-    },
-    {
-        "storeId": "1713",
-        "subwayId": "248",
+        "storeId": "2152944019",
+        "subwayId": "185",
         "distanceText": "1.7 km",
-        "distanceValue": "1671"
+        "distanceValue": "1743"
     },
     {
-        "storeId": "1586",
-        "subwayId": "248",
+        "storeId": "2160456277",
+        "subwayId": "186",
+        "distanceText": "0.7 km",
+        "distanceValue": "749"
+    },
+    {
+        "storeId": "2150811182",
+        "subwayId": "186",
+        "distanceText": "1.1 km",
+        "distanceValue": "1140"
+    },
+    {
+        "storeId": "2161590113",
+        "subwayId": "186",
         "distanceText": "1.7 km",
-        "distanceValue": "1671"
+        "distanceValue": "1704"
     },
     {
-        "storeId": "1009415",
-        "subwayId": "248",
+        "storeId": "2164826126",
+        "subwayId": "187",
+        "distanceText": "1.1 km",
+        "distanceValue": "1139"
+    },
+    {
+        "storeId": "2164268826",
+        "subwayId": "188",
+        "distanceText": "0.5 km",
+        "distanceValue": "457"
+    },
+    {
+        "storeId": "2160857631",
+        "subwayId": "188",
+        "distanceText": "1.3 km",
+        "distanceValue": "1293"
+    },
+    {
+        "storeId": "2164693630",
+        "subwayId": "188",
+        "distanceText": "1.4 km",
+        "distanceValue": "1418"
+    },
+    {
+        "storeId": "2164268826",
+        "subwayId": "189",
+        "distanceText": "1.2 km",
+        "distanceValue": "1250"
+    },
+    {
+        "storeId": "2160857631",
+        "subwayId": "189",
         "distanceText": "1.8 km",
-        "distanceValue": "1836"
+        "distanceValue": "1813"
     },
     {
-        "storeId": "87634",
-        "subwayId": "250",
-        "distanceText": "1.3 km",
-        "distanceValue": "1310"
-    },
-    {
-        "storeId": "1006538",
-        "subwayId": "250",
-        "distanceText": "1.5 km",
-        "distanceValue": "1453"
-    },
-    {
-        "storeId": "1011557",
-        "subwayId": "250",
+        "storeId": "2158446297",
+        "subwayId": "192",
         "distanceText": "1.7 km",
-        "distanceValue": "1657"
+        "distanceValue": "1696"
     },
     {
-        "storeId": "1005409",
-        "subwayId": "250",
+        "storeId": "2162186193",
+        "subwayId": "199",
+        "distanceText": "0.4 km",
+        "distanceValue": "392"
+    },
+    {
+        "storeId": "2132521867",
+        "subwayId": "199",
+        "distanceText": "1.2 km",
+        "distanceValue": "1237"
+    },
+    {
+        "storeId": "2162308227",
+        "subwayId": "199",
+        "distanceText": "1.7 km",
+        "distanceValue": "1732"
+    },
+    {
+        "storeId": "2152895880",
+        "subwayId": "199",
+        "distanceText": "1.7 km",
+        "distanceValue": "1732"
+    },
+    {
+        "storeId": "2164065909",
+        "subwayId": "199",
+        "distanceText": "1.8 km",
+        "distanceValue": "1828"
+    },
+    {
+        "storeId": "2165808180",
+        "subwayId": "202",
+        "distanceText": "1.9 km",
+        "distanceValue": "1920"
+    },
+    {
+        "storeId": "2167760458",
+        "subwayId": "207",
+        "distanceText": "1.9 km",
+        "distanceValue": "1943"
+    },
+    {
+        "storeId": "2162308227",
+        "subwayId": "210",
+        "distanceText": "0.4 km",
+        "distanceValue": "437"
+    },
+    {
+        "storeId": "2152895880",
+        "subwayId": "210",
+        "distanceText": "0.4 km",
+        "distanceValue": "437"
+    },
+    {
+        "storeId": "2132521867",
+        "subwayId": "210",
+        "distanceText": "1.9 km",
+        "distanceValue": "1917"
+    },
+    {
+        "storeId": "2163129135",
+        "subwayId": "212",
+        "distanceText": "55 m",
+        "distanceValue": "55"
+    },
+    {
+        "storeId": "2133660057",
+        "subwayId": "212",
+        "distanceText": "0.4 km",
+        "distanceValue": "368"
+    },
+    {
+        "storeId": "2164047144",
+        "subwayId": "212",
+        "distanceText": "1.0 km",
+        "distanceValue": "1023"
+    },
+    {
+        "storeId": "2163346035",
+        "subwayId": "212",
+        "distanceText": "1.2 km",
+        "distanceValue": "1243"
+    },
+    {
+        "storeId": "2164741223",
+        "subwayId": "212",
+        "distanceText": "1.5 km",
+        "distanceValue": "1462"
+    },
+    {
+        "storeId": "2162308226",
+        "subwayId": "212",
+        "distanceText": "1.5 km",
+        "distanceValue": "1497"
+    },
+    {
+        "storeId": "2133161051",
+        "subwayId": "212",
+        "distanceText": "1.6 km",
+        "distanceValue": "1619"
+    },
+    {
+        "storeId": "2164160683",
+        "subwayId": "212",
+        "distanceText": "1.6 km",
+        "distanceValue": "1638"
+    },
+    {
+        "storeId": "2153088773",
+        "subwayId": "212",
+        "distanceText": "1.7 km",
+        "distanceValue": "1742"
+    },
+    {
+        "storeId": "2163512916",
+        "subwayId": "212",
+        "distanceText": "1.9 km",
+        "distanceValue": "1888"
+    },
+    {
+        "storeId": "2164226862",
+        "subwayId": "212",
+        "distanceText": "2.0 km",
+        "distanceValue": "1959"
+    },
+    {
+        "storeId": "2133161051",
+        "subwayId": "217",
+        "distanceText": "2.0 km",
+        "distanceValue": "1956"
+    },
+    {
+        "storeId": "2158660083",
+        "subwayId": "218",
+        "distanceText": "0.9 km",
+        "distanceValue": "947"
+    },
+    {
+        "storeId": "2150762907",
+        "subwayId": "218",
+        "distanceText": "1.5 km",
+        "distanceValue": "1466"
+    },
+    {
+        "storeId": "2168739675",
+        "subwayId": "219",
+        "distanceText": "0.2 km",
+        "distanceValue": "209"
+    },
+    {
+        "storeId": "2151925153",
+        "subwayId": "219",
+        "distanceText": "0.4 km",
+        "distanceValue": "360"
+    },
+    {
+        "storeId": "2150762907",
+        "subwayId": "219",
+        "distanceText": "1.9 km",
+        "distanceValue": "1855"
+    },
+    {
+        "storeId": "2156982819",
+        "subwayId": "223",
+        "distanceText": "0.6 km",
+        "distanceValue": "576"
+    },
+    {
+        "storeId": "2136336229",
+        "subwayId": "223",
+        "distanceText": "1.0 km",
+        "distanceValue": "973"
+    },
+    {
+        "storeId": "2153210007",
+        "subwayId": "223",
+        "distanceText": "1.1 km",
+        "distanceValue": "1137"
+    },
+    {
+        "storeId": "2153088773",
+        "subwayId": "223",
+        "distanceText": "1.7 km",
+        "distanceValue": "1667"
+    },
+    {
+        "storeId": "2163512916",
+        "subwayId": "223",
+        "distanceText": "1.9 km",
+        "distanceValue": "1883"
+    },
+    {
+        "storeId": "2165808180",
+        "subwayId": "225",
+        "distanceText": "1.4 km",
+        "distanceValue": "1354"
+    },
+    {
+        "storeId": "2134532153",
+        "subwayId": "228",
+        "distanceText": "1.4 km",
+        "distanceValue": "1442"
+    },
+    {
+        "storeId": "2164122191",
+        "subwayId": "228",
+        "distanceText": "1.5 km",
+        "distanceValue": "1482"
+    },
+    {
+        "storeId": "2150762907",
+        "subwayId": "232",
+        "distanceText": "1.8 km",
+        "distanceValue": "1783"
+    },
+    {
+        "storeId": "2158446297",
+        "subwayId": "233",
+        "distanceText": "1.1 km",
+        "distanceValue": "1109"
+    },
+    {
+        "storeId": "2161361404",
+        "subwayId": "236",
+        "distanceText": "44 m",
+        "distanceValue": "44"
+    },
+    {
+        "storeId": "2161361403",
+        "subwayId": "236",
+        "distanceText": "44 m",
+        "distanceValue": "44"
+    },
+    {
+        "storeId": "2152288196",
+        "subwayId": "236",
+        "distanceText": "0.4 km",
+        "distanceValue": "392"
+    },
+    {
+        "storeId": "2152399185",
+        "subwayId": "236",
+        "distanceText": "0.5 km",
+        "distanceValue": "500"
+    },
+    {
+        "storeId": "2162308226",
+        "subwayId": "236",
+        "distanceText": "0.6 km",
+        "distanceValue": "621"
+    },
+    {
+        "storeId": "2162308225",
+        "subwayId": "236",
+        "distanceText": "0.8 km",
+        "distanceValue": "789"
+    },
+    {
+        "storeId": "2163346035",
+        "subwayId": "236",
+        "distanceText": "1.0 km",
+        "distanceValue": "979"
+    },
+    {
+        "storeId": "2153088773",
+        "subwayId": "236",
+        "distanceText": "1.5 km",
+        "distanceValue": "1529"
+    },
+    {
+        "storeId": "2164741223",
+        "subwayId": "236",
+        "distanceText": "1.6 km",
+        "distanceValue": "1635"
+    },
+    {
+        "storeId": "2164160683",
+        "subwayId": "236",
         "distanceText": "1.8 km",
         "distanceValue": "1810"
     },
     {
-        "storeId": "1011557",
-        "subwayId": "251",
+        "storeId": "2163512916",
+        "subwayId": "236",
+        "distanceText": "1.9 km",
+        "distanceValue": "1910"
+    },
+    {
+        "storeId": "2152300972",
+        "subwayId": "238",
+        "distanceText": "0.9 km",
+        "distanceValue": "872"
+    },
+    {
+        "storeId": "2152381955",
+        "subwayId": "238",
         "distanceText": "1.3 km",
-        "distanceValue": "1264"
+        "distanceValue": "1298"
     },
     {
-        "storeId": "1006538",
-        "subwayId": "251",
-        "distanceText": "1.9 km",
-        "distanceValue": "1941"
-    },
-    {
-        "storeId": "19069",
-        "subwayId": "252",
+        "storeId": "2162128618",
+        "subwayId": "238",
         "distanceText": "1.4 km",
-        "distanceValue": "1436"
+        "distanceValue": "1379"
     },
     {
-        "storeId": "1006117",
-        "subwayId": "252",
-        "distanceText": "1.7 km",
-        "distanceValue": "1739"
-    },
-    {
-        "storeId": "1008329",
-        "subwayId": "253",
+        "storeId": "2132521867",
+        "subwayId": "238",
         "distanceText": "1.9 km",
-        "distanceValue": "1937"
+        "distanceValue": "1861"
     },
     {
-        "storeId": "1011012",
-        "subwayId": "254",
-        "distanceText": "56 m",
-        "distanceValue": "56"
+        "storeId": "2155233015",
+        "subwayId": "242",
+        "distanceText": "0.5 km",
+        "distanceValue": "474"
     },
     {
-        "storeId": "1697",
-        "subwayId": "254",
+        "storeId": "2165379893",
+        "subwayId": "242",
         "distanceText": "0.6 km",
-        "distanceValue": "563"
+        "distanceValue": "647"
     },
     {
-        "storeId": "76319",
+        "storeId": "2162145972",
+        "subwayId": "244",
+        "distanceText": "1.9 km",
+        "distanceValue": "1869"
+    },
+    {
+        "storeId": "2155233015",
+        "subwayId": "247",
+        "distanceText": "1.8 km",
+        "distanceValue": "1785"
+    },
+    {
+        "storeId": "2169568531",
+        "subwayId": "250",
+        "distanceText": "1.1 km",
+        "distanceValue": "1131"
+    },
+    {
+        "storeId": "2156618967",
+        "subwayId": "250",
+        "distanceText": "1.3 km",
+        "distanceValue": "1266"
+    },
+    {
+        "storeId": "2133660057",
+        "subwayId": "254",
+        "distanceText": "0.4 km",
+        "distanceValue": "357"
+    },
+    {
+        "storeId": "2164047144",
+        "subwayId": "254",
+        "distanceText": "0.5 km",
+        "distanceValue": "523"
+    },
+    {
+        "storeId": "2163129135",
         "subwayId": "254",
         "distanceText": "0.8 km",
-        "distanceValue": "782"
+        "distanceValue": "784"
     },
     {
-        "storeId": "1006164",
+        "storeId": "2133161051",
         "subwayId": "254",
         "distanceText": "0.9 km",
-        "distanceValue": "854"
+        "distanceValue": "895"
     },
     {
-        "storeId": "1008537",
-        "subwayId": "254",
-        "distanceText": "1.0 km",
-        "distanceValue": "1000"
-    },
-    {
-        "storeId": "1946",
-        "subwayId": "254",
-        "distanceText": "1.0 km",
-        "distanceValue": "1024"
-    },
-    {
-        "storeId": "1734",
-        "subwayId": "254",
-        "distanceText": "1.2 km",
-        "distanceValue": "1195"
-    },
-    {
-        "storeId": "92696",
-        "subwayId": "254",
-        "distanceText": "1.3 km",
-        "distanceValue": "1268"
-    },
-    {
-        "storeId": "1008391",
-        "subwayId": "254",
-        "distanceText": "1.4 km",
-        "distanceValue": "1407"
-    },
-    {
-        "storeId": "1006522",
-        "subwayId": "254",
-        "distanceText": "1.6 km",
-        "distanceValue": "1595"
-    },
-    {
-        "storeId": "86964",
-        "subwayId": "254",
-        "distanceText": "1.6 km",
-        "distanceValue": "1595"
-    },
-    {
-        "storeId": "116528",
-        "subwayId": "254",
-        "distanceText": "1.6 km",
-        "distanceValue": "1617"
-    },
-    {
-        "storeId": "1566",
-        "subwayId": "254",
-        "distanceText": "1.7 km",
-        "distanceValue": "1656"
-    },
-    {
-        "storeId": "87185",
+        "storeId": "2160752058",
         "subwayId": "254",
         "distanceText": "1.8 km",
         "distanceValue": "1760"
     },
     {
-        "storeId": "116537",
+        "storeId": "2164741223",
         "subwayId": "254",
         "distanceText": "1.8 km",
-        "distanceValue": "1776"
+        "distanceValue": "1809"
     },
     {
-        "storeId": "1009415",
+        "storeId": "2164668081",
         "subwayId": "254",
         "distanceText": "1.9 km",
-        "distanceValue": "1871"
+        "distanceValue": "1883"
     },
     {
-        "storeId": "1006698",
+        "storeId": "2164160683",
         "subwayId": "254",
-        "distanceText": "1.9 km",
-        "distanceValue": "1895"
-    },
-    {
-        "storeId": "1652",
-        "subwayId": "255",
-        "distanceText": "1.0 km",
-        "distanceValue": "988"
-    },
-    {
-        "storeId": "1769",
-        "subwayId": "255",
-        "distanceText": "1.1 km",
-        "distanceValue": "1097"
-    },
-    {
-        "storeId": "1008574",
-        "subwayId": "255",
-        "distanceText": "1.1 km",
-        "distanceValue": "1112"
-    },
-    {
-        "storeId": "1009771",
-        "subwayId": "255",
-        "distanceText": "1.1 km",
-        "distanceValue": "1143"
-    },
-    {
-        "storeId": "1005580",
-        "subwayId": "255",
-        "distanceText": "1.2 km",
-        "distanceValue": "1171"
-    },
-    {
-        "storeId": "1007862",
-        "subwayId": "255",
-        "distanceText": "1.3 km",
-        "distanceValue": "1251"
-    },
-    {
-        "storeId": "1801",
-        "subwayId": "255",
-        "distanceText": "1.3 km",
-        "distanceValue": "1276"
-    },
-    {
-        "storeId": "19397",
-        "subwayId": "255",
-        "distanceText": "1.4 km",
-        "distanceValue": "1363"
-    },
-    {
-        "storeId": "1011209",
-        "subwayId": "255",
-        "distanceText": "1.4 km",
-        "distanceValue": "1376"
-    },
-    {
-        "storeId": "1551",
-        "subwayId": "255",
-        "distanceText": "1.4 km",
-        "distanceValue": "1377"
-    },
-    {
-        "storeId": "91327",
-        "subwayId": "255",
-        "distanceText": "1.5 km",
-        "distanceValue": "1465"
-    },
-    {
-        "storeId": "1005195",
-        "subwayId": "255",
-        "distanceText": "1.6 km",
-        "distanceValue": "1553"
-    },
-    {
-        "storeId": "1776",
-        "subwayId": "255",
-        "distanceText": "1.6 km",
-        "distanceValue": "1600"
-    },
-    {
-        "storeId": "116349",
-        "subwayId": "255",
-        "distanceText": "1.6 km",
-        "distanceValue": "1607"
-    },
-    {
-        "storeId": "63283",
-        "subwayId": "255",
-        "distanceText": "1.6 km",
-        "distanceValue": "1613"
-    },
-    {
-        "storeId": "1633",
-        "subwayId": "255",
-        "distanceText": "1.7 km",
-        "distanceValue": "1657"
-    },
-    {
-        "storeId": "1718",
-        "subwayId": "255",
-        "distanceText": "1.7 km",
-        "distanceValue": "1740"
-    },
-    {
-        "storeId": "1646",
-        "subwayId": "255",
-        "distanceText": "1.8 km",
-        "distanceValue": "1765"
-    },
-    {
-        "storeId": "1835",
-        "subwayId": "255",
-        "distanceText": "1.9 km",
-        "distanceValue": "1875"
-    },
-    {
-        "storeId": "68301",
-        "subwayId": "255",
-        "distanceText": "1.9 km",
-        "distanceValue": "1932"
-    },
-    {
-        "storeId": "1550",
-        "subwayId": "255",
-        "distanceText": "1.9 km",
-        "distanceValue": "1942"
-    },
-    {
-        "storeId": "113989",
-        "subwayId": "255",
-        "distanceText": "1.9 km",
-        "distanceValue": "1948"
-    },
-    {
-        "storeId": "1768",
-        "subwayId": "255",
         "distanceText": "2.0 km",
-        "distanceValue": "1953"
+        "distanceValue": "1960"
     },
     {
-        "storeId": "91735",
+        "storeId": "2163346035",
+        "subwayId": "254",
+        "distanceText": "2.0 km",
+        "distanceValue": "1972"
+    },
+    {
+        "storeId": "2153088773",
         "subwayId": "255",
-        "distanceText": "2.0 km",
-        "distanceValue": "1961"
-    },
-    {
-        "storeId": "1006355",
-        "subwayId": "255",
-        "distanceText": "2.0 km",
-        "distanceValue": "1993"
-    },
-    {
-        "storeId": "1009931",
-        "subwayId": "256",
-        "distanceText": "1.0 km",
-        "distanceValue": "962"
-    },
-    {
-        "storeId": "68269",
-        "subwayId": "256",
-        "distanceText": "1.2 km",
-        "distanceValue": "1194"
-    },
-    {
-        "storeId": "19159",
-        "subwayId": "256",
-        "distanceText": "1.3 km",
-        "distanceValue": "1329"
-    },
-    {
-        "storeId": "1008352",
-        "subwayId": "257",
-        "distanceText": "0.5 km",
-        "distanceValue": "493"
-    },
-    {
-        "storeId": "1529",
-        "subwayId": "257",
-        "distanceText": "0.6 km",
-        "distanceValue": "639"
-    },
-    {
-        "storeId": "68396",
-        "subwayId": "257",
-        "distanceText": "0.6 km",
-        "distanceValue": "639"
-    },
-    {
-        "storeId": "1006318",
-        "subwayId": "257",
-        "distanceText": "0.6 km",
-        "distanceValue": "639"
-    },
-    {
-        "storeId": "1708",
-        "subwayId": "257",
-        "distanceText": "0.6 km",
-        "distanceValue": "642"
-    },
-    {
-        "storeId": "19429",
-        "subwayId": "257",
-        "distanceText": "1.0 km",
-        "distanceValue": "966"
-    },
-    {
-        "storeId": "1008418",
-        "subwayId": "257",
-        "distanceText": "1.0 km",
-        "distanceValue": "1011"
-    },
-    {
-        "storeId": "1743",
-        "subwayId": "257",
-        "distanceText": "1.2 km",
-        "distanceValue": "1157"
-    },
-    {
-        "storeId": "1899",
-        "subwayId": "257",
-        "distanceText": "1.4 km",
-        "distanceValue": "1396"
-    },
-    {
-        "storeId": "1005227",
-        "subwayId": "257",
-        "distanceText": "1.4 km",
-        "distanceValue": "1400"
-    },
-    {
-        "storeId": "1612",
-        "subwayId": "257",
-        "distanceText": "1.4 km",
-        "distanceValue": "1432"
-    },
-    {
-        "storeId": "1860",
-        "subwayId": "257",
-        "distanceText": "1.6 km",
-        "distanceValue": "1612"
-    },
-    {
-        "storeId": "1011136",
-        "subwayId": "257",
-        "distanceText": "1.6 km",
-        "distanceValue": "1646"
-    },
-    {
-        "storeId": "1632",
-        "subwayId": "257",
-        "distanceText": "1.8 km",
-        "distanceValue": "1790"
-    },
-    {
-        "storeId": "1837",
-        "subwayId": "257",
-        "distanceText": "1.9 km",
-        "distanceValue": "1909"
-    },
-    {
-        "storeId": "1009374",
-        "subwayId": "257",
-        "distanceText": "2.0 km",
-        "distanceValue": "1970"
-    },
-    {
-        "storeId": "1009029",
-        "subwayId": "257",
-        "distanceText": "2.0 km",
-        "distanceValue": "1978"
-    },
-    {
-        "storeId": "1607",
-        "subwayId": "258",
-        "distanceText": "0.8 km",
-        "distanceValue": "757"
-    },
-    {
-        "storeId": "1005672",
-        "subwayId": "258",
-        "distanceText": "1.7 km",
-        "distanceValue": "1706"
-    },
-    {
-        "storeId": "1009342",
-        "subwayId": "259",
-        "distanceText": "1.1 km",
-        "distanceValue": "1083"
-    },
-    {
-        "storeId": "1005547",
-        "subwayId": "259",
-        "distanceText": "1.3 km",
-        "distanceValue": "1305"
-    },
-    {
-        "storeId": "92812",
-        "subwayId": "259",
-        "distanceText": "1.5 km",
-        "distanceValue": "1543"
-    },
-    {
-        "storeId": "1011325",
-        "subwayId": "259",
-        "distanceText": "1.7 km",
-        "distanceValue": "1709"
-    },
-    {
-        "storeId": "1006948",
-        "subwayId": "261",
-        "distanceText": "0.6 km",
-        "distanceValue": "608"
-    },
-    {
-        "storeId": "1006738",
-        "subwayId": "261",
-        "distanceText": "1.2 km",
-        "distanceValue": "1238"
-    },
-    {
-        "storeId": "116319",
-        "subwayId": "262",
-        "distanceText": "0.6 km",
-        "distanceValue": "612"
-    },
-    {
-        "storeId": "1572",
-        "subwayId": "262",
-        "distanceText": "1.1 km",
-        "distanceValue": "1053"
-    },
-    {
-        "storeId": "1956",
-        "subwayId": "262",
-        "distanceText": "1.2 km",
-        "distanceValue": "1201"
-    },
-    {
-        "storeId": "1656",
-        "subwayId": "262",
-        "distanceText": "1.3 km",
-        "distanceValue": "1300"
-    },
-    {
-        "storeId": "68785",
-        "subwayId": "262",
-        "distanceText": "1.3 km",
-        "distanceValue": "1317"
-    },
-    {
-        "storeId": "1716",
-        "subwayId": "262",
-        "distanceText": "1.3 km",
-        "distanceValue": "1336"
-    },
-    {
-        "storeId": "1008380",
-        "subwayId": "262",
-        "distanceText": "1.5 km",
-        "distanceValue": "1456"
-    },
-    {
-        "storeId": "1005320",
-        "subwayId": "262",
-        "distanceText": "1.7 km",
-        "distanceValue": "1680"
-    },
-    {
-        "storeId": "94737",
-        "subwayId": "262",
-        "distanceText": "1.9 km",
-        "distanceValue": "1875"
-    },
-    {
-        "storeId": "1010731",
-        "subwayId": "262",
-        "distanceText": "1.9 km",
-        "distanceValue": "1945"
-    },
-    {
-        "storeId": "1011184",
-        "subwayId": "262",
-        "distanceText": "2.0 km",
-        "distanceValue": "1993"
-    },
-    {
-        "storeId": "1738",
-        "subwayId": "262",
-        "distanceText": "2.0 km",
-        "distanceValue": "1999"
-    },
-    {
-        "storeId": "1006116",
-        "subwayId": "264",
-        "distanceText": "1.5 km",
-        "distanceValue": "1472"
-    },
-    {
-        "storeId": "88354",
-        "subwayId": "264",
-        "distanceText": "1.5 km",
-        "distanceValue": "1490"
-    },
-    {
-        "storeId": "1008352",
-        "subwayId": "264",
-        "distanceText": "1.6 km",
-        "distanceValue": "1592"
-    },
-    {
-        "storeId": "1708",
-        "subwayId": "264",
-        "distanceText": "1.8 km",
-        "distanceValue": "1846"
-    },
-    {
-        "storeId": "1011136",
-        "subwayId": "264",
-        "distanceText": "1.8 km",
-        "distanceValue": "1849"
-    },
-    {
-        "storeId": "1009404",
-        "subwayId": "264",
-        "distanceText": "1.9 km",
-        "distanceValue": "1888"
-    },
-    {
-        "storeId": "1837",
-        "subwayId": "264",
-        "distanceText": "2.0 km",
-        "distanceValue": "1995"
-    },
-    {
-        "storeId": "1012055",
-        "subwayId": "265",
-        "distanceText": "1.0 km",
-        "distanceValue": "992"
-    },
-    {
-        "storeId": "1011347",
-        "subwayId": "265",
-        "distanceText": "1.1 km",
-        "distanceValue": "1139"
-    },
-    {
-        "storeId": "1651",
-        "subwayId": "265",
-        "distanceText": "1.8 km",
-        "distanceValue": "1786"
-    },
-    {
-        "storeId": "1914",
-        "subwayId": "265",
-        "distanceText": "2.0 km",
-        "distanceValue": "1987"
-    },
-    {
-        "storeId": "1007868",
-        "subwayId": "266",
         "distanceText": "0.7 km",
-        "distanceValue": "671"
+        "distanceValue": "736"
     },
     {
-        "storeId": "1645",
-        "subwayId": "268",
+        "storeId": "2162308225",
+        "subwayId": "255",
+        "distanceText": "0.9 km",
+        "distanceValue": "930"
+    },
+    {
+        "storeId": "2163346035",
+        "subwayId": "255",
+        "distanceText": "1.1 km",
+        "distanceValue": "1073"
+    },
+    {
+        "storeId": "2162308226",
+        "subwayId": "255",
         "distanceText": "1.2 km",
-        "distanceValue": "1238"
+        "distanceValue": "1217"
     },
     {
-        "storeId": "90289",
-        "subwayId": "268",
-        "distanceText": "1.4 km",
-        "distanceValue": "1370"
+        "storeId": "2163512916",
+        "subwayId": "255",
+        "distanceText": "1.2 km",
+        "distanceValue": "1221"
     },
     {
-        "storeId": "1593",
-        "subwayId": "268",
-        "distanceText": "1.5 km",
-        "distanceValue": "1523"
-    },
-    {
-        "storeId": "113875",
-        "subwayId": "268",
-        "distanceText": "1.5 km",
-        "distanceValue": "1527"
-    },
-    {
-        "storeId": "1011018",
-        "subwayId": "268",
+        "storeId": "2161361404",
+        "subwayId": "255",
         "distanceText": "1.7 km",
-        "distanceValue": "1656"
+        "distanceValue": "1689"
     },
     {
-        "storeId": "1800",
-        "subwayId": "268",
+        "storeId": "2161361403",
+        "subwayId": "255",
         "distanceText": "1.7 km",
-        "distanceValue": "1679"
+        "distanceValue": "1689"
     },
     {
-        "storeId": "1856",
-        "subwayId": "268",
-        "distanceText": "1.7 km",
-        "distanceValue": "1728"
+        "storeId": "2152399185",
+        "subwayId": "255",
+        "distanceText": "2.0 km",
+        "distanceValue": "1968"
     },
     {
-        "storeId": "1011020",
-        "subwayId": "268",
-        "distanceText": "1.7 km",
-        "distanceValue": "1734"
-    },
-    {
-        "storeId": "1008280",
-        "subwayId": "268",
-        "distanceText": "1.8 km",
-        "distanceValue": "1777"
-    },
-    {
-        "storeId": "1634",
-        "subwayId": "268",
-        "distanceText": "1.9 km",
-        "distanceValue": "1902"
-    },
-    {
-        "storeId": "1604",
-        "subwayId": "268",
-        "distanceText": "1.9 km",
-        "distanceValue": "1918"
-    },
-    {
-        "storeId": "94957",
-        "subwayId": "268",
-        "distanceText": "1.9 km",
-        "distanceValue": "1930"
-    },
-    {
-        "storeId": "1698",
-        "subwayId": "268",
-        "distanceText": "1.9 km",
-        "distanceValue": "1942"
-    },
-    {
-        "storeId": "1010418",
-        "subwayId": "270",
-        "distanceText": "1.4 km",
-        "distanceValue": "1375"
-    },
-    {
-        "storeId": "1548",
-        "subwayId": "270",
-        "distanceText": "1.9 km",
-        "distanceValue": "1939"
-    },
-    {
-        "storeId": "1006948",
-        "subwayId": "271",
-        "distanceText": "1.3 km",
-        "distanceValue": "1299"
-    },
-    {
-        "storeId": "18974",
-        "subwayId": "271",
+        "storeId": "2134978366",
+        "subwayId": "256",
         "distanceText": "1.6 km",
         "distanceValue": "1642"
     },
     {
-        "storeId": "1006738",
+        "storeId": "2164693630",
+        "subwayId": "257",
+        "distanceText": "0.4 km",
+        "distanceValue": "388"
+    },
+    {
+        "storeId": "2160857631",
+        "subwayId": "257",
+        "distanceText": "0.6 km",
+        "distanceValue": "641"
+    },
+    {
+        "storeId": "2164268826",
+        "subwayId": "257",
+        "distanceText": "1.3 km",
+        "distanceValue": "1252"
+    },
+    {
+        "storeId": "2131078733",
+        "subwayId": "261",
+        "distanceText": "1.1 km",
+        "distanceValue": "1059"
+    },
+    {
+        "storeId": "2131078731",
+        "subwayId": "261",
+        "distanceText": "1.1 km",
+        "distanceValue": "1059"
+    },
+    {
+        "storeId": "2131078732",
+        "subwayId": "261",
+        "distanceText": "1.1 km",
+        "distanceValue": "1059"
+    },
+    {
+        "storeId": "2152895880",
+        "subwayId": "262",
+        "distanceText": "0.5 km",
+        "distanceValue": "512"
+    },
+    {
+        "storeId": "2162308227",
+        "subwayId": "262",
+        "distanceText": "0.5 km",
+        "distanceValue": "512"
+    },
+    {
+        "storeId": "2132521867",
+        "subwayId": "262",
+        "distanceText": "1.1 km",
+        "distanceValue": "1099"
+    },
+    {
+        "storeId": "2162186193",
+        "subwayId": "262",
+        "distanceText": "1.2 km",
+        "distanceValue": "1248"
+    },
+    {
+        "storeId": "2164693630",
+        "subwayId": "264",
+        "distanceText": "1.7 km",
+        "distanceValue": "1669"
+    },
+    {
+        "storeId": "2160857631",
+        "subwayId": "264",
+        "distanceText": "1.8 km",
+        "distanceValue": "1780"
+    },
+    {
+        "storeId": "2165808180",
+        "subwayId": "265",
+        "distanceText": "1.1 km",
+        "distanceValue": "1110"
+    },
+    {
+        "storeId": "2166053389",
+        "subwayId": "265",
+        "distanceText": "1.5 km",
+        "distanceValue": "1512"
+    },
+    {
+        "storeId": "2161736102",
+        "subwayId": "265",
+        "distanceText": "1.9 km",
+        "distanceValue": "1879"
+    },
+    {
+        "storeId": "2160456277",
+        "subwayId": "268",
+        "distanceText": "1.3 km",
+        "distanceValue": "1330"
+    },
+    {
+        "storeId": "2161590113",
+        "subwayId": "268",
+        "distanceText": "1.4 km",
+        "distanceValue": "1373"
+    },
+    {
+        "storeId": "2150811182",
+        "subwayId": "268",
+        "distanceText": "1.5 km",
+        "distanceValue": "1516"
+    },
+    {
+        "storeId": "2120233063",
+        "subwayId": "268",
+        "distanceText": "1.6 km",
+        "distanceValue": "1558"
+    },
+    {
+        "storeId": "2131078733",
         "subwayId": "271",
-        "distanceText": "1.9 km",
-        "distanceValue": "1929"
-    },
-    {
-        "storeId": "113547",
-        "subwayId": "272",
-        "distanceText": "1.1 km",
-        "distanceValue": "1118"
-    },
-    {
-        "storeId": "91735",
-        "subwayId": "273",
-        "distanceText": "0.8 km",
-        "distanceValue": "841"
-    },
-    {
-        "storeId": "18897",
-        "subwayId": "273",
-        "distanceText": "0.9 km",
-        "distanceValue": "913"
-    },
-    {
-        "storeId": "19084",
-        "subwayId": "273",
-        "distanceText": "0.9 km",
-        "distanceValue": "923"
-    },
-    {
-        "storeId": "116528",
-        "subwayId": "273",
-        "distanceText": "0.9 km",
-        "distanceValue": "931"
-    },
-    {
-        "storeId": "1586",
-        "subwayId": "273",
-        "distanceText": "1.0 km",
-        "distanceValue": "977"
-    },
-    {
-        "storeId": "1713",
-        "subwayId": "273",
-        "distanceText": "1.0 km",
-        "distanceValue": "977"
-    },
-    {
-        "storeId": "1707",
-        "subwayId": "273",
-        "distanceText": "1.0 km",
-        "distanceValue": "981"
-    },
-    {
-        "storeId": "92693",
-        "subwayId": "273",
-        "distanceText": "1.0 km",
-        "distanceValue": "1034"
-    },
-    {
-        "storeId": "1633",
-        "subwayId": "273",
-        "distanceText": "1.1 km",
-        "distanceValue": "1074"
-    },
-    {
-        "storeId": "1008369",
-        "subwayId": "273",
-        "distanceText": "1.1 km",
-        "distanceValue": "1078"
-    },
-    {
-        "storeId": "1603",
-        "subwayId": "273",
-        "distanceText": "1.1 km",
-        "distanceValue": "1105"
-    },
-    {
-        "storeId": "1008391",
-        "subwayId": "273",
         "distanceText": "1.2 km",
-        "distanceValue": "1151"
+        "distanceValue": "1202"
     },
     {
-        "storeId": "92696",
-        "subwayId": "273",
+        "storeId": "2131078731",
+        "subwayId": "271",
         "distanceText": "1.2 km",
-        "distanceValue": "1178"
+        "distanceValue": "1202"
     },
     {
-        "storeId": "116349",
+        "storeId": "2131078732",
+        "subwayId": "271",
+        "distanceText": "1.2 km",
+        "distanceValue": "1202"
+    },
+    {
+        "storeId": "2163129135",
         "subwayId": "273",
-        "distanceText": "1.3 km",
-        "distanceValue": "1294"
+        "distanceText": "1.5 km",
+        "distanceValue": "1538"
     },
     {
-        "storeId": "68301",
-        "subwayId": "273",
-        "distanceText": "1.3 km",
-        "distanceValue": "1335"
-    },
-    {
-        "storeId": "1006355",
-        "subwayId": "273",
-        "distanceText": "1.4 km",
-        "distanceValue": "1397"
-    },
-    {
-        "storeId": "1008537",
-        "subwayId": "273",
-        "distanceText": "1.4 km",
-        "distanceValue": "1421"
-    },
-    {
-        "storeId": "63283",
+        "storeId": "2153210007",
         "subwayId": "273",
         "distanceText": "1.7 km",
-        "distanceValue": "1714"
+        "distanceValue": "1712"
     },
     {
-        "storeId": "89911",
-        "subwayId": "273",
-        "distanceText": "1.7 km",
-        "distanceValue": "1731"
-    },
-    {
-        "storeId": "1801",
+        "storeId": "2163512916",
         "subwayId": "273",
         "distanceText": "1.8 km",
-        "distanceValue": "1752"
+        "distanceValue": "1772"
     },
     {
-        "storeId": "86964",
-        "subwayId": "273",
-        "distanceText": "1.8 km",
-        "distanceValue": "1759"
-    },
-    {
-        "storeId": "1835",
-        "subwayId": "273",
-        "distanceText": "1.9 km",
-        "distanceValue": "1874"
-    },
-    {
-        "storeId": "1551",
-        "subwayId": "273",
-        "distanceText": "1.9 km",
-        "distanceValue": "1910"
-    },
-    {
-        "storeId": "113989",
-        "subwayId": "273",
-        "distanceText": "1.9 km",
-        "distanceValue": "1947"
-    },
-    {
-        "storeId": "1005580",
+        "storeId": "2133660057",
         "subwayId": "273",
         "distanceText": "2.0 km",
-        "distanceValue": "1963"
+        "distanceValue": "1957"
     },
     {
-        "storeId": "1005446",
+        "storeId": "2151355819",
         "subwayId": "275",
-        "distanceText": "0.6 km",
-        "distanceValue": "604"
+        "distanceText": "1.5 km",
+        "distanceValue": "1541"
     },
     {
-        "storeId": "1595",
-        "subwayId": "275",
-        "distanceText": "1.2 km",
-        "distanceValue": "1175"
-    },
-    {
-        "storeId": "1010448",
-        "subwayId": "275",
-        "distanceText": "1.2 km",
-        "distanceValue": "1230"
-    },
-    {
-        "storeId": "1008497",
-        "subwayId": "275",
-        "distanceText": "1.3 km",
-        "distanceValue": "1348"
-    },
-    {
-        "storeId": "66114",
-        "subwayId": "275",
-        "distanceText": "1.7 km",
-        "distanceValue": "1711"
-    },
-    {
-        "storeId": "1008425",
-        "subwayId": "275",
-        "distanceText": "1.8 km",
-        "distanceValue": "1843"
-    },
-    {
-        "storeId": "116462",
+        "storeId": "2150272338",
         "subwayId": "275",
         "distanceText": "1.9 km",
-        "distanceValue": "1911"
+        "distanceValue": "1945"
     },
     {
-        "storeId": "88712",
+        "storeId": "2169503640",
         "subwayId": "276",
         "distanceText": "1.5 km",
         "distanceValue": "1483"
     },
     {
-        "storeId": "1860",
-        "subwayId": "277",
-        "distanceText": "0.3 km",
-        "distanceValue": "343"
-    },
-    {
-        "storeId": "1009029",
-        "subwayId": "277",
-        "distanceText": "1.3 km",
-        "distanceValue": "1338"
-    },
-    {
-        "storeId": "19429",
+        "storeId": "2164693630",
         "subwayId": "277",
         "distanceText": "1.4 km",
-        "distanceValue": "1359"
+        "distanceValue": "1402"
     },
     {
-        "storeId": "1011139",
-        "subwayId": "277",
-        "distanceText": "1.4 km",
-        "distanceValue": "1418"
-    },
-    {
-        "storeId": "1529",
-        "subwayId": "277",
-        "distanceText": "1.4 km",
-        "distanceValue": "1422"
-    },
-    {
-        "storeId": "1006318",
-        "subwayId": "277",
-        "distanceText": "1.4 km",
-        "distanceValue": "1422"
-    },
-    {
-        "storeId": "68396",
-        "subwayId": "277",
-        "distanceText": "1.4 km",
-        "distanceValue": "1422"
-    },
-    {
-        "storeId": "1619",
-        "subwayId": "277",
-        "distanceText": "1.4 km",
-        "distanceValue": "1444"
-    },
-    {
-        "storeId": "1008539",
-        "subwayId": "277",
-        "distanceText": "1.5 km",
-        "distanceValue": "1531"
-    },
-    {
-        "storeId": "1743",
+        "storeId": "2160857631",
         "subwayId": "277",
         "distanceText": "1.6 km",
-        "distanceValue": "1550"
+        "distanceValue": "1582"
     },
     {
-        "storeId": "1008418",
+        "storeId": "2164668081",
         "subwayId": "277",
         "distanceText": "1.8 km",
-        "distanceValue": "1778"
+        "distanceValue": "1808"
     },
     {
-        "storeId": "1637",
+        "storeId": "2164268826",
         "subwayId": "277",
         "distanceText": "1.8 km",
-        "distanceValue": "1793"
+        "distanceValue": "1840"
     },
     {
-        "storeId": "1899",
-        "subwayId": "277",
-        "distanceText": "1.8 km",
-        "distanceValue": "1811"
-    },
-    {
-        "storeId": "1005192",
+        "storeId": "2160752058",
         "subwayId": "277",
         "distanceText": "1.9 km",
-        "distanceValue": "1913"
+        "distanceValue": "1853"
     },
     {
-        "storeId": "1005227",
+        "storeId": "2154037951",
         "subwayId": "277",
         "distanceText": "1.9 km",
-        "distanceValue": "1947"
+        "distanceValue": "1865"
     },
     {
-        "storeId": "1008410",
-        "subwayId": "278",
-        "distanceText": "0.2 km",
-        "distanceValue": "202"
-    },
-    {
-        "storeId": "1006923",
-        "subwayId": "278",
-        "distanceText": "0.4 km",
-        "distanceValue": "397"
-    },
-    {
-        "storeId": "113955",
-        "subwayId": "278",
+        "storeId": "2164226862",
+        "subwayId": "277",
         "distanceText": "2.0 km",
-        "distanceValue": "1983"
+        "distanceValue": "1996"
     },
     {
-        "storeId": "1011363",
+        "storeId": "2152919871",
         "subwayId": "279",
         "distanceText": "1.8 km",
-        "distanceValue": "1843"
+        "distanceValue": "1795"
     },
     {
-        "storeId": "86953",
+        "storeId": "2169568531",
         "subwayId": "279",
-        "distanceText": "2.0 km",
-        "distanceValue": "1986"
+        "distanceText": "1.8 km",
+        "distanceValue": "1795"
     },
     {
-        "storeId": "87634",
+        "storeId": "2132520392",
+        "subwayId": "279",
+        "distanceText": "1.8 km",
+        "distanceValue": "1823"
+    },
+    {
+        "storeId": "2169568531",
         "subwayId": "280",
-        "distanceText": "1.5 km",
-        "distanceValue": "1462"
-    },
-    {
-        "storeId": "1738",
-        "subwayId": "282",
-        "distanceText": "1.5 km",
-        "distanceValue": "1547"
-    },
-    {
-        "storeId": "1945",
-        "subwayId": "282",
-        "distanceText": "1.7 km",
-        "distanceValue": "1716"
-    },
-    {
-        "storeId": "1608",
-        "subwayId": "282",
-        "distanceText": "1.8 km",
-        "distanceValue": "1813"
-    },
-    {
-        "storeId": "1011184",
-        "subwayId": "282",
-        "distanceText": "1.8 km",
-        "distanceValue": "1822"
-    },
-    {
-        "storeId": "1803",
-        "subwayId": "282",
-        "distanceText": "1.8 km",
-        "distanceValue": "1825"
-    },
-    {
-        "storeId": "1862",
-        "subwayId": "282",
-        "distanceText": "1.8 km",
-        "distanceValue": "1825"
-    },
-    {
-        "storeId": "86953",
-        "subwayId": "283",
-        "distanceText": "0.3 km",
-        "distanceValue": "273"
-    },
-    {
-        "storeId": "1667",
-        "subwayId": "283",
-        "distanceText": "1.5 km",
-        "distanceValue": "1541"
-    },
-    {
-        "storeId": "69600",
-        "subwayId": "283",
-        "distanceText": "1.8 km",
-        "distanceValue": "1818"
-    },
-    {
-        "storeId": "1011363",
-        "subwayId": "283",
-        "distanceText": "1.9 km",
-        "distanceValue": "1920"
-    },
-    {
-        "storeId": "51989",
-        "subwayId": "283",
-        "distanceText": "1.9 km",
-        "distanceValue": "1928"
-    },
-    {
-        "storeId": "116355",
-        "subwayId": "284",
-        "distanceText": "1.1 km",
-        "distanceValue": "1141"
-    },
-    {
-        "storeId": "1597",
-        "subwayId": "284",
-        "distanceText": "1.7 km",
-        "distanceValue": "1724"
-    },
-    {
-        "storeId": "19397",
-        "subwayId": "284",
-        "distanceText": "1.9 km",
-        "distanceValue": "1914"
-    },
-    {
-        "storeId": "1009375",
-        "subwayId": "287",
         "distanceText": "1.3 km",
-        "distanceValue": "1255"
+        "distanceValue": "1339"
     },
     {
-        "storeId": "113546",
-        "subwayId": "288",
+        "storeId": "2154867152",
+        "subwayId": "281",
+        "distanceText": "1.6 km",
+        "distanceValue": "1637"
+    },
+    {
+        "storeId": "2152381955",
+        "subwayId": "282",
+        "distanceText": "0.5 km",
+        "distanceValue": "497"
+    },
+    {
+        "storeId": "2162128618",
+        "subwayId": "282",
         "distanceText": "0.8 km",
-        "distanceValue": "800"
+        "distanceValue": "820"
+    },
+    {
+        "storeId": "2152300972",
+        "subwayId": "282",
+        "distanceText": "1.6 km",
+        "distanceValue": "1557"
+    },
+    {
+        "storeId": "2162145972",
+        "subwayId": "282",
+        "distanceText": "1.8 km",
+        "distanceValue": "1773"
+    },
+    {
+        "storeId": "2152944019",
+        "subwayId": "283",
+        "distanceText": "1.6 km",
+        "distanceValue": "1623"
+    },
+    {
+        "storeId": "2152919871",
+        "subwayId": "283",
+        "distanceText": "1.7 km",
+        "distanceValue": "1669"
+    },
+    {
+        "storeId": "2136336229",
+        "subwayId": "284",
+        "distanceText": "1.9 km",
+        "distanceValue": "1915"
+    },
+    {
+        "storeId": "2167760458",
+        "subwayId": "288",
+        "distanceText": "1.0 km",
+        "distanceValue": "1041"
     }
 ]

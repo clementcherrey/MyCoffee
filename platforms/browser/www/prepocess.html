@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<title>dev page</title>
+
+	<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/testpreprocess.css" />
+
+	<script type="text/javascript" src="js/testWalkingDistance.js"></script>
+	<script type="text/javascript" src="js/distance.js"></script>
+	<script type="text/javascript" src="js/distancesub2.js"></script>
+	<script type="text/javascript" src="js/geocoding.js"></script>
+	<script type="text/javascript" src="js/storage2.js"></script>
+	<script type="text/javascript" src="js/loadingfile.js"></script>
+
+	<script type="text/javascript"
+	src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript"
+	src="js/jquery.mobile-1.4.5.min.js"></script>
+
+	<!-- Script for map -->
+	<script type="text/javascript" src="http://maps.google.cn/maps/api/js?region=cn&language=en-US&sensor=true"></script>
+
+	<script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=nfXjwqvucomlwsM2Pdq2Ik2Y&v=1.0"></script> 
+<style type="text/css">  
+body, html,#l-map {width: 100%;height: 100%;overflow: hidden;margin:0;}  
+</style> 
+</head>
+
+<script>
+function init() {
+ 	alert("in init");
+ 	// document.addEventListener("deviceready", downloadInCustomDirectory, true);
+	$( document ).ready(function() {
+		console.log( "ready!" );
+		// testWalkingDistance();
+		// testCoordinate()
+		jsonTransform();
+		// jsonTransformSub();
+		// getsub();
+	}); 	
+}
+</script>
+
+<body onload="init()">
+	<div id="inputdiv">
+		<form id="searchsub" action="preprocess.html">
+			 <input type="search" name="search-sub" id="search-sub" value=""/>
+		</form>
+	</div>
+<div id="l-map"></div>  
+<div id="mybigdivforimage">
+The background will be the funny image
+</br> O yeah
+</br> O yeah
+</br> O yeah
+</br> O yeah</br> O yeah
+</div>
+</body>
+</html>

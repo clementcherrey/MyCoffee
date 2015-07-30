@@ -1,9 +1,3 @@
-var map;
-var markers = [];
-var contents = [];
-var myInfoWindow;
-
-
 
 function initMap() {
 	myInfoWindow = new google.maps.InfoWindow( {
@@ -15,10 +9,6 @@ function initMap() {
 	// init the map if no map
 	if (mapInfo.createNb == 0) {
 		console.log("in no map created !");
-	//initialize button behaviour
-	$("#test").on('click', function() {
-		myInfoWindow.close();
-	});
 	// add listener for return cleaning markers
 	$("#back-home").on('click', function() {
 		deleteMarkers();
@@ -37,20 +27,21 @@ function initMap() {
         	position: google.maps.ControlPosition.RIGHT_BOTTOM
    			 },
 			zoom : mapInfo.mapZoom,
-			center : new google.maps.LatLng(mapInfo.centerLat,
-				mapInfo.centerLng)
+			center : new google.maps.LatLng(mapInfo.currentLat,
+				mapInfo.currentLng)
 		};
 		map = new google.maps.Map(document.getElementById('map_canvas'),
 			mapOptions);
+		console.log(mapInfo.currentLat+"  ---  "+mapInfo.currentLng);
 		mapInfo.createNb++;
 	} else {
 		console.log("map already created");
-		map.setCenter(new google.maps.LatLng(mapInfo.centerLat,
-			mapInfo.centerLng));
+		map.setCenter(new google.maps.LatLng(mapInfo.currentLat,
+			mapInfo.currentLng));
 		map.setZoom(mapInfo.mapZoom);
 	}
 	initMarkers();
-	getPointclicked();
+	// getPointclicked();
 }
 
 function clickCurrentMarker(){
@@ -70,38 +61,39 @@ function initMarkers(){
 	console.log("in initMarkers");
 	myInfoWindow.content = null;
 	contents = [];
-	for ( var i = 0; i < storeInfo.result.length; i++) {
-		var tmplat = storeInfo.result[i].lat;
-		var tmplng = storeInfo.result[i].lng;
-		var tmpId = storeInfo.result[i].id;
-		var tmpLatlng = new google.maps.LatLng(tmplat, tmplng);
+	if(storeInfo.result != null){
+		for ( var i = 0; i < storeInfo.result.length; i++) {
+			var tmplat = storeInfo.result[i].lat;
+			var tmplng = storeInfo.result[i].lng;
+			var tmpId = storeInfo.result[i].id;
+			var tmpLatlng = new google.maps.LatLng(tmplat, tmplng);
 
-		var tmpName = storeInfo.result[i].name;
-		var tmpBrand = storeInfo.result[i].brand;
-		var tmpAddress = storeInfo.result[i].addresseng;
+			var tmpName = storeInfo.result[i].name;
+			var tmpBrand = storeInfo.result[i].brand;
+			var tmpAddress = storeInfo.result[i].addresseng;
 
-		contents.push('<div>' + '<h3>'
-			+ tmpBrand + '</h3>'
-			+ tmpAddress 
-			+'</br><a href="#headline">view detail</a></div>');
+			contents.push('<div>' + '<h3>'
+				+ tmpBrand + '</h3>'
+				+ tmpAddress 
+				+'</br><a href="#headline">view detail</a></div>');
 
-		markers.push( new google.maps.Marker({
-			position : tmpLatlng,
-			map : map,
-			icon : 'img/marker.png',
-			content : contents[i],
-			markerId: tmpId
-		}));
-		
-		google.maps.event.addListener(markers[i], 'click',  function(){
-			myInfoWindow.content = "YO";
-			myInfoWindow.setContent(this.content);
-			myInfoWindow.open(map, this);
+			markers.push( new google.maps.Marker({
+				position : tmpLatlng,
+				map : map,
+				icon : 'img/marker1.png',
+				content : contents[i],
+				markerId: tmpId
+			}));
+			
+			google.maps.event.addListener(markers[i], 'click',  function(){
+				myInfoWindow.content = "YO";
+				myInfoWindow.setContent(this.content);
+				myInfoWindow.open(map, this);
 			// TO CUSTOMIZE THE LAT AND LNG
-			getActiveMarker(this);
+				// getActiveMarker(this);
 		});
-	};
-
+		};
+	}
 
 	// TEST FOR THE LAT LNG BAIDU
 	var testjiashan = new google.maps.LatLng(31.202855,121.460856);
@@ -144,56 +136,56 @@ function initMarkers(){
 		map : map,
 		icon : 'img/xigua.png',
 	}));
-	markers.push( new google.maps.Marker({
-		position : testSBJiashan,
-		map : map,
-		icon : 'img/marker.png',
-	}));
-	markers.push( new google.maps.Marker({
-		position : testCostJiashan,
-		map : map,
-		icon : 'img/marker.png',
-	}));
-	markers.push( new google.maps.Marker({
-		position : testLatLngB,
-		map : map,
-		icon : 'img/150.png',
-	}));
-	markers.push( new google.maps.Marker({
-		position : testLatLngC,
-		map : map,
-		icon : 'img/150.png',
-	}));
-	markers.push( new google.maps.Marker({
-		position : testLatLngF,
-		map : map,
-		icon : 'img/150.png',
-	}));
-	markers.push( new google.maps.Marker({
-		position : testLatLngI,
-		map : map,
-		icon : 'img/150.png',
-	}));
-		markers.push( new google.maps.Marker({
-		position : testLatLngb,
-		map : map,
-		icon : 'img/150.png',
-	}));
-	markers.push( new google.maps.Marker({
-		position : testLatLngc,
-		map : map,
-		icon : 'img/150.png',
-	}));
-	markers.push( new google.maps.Marker({
-		position : testLatLngf,
-		map : map,
-		icon : 'img/150.png',
-	}));
-	markers.push( new google.maps.Marker({
-		position : testLatLngi,
-		map : map,
-		icon : 'img/150.png',
-	}));
+	// markers.push( new google.maps.Marker({
+	// 	position : testSBJiashan,
+	// 	map : map,
+	// 	icon : 'img/marker.png',
+	// }));
+	// markers.push( new google.maps.Marker({
+	// 	position : testCostJiashan,
+	// 	map : map,
+	// 	icon : 'img/marker.png',
+	// }));
+	// markers.push( new google.maps.Marker({
+	// 	position : testLatLngB,
+	// 	map : map,
+	// 	icon : 'img/150.png',
+	// }));
+	// markers.push( new google.maps.Marker({
+	// 	position : testLatLngC,
+	// 	map : map,
+	// 	icon : 'img/150.png',
+	// }));
+	// markers.push( new google.maps.Marker({
+	// 	position : testLatLngF,
+	// 	map : map,
+	// 	icon : 'img/150.png',
+	// }));
+	// markers.push( new google.maps.Marker({
+	// 	position : testLatLngI,
+	// 	map : map,
+	// 	icon : 'img/150.png',
+	// }));
+	// 	markers.push( new google.maps.Marker({
+	// 	position : testLatLngb,
+	// 	map : map,
+	// 	icon : 'img/150.png',
+	// }));
+	// markers.push( new google.maps.Marker({
+	// 	position : testLatLngc,
+	// 	map : map,
+	// 	icon : 'img/150.png',
+	// }));
+	// markers.push( new google.maps.Marker({
+	// 	position : testLatLngf,
+	// 	map : map,
+	// 	icon : 'img/150.png',
+	// }));
+	// markers.push( new google.maps.Marker({
+	// 	position : testLatLngi,
+	// 	map : map,
+	// 	icon : 'img/150.png',
+	// }));
 
 	// --------Test for the position of subwats
 	// printSubways();

@@ -9,27 +9,32 @@
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/headline.css" />
+	<link rel="stylesheet" href="css/more.css" />
 	<link rel="stylesheet" href="css/search.css" />
 
-
+	<script type="text/javascript" src="js/geolocation.js"></script>
+	<script type="text/javascript" src="js/backupCurrent.js"></script>
+	<script type="text/javascript" src="js/globalVar.js"></script>
+	<script type="text/javascript" src="js/initDB.js"></script>
+	<script type="text/javascript" src="js/globalinit.js"></script>
+	<script type="text/javascript" src="js/homepage.js"></script>
+	<script type="text/javascript" src="js/initListener.js"></script>
 	<script type="text/javascript" src="js/downloadingFile.js"></script>
+	<script type="text/javascript" src="js/loadingFile.js"></script>
 	<script type="text/javascript" src="js/morePage.js"></script>
-	<script type="text/javascript" src="js/customLocation.js"></script>
-	<script type="text/javascript" src="js/storage2.js"></script>
 	<script type="text/javascript" src="js/mapOperation.js"></script>
 	<script type="text/javascript" src="js/headline.js"></script>
 	<script type="text/javascript" src="js/distance.js"></script>
 	<script type="text/javascript" src="js/searchbar.js"></script>
+	
 	<script type="text/javascript" src="cordova.js"></script>
-	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 	
 </head>
 
 <body onload="init()">
-
 <!-- //////////////////////// HOME PAGE /////////////////////////////////// -->
-
 	<div data-role="page" id="homepage">
 		<div data-role="header" data-position="fixed">
 			<div align="center"><img src="img/title-app2.png" alt="my-app"
@@ -50,6 +55,15 @@
 				<ul id="autocomplete" data-role="listview" data-inset="true" data-filter-reveal="true" data-filter="true" data-input="#search-1"></ul>
 			</div>
 		</div>
+		
+	<!-- ///////////////// POPUP TEST ???????????????????? -->
+	<div data-role="popup" id="popupSearch" data-arrow="true" data-transition="none">
+		<p>Enter a subway station to find the shops nearby</p>
+	</div>
+	<div data-role="popup" id="popupGps" data-arrow="true" data-transition="none">
+		<p>Use the GPS to find store near you</p>
+	</div>
+	<!-- /////////////////// END POPUP /////////////////////// -->
 
 		<ul data-role="listview" data-split-icon="refresh">
 			<li>Results close to 
@@ -57,8 +71,11 @@
 			</li>
 		</ul>
 
+
 			<!-- Main content-->
 			<div data-role="content">
+				<div id="message-wrapper">		
+				</div>	
 				<div class="list-wrapper">
 					<ul data-role="listview" id="store-list">
 						<!-- store list here -->
@@ -67,10 +84,10 @@
 				</div>
 		<!-- /content -->
 			<div data-theme="a" data-role="footer" data-position="fixed"
-				id="homefooter" hidden="true">
+				id="homefooter">
 				<div id="footernav" data-role="navbar" class="custom-navbar">
 					<ul style="border: none">
-						<li class="lifoot"><a href="#main"><img  style="width: 30%;"  src="img/logo/map.png"></a></li>
+						<li class="lifoot"><a id="mapButtoon" href="#"><img  style="width: 30%;"  src="img/logo/map.png"></a></li>
 						<li id="midbutt" class="lifoot"><a id="getLocation1" href="#"><img style="width: 30%;" src="img/logo/gps.png"></a></li>
 						<li class="lifoot"><a href="#more"><img  style="width: 30%;"src="img/logo/gear.png"></a></li>
 					</ul>
@@ -120,26 +137,31 @@
 
 		<div data-role="content">
 			<div>
-			<button id="emailMe">Email Me!</button>
+			<table id="more-shareTable">
+				<tr><td>
+				<button class="ui-btn" id="more-shareFB" onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})"></button></td><td>
+				<button class="ui-btn" id="more-shareWC"></button>
+				</td></tr>
+			</table>
+			<button class="ui-btn ui-icon-mail ui-nodisc-icon ui-alt-icon ui-btn-icon-right"
+			id="emailMe">Send Feedback</button>
+			<button class="ui-btn ui-icon-star ui-nodisc-icon ui-alt-icon ui-btn-icon-right"
+			id="rateMe">Rate the app</button>
+			<a href="#myPopupDialog" data-rel="popup" data-transition="pop" data-position-to="window"
+			class="ui-btn ui-icon-download ui-nodisc-icon ui-alt-icon ui-btn-icon-right"
+			id="downloadMe">Download local maps</a>
 			</div>
-			<div class="list-wrapper">
-				<ul data-role="listview" data-inset="true">
-					 <li class="ui-field-contain">
-						 <label for="flip1">Map loaded in background:</label>
-						            <select name="flip1" id="flip1" data-role="slider">
-							                <option value="off">no</option>
-							                <option value="on">yes</option>
-						            </select>
-					        </li>
-					<li class="ui-field-contain">
-						            <label for="flip2">Get my position automatically:</label>
-						            <select name="flip2" id="flip2" data-role="slider">
-							                <option value="off">no</option>
-							                <option value="on">yes</option>
-						            </select>
-					        </li>
-				    </ul>
-			</div>
+		<!-- ////////////////////// POPUP /////////////////////// -->
+		<div data-role="popup" id="myPopupDialog" data-overlay-theme="a" data-theme="a" data-dismissible="false">
+			    <div role="main" class="ui-content">
+					<h3 class="more-dialog-title">Download Offline Maps</h3>
+					<h4 id="downloadBrand" style="padding-top: 10%"></h4>
+					<p id="downloadStatus" style="padding-top: 10%">Waiting for server response</p>
+					<p id="downloadedFiles" style="padding-top: 10%"></p>
+					<a id="more-cancel" href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-a more-cancel-btn" data-rel="back">Cancel</a>
+			    </div>
+		</div>
+		<!-- /////////////////// END POPUP /////////////////////// -->
 		</div>
 	</div>
 
@@ -162,17 +184,13 @@
 			<div data-role="footer" data-position="fixed"
 style="text-align: center;"><!--<a href="#" class="ui-btn ui-corner-all ui-shadow"><span>My location</span></a>
 -->
+
+
+
 <button id="printNewLatLng" class="ui-btn">Print</button>
 </div>
 </div>
 </div>
 
 </body>
-<!-- TEST async load google map script -->
-<script>
-    $.getScript("js/storage2.js",function(){
-    	$(document).ready(loadTheMapScript);
-		// document.addEventListener("deviceready", loadTheMapScript, true);
-    });
-</script>
 </html>

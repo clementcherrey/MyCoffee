@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<title>dev page</title>
+
+	<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script type="text/javascript" src="js/distance.js"></script>
+	<script type="text/javascript" src="js/distancesub.js"></script>
+	<script type="text/javascript"
+	src="http://maps.google.cn/maps/api/js?region=cn&language=en-US&sensor=true"></script>
+	<script type="text/javascript"
+	src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript"
+	src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<script>
+function init() {
+ 	// alert("in init");
+	$( document ).ready(function() {
+		alert( "ready!" );
+		//jsonTransform();
+		getsub()
+	}); 	
+}
+</script>
+
+<body onload="init()">
+	<div id="inputdiv">
+		<form id="searchsub" action="preprocess.html">
+			 <input type="search" name="search-sub" id="search-sub" value=""/>
+		</form>
+	</div>
+
+</body>
+</html>

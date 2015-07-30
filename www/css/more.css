@@ -1,0 +1,57 @@
+#more-shareTable{
+	width: 100%;
+}
+#more-shareTable tboby{
+	width: 100%;
+}
+#more-shareTable tboby tr{
+	width: 100%;
+}
+#more-shareTable tboby tr td{
+	width: 100%;
+	vertical-align: center;
+}
+
+.disableClick{
+    pointer-events: none;
+    color: gray !important;
+}
+
+
+#more-shareFB{
+	position: relative;
+	background-image: url('../img/near-me.png') !important;
+	width: 100%;
+	height: 60px;
+	background-size: 100%;
+	background-position: center;
+}
+
+#more-shareWC{
+	background-image: url('../img/search-background.png') !important;
+	width: 100%;
+	height: 60px;
+	background-size: 100%;
+	background-position: center;
+}
+
+#downloadMe{
+}
+
+
+#downloadStatus{
+	padding-top: 10px;
+	padding-bottom: 15px !important;
+}
+
+#myPopupDialog-popup{
+	width:400px;
+}
+
+.more-dialog-title{
+	padding-bottom: 0;
+
+}
+
+.more-cancel-btn{
+}

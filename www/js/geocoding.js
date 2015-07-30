@@ -4,7 +4,7 @@ var addressArray = [];
 //to get the coordinate from the address
 function jsonTransform() {
 	console.log("in json function");
-	$.getJSON("ajax/costaPregeo.json",function(data) {
+	$.getJSON("ajax/WagPregeo.json",function(data) {
 		$.each(data,function(key, val) {	
 			addressArray.push({id: val.id, name: val.name,addresseng: val.addresseng, addresscn: val.addresscn});
 		});

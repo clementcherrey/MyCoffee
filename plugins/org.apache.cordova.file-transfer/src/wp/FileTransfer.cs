@@ -377,7 +377,7 @@ namespace WPCordovaClassLib.Cordova.Commands
                 {
                     using (IsolatedStorageFile isoFile = IsolatedStorageFile.GetUserStoreForApplication())
                     {
-                        string cleanUrl = downloadOptions.Url.Replace("x-wmapp0:", "").Replace("file:", "").Replace("//","");
+                        string cleanUrl = downloadOptions.Url.Replace("x-wmapp0:", "").Replace("file:", "");
 
                         // pre-emptively create any directories in the FilePath that do not exist
                         string directoryName = getDirectoryName(downloadOptions.FilePath);

@@ -12,24 +12,22 @@ function getsub(){
 	});
 }
 
-//put the brand as parmeter for futur version
+//use the file with all the brands
 function getStore(){
 	console.log("in get store");
-	$.getJSON("ajax/starbucks.json",function(data) {
+	$.getJSON("ajax/allStores.json",function(data) {
 		$.each(data,function(key, val) {	
 			storeArray.push({id: val.id, name: val.name, lat: val.lat, lng: val.lng });
-		});
+		});	
 
-	$( "#search-sub").focus().tap();	
-
-	$( "#searchsub" ).submit(function( event ) {
+		$( "#searchsub" ).submit(function( event ) {
 			console.log( "Handler for .submit() called." );
 			event.preventDefault();
 			var searchid = $("#search-sub").val();
-			// alert(searchid);
+			console.log("searchid = " +searchid);
 			loopOnSub(searchid);
 		});
-		// loopOnSub(0);
+		$( "#search-sub").focus().tap();
 	});
 }	
 
@@ -58,12 +56,30 @@ function loopOnSub(it){
 // custom estimateDiff
 function estimateDiff2(origin,objArr){
 	// console.log("in init estimateDiff");
-	var diffOp = function (lat,lng){
-		return (origin.lat - lat) * (origin.lat - lat) + (origin.lng- lng)*(origin.lng- lng);
-	};
+	// OLD FUNCTION TO ESTIMATE DIST
+	// var diffOp = function (lat,lng){
+	// 	return (origin.lat - lat) * (origin.lat - lat) + (origin.lng- lng)*(origin.lng- lng);
+	// };
+	// NEW FUNCTION TO CALCULATE DIST
+	function getDistanceFromLatLonInKm(lat2,lon2) {
+  	var R = 6371; // Radius of the earth in km
+  	var dLat = deg2rad(lat2-origin.lat);  // deg2rad below
+  	var dLon = deg2rad(lon2-origin.lng); 
+  	var a = 
+  		Math.sin(dLat/2) * Math.sin(dLat/2) +
+  		Math.cos(deg2rad(origin.lat)) * Math.cos(deg2rad(lat2)) * 
+  		Math.sin(dLon/2) * Math.sin(dLon/2); 
+  	var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+  	var d = R * c; // Distance in km
+  	return d;
+	}
+
+	function deg2rad(deg) {
+	return deg * (Math.PI/180)
+	}
 
 	var diffArr = $.map(objArr, function(n,i){
-		return [{id: n.id, diff: diffOp(n.lat,n.lng)}];
+	return [{id: n.id, diff: getDistanceFromLatLonInKm(n.lat,n.lng)}];
 	})
 	// sort using diff
 	function compareDiff(a, b) {
@@ -82,10 +98,10 @@ function estimateDiff2(origin,objArr){
 
 // ***** use the sync loop to launch the distances calc*******//
 function initDistCalc2(myOrigin, callcall) {
-	// console.log("in init calc");
+	// console.log("in init calc 2");
 	tempSubStore = [];
 	var currentDiff = estimateDiff2(myOrigin,storeArray);
-	// only send 20 locations per request for distqnces
+	// console.log(currentDiff);
 	// console.log ("number of store : " + currentDiff.length);
 	var divbytwenty = currentDiff.length / 20;
 	// test for new limit to replace divby twenty
@@ -153,7 +169,7 @@ function calculateDistances2(myOrigin,valueId, tableLL, callback) {
 					});
 				}
 			}
-		callback();
+			callback();
 		}else if (status === google.maps.DistanceMatrixStatus.OVER_QUERY_LIMIT) {   
 			// console.log("OVER_QUERY_LIMIT"); 
 			setTimeout(function() {
@@ -176,13 +192,35 @@ function sortDistance2() {
 		return 0;
 	}
 	tempSubStore.sort(compare);
-	// console.log("///////////// TABLE /////////////");
-	for (var i =0; i<tempSubStore.length;i++){
-		console.log( ","+tempSubStore[i].storeId+","+tempSubStore[i].subID
-			+","+tempSubStore[i].distanceText+","+tempSubStore[i].distanceValue);
+	if (tempSubStore.length>0) {
+		printNewCoordinates();
+	};
+
+	// OLD WAY TO SEND DATA
+	// for (var i =0; i<tempSubStore.length;i++){
+	// 	console.log( ","+tempSubStore[i].storeId+","+tempSubStore[i].subID
+	// 		+","+tempSubStore[i].distanceText+","+tempSubStore[i].distanceValue);
+	// 	var tmpData = "storeId="+tempSubStore[i].storeId
+	// 					+"&subID="+ tempSubStore[i].subID+"&distanceText="
+	// 					+ tempSubStore[i].distanceText+"&distanceValue="
+	// 					+ tempSubStore[i].distanceValue+"&file="
+	// 					+ 'lol' ;
+	// 	console.log("tmpData = "+ tmpData);
+	// 	sendData(tmpData);
 
 	// console.log(storeArray[tempSubStore[i].storeId].id +", "
 	// 	+storeArray[tempSubStore[i].storeId].name);
-};
+	// };
 	// console.log("/////////////	/////////////");
+}
+
+
+function printNewCoordinates(){
+	console.log("*********************************");
+	console.log("--------- NEW COORDINATES -------");
+	console.log("*********************************");
+	var tmpData = JSON.stringify(tempSubStore);
+	console.log("tmpData = "+ tmpData);
+	sendData(tmpData);
+	console.log("*********************************");
 }

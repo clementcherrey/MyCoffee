@@ -1,0 +1,34 @@
+#more-shareTable{
+	width: 100%;
+}
+#more-shareTable tboby{
+	width: 100%;
+}
+#more-shareTable tboby tr{
+	width: 100%;
+}
+#more-shareTable tboby tr td{
+	width: 100%;
+	vertical-align: center;
+}
+
+
+#more-shareFB{
+	position: relative;
+	background-image: url('../img/near-me.png') !important;
+	width: 100%;
+	height: 60px;
+	background-size: 100%;
+	background-position: center;
+}
+
+#more-shareWC{
+	background-image: url('../img/search-background.png') !important;
+	width: 100%;
+	height: 60px;
+	background-size: 100%;
+	background-position: center;
+}
+
+#downloadMe{
+}

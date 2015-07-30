@@ -1,0 +1,436 @@
+.ui-page {
+	
+}
+
+#myContent .ui-listview-filter {
+	display: none;
+}
+
+#myContent .ui-input-search { /*display: none*/;
+	
+}
+
+.lifoot{
+
+}
+
+/*TEST*/
+.ui-filter-inset {
+    margin-top: 0;
+}
+
+#midbutt{
+	border-left: solid;
+	border-right: solid;
+	border-width: 0.1em;
+	border-color: #bababa;
+}
+
+.lifoot a{
+	display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	border: none;
+}
+
+
+.ui-footer {
+	position: fixed !important;
+	background: #FFFFFF !important;
+	border-top: solid;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	border-width: 3px !important;
+	border-color: #5da92a !important;
+}
+
+.ui-header {
+	position: fixed !important;
+	background: #FFFFFF !important;
+	border-top: none;
+	border-right: none;
+	border-bottom: solid;
+	border-left: none;
+	border-width: 3px !important;
+	border-color: #5da92a !important;
+}
+
+
+/*CSS for the location band*/
+#band-container{
+	width: 100%;
+	margin: 0;
+	padding-bottom: 30px;
+	height: 0;
+}
+
+#refreshInfo-container{
+	position: relative;
+	float: left;
+	width: 70%;
+	margin: 0;
+	text-align: center;
+}
+
+#refPos{
+	padding: 0.1em;
+	padding-left:0;
+	display: block;
+	margin: auto;
+	font-size: 0.7em;
+}
+#refPos2{
+	text-align: center;
+	font-size: 0.7em;
+	font-weight: normal;
+}
+
+#refDate{
+	padding-left: 0;
+	display: block;
+	margin: auto;
+	font-size: 0.5em;
+}
+
+#refreshLogo-container{
+	position: relative;
+	float: left;
+	width: 25%;
+	margin: 0;
+	padding: 0;
+	border-left: none;
+	border-left-width: 0.1em;
+	border-left-color: grey;
+
+}
+
+#refreshLogo-container img{
+	width: 50%;
+	margin: auto;
+	padding: 3px;
+	display: block;
+}
+/*-------end band-------*/
+
+
+.banner img {
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100%;
+}
+
+.line-1 {
+	height: 80px;
+}
+
+
+
+.container1{
+	position: relative;
+	width: 100% - 90px;
+	padding-bottom: 80px;
+	float: left;
+	height: 0;
+
+}
+
+.bigcontainer{
+	padding: 7px !important;
+}
+
+.container1 div{
+	position: absolute;
+	top: 50%;
+	height: 80px;
+	margin-top: -40px;
+	padding: 0px;
+	margin-left: 0px !important;
+
+}
+
+.container1 div p{
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
+	padding: 0px;
+}
+
+.container2{
+	position: relative;
+	display: block;
+	width: 80px;
+	padding-bottom: 80px;
+	float: left;
+	height: 0;
+}
+
+.container2 img{
+	margin: auto !important;
+	padding: 0 !important;
+	width: 80px;
+	height: 80px;
+}
+
+.containerWifi{
+	padding: 7px !important;
+}
+
+.containerWifi div{ 
+	padding: 4px !important;
+	background:#ccddcc;
+	border-radius: 10px !important;
+
+}
+
+.containerSubway{
+	background:#e1ffc7 !important;
+}
+
+.containerSubway div{ 
+	padding: 4px !important;
+	border-radius: 0px !important;
+}
+
+.grids {
+	position: relative;
+	width: 33% !important;
+	margin: 0px !important;
+	padding: 0px !important;
+	align: center;
+}
+
+.grids div{
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.grids div p {
+	vertical-align: middle;
+	text-align: center;
+	color: black;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.grids div img{
+	display: block;
+	margin: 0 auto;
+}
+
+.line-1 div {
+	position: absolute;
+	top: 50%;
+	height: 80px;
+	margin-top: -40px;
+	padding: 0px;
+	margin-left: 0px !important;
+}
+
+.divimage {
+	width: 80px !important;
+	margin-left: 0px !important;
+}
+
+.line-2 div {
+	position: absolute;
+	top: 50%;
+	height: 60px;
+	margin-top: -30px;
+	width: 100%;
+	padding: 0px;
+}
+
+.right div img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.left div {
+	left: 0px;
+}
+
+.grids div p {
+	color: black;
+	font-size: 13px;
+	font-weight: normal;
+	width: 100%;
+	padding: 0px;
+}
+
+.center-div {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.custom-navbar ul li a {
+	color: black !important;
+	border: 0 1px 0 1px !important;
+	text-shadow: none !important;
+	background: #FFFFFF !important; /* Old browsers */
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	font-size: large !important;
+}
+
+.custom-navbar ul li a.ui-btn-active {
+	color: black !important;
+	border: 0 1px 0 1px !important;
+	text-shadow: none !important;
+	background: #FFFFFF !important; /* Old browsers */
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	font-size: large !important;
+}
+
+.imageContainer {
+	position: relative;
+	width: 50%;
+	padding-bottom: 50%;
+	float: left;
+	height: 0;
+}
+
+#getLocation {
+	background-image: url('../img/near-me.png') !important;
+	width: 70% !important;
+	height: 70% !important;
+	background-size: 100% 100%;
+	position: absolute;
+	border-radius: 50% !important;
+	border: none;
+	top: 15%;
+	right: 15%;
+	padding: 0 !important;
+	right: 15%;
+}
+
+#goMap {
+	background-image: url('../img/map-me.png') !important;
+	width: 70% !important;
+	height: 70% !important;
+	background-size: 100% 100%;
+	position: absolute;
+	border-radius: 50% !important;
+	border: none;
+	top: 15%;
+	left: 15%;;
+	padding: 0 !important;
+}
+
+#content {
+	padding: 0 !important;
+	position: absolute !important;
+	top: 40px !important;
+	right: 0;
+	bottom: 40px !important;
+	left: 0 !important;
+}
+
+#store-list  {
+	/*border-bottom:solid;*/
+}
+
+#store-list li a {
+	background: #FFFFFF;
+}
+
+#store-list li a img {
+	background: #FFFFFF !important;
+	border: none;
+	border-color: #bbb;
+	border-width: 1px !important;
+	max-height: 60px;
+	max-width: 60px;
+	margin: 10px 10px 10px 10px !important;
+}
+
+.ui-li-count {
+	top: 1.6em !important;
+}
+
+#map_canvas {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#show-map-button,#test {
+	padding: 10px 30px 10px 30px;
+	font-size: large;
+	border-color: #5da92a;
+	background-color: white;
+	color: black;
+	background-color: white;
+}
+
+.store-name {
+	font-size: large;
+	font-weight: bold;
+	display: table;
+	margin: auto;
+}
+
+.store-note {
+	font-size: medium;
+	display: table;
+	margin-top: auto;
+}
+
+.store-address {
+	font-size: large;
+	font-style: italic;
+	white-space: normal;
+	margin-bottom: 30px;
+}
+
+.how-to-go {
+	font-size: medium;
+	font-style: normal;
+}
+
+.info1 {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.info2 {
+	display: block;
+	margin: auto auto auto auto;
+}
+
+.back-button {
+	outline: 0;
+}
+
+.header-title {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: large;
+}
+
+#gpsLoading {
+	background-image: url('../img/dancing-banana.gif') !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100% !important;
+	height: 50px ;
+	overflow: hidden;
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	border-width: 0px !important;
+	border-color: #5da92a !important;
+	display: table;
+}
+

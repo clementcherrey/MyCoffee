@@ -33,7 +33,7 @@ function newProgressEvent(result) {
 }
 
 function getUrlCredentials(urlString) {
-    var credentialsPattern = /^https?\:\/\/(?:(?:(([^:@\/]*)(?::([^@\/]*))?)?@)?([^:\/?#]*)(?::(\d*))?).*$/,
+    var credentialsPattern = /^http\:\/\/((.*?)\:(.*?))@.*$/g,
         credentials = credentialsPattern.exec(urlString);
 
     return credentials && credentials[1];

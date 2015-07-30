@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<title>dev page</title>
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/headline.css" />
+	<link rel="stylesheet" href="css/more.css" />
+	<link rel="stylesheet" href="css/search.css" />
+
+
+	<script type="text/javascript" src="js/initListener.js"></script>
+	<script type="text/javascript" src="js/downloadingFile.js"></script>
+	<script type="text/javascript" src="js/loadingFile.js"></script>
+	<script type="text/javascript" src="js/morePage.js"></script>
+	<script type="text/javascript" src="js/customLocation.js"></script>
+	<script type="text/javascript" src="js/storage2.js"></script>
+	<script type="text/javascript" src="js/mapOperation.js"></script>
+	<script type="text/javascript" src="js/headline.js"></script>
+	<script type="text/javascript" src="js/distance.js"></script>
+	<script type="text/javascript" src="js/searchbar.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	
+</head>
+
+<body onload="init()">
+<!-- //////////////////////// HOME PAGE /////////////////////////////////// -->
+	<div data-role="page" id="homepage">
+		<div data-role="header" data-position="fixed">
+			<div align="center"><img src="img/title-app2.png" alt="my-app"
+				Style="padding: 5% 0px 3% 0px;" />
+			</div>
+		</div>
+		<!-- /header -->	
+		<!-- Search with suggestions -->
+		<div class="wrap">
+			<div class="banner">
+				<div id="inputdiv">
+					<form id="searchForm" action="devpage2.html">
+						 <input type="search" name="search-1" id="search-1" placeholder="Enter a station"value=""/>
+					</form>
+				</div>
+			</div>
+			<div id="div-suggestion">
+				<ul id="autocomplete" data-role="listview" data-inset="true" data-filter-reveal="true" data-filter="true" data-input="#search-1"></ul>
+			</div>
+		</div>
+		
+	<!-- ///////////////// POPUP TEST ???????????????????? -->
+		<a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Basic Popup</a>
+		<div data-role="popup" id="popupBasic">
+			<p>This is a completely basic popup, no options set.</p>
+		</div>
+	<!-- /////////////////// END POPUP /////////////////////// -->
+
+		<ul data-role="listview" data-split-icon="refresh">
+			<li>Results close to 
+				<span id="span-pos" style="font-weight:bold;"> Your Position</span>
+			</li>
+		</ul>
+
+
+			<!-- Main content-->
+			<div data-role="content">
+				<div class="list-wrapper">
+					<ul data-role="listview" id="store-list">
+						<!-- store list here -->
+					</ul>
+				</div>
+				</div>
+		<!-- /content -->
+			<div data-theme="a" data-role="footer" data-position="fixed"
+				id="homefooter">
+				<div id="footernav" data-role="navbar" class="custom-navbar">
+					<ul style="border: none">
+						<li class="lifoot"><a href="#main"><img  style="width: 30%;"  src="img/logo/map.png"></a></li>
+						<li id="midbutt" class="lifoot"><a id="getLocation1" href="#"><img style="width: 30%;" src="img/logo/gps.png"></a></li>
+						<li class="lifoot"><a href="#more"><img  style="width: 30%;"src="img/logo/gear.png"></a></li>
+					</ul>
+				</div>
+				<div data-role="popup" id="popupGPS" class="photopopup" data-overlay-theme="b" data-rolecorners="false" data-tolerance="30,15">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+				<img src="img/dancing-banana.gif" alt="Finding coffe shop near you...">
+				</div>
+			</div>
+	</div>
+<!-- //////////////////////// HEADLINE /////////////////////////////////// -->
+
+	<div data-role="page" id="headline">
+		<div data-role="header" data-position="fixed" class="header-div">
+			<h1 class="header-title"></h1>
+			<a href="#homepage"
+			class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
+			data-transition="slide" data-direction="reverse"
+			style="border: none; background-color: transparent;"><img
+			src="img/logo-coffee.png" alt="cup-logo"></a></div>
+			<!-- /header -->
+
+		<div data-role="content">
+			<div class="list-wrapper">
+				<ul data-role="listview" id="store-data" data-theme="a">
+					<!-- description here -->
+				</ul>
+			</div>
+		</div>
+
+		<div data-role="footer" data-position="fixed"
+				style="text-align: center;" ><a href="#main" id="show-map-button"
+				class="ui-btn ui-corner-all ui-shadow"><span>Show on Map</span></a></div>
+	</div>
+
+<!-- //////////////////////// MORE /////////////////////////////////// -->
+
+	<div data-role="page" id="more">
+		<div data-role="header" data-position="fixed" class="header-div">
+			<h1 class="header-title"></h1>
+			<a href="#homepage"
+			class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
+			data-transition="slide" data-direction="reverse"
+			style="border: none; background-color: transparent;"><img
+			src="img/logo-coffee.png" alt="cup-logo"></a></div>
+			<!-- /header -->
+
+		<div data-role="content">
+			<div>
+			<table id="more-shareTable">
+				<tr><td>
+				<button class="ui-btn" id="more-shareFB" onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})"></button></td><td>
+				<button class="ui-btn" id="more-shareWC"></button>
+				</td></tr>
+			</table>
+			<button class="ui-btn ui-icon-mail ui-nodisc-icon ui-alt-icon ui-btn-icon-right"
+			id="emailMe">Send Feedback</button>
+			<button class="ui-btn ui-icon-star ui-nodisc-icon ui-alt-icon ui-btn-icon-right"
+			id="rateMe">Rate the app</button>
+			<a href="#mypopupBasic" data-rel="popup" data-transition="pop" data-position-to="window"
+			class="ui-btn ui-icon-location ui-nodisc-icon ui-alt-icon ui-btn-icon-right"
+			id="downloadMe">Download local maps</a>
+			</div>
+		<!-- ////////////////////// POPUP /////////////////////// -->
+			<div data-role="popup" id="mypopupBasic" style="height:150px;vertical-align: center;">
+				<p id="downloadStatus" style="padding-top: 10%">Waiting for server response</p>
+				<button style="width:30%;">Cancel</button>
+			</div>
+		<!-- /////////////////// END POPUP /////////////////////// -->
+		</div>
+	</div>
+
+	<!-- //////////////////////// MAIN /////////////////////////////////// -->
+
+	<div data-role="page" id="main">
+		<div data-role="header" data-position="fixed" class="header-div">
+			<h1 class="header-title"></h1>
+			<a href="#homepage" id="back-home"
+			class="ui-btn ui-icon-carat-l ui-nodisc-icon ui-alt-icon ui-btn-icon-left"
+			data-transition="slide" data-direction="reverse"
+			style="border: none; background-color: transparent;"><img
+			src="img/logo-coffee.png" alt="cup-logo"></a></div>
+			<!-- /header -->
+
+			<div data-role="content" id="content">
+				<div id="map_canvas" style="height: 100%"></div>
+			</div>
+			<!-- /content -->
+			<div data-role="footer" data-position="fixed"
+style="text-align: center;"><!--<a href="#" class="ui-btn ui-corner-all ui-shadow"><span>My location</span></a>
+-->
+
+
+
+<button id="printNewLatLng" class="ui-btn">Print</button>
+</div>
+</div>
+</div>
+
+</body>
+<!-- TEST async load google map script -->
+<script>
+    $.getScript("js/storage2.js",function(){
+    	$(document).ready(loadTheMapScript);
+		// document.addEventListener("deviceready", loadTheMapScript, true);
+    });
+</script>
+</html>

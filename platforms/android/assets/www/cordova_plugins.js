@@ -147,20 +147,6 @@ module.exports = [
         "runs": true
     },
     {
-        "file": "plugins/org.apache.cordova.file-transfer/www/FileTransferError.js",
-        "id": "org.apache.cordova.file-transfer.FileTransferError",
-        "clobbers": [
-            "window.FileTransferError"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.file-transfer/www/FileTransfer.js",
-        "id": "org.apache.cordova.file-transfer.FileTransfer",
-        "clobbers": [
-            "window.FileTransfer"
-        ]
-    },
-    {
         "file": "plugins/org.chromium.zip/zip.js",
         "id": "org.chromium.zip.Zip",
         "clobbers": [
@@ -178,6 +164,34 @@ module.exports = [
             "cordova.plugins.email",
             "plugin.email"
         ]
+    },
+    {
+        "file": "plugins/nl.x-services.plugins.socialsharing/www/SocialSharing.js",
+        "id": "nl.x-services.plugins.socialsharing.SocialSharing",
+        "clobbers": [
+            "window.plugins.socialsharing"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.file-transfer/www/FileTransferError.js",
+        "id": "org.apache.cordova.file-transfer.FileTransferError",
+        "clobbers": [
+            "window.FileTransferError"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.file-transfer/www/FileTransfer.js",
+        "id": "org.apache.cordova.file-transfer.FileTransfer",
+        "clobbers": [
+            "window.FileTransfer"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js",
+        "id": "org.apache.cordova.inappbrowser.inappbrowser",
+        "clobbers": [
+            "window.open"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -185,9 +199,11 @@ module.exports.metadata =
 {
     "org.apache.cordova.geolocation": "0.3.12",
     "org.apache.cordova.file": "1.3.3",
-    "org.apache.cordova.file-transfer": "0.5.0",
     "org.chromium.zip": "2.1.0",
-    "de.appplant.cordova.plugin.email-composer": "0.8.2"
+    "de.appplant.cordova.plugin.email-composer": "0.8.2",
+    "nl.x-services.plugins.socialsharing": "4.3.19-dev",
+    "org.apache.cordova.file-transfer": "0.4.8",
+    "org.apache.cordova.inappbrowser": "0.6.0"
 }
 // BOTTOM OF METADATA
 });

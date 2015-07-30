@@ -1,0 +1,80 @@
+#store-data li{
+
+}
+
+#detail-head{
+	margin: 8px;
+	padding: 12px;
+	border:none !important;
+}
+
+#detail-name{
+	font-size: 20px !important;
+	padding: 5px;
+}
+
+#detail-distance{
+	font-size: 16px;
+	font-family: "Arial", Arial, Sans-serif;	
+	font-weight: 200;
+	text-shadow: none;
+	padding: 5px;
+	color: white;
+	margin: 5px;
+	background: #629d2a !important;
+/*	letter-spacing: 0.04em;*/
+}
+
+#detail-close{
+	font-size: 16px;
+	color: #548e3f;
+}
+
+#detail-position{
+	padding: 5px;
+	font-size: 13px;
+	color: grey;
+}
+
+#detail-station {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+#detail-subway {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+#detail-subway table tbody{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+#detail-subway table tbody tr {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+#detail-subway table tbody tr td{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.detail-subline{
+	width: 19px;
+}
+
+
+.detail-multiline img{
+	position: absolute;
+	top: 50% !important;
+	max-height: 1em
+	max-width: 1em;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.detail-multiline p{
+	padding: 0 !important;
+	margin: 0 !important;
+}

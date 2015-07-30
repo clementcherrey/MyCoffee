@@ -3,10 +3,26 @@
 }
 
 #detail-head{
+	background-size: 380px;
+	background-repeat: no-repeat;
+	
 	margin: 8px;
 	padding: 12px;
 	border:none !important;
 }
+
+.detail-head-starbucks{
+	background-image: url('../img/banners/banner SB.png');
+}
+
+.detail-head-Costa{
+	background-image: url('../img/banners/banner_costa.png');
+}
+
+.detail-head-Wagas{
+	background-image: url('../img/banners/banner_wagas.png');
+}
+
 
 #detail-name{
 	font-size: 20px !important;
@@ -63,6 +79,10 @@
 	width: 19px;
 }
 
+.detail-subline img{
+	max-width: 18px;
+	max-height: 18px;
+}
 
 .detail-multiline img{
 	position: absolute;

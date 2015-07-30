@@ -3,8 +3,9 @@ function headlinePreDisplay(){
 	var tmpStation = null;
 	var tmpSubwayLine = [];	
 	console.log("in headline headlinePreDisplay");
+	$( "#popupDialog" ).popup( "open" );
 	db.transaction(function(tx) {
-		tx.executeSql("select * from storeSub where storeId = ? order by distanceValue desc",
+		tx.executeSql("select * from storeSub where storeId = ? order by distanceValue asc",
 			[storeInfo.id],function(tx, results){	
 				if (results.rows.length == 0) {
 					console.log(" no result for subway association");
@@ -41,7 +42,7 @@ function headlineNewDisplay(station,sublines) {
 			var tmpName = storeInfo.result[i].name;
 			// $('.header-title').append(tmpName);
 			var tmpBrand = storeInfo.result[i].brand;
-			alert(tmpBrand);
+			console.log(tmpBrand);
 			$('.header-title').append(tmpBrand);
 			var tmpWifi = storeInfo.result[i].wifi;
 			var tmpAddress = storeInfo.result[i].addresseng;
@@ -57,6 +58,8 @@ function headlineNewDisplay(station,sublines) {
 			var tmpOpen3 = storeInfo.result[i].open3;
 			var tmpOpen4 = storeInfo.result[i].open4;
 
+			var tmpHeadBGUrl = "../img/banner SB.png";
+
 
 			mapInfo.centerLat = storeInfo.result[i].lat;
 			mapInfo.centerLng = storeInfo.result[i].lng;
@@ -67,7 +70,8 @@ function headlineNewDisplay(station,sublines) {
 			//------------------ Name + distance ------------------------
 			$('#store-data')
 			.append(
-				'<li id="detail-head"style="white-space:normal;">'
+				'<li id="detail-head"'
+				+'style="white-space:normal;">'
 				+'<span id="detail-name">'+ tmpName + '</span></br></br>'
 				+'<span id="detail-distance">'+ tmpDistance + '</span></br></br>'
 				+'<span id="detail-position"> from '+ searchTerm +' station</span>'
@@ -108,8 +112,8 @@ function headlineNewDisplay(station,sublines) {
 					if(sublines[i-1]!=""){
 						console.log(sublines[i-1]);
 						$('#line'+i).append(
-							'<img src="img/line2'
-							+ sublines[i]
+							'<img src="img/metro/line_'
+							+ sublines[i-1]
 							+ '.png" />');
 					}
 				};
@@ -182,106 +186,14 @@ function headlineNewDisplay(station,sublines) {
 					'<li style="white-space:normal;">'
 					+'<div id="detail-staticMap">'
 					+ '</div></li>');
-			break;
-		}
-	}
-	$('#store-data').listview('refresh');
-	loadStaticMap(storeInfo.id,"detail-staticMap","store-data");
-}
-
-///////////////*******************************//////////////////
-///////////////********* OLD VERSION *********//////////////////
-///////////////*******************************//////////////////
-
-function headlineDisplay(sublines) {
-	console.log("in headline for display");
-	$('#store-data').empty();
-	$('.header-title').empty();
-
-	for ( var i = 0; i < storeInfo.result.length; i++) {
-		if (storeInfo.result[i].id == storeInfo.id) {
-			console.log("storeInfo.id: " + storeInfo.id);
-			var tmpName = storeInfo.result[i].name;
-			// $('.header-title').append(tmpName);
-			var tmpBrand = storeInfo.result[i].brand;
-			alert(tmpBrand);
-			$('.header-title').append(tmpBrand);
-			var tmpNote = "2";
-			var tmpWifi = storeInfo.result[i].wifi;
-			var tmpAddress = storeInfo.result[i].address;
-			var tmpOpen = storeInfo.result[i].open;
-			var tmpDescription = storeInfo.result[i].description;
-			console.log("open: "+ tmpOpen+", description: "+tmpDescription);
-			var tmpDistance = storeInfo.distance;
-			var tmpPrice = storeInfo.result[i].latte;
-
-			mapInfo.centerLat = storeInfo.result[i].lat;
-			mapInfo.centerLng = storeInfo.result[i].lng;
-			mapInfo.mapZoom = 14;
-
-
-
-			$('#store-data')
-			.append(
-				'<li><div class="bigcontainer">'
-				+ '<div class="container2"><img src="img/'
-				+ tmpBrand
-				+ '.png"/></div>'
-				+ '<div class = "container1"><div><p>'
-				+ tmpName
-				+ '</p><p>'
-				+	tmpOpen
-				+'</p></div></div>'						
-				+ '</div></li>');
-
-			$('#store-data')
-			.append(
-				'<li class="containerWifi"><div class="ui-grid-b">'
-				+ '<div class="ui-block-a grids"><div class="ui-body ui-body-d"><p>Distance:</p><p><span style="font-weight:bold; ">'
-				+ tmpDistance
-				+ '</span></p></div></div>'
-				+ '<div class="ui-block-b grids"><div class="ui-body ui-body-d"><p>Wifi : </p><p><span style="font-weight:bold; ">'
-				+ tmpWifi
-				+ ' wifi</span></p></div></div>'
-				+ '<div class="ui-block-c grids"><div class="ui-body ui-body-d"><p>Price latte: </p><p><span style="font-weight:bold; ">'
-				+ tmpPrice
-				+ ' Rmb</span></p></div></div>'
-				+ '</div></li>');
-			$('#store-data')
-			.append(
-				'<li style="white-space:normal;"><span style="font-weight:bold;">Address: </span>'
-				+ tmpAddress + '</li>');
-			$('#store-data')
-			.append(
-				'<li class="containerSubway" style="white-space:normal;"><div><div>'
-				+ '<p style="font-size: 16px"><span style="font-weight:bold; ">Station:</span>  '
-				+ tmpStation
-				+ '</p><div id="subway-lines" style="display:table;font-weight:bold; font-size: 16px;"><span style="vertical-align: middle;display: table-cell"> Line: </span>'
-				+ '	</div>'			
-				+ '<p style="font-size: 15px;">'
-				+ tmpSubwayDetail
-				+ '</p>'
-				+'<div></div></li>');
-			$('#store-data')
-			.append(
-				'<li style="white-space:normal; font-size: medium"><span style="font-weight:bold;">Description :</span>'
-				+ tmpDescription
-				+ '</li>');
-
-
+			
+			$("#detail-head").addClass( "detail-head-"+tmpBrand );
 			$('#store-data').listview('refresh');
-
 			break;
 		}
 	}
-	console.log("ATTENTION : "+sublines.length);
-	for (var i = sublines.length - 1; i >= 0; i--) {
-		console.log(sublines.length);
-		$('#subway-lines')
-		.append(
-			'<span style="vertical-align: middle;display: table-cell;"><img src="img/line2'
-			// + sublines[i]
-			+ '.png" /></span>');			
-	};
+
 	$('#store-data').listview('refresh');
+	// LOAD THE STATIC MAP
+	loadStaticMap(storeInfo.id,"detail-staticMap","store-data");
 }
